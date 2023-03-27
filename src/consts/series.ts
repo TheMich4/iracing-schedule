@@ -1,4 +1,4 @@
-[
+export const seriesData = [
   {
     "active": true,
     "allowedSeasonMembers": null,
