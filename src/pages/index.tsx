@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import ScheduleTable from "~/components/schedule-table";
 
 import Sidebar from "~/components/sidebar";
 
@@ -13,7 +14,8 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gradient-to-br dark:from-gray-700 dark:to-gray-800">
         <Sidebar />
-        App
+
+        <ScheduleTable />
       </main>
     </>
   );

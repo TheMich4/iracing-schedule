@@ -18,24 +18,35 @@ const Sidebar = () => {
   return (
     <aside className="fixed top-0 left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0">
       <SB collapsed={false}>
-        <SB.Items>
-          {sessionData && (
+        <SB.Items className="flex flex-col justify-between">
+          <div>
             <SB.ItemGroup>
               <SB.Item
-                onClick={() => void router.push("/admin")}
+                onClick={() => void router.push("/")}
                 className="cursor-pointer"
               >
-                Admin
+                Home
               </SB.Item>
             </SB.ItemGroup>
-          )}
+
+            {sessionData && (
+              <SB.ItemGroup>
+                <SB.Item
+                  onClick={() => void router.push("/admin")}
+                  className="cursor-pointer"
+                >
+                  Admin
+                </SB.Item>
+              </SB.ItemGroup>
+            )}
+          </div>
 
           <SB.ItemGroup>
-            <SB.Item>
-              <DarkThemeToggle className="flex w-full justify-center" />
-            </SB.Item>
             <SB.Item onClick={handleAuth} className="cursor-pointer">
               {sessionData ? "Log out" : "Log in"}
+            </SB.Item>
+            <SB.Item>
+              <DarkThemeToggle className="flex w-full justify-center" />
             </SB.Item>
           </SB.ItemGroup>
         </SB.Items>

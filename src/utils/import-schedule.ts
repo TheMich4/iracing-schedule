@@ -1,9 +1,7 @@
 import { seriesData } from "~/consts/series";
 
-const importSchedule = async () => {
+const importSchedule = () => {
   console.log("--- import schedule start ---");
-
-  console.log({ seriesData });
 
   const series = seriesData.reduce((acc, series) => {
     if (!series.active) return acc;
@@ -26,11 +24,14 @@ const importSchedule = async () => {
     };
   }, {});
 
-  console.log({ series });
+  if (typeof window === "undefined") {
+    console.log("--- import schedule failed ---");
+    return;
+  }
+
+  localStorage.setItem("schedule", JSON.stringify(series));
 
   console.log("--- import schedule end ---");
-
-  return series;
 };
 
 export default importSchedule;
