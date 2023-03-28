@@ -1,4 +1,4 @@
-interface Season {
+export interface Season {
   carClassIds: Array<string>;
   licenseGroup: string;
   official: boolean;

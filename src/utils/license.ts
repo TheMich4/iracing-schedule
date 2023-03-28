@@ -1,3 +1,11 @@
+export interface LicenseGroupMap {
+  [licenseGroupId: string]: {
+    name: string;
+    color: string;
+    short: string;
+  };
+}
+
 export const licenseGroupMap = new Proxy(
   {
     "1": {
@@ -27,7 +35,7 @@ export const licenseGroupMap = new Proxy(
     },
   },
   {
-    get: (target, prop) =>
+    get: (target: LicenseGroupMap, prop) =>
       target[String(prop)] || { name: "Unknown", color: "#FFFFFF", short: "U" },
   }
 );

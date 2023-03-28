@@ -1,45 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 import {
-  createColumnHelper,
   flexRender,
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 
-import { format } from "date-fns";
-import { licenseGroupMap } from "~/utils/license";
+import columns from "./columns";
 import useSchedule from "~/hooks/use-schedule";
-
-const columnHelper = createColumnHelper<Season>();
-
-const columns = [
-  columnHelper.accessor("licenseGroup", {
-    id: "licenseGroup",
-    cell: (cell) => {
-      const license = licenseGroupMap[cell.getValue()?.toString()] as {
-        name: string;
-        color: string;
-        short: string;
-      };
-
-      return (
-        <span className={`px-1 bg-${license.color} rounded-sm text-white`}>
-          {license.short}
-        </span>
-      );
-    },
-    header: () => "Class",
-  }),
-  columnHelper.accessor("seriesName", {
-    id: "seriesName",
-    cell: (cell) => cell.getValue(),
-  }),
-  // columnHelper.accessor("startDate", {
-  //   id: "startDate",
-  //   cell: (cell) => format(cell.getValue(), "dd-MM-yyyy"),
-  // }),
-];
 
 const ScheduleTable = () => {
   const schedule = useSchedule();
