@@ -13,8 +13,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Sidebar />
-      <Component {...pageProps} />
+      <div className="flex w-screen flex-row justify-between">
+        <Sidebar />
+        <div className="h-screen w-full overflow-auto">
+          <Component {...pageProps} />
+        </div>
+      </div>
     </SessionProvider>
   );
 };

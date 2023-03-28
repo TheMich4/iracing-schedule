@@ -26,8 +26,8 @@ const Sidebar = () => {
   };
 
   return (
-    <aside
-      className={`fixed top-0 left-0 z-40 flex h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-900 p-2 transition-transform duration-300 ${
+    <div
+      className={`z-40 flex h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-900 p-2 transition-transform duration-300 ${
         expanded ? "w-64 md:translate-x-0" : "sm:translate-x-0"
       }`}
     >
@@ -65,7 +65,7 @@ const Sidebar = () => {
           {sessionData ? "Log out" : "Log in"}
         </SidebarButton>
       </div>
-    </aside>
+    </div>
   );
 };
 
