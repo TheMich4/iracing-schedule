@@ -7,18 +7,29 @@ import {
 } from "@tanstack/react-table";
 
 import columns from "./columns";
+import { format } from "date-fns";
 import useSchedule from "~/hooks/use-schedule";
 
 const ScheduleTable = () => {
-  const schedule = useSchedule();
+  const date = new Date();
+
+  const schedule = useSchedule(date);
   const table = useReactTable({
     data: Object.values(schedule),
     columns,
     getCoreRowModel: getCoreRowModel(),
   });
 
+  console.log({ date, schedule });
+
   return (
-    <div className="p-2">
+    <div className="flex flex-col gap-2 p-2">
+      <div>
+        Date:{" "}
+        <span className="font-light text-slate-300">
+          {format(date, "dd-MM-yyy EEEE")}
+        </span>
+      </div>
       <table className="min-w-full divide-y divide-slate-700 rounded-sm">
         <thead className="bg-slate-900/40">
           {table.getHeaderGroups().map((headerGroup) => (

@@ -1,36 +1,53 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import { seriesData } from "~/consts/series";
+
+const prepareScheduleData = (series: any, schedule: any) => {
+  return {
+    fixedSetup: series.fixedSetup,
+    licenseGroup: series.licenseGroup,
+    raceLapLimit: schedule.raceLapLimit,
+    raceTimeLimit: schedule.raceTimeLimit,
+    seriesId: schedule.seriesId,
+    seriesName: schedule.seriesName,
+    seasonId: series.seasonId,
+    seasonName: series.seasonName,
+    seasonStartDate: series.startDate,
+    startDate: schedule.startDate,
+    startType: schedule.startType,
+    track: schedule.track,
+    trackTypes: series.trackTypes,
+  };
+};
 
 const importSchedule = () => {
   console.log("--- import schedule start ---");
 
-  const series = seriesData.reduce((acc, series) => {
+  const byStartDate = seriesData.reduce((acc, series) => {
     if (!series.active) return acc;
 
-    return {
-      ...acc,
-      [series.seasonId]: {
-        carClassIds: series.carClassIds,
-        licenseGroup: series.licenseGroup,
-        official: series.official,
-        scheduleDescription: series.scheduleDescription,
-        schedules: series.schedules.map((schedule) => ({
-          raceWeekNum: schedule.raceWeekNum,
-          startDate: schedule.startDate,
-          track: schedule.track,
-        })),
-        seasonName: series.seasonName,
-        seriesName: series.schedules[0]?.seriesName ?? "Unknown series name",
-        startDate: series.startDate,
-      },
-    };
+    series.schedules.forEach((schedule) => {
+      if (!acc[schedule.startDate]) {
+        acc = {
+          ...acc,
+          [schedule.startDate]: [prepareScheduleData(series, schedule)],
+        };
+      } else {
+        acc = {
+          ...acc,
+          [schedule.startDate]: [
+            ...acc[schedule.startDate],
+            prepareScheduleData(series, schedule),
+          ],
+        };
+      }
+    });
+
+    return acc;
   }, {});
 
-  if (typeof window === "undefined") {
-    console.log("--- import schedule failed ---");
-    return;
-  }
-
-  localStorage.setItem("schedule", JSON.stringify(series));
+  localStorage.setItem("schedule", JSON.stringify(byStartDate));
 
   console.log("--- import schedule end ---");
 };

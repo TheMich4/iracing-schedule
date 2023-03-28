@@ -30,8 +30,8 @@ const columns = [
   }),
   columnHelper.accessor("startDate", {
     id: "startDate",
-    cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
-    header: () => "Start date",
+    cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy EEEE"),
+    header: () => "Season Start date",
   }),
   columnHelper.accessor("scheduleDescription", {
     id: "scheduleDescription",
