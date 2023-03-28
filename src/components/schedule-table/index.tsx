@@ -9,13 +9,13 @@ import {
 import columns from "./columns";
 import { format } from "date-fns";
 import useSchedule from "~/hooks/use-schedule";
+import { useState } from "react";
 
 const ScheduleTable = () => {
-  const date = new Date();
-
+  const [date, setDate] = useState<Date>(new Date());
   const schedule = useSchedule(date);
   const table = useReactTable({
-    data: Object.values(schedule),
+    data: schedule,
     columns,
     getCoreRowModel: getCoreRowModel(),
   });

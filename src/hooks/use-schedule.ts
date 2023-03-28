@@ -19,10 +19,11 @@ const useSchedule = (date: Date): SeasonMap => {
 
   const schedule: SeasonMap = useMemo(() => {
     if (!tuesday) return [];
+    console.log("getting schedule");
 
     const s = JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};
 
-    return s[tuesday] || [];
+    return Object.values(s[tuesday] || {});
   }, [tuesday]);
 
   return schedule;
