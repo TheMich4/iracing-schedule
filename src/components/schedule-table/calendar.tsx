@@ -23,8 +23,9 @@ const Calendar = ({ initialDate, setDate }: CalendarProps) => {
   };
 
   return (
-    <div >
+    <div>
       <DatePicker
+        startWeekOn="mon"
         value={value}
         onChange={handleValueChange}
         useRange={false}

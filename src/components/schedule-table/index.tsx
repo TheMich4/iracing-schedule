@@ -22,7 +22,7 @@ const ScheduleTable = () => {
 
   return (
     <div className="flex flex-col gap-2 p-2">
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row justify-end gap-2">
         <Calendar initialDate={date} setDate={setDate} />
       </div>
       <table className="min-w-full divide-y divide-slate-700 rounded-sm">
