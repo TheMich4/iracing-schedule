@@ -15,7 +15,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <div className="flex w-screen flex-row justify-between">
         <Sidebar />
-        <div className="h-screen w-full overflow-auto">
+        <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-screen w-full overflow-auto overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-slate-900">
           <Component {...pageProps} />
         </div>
       </div>

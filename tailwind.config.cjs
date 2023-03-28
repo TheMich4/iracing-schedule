@@ -1,14 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        kanit: ["Kanit"],
-      },
-    },
-  },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
   safelist: [
     // For class backgrounds
     "bg-red-500",
@@ -17,6 +10,16 @@ const config = {
     "bg-green-500",
     "bg-blue-500",
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        kanit: ["Kanit"],
+      },
+    },
+  },
+  variants: {
+    scrollbar: ["rounded"],
+  },
 };
 
 module.exports = config;
