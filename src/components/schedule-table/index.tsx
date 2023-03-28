@@ -6,8 +6,8 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
+import Calendar from "./calendar";
 import columns from "./columns";
-import { format } from "date-fns";
 import useSchedule from "~/hooks/use-schedule";
 import { useState } from "react";
 
@@ -20,15 +20,10 @@ const ScheduleTable = () => {
     getCoreRowModel: getCoreRowModel(),
   });
 
-  console.log({ date, schedule });
-
   return (
     <div className="flex flex-col gap-2 p-2">
-      <div>
-        Date:{" "}
-        <span className="font-light text-slate-300">
-          {format(date, "dd-MM-yyy EEEE")}
-        </span>
+      <div className="flex flex-row gap-2">
+        <Calendar initialDate={date} setDate={setDate} />
       </div>
       <table className="min-w-full divide-y divide-slate-700 rounded-sm">
         <thead className="bg-slate-900/40">

@@ -1,10 +1,10 @@
-const columnHelper = createColumnHelper<Season>();
-
-import type { Season, Track } from "~/types";
+import type { Schedule, Track } from "~/types";
 
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
+
+const columnHelper = createColumnHelper<Schedule>();
 
 const columns = [
   columnHelper.accessor("licenseGroup", {

@@ -20,7 +20,6 @@ const useSchedule = (date: Date): Array<Schedule> => {
 
   const schedule = useMemo<Array<Schedule>>(() => {
     if (!tuesday) return [];
-    console.log("getting schedule");
 
     const s: ScheduleMap =
       JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};

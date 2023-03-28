@@ -20,6 +20,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.56.0
   autoprefixer: ^10.4.14
   date-fns: ^2.29.3
+  dayjs: ^1.11.7
   eslint: ^8.36.0
   eslint-config-next: ^13.2.4
   iracing-api: ^0.1.5
@@ -31,6 +32,7 @@ specifiers:
   prisma: ^4.11.0
   react: 18.2.0
   react-dom: 18.2.0
+  react-tailwindcss-datepicker: ^1.5.1
   superjson: 1.12.2
   tailwind-scrollbar: ^3.0.0
   tailwindcss: ^3.2.7
@@ -48,11 +50,13 @@ dependencies:
   '@trpc/react-query': 10.18.0_rcvfzig2xktluz4p7kugxqlbwi
   '@trpc/server': 10.18.0
   date-fns: 2.29.3
+  dayjs: 1.11.7
   iracing-api: 0.1.5
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
   next-auth: 4.20.1_ld2jel3hspngo3u5lti2kgl2sq
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-tailwindcss-datepicker: 1.5.1_dayjs@1.11.7+react@18.2.0
   superjson: 1.12.2
   tailwind-scrollbar: 3.0.0_tailwindcss@3.2.7
   zod: 3.21.4
@@ -1121,6 +1125,10 @@ packages:
   /date-fns/2.29.3:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
+    dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /debug/3.2.7:
@@ -2775,6 +2783,16 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
+      react: 18.2.0
+    dev: false
+
+  /react-tailwindcss-datepicker/1.5.1_dayjs@1.11.7+react@18.2.0:
+    resolution: {integrity: sha512-IbNw3Lu2dwkRYOlYr3ffOwEbLiVz+QufaYbwiy0ToeLmx7ZUt0CPh3HfwVQGNS1/o4D/+8Rl4WHNsLd+wVb5Mg==}
+    peerDependencies:
+      dayjs: ^1.11.6
+      react: ^17.0.2 || ^18.2.0
+    dependencies:
+      dayjs: 1.11.7
       react: 18.2.0
     dev: false
 
