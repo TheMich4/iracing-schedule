@@ -1,4 +1,3 @@
-import { Button } from "flowbite-react";
 import Head from "next/head";
 import type { NextPage } from "next";
 import Sidebar from "~/components/sidebar";
@@ -15,7 +14,7 @@ const AdminPage: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gradient-to-br dark:from-gray-700 dark:to-gray-800 dark:text-gray-50">
         <Sidebar />
         <div className="flex-1 overflow-auto p-4">
-          <Button onClick={() => void importSchedule()}>Import schedule</Button>
+          <button onClick={() => void importSchedule()}>Import schedule</button>
         </div>
       </main>
     </>

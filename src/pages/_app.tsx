@@ -5,7 +5,6 @@ import { SessionProvider } from "next-auth/react";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
-import { Flowbite } from "flowbite-react";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -13,9 +12,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Flowbite theme={{ dark: true }}>
-        <Component {...pageProps} />
-      </Flowbite>
+      <Component {...pageProps} />
     </SessionProvider>
   );
 };

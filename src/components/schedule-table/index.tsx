@@ -5,6 +5,7 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
+import { format } from "date-fns";
 import useSchedule from "~/hooks/use-schedule";
 
 const columnHelper = createColumnHelper<unknown>();
@@ -18,6 +19,10 @@ const columns = [
     id: "seasonName",
     cell: (cell) => cell.getValue(),
   }),
+  // columnHelper.accessor("startDate", {
+  //   id: "startDate",
+  //   cell: (cell) => format(cell.getValue(), "dd-MM-yyyy"),
+  // }),
 ];
 
 const ScheduleTable = () => {
