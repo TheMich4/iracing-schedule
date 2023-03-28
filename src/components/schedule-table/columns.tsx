@@ -33,10 +33,15 @@ const columns = [
     cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy EEEE"),
     header: () => "Season Start date",
   }),
-  columnHelper.accessor("scheduleDescription", {
-    id: "scheduleDescription",
-    cell: (cell) => cell.getValue(),
-    header: () => "Schedule",
+  // columnHelper.accessor("scheduleDescription", {
+  //   id: "scheduleDescription",
+  //   cell: (cell) => cell.getValue(),
+  //   header: () => "Schedule",
+  // }),
+  columnHelper.accessor("track", {
+    id: "track",
+    cell: (cell) => cell.getValue()?.trackName ?? "Unknown",
+    header: () => "Track",
   }),
 ];
 
