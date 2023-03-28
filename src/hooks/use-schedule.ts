@@ -4,26 +4,28 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 
-import type { SeasonMap } from "~/types";
+import type { Schedule, ScheduleMap } from "~/types";
+
 import { format } from "date-fns";
 import getLastTuesday from "~/utils/get-last-tuesday";
 import { useMemo } from "react";
 
-const useSchedule = (date: Date): SeasonMap => {
-  if (typeof window === "undefined") return {};
+const useSchedule = (date: Date): Array<Schedule> => {
+  if (typeof window === "undefined") return [];
 
   const tuesday = useMemo<string>(
-    () => format(getLastTuesday(date), "yyyy-MM-dd"),
+    () => format(getLastTuesday(date), "yyyy-MM-dd") ?? "",
     [date]
   );
 
-  const schedule: SeasonMap = useMemo(() => {
+  const schedule = useMemo<Array<Schedule>>(() => {
     if (!tuesday) return [];
     console.log("getting schedule");
 
-    const s = JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};
+    const s: ScheduleMap =
+      JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};
 
-    return Object.values(s[tuesday] || {});
+    return Object.values(s[tuesday] || {}) ?? [];
   }, [tuesday]);
 
   return schedule;
