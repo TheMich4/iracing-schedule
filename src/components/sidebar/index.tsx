@@ -33,16 +33,16 @@ const Sidebar = () => {
     >
       <div className="flex flex-col gap-2">
         <SidebarButton
+          expanded={expanded}
           Icon={HomeIcon}
           onClick={() => void router.push("/")}
-          expanded={expanded}
         >
           Home
         </SidebarButton>
         {sessionData && (
           <SidebarButton
-            expanded={expanded}
             Icon={UserIcon}
+            expanded={expanded}
             onClick={() => void router.push("/admin")}
           >
             Admin
@@ -51,16 +51,16 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col gap-2">
         <SidebarButton
-          expanded={expanded}
           Icon={expanded ? ChevronLeftIcon : ChevronRightIcon}
+          expanded={expanded}
           onClick={() => setExpanded((prev) => !prev)}
         >
           {expanded ? "Collapse" : "Expand"}
         </SidebarButton>
         <SidebarButton
           Icon={ArrowRightCircleIcon}
-          onClick={handleAuth}
           expanded={expanded}
+          onClick={handleAuth}
         >
           {sessionData ? "Log out" : "Log in"}
         </SidebarButton>

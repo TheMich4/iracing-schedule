@@ -10,24 +10,46 @@ import { format } from "date-fns";
 import getLastTuesday from "~/utils/get-last-tuesday";
 import { useMemo } from "react";
 
-const useSchedule = (date: Date): Array<Schedule> => {
-  if (typeof window === "undefined") return [];
+interface ScheduleData {
+  schedule: Array<Schedule>;
+  minDate?: Date;
+  maxDate?: Date;
+}
+
+const useSchedule = (date: Date): ScheduleData => {
+  if (typeof window === "undefined") return { schedule: [] };
 
   const tuesday = useMemo<string>(
     () => format(getLastTuesday(date), "yyyy-MM-dd") ?? "",
     [date]
   );
 
-  const schedule = useMemo<Array<Schedule>>(() => {
-    if (!tuesday) return [];
+  const data = useMemo<ScheduleData>(() => {
+    if (!tuesday) return { schedule: [] };
 
     const s: ScheduleMap =
       JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};
 
-    return Object.values(s[tuesday] || {}) ?? [];
+    const { minDate, maxDate } = Object.keys(s || {}).reduce(
+      (acc, key) => {
+        const date = new Date(key);
+
+        if (date < acc.minDate) acc.minDate = date;
+        if (date > acc.maxDate) acc.maxDate = date;
+
+        return acc;
+      },
+      { minDate: new Date(), maxDate: new Date() }
+    );
+
+    return {
+      schedule: Object.values(s[tuesday] || {}) ?? [],
+      minDate,
+      maxDate,
+    };
   }, [tuesday]);
 
-  return schedule;
+  return data;
 };
 
 export default useSchedule;

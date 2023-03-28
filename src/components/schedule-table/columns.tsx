@@ -41,7 +41,7 @@ const columns = [
   // }),
   columnHelper.accessor("track", {
     id: "track",
-    cell: (cell) => (cell.getValue() as Track)?.trackName ?? "Unknown",
+    cell: (cell) => (cell.getValue() )?.trackName ?? "Unknown",
     header: () => "Track",
   }),
 ];
