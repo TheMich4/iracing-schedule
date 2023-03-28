@@ -19,6 +19,7 @@ const importSchedule = () => {
           track: schedule.track,
         })),
         seasonName: series.seasonName,
+        seriesName: series.schedules[0]?.seriesName ?? "Unknown series name",
         startDate: series.startDate,
       },
     };

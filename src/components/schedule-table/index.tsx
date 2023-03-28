@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
 import {
   createColumnHelper,
   flexRender,
@@ -6,17 +8,31 @@ import {
 } from "@tanstack/react-table";
 
 import { format } from "date-fns";
+import { licenseGroupMap } from "~/utils/license";
 import useSchedule from "~/hooks/use-schedule";
 
-const columnHelper = createColumnHelper<unknown>();
+const columnHelper = createColumnHelper<Season>();
 
 const columns = [
   columnHelper.accessor("licenseGroup", {
     id: "licenseGroup",
-    cell: (cell) => cell.getValue(),
+    cell: (cell) => {
+      const license = licenseGroupMap[cell.getValue()?.toString()] as {
+        name: string;
+        color: string;
+        short: string;
+      };
+
+      return (
+        <span className={`px-1 bg-${license.color} rounded-sm text-white`}>
+          {license.short}
+        </span>
+      );
+    },
+    header: () => "Class",
   }),
-  columnHelper.accessor("seasonName", {
-    id: "seasonName",
+  columnHelper.accessor("seriesName", {
+    id: "seriesName",
     cell: (cell) => cell.getValue(),
   }),
   // columnHelper.accessor("startDate", {
