@@ -1,6 +1,7 @@
 const columnHelper = createColumnHelper<Season>();
 
-import type { Season } from "~/types";
+import type { Season, Track } from "~/types";
+
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
@@ -40,7 +41,7 @@ const columns = [
   // }),
   columnHelper.accessor("track", {
     id: "track",
-    cell: (cell) => cell.getValue()?.trackName ?? "Unknown",
+    cell: (cell) => (cell.getValue() as Track)?.trackName ?? "Unknown",
     header: () => "Track",
   }),
 ];

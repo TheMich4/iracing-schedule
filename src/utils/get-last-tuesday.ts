@@ -7,7 +7,8 @@ const getLastTuesday = (date: Date) => {
   }
 
   // Subtract the number of days to get to the previous Tuesday
-  const daysUntilTuesday = (dayOfWeek + 6) % 7; // 0 for Tuesday, 1 for Monday, etc.
+  const daysUntilTuesday = (dayOfWeek + 5) % 7; // 0 for Tuesday, 1 for Monday, etc.
+  console.log({ daysUntilTuesday, dayOfWeek });
   date.setDate(date.getDate() - daysUntilTuesday);
 
   return date;
