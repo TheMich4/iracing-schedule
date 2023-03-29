@@ -38,6 +38,7 @@ export interface Schedule {
   startDate: string;
   startType: string;
   track: Track;
+  trackName: string;
   trackTypes: Array<{ trackType: string }>;
 }
 

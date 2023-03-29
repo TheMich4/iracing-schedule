@@ -17,6 +17,7 @@ const prepareScheduleData = (series: any, schedule: any) => {
     startDate: schedule.startDate,
     startType: schedule.startType,
     track: schedule.track,
+    trackName: schedule.track.trackName,
     trackTypes: series.trackTypes,
   };
 };

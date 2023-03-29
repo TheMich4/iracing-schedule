@@ -8,7 +8,6 @@ interface SortIconProps {
 }
 
 const SortIcon = ({ isSorted }: SortIconProps) => {
-  console.log({ isSorted });
   if (!isSorted) return null;
 
   if (isSorted === "asc") return <ArrowUpCircleIcon className="h-4 w-4" />;

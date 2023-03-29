@@ -1,5 +1,4 @@
-import type { Schedule, Track } from "~/types";
-
+import type { Schedule } from "~/types";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
@@ -39,10 +38,10 @@ const columns = [
   //   cell: (cell) => cell.getValue(),
   //   header: () => "Schedule",
   // }),
-  columnHelper.accessor("track", {
-    id: "track",
-    cell: (cell) => (cell.getValue() )?.trackName ?? "Unknown",
-    header: () => "Track",
+  columnHelper.accessor("trackName", {
+    id: "trackName",
+    cell: (cell) => cell.getValue() ?? "Unknown",
+    header: () => "Track name",
   }),
 ];
 
