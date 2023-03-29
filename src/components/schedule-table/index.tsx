@@ -5,20 +5,35 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import { useMemo, useState } from "react";
 
 import Calendar from "./calendar";
+import SortIcon from "./sort-icon";
+import type { SortingState } from "@tanstack/react-table";
 import columns from "./columns";
 import useSchedule from "~/hooks/use-schedule";
-import { useState } from "react";
 
 const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
+  const [sorting, setSorting] = useState<SortingState>([]);
+
   const { schedule, minDate, maxDate } = useSchedule(date);
+
+  const data = useMemo(() => {
+    return schedule;
+  }, [schedule]);
+
   const table = useReactTable({
-    data: schedule,
     columns,
+    data,
     getCoreRowModel: getCoreRowModel(),
+    onSortingChange: setSorting,
+    state: {
+      sorting,
+    },
   });
+
+  console.log({ sorting });
 
   return (
     <div className="flex flex-col gap-2 p-2">
@@ -39,12 +54,20 @@ const ScheduleTable = () => {
                   className="px-4 py-1 text-start text-xs font-medium uppercase tracking-wider text-gray-500"
                   key={header.id}
                 >
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
+                  {header.isPlaceholder ? null : (
+                    <div
+                      className={`flex flex-row items-center gap-1 ${
+                        header.column.getCanSort() ? "cursor-pointer" : ""
+                      }`}
+                      onClick={header.column.getToggleSortingHandler()}
+                    >
+                      {flexRender(
                         header.column.columnDef.header,
                         header.getContext()
                       )}
+                      <SortIcon isSorted={header.column.getIsSorted()} />
+                    </div>
+                  )}
                 </th>
               ))}
             </tr>
