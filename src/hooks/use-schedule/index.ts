@@ -5,6 +5,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 
 import type { Schedule, ScheduleMap } from "~/types";
+import { getNewWeekSchedule, getScheduleDateRange } from "./helpers";
 import { useEffect, useMemo, useState } from "react";
 
 import { format } from "date-fns";
@@ -35,28 +36,16 @@ const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
     [date]
   );
 
+  const { minDate, maxDate } = useMemo(
+    () => getScheduleDateRange(scheduleMap),
+    [scheduleMap]
+  );
+
   // Handle week change
-  useEffect(() => {
-    if (!tuesday) {
-      setSchedule([]);
-    }
-
-    setSchedule(Object.values(scheduleMap[tuesday] || {}) ?? []);
-  }, [tuesday]);
-
-  const { minDate, maxDate } = useMemo(() => {
-    return Object.keys(scheduleMap || {}).reduce(
-      (acc, key) => {
-        const date = new Date(key);
-
-        if (date < acc.minDate) acc.minDate = date;
-        if (date > acc.maxDate) acc.maxDate = date;
-
-        return acc;
-      },
-      { minDate: new Date(), maxDate: new Date() }
-    );
-  }, [scheduleMap]);
+  useEffect(
+    () => setSchedule(getNewWeekSchedule(scheduleMap, tuesday)),
+    [tuesday]
+  );
 
   return {
     schedule,
