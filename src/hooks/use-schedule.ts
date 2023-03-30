@@ -5,10 +5,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 
 import type { Schedule, ScheduleMap } from "~/types";
+import { useEffect, useMemo, useState } from "react";
 
 import { format } from "date-fns";
 import getLastTuesday from "~/utils/get-last-tuesday";
-import { useMemo } from "react";
 
 interface ScheduleData {
   schedule: Array<Schedule>;
@@ -16,21 +16,36 @@ interface ScheduleData {
   maxDate?: Date;
 }
 
-const useSchedule = (date: Date): ScheduleData => {
+interface UseScheduleArgs {
+  date: Date;
+}
+
+const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
   if (typeof window === "undefined") return { schedule: [] };
+
+  const [schedule, setSchedule] = useState<Array<Schedule>>([]);
+
+  const scheduleMap = useMemo<ScheduleMap>(
+    () => JSON.parse(localStorage.getItem("schedule") ?? "{}") || {},
+    []
+  );
 
   const tuesday = useMemo<string>(
     () => format(getLastTuesday(date), "yyyy-MM-dd") ?? "",
     [date]
   );
 
-  const data = useMemo<ScheduleData>(() => {
-    if (!tuesday) return { schedule: [] };
+  // Handle week change
+  useEffect(() => {
+    if (!tuesday) {
+      setSchedule([]);
+    }
 
-    const s: ScheduleMap =
-      JSON.parse(localStorage.getItem("schedule") ?? "{}") || {};
+    setSchedule(Object.values(scheduleMap[tuesday] || {}) ?? []);
+  }, [tuesday]);
 
-    const { minDate, maxDate } = Object.keys(s || {}).reduce(
+  const { minDate, maxDate } = useMemo(() => {
+    return Object.keys(scheduleMap || {}).reduce(
       (acc, key) => {
         const date = new Date(key);
 
@@ -41,15 +56,13 @@ const useSchedule = (date: Date): ScheduleData => {
       },
       { minDate: new Date(), maxDate: new Date() }
     );
+  }, [scheduleMap]);
 
-    return {
-      schedule: Object.values(s[tuesday] || {}) ?? [],
-      minDate,
-      maxDate,
-    };
-  }, [tuesday]);
-
-  return data;
+  return {
+    schedule,
+    minDate,
+    maxDate,
+  };
 };
 
 export default useSchedule;

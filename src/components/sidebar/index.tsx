@@ -33,8 +33,8 @@ const Sidebar = () => {
     >
       <div className="flex flex-col gap-2">
         <SidebarButton
-          expanded={expanded}
           Icon={HomeIcon}
+          expanded={expanded}
           onClick={() => void router.push("/")}
         >
           Home

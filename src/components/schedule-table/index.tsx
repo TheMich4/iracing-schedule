@@ -18,7 +18,9 @@ const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
 
-  const { schedule, minDate, maxDate } = useSchedule(date);
+  const { schedule, minDate, maxDate } = useSchedule({ date });
+
+  console.log({ schedule, minDate, maxDate });
 
   const data = useMemo(
     () =>
