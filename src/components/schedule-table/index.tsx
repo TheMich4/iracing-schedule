@@ -1,14 +1,15 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-
+import type { Schedule, ScheduleKeys } from "~/types";
 import {
   flexRender,
   getCoreRowModel,
+  getFilteredRowModel,
+  getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
 import Calendar from "./calendar";
-import type { Schedule } from "~/types";
+import Filters from "./filters";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import columns from "./columns";
@@ -20,36 +21,12 @@ const ScheduleTable = () => {
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
-  console.log({ schedule, minDate, maxDate });
-
-  const data = useMemo(
-    () =>
-      [...schedule].sort((a: Schedule, b: Schedule) => {
-        if (sorting.length === 0) return 0;
-        const [sort] = sorting;
-        if (!sort) {
-          return a.seriesId < b.seriesId ? -1 : 1;
-        }
-
-        const { id, desc } = sort;
-
-        if (desc) {
-          if (a[id] > b[id]) return -1;
-          if (a[id] < b[id]) return 1;
-        } else {
-          if (a[id] > b[id]) return 1;
-          if (a[id] < b[id]) return -1;
-        }
-
-        return 0;
-      }),
-    [schedule, sorting]
-  );
-
   const table = useReactTable({
     columns,
-    data,
+    data: schedule,
     getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
     state: {
       sorting,
@@ -58,7 +35,8 @@ const ScheduleTable = () => {
 
   return (
     <div className="flex flex-col gap-2 p-2">
-      <div className="flex flex-row justify-end gap-2">
+      <div className="flex flex-row justify-between gap-2">
+        <Filters />
         <Calendar
           initialDate={date}
           maxDate={maxDate}

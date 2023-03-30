@@ -45,3 +45,5 @@ export interface Schedule {
 export interface ScheduleMap {
   [startDate: string]: Array<Schedule>;
 }
+
+export type ScheduleKeys = keyof Schedule;
