@@ -1,7 +1,9 @@
+import type { Dispatch, SetStateAction } from "react";
+
 import type { Filter } from "./types";
 import { useState } from "react";
 
-const useFilter = () => {
+const useFilter = (): [Filter, Dispatch<SetStateAction<Filter>>] => {
   const [filter, setFilter] = useState<Filter>({
     licenseGroup: [],
   });

@@ -22,10 +22,16 @@ const ScheduleTable = () => {
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
   const data = useMemo(() => {
-    return schedule;
-  }, [schedule, filter]);
+    return schedule.filter((scheduleItem) => {
+      if (filter.licenseGroup.length > 0) {
+        return filter.licenseGroup.includes(
+          scheduleItem.licenseGroup.toString()
+        );
+      }
 
-  console.log({ schedule, filter });
+      return true;
+    });
+  }, [schedule, filter]);
 
   const table = useReactTable({
     columns,

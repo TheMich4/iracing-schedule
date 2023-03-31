@@ -1,3 +1,3 @@
 export interface Filter {
-    licenseGroup: Array<string>
+  licenseGroup: Array<string>;
 }
