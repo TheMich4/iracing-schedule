@@ -1,6 +1,18 @@
 import Head from "next/head";
 import type { NextPage } from "next";
+import importCars from "~/utils/import-cars";
 import importSchedule from "~/utils/import-schedule";
+
+const Button = ({ children, onClick }) => {
+  return (
+    <button
+      className="inline-flex h-10 w-48 items-center justify-center rounded-md bg-slate-100 px-4 py-2 text-sm font-medium text-slate-900 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-slate-100 hover:bg-slate-200 active:scale-95 dark:bg-slate-700 dark:text-slate-100 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900 dark:data-[state=open]:bg-slate-800 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
 
 const AdminPage: NextPage = () => {
   return (
@@ -11,13 +23,9 @@ const AdminPage: NextPage = () => {
         <link href="/favicon.ico" rel="icon" />
       </Head>
       <main>
-        <div className="flex-1 overflow-auto p-4">
-          <button
-            className="inline-flex h-10 items-center justify-center rounded-md bg-slate-100 py-2 px-4 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-100 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900 dark:data-[state=open]:bg-slate-800"
-            onClick={() => void importSchedule()}
-          >
-            Import schedule
-          </button>
+        <div className="flex flex-col gap-2 overflow-auto p-4">
+          <Button onClick={() => void importSchedule()}>Import schedule</Button>
+          <Button onClick={() => void importCars()}>Import cars</Button>
         </div>
       </main>
     </>

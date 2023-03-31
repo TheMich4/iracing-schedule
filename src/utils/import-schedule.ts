@@ -1,10 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
+import type { Schedule } from "~/types";
 import { seriesData } from "~/consts/series";
 
-const prepareScheduleData = (series: any, schedule: any) => {
+const prepareScheduleData = (series: any, schedule: any): Schedule => {
   return {
+    carClassIds: series.carClassIds,
     fixedSetup: series.fixedSetup,
     licenseGroup: series.licenseGroup,
     raceLapLimit: schedule.raceLapLimit,
@@ -18,7 +20,7 @@ const prepareScheduleData = (series: any, schedule: any) => {
     startType: schedule.startType,
     track: schedule.track,
     trackName: schedule.track.trackName,
-    trackTypes: series.trackTypes,
+    trackType: series.trackTypes?.[0]?.trackType,
   };
 };
 

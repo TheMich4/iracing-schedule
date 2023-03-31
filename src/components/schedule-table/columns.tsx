@@ -31,7 +31,7 @@ const columns = [
   columnHelper.accessor("startDate", {
     id: "startDate",
     cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy EEEE"),
-    header: () => "Season Start date",
+    header: () => "Start date",
   }),
   // columnHelper.accessor("scheduleDescription", {
   //   id: "scheduleDescription",
@@ -42,6 +42,16 @@ const columns = [
     id: "trackName",
     cell: (cell) => cell.getValue() ?? "Unknown",
     header: () => "Track name",
+  }),
+  columnHelper.accessor("trackType", {
+    id: "trackType",
+    cell: (cell) => cell.getValue() ?? "Unknown",
+    header: () => "Track type",
+  }),
+  columnHelper.accessor("fixedSetup", {
+    id: "fixedSetup",
+    cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
+    header: () => "Setup",
   }),
 ];
 

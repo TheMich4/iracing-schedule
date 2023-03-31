@@ -26,6 +26,7 @@ export interface SeasonMap {
 }
 
 export interface Schedule {
+  carClassIds: Array<number>;
   fixedSetup: boolean;
   licenseGroup: string;
   raceLapLimit: number | null;
@@ -39,7 +40,7 @@ export interface Schedule {
   startType: string;
   track: Track;
   trackName: string;
-  trackTypes: Array<{ trackType: string }>;
+  trackType: string;
 }
 
 export interface ScheduleMap {
@@ -47,3 +48,11 @@ export interface ScheduleMap {
 }
 
 export type ScheduleKeys = keyof Schedule;
+
+export interface Car {
+  carName: string;
+}
+
+export interface CarMap {
+  [carId: string]: Car;
+}
