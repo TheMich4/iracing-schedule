@@ -1,8 +1,6 @@
-import type { Schedule, ScheduleKeys } from "~/types";
 import {
   flexRender,
   getCoreRowModel,
-  getFilteredRowModel,
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
@@ -13,19 +11,26 @@ import Filters from "./filters";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import columns from "./columns";
+import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
 
 const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
+  const [filter, setFilter] = useFilter();
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
+  const data = useMemo(() => {
+    return schedule;
+  }, [schedule, filter]);
+
+  console.log({ schedule, filter });
+
   const table = useReactTable({
     columns,
-    data: schedule,
+    data,
     getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
     state: {
@@ -36,7 +41,7 @@ const ScheduleTable = () => {
   return (
     <div className="flex flex-col gap-2 p-2">
       <div className="flex flex-row justify-between gap-2">
-        <Filters />
+        <Filters filter={filter} setFilter={setFilter} />
         <Calendar
           initialDate={date}
           maxDate={maxDate}
