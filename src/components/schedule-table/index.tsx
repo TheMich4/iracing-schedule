@@ -44,8 +44,6 @@ const ScheduleTable = () => {
     },
   });
 
-  console.log({ schedule });
-
   return (
     <div className="flex flex-col gap-2 p-2">
       <div className="flex flex-row justify-between gap-2">
