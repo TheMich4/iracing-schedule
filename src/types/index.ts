@@ -26,6 +26,7 @@ export interface SeasonMap {
 }
 
 export interface Schedule {
+  carIds: Array<number>;
   carClassIds: Array<number>;
   fixedSetup: boolean;
   licenseGroup: string;

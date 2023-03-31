@@ -6,6 +6,7 @@ import { seriesData } from "~/consts/series";
 
 const prepareScheduleData = (series: any, schedule: any): Schedule => {
   return {
+    carIds: schedule.carRestrictions.map((c: { carId: number }) => c.carId),
     carClassIds: series.carClassIds,
     fixedSetup: series.fixedSetup,
     licenseGroup: series.licenseGroup,

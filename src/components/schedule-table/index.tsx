@@ -10,7 +10,8 @@ import Calendar from "./calendar";
 import Filters from "./filters";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
-import columns from "./columns";
+import useCars from "~/hooks/use-cars";
+import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
 
@@ -18,6 +19,8 @@ const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const [filter, setFilter] = useFilter();
+  const cars = useCars();
+  const columns = useColumns(cars);
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
