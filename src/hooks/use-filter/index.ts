@@ -1,7 +1,8 @@
+import type { Filter } from "./types";
 import { useState } from "react";
 
 const useFilter = () => {
-  const [filter, setFilter] = useState<Record<string, Array<string>>>({
+  const [filter, setFilter] = useState<Filter>({
     licenseGroup: [],
   });
 

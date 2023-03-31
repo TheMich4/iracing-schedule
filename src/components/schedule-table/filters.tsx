@@ -1,12 +1,18 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
+import type { Dispatch, SetStateAction } from "react";
+
 import Checkbox from "../checkbox";
+import type { Filter } from "~/hooks/use-filter/types";
 import { licenseGroups } from "~/utils/license";
 
-const Filters = ({ filter, setFilter }) => {
-  const handleClassChange = (event: any) => {
+interface FiltersProps {
+  filter: Filter;
+  setFilter: Dispatch<SetStateAction<Filter>>;
+}
+
+const Filters = ({ filter, setFilter }: FiltersProps) => {
+  const handleClassChange = (event: unknown) => {
     const { checked, id } = event.target;
     if (checked) {
       setFilter((prevFilter) => ({
