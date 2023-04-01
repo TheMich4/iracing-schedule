@@ -59,10 +59,23 @@ const getColumns = (cars) => {
       id: "carIds",
       cell: (cell) => {
         const carIds = cell.getValue();
-        console.log({ carIds, cars });
-        const c = carIds?.map((carId) => cars[carId]?.carName ?? "Unknown");
+        const c = carIds?.map(
+          (carId) =>
+            (cars[carId]?.carNameAbbreviated || cars[carId]?.carName) ??
+            "Unknown"
+        );
 
-        return c?.map((x) => <span>{x}</span>);
+        // TODO: Fix this + use proper key
+        return (
+          <div className="cursor-pointer rounded-sm hover:bg-slate-900">
+            {c?.map((x, i) => (
+              <span key={i}>
+                {x}
+                {i !== c.length - 1 && ", "}
+              </span>
+            ))}
+          </div>
+        );
       },
       header: () => "Cars",
     }),

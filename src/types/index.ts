@@ -52,6 +52,7 @@ export type ScheduleKeys = keyof Schedule;
 
 export interface Car {
   carName: string;
+  carNameAbbreviated: string;
 }
 
 export interface CarMap {

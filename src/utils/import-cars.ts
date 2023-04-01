@@ -4,6 +4,7 @@ import { cars } from "~/consts/cars";
 const prepareCarData = (car: any): Car => {
   return {
     carName: car.carName,
+    carNameAbbreviated: car.carNameAbbreviated,
   };
 };
 
