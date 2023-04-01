@@ -1,3 +1,4 @@
+import { CheckIcon } from "@heroicons/react/24/outline";
 import type { Schedule } from "~/types";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
@@ -32,7 +33,7 @@ const getColumns = (cars) => {
     }),
     columnHelper.accessor("startDate", {
       id: "startDate",
-      cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy EEEE"),
+      cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
       header: () => "Start date",
     }),
     // columnHelper.accessor("scheduleDescription", {
@@ -95,6 +96,15 @@ const getColumns = (cars) => {
         return <span>Unknown</span>;
       },
       header: "Race length",
+    }),
+    columnHelper.display({
+      id: "official",
+      cell: ({ row }) => {
+        const { official } = row.original;
+
+        return official && <CheckIcon className="h-4 w-4" />;
+      },
+      header: "Official",
     }),
   ];
 };

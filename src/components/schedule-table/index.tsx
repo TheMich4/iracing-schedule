@@ -31,6 +31,22 @@ const ScheduleTable = () => {
           scheduleItem.licenseGroup.toString()
         );
       }
+      if (filter.official.length > 0) {
+        const showOfficial = filter.official.includes("Official");
+        const showUnofficial = filter.official.includes("Unofficial");
+        return (
+          (showOfficial && scheduleItem.official) ||
+          (showUnofficial && !scheduleItem.official)
+        );
+      }
+      if (filter.setup.length > 0) {
+        const showFixed = filter.setup.includes("Fixed");
+        const showOpen = filter.setup.includes("Open");
+        return (
+          (showFixed && scheduleItem.fixedSetup) ||
+          (showOpen && !scheduleItem.fixedSetup)
+        );
+      }
 
       return true;
     });

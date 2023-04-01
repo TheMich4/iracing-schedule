@@ -42,6 +42,58 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
           />
         ))}
       </div>
+      <div>
+        <div>Setup:</div>
+        {["Fixed", "Open"].map((setup) => (
+          <Checkbox
+            checked={filter.setup.includes(setup)}
+            id={setup}
+            key={`setup-${setup}`}
+            label={setup}
+            onChange={(event) => {
+              const { checked, id } = event.target;
+              if (checked) {
+                setFilter((prevFilter) => ({
+                  ...prevFilter,
+                  setup: [...prevFilter.setup, id],
+                }));
+              }
+              if (!checked) {
+                setFilter((prevFilter) => ({
+                  ...prevFilter,
+                  setup: prevFilter.setup.filter((c) => c !== id),
+                }));
+              }
+            }}
+          />
+        ))}
+      </div>
+      <div>
+        <div>Official:</div>
+        {["Official", "Unofficial"].map((official) => (
+          <Checkbox
+            checked={filter.official.includes(official)}
+            id={official}
+            key={`official-${official}`}
+            label={official}
+            onChange={(event) => {
+              const { checked, id } = event.target;
+              if (checked) {
+                setFilter((prevFilter) => ({
+                  ...prevFilter,
+                  official: [...prevFilter.official, id],
+                }));
+              }
+              if (!checked) {
+                setFilter((prevFilter) => ({
+                  ...prevFilter,
+                  official: prevFilter.official.filter((c) => c !== id),
+                }));
+              }
+            }}
+          />
+        ))}
+        </div>
     </div>
   );
 };

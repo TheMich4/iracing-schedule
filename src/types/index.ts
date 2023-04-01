@@ -30,6 +30,7 @@ export interface Schedule {
   carClassIds: Array<number>;
   fixedSetup: boolean;
   licenseGroup: string;
+  official: boolean;
   raceLapLimit: number | null;
   raceTimeLimit: number | null;
   seasonId: number;
