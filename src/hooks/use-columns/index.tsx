@@ -3,6 +3,7 @@ import type { Schedule } from "~/types";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
+import { trackTypesMap } from "~/utils/track-type";
 import { useMemo } from "react";
 
 const getColumns = (cars) => {
@@ -48,7 +49,7 @@ const getColumns = (cars) => {
     }),
     columnHelper.accessor("trackType", {
       id: "trackType",
-      cell: (cell) => cell.getValue() ?? "Unknown",
+      cell: (cell) => trackTypesMap[cell.getValue()]?.name,
       header: () => "Track type",
     }),
     columnHelper.accessor("fixedSetup", {
