@@ -79,11 +79,27 @@ const getColumns = (cars) => {
       },
       header: () => "Cars",
     }),
+    columnHelper.display({
+      id: "raceLength",
+      cell: ({ row }) => {
+        const { raceLapLimit, raceTimeLimit } = row.original;
+
+        if (raceLapLimit) {
+          return <span>{raceLapLimit} laps</span>;
+        }
+
+        if (raceTimeLimit) {
+          return <span>{raceTimeLimit} minutes</span>;
+        }
+
+        return <span>Unknown</span>;
+      },
+      header: "Race length",
+    }),
   ];
 };
 
 const useColumns = (cars) => {
-  console.log({ cars });
   const columns = useMemo(() => getColumns(cars), [cars]);
 
   return columns;
