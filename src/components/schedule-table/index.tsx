@@ -10,6 +10,7 @@ import Calendar from "./calendar";
 import Filters from "./filters";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
+import { getFilteredSchedule } from "./helpers";
 import useCars from "~/hooks/use-cars";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
@@ -24,33 +25,10 @@ const ScheduleTable = () => {
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
-  const data = useMemo(() => {
-    return schedule.filter((scheduleItem) => {
-      if (filter.licenseGroup.length > 0) {
-        return filter.licenseGroup.includes(
-          scheduleItem.licenseGroup.toString()
-        );
-      }
-      if (filter.official.length > 0) {
-        const showOfficial = filter.official.includes("Official");
-        const showUnofficial = filter.official.includes("Unofficial");
-        return (
-          (showOfficial && scheduleItem.official) ||
-          (showUnofficial && !scheduleItem.official)
-        );
-      }
-      if (filter.setup.length > 0) {
-        const showFixed = filter.setup.includes("Fixed");
-        const showOpen = filter.setup.includes("Open");
-        return (
-          (showFixed && scheduleItem.fixedSetup) ||
-          (showOpen && !scheduleItem.fixedSetup)
-        );
-      }
-
-      return true;
-    });
-  }, [schedule, filter]);
+  const data = useMemo(
+    () => getFilteredSchedule(schedule, filter),
+    [schedule, filter]
+  );
 
   const table = useReactTable({
     columns,
