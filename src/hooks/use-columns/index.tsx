@@ -116,6 +116,11 @@ const getColumns = (cars) => {
       },
       header: "Multi Class",
     }),
+    columnHelper.accessor("startType", {
+      id: "startType",
+      cell: (cell) => cell.getValue(),
+      header: () => "Start type",
+    }),
   ];
 };
 
