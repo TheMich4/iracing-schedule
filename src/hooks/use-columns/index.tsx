@@ -107,6 +107,15 @@ const getColumns = (cars) => {
       },
       header: "Official",
     }),
+    columnHelper.display({
+      id: "multiclass",
+      cell: ({ row }) => {
+        const { multiclass } = row.original;
+
+        return multiclass && <CheckIcon className="h-4 w-4" />;
+      },
+      header: "Multi Class",
+    }),
   ];
 };
 

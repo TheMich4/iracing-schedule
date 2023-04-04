@@ -10,6 +10,7 @@ const prepareScheduleData = (series: any, schedule: any): Schedule => {
     carClassIds: series.carClassIds,
     fixedSetup: series.fixedSetup,
     licenseGroup: series.licenseGroup,
+    multiclass: series.multiclass,
     official: series.official,
     raceLapLimit: schedule.raceLapLimit,
     raceTimeLimit: schedule.raceTimeLimit,
