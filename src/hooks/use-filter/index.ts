@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { type Dispatch, type SetStateAction, useEffect } from "react";
 
 import type { Filter } from "./types";
 import { licenseGroups } from "~/utils/license";

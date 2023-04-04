@@ -16,8 +16,7 @@ interface FiltersProps {
 const Filters = ({ filter, setFilter }: FiltersProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
-  const handleClassChange = (event: unknown) => {
-    const { checked, id } = event.target;
+  const handleClassChange = (checked: boolean, id: string) => {
     if (checked) {
       setFilter((prevFilter) => ({
         ...prevFilter,
@@ -66,8 +65,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
                 id={setup}
                 key={`setup-${setup}`}
                 label={setup}
-                onChange={(event) => {
-                  const { checked, id } = event.target;
+                onChange={(checked: boolean, id: string) => {
                   if (checked) {
                     setFilter((prevFilter) => ({
                       ...prevFilter,
@@ -92,8 +90,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
                 id={official}
                 key={`official-${official}`}
                 label={official}
-                onChange={(event) => {
-                  const { checked, id } = event.target;
+                onChange={(checked: boolean, id: string) => {
                   if (checked) {
                     setFilter((prevFilter) => ({
                       ...prevFilter,
@@ -118,8 +115,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
                 id={trackTypeId}
                 key={`trackType-${trackTypeId}`}
                 label={value.name}
-                onChange={(event) => {
-                  const { checked, id } = event.target;
+                onChange={(checked: boolean, id: string) => {
                   if (checked) {
                     setFilter((prevFilter) => ({
                       ...prevFilter,
