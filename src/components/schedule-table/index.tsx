@@ -42,7 +42,7 @@ const ScheduleTable = () => {
   });
 
   return (
-    <div className="flex flex-col gap-2 p-2">
+    <div className="flex h-full flex-col gap-2 p-2">
       <div className="flex flex-row justify-between gap-2">
         <Filters filter={filter} setFilter={setFilter} />
         <Calendar
@@ -52,9 +52,9 @@ const ScheduleTable = () => {
           setDate={setDate}
         />
       </div>
-      <div className="w-full overflow-x-auto">
+      <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800">
         <table className="min-w-full divide-y divide-slate-700 rounded-sm">
-          <thead className="bg-slate-900/40">
+          <thead className="sticky bg-slate-900/40">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
