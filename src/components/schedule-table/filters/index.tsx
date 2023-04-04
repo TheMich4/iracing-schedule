@@ -44,7 +44,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
           <ChevronDownIcon className="h-4 w-4" />
         )}
       </div>
-      {isExpanded && (
+      {isExpanded ? (
         <>
           <div>
             Class:
@@ -137,6 +137,8 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
             ))}
           </div>
         </>
+      ) : (
+        <div>TEST</div>
       )}
     </div>
   );
