@@ -6,7 +6,9 @@ import {
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
+import Button from "../button";
 import Calendar from "./calendar";
+import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 import Filters from "./filters";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
@@ -51,6 +53,12 @@ const ScheduleTable = () => {
           minDate={minDate}
           setDate={setDate}
         />
+        <Button
+          className="dark:bg-slate-800 dark:hover:bg-slate-800/60"
+          variant="subtle"
+        >
+          <Cog6ToothIcon className="h-5 w-5" />
+        </Button>
       </div>
       <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800">
         <table className="min-w-full divide-y divide-slate-700 rounded-sm">
