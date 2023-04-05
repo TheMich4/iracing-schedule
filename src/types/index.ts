@@ -34,6 +34,7 @@ export interface Schedule {
   official: boolean;
   raceLapLimit: number | null;
   raceTimeLimit: number | null;
+  raceWeekNum: number;
   seasonId: number;
   seasonName: string;
   seasonStartDate: string;

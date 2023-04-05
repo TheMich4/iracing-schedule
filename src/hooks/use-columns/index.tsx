@@ -121,6 +121,11 @@ const getColumns = (cars) => {
       cell: (cell) => cell.getValue(),
       header: () => "Start type",
     }),
+    columnHelper.accessor("raceWeekNum", {
+      id: "raceWeekNum",
+      cell: (cell) => cell.getValue(),
+      header: () => "Week",
+    }),
   ];
 };
 

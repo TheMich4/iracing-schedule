@@ -14,6 +14,7 @@ const prepareScheduleData = (series: any, schedule: any): Schedule => {
     official: series.official,
     raceLapLimit: schedule.raceLapLimit,
     raceTimeLimit: schedule.raceTimeLimit,
+    raceWeekNum: schedule.raceWeekNum,
     seriesId: schedule.seriesId,
     seriesName: schedule.seriesName,
     seasonId: series.seasonId,
