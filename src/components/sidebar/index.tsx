@@ -27,8 +27,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`z-40 flex h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-900 p-2 transition-transform duration-300 ${
-        expanded ? "w-64 md:translate-x-0" : "sm:translate-x-0"
+      className={`z-40 hidden h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-900 p-2 transition-all duration-300 ease-in-out lg:flex ${
+        expanded ? "w-64 md:translate-x-0" : "w-fit sm:translate-x-0"
       }`}
     >
       <div className="flex flex-col gap-2">
