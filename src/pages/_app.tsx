@@ -6,6 +6,7 @@ import Sidebar from "~/components/sidebar";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
+import Navbar from "~/components/navbar";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -13,10 +14,13 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <div className="flex w-screen flex-row justify-between">
-        <Sidebar />
-        <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-screen w-full overflow-auto overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-slate-900">
-          <Component {...pageProps} />
+      <div>
+        <div className="flex w-screen flex-row justify-between">
+          <Sidebar />
+          <div className="flex h-screen w-full flex-col overflow-auto">
+            <Navbar />
+            <Component {...pageProps} />
+          </div>
         </div>
       </div>
     </SessionProvider>
