@@ -1,3 +1,5 @@
+import type { CarRestriction } from "iracing-api/lib/types/car";
+
 export interface Track {
   category: string;
   categoryId: number;
@@ -26,10 +28,16 @@ export interface SeasonMap {
 }
 
 export interface Schedule {
-  carIds: Array<number>;
   carClassIds: Array<number>;
+  carClasses: Array<{
+    carClassId: number;
+    name: string;
+    shortName: string;
+  }>;
+  carIds: Array<number>;
+  carRestrictions: Array<CarRestriction> | undefined;
   fixedSetup: boolean;
-  licenseGroup: string;
+  licenseGroup: number;
   multiclass: boolean;
   official: boolean;
   raceLapLimit: number | null;
@@ -44,7 +52,7 @@ export interface Schedule {
   startType: string;
   track: Track;
   trackName: string;
-  trackType: string;
+  trackType: string | undefined;
 }
 
 export interface ScheduleMap {

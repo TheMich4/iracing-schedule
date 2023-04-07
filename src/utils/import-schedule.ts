@@ -1,13 +1,42 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
+import type {
+  Schedule as IRSchedule,
+  SeriesSeason,
+} from "iracing-api/lib/types/series";
+
 import type { Schedule } from "~/types";
+import { carClasses } from "~/consts/carClasses";
 import { seriesData } from "~/consts/series";
 
-const prepareScheduleData = (series: any, schedule: any): Schedule => {
+const prepareScheduleData = (
+  series: SeriesSeason,
+  schedule: IRSchedule
+): Schedule => {
   return {
-    carIds: schedule.carRestrictions.map((c: { carId: number }) => c.carId),
     carClassIds: series.carClassIds,
+    carClasses: series.carClassIds.map((carClassId) => {
+      const carClass = carClasses.find(
+        (carClass) => carClass.carClassId === carClassId
+      );
+      if (!carClass) return null;
+
+      return {
+        carClassId: carClass.carClassId,
+        name: carClass.name,
+        shortName: carClass.shortName,
+      };
+    }),
+    carRestrictions: schedule.carRestrictions,
+    carIds: series.carClassIds.flatMap((carClassId) => {
+      const cars = carClasses.find(
+        (carClass) => carClass.carClassId === carClassId
+      )?.carsInClass;
+      if (!cars) return [];
+
+      return cars.map((car) => car.carId);
+    }),
     fixedSetup: series.fixedSetup,
     licenseGroup: series.licenseGroup,
     multiclass: series.multiclass,
@@ -53,6 +82,8 @@ const importSchedule = () => {
 
     return acc;
   }, {});
+
+  console.log({ byStartDate });
 
   localStorage.setItem("schedule", JSON.stringify(byStartDate));
 
