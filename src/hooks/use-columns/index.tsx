@@ -57,29 +57,20 @@ const getColumns = (cars) => {
       cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
       header: () => "Setup",
     }),
-    columnHelper.accessor("carIds", {
-      id: "carIds",
+    columnHelper.accessor("carClasses", {
+      id: "carClasses",
       cell: (cell) => {
-        const carIds = cell.getValue();
-        const c = carIds?.map(
-          (carId) =>
-            (cars[carId]?.carNameAbbreviated || cars[carId]?.carName) ??
-            "Unknown"
-        );
+        const carClasses = cell.getValue();
 
-        // TODO: Fix this + use proper key
+        console.log({ carClasses });
+
         return (
-          <div className="cursor-pointer rounded-sm hover:bg-slate-900">
-            {c?.map((x, i) => (
-              <span key={i}>
-                {x}
-                {i !== c.length - 1 && ", "}
-              </span>
-            ))}
-          </div>
+          <span>
+            {carClasses.map((carClass) => carClass?.shortName).join(", ")}
+          </span>
         );
       },
-      header: () => "Cars",
+      header: () => "Car classes",
     }),
     columnHelper.display({
       id: "raceLength",

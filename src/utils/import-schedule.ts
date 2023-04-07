@@ -83,8 +83,6 @@ const importSchedule = () => {
     return acc;
   }, {});
 
-  console.log({ byStartDate });
-
   localStorage.setItem("schedule", JSON.stringify(byStartDate));
 
   console.log("--- import schedule end ---");
