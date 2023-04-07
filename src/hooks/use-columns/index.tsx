@@ -20,9 +20,11 @@ const getColumns = (cars) => {
         };
 
         return (
-          <span className={`px-1 bg-${license.color} rounded-sm text-white`}>
-            {license.short}
-          </span>
+          <div className="flex w-full justify-center">
+            <span className={`px-1 bg-${license.color} rounded-sm text-white`}>
+              {license.short}
+            </span>
+          </div>
         );
       },
       header: () => "Class",
@@ -62,12 +64,10 @@ const getColumns = (cars) => {
       cell: (cell) => {
         const carClasses = cell.getValue();
 
-        console.log({ carClasses });
-
         return (
-          <span>
+          <div className="w-fill cursor-pointer hover:bg-slate-900">
             {carClasses.map((carClass) => carClass?.shortName).join(", ")}
-          </span>
+          </div>
         );
       },
       header: () => "Car classes",
@@ -94,7 +94,13 @@ const getColumns = (cars) => {
       cell: ({ row }) => {
         const { official } = row.original;
 
-        return official && <CheckIcon className="h-4 w-4" />;
+        return (
+          official && (
+            <div className="flex w-full justify-center">
+              <CheckIcon className="h-4 w-4" />
+            </div>
+          )
+        );
       },
       header: "Official",
     }),
@@ -103,7 +109,13 @@ const getColumns = (cars) => {
       cell: ({ row }) => {
         const { multiclass } = row.original;
 
-        return multiclass && <CheckIcon className="h-4 w-4" />;
+        return (
+          multiclass && (
+            <div className="flex w-full justify-center">
+              <CheckIcon className="h-4 w-4" />
+            </div>
+          )
+        );
       },
       header: "Multi Class",
     }),
