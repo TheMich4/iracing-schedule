@@ -16,8 +16,6 @@ const CarsDialog = ({ isOpen, close, series }) => {
     );
   }, [series]);
 
-  console.log({ carData });
-
   return (
     <Dialog open={isOpen} onOpenChange={close}>
       <DialogContent>
