@@ -6,7 +6,7 @@ import { licenseGroupMap } from "~/utils/license";
 import { trackTypesMap } from "~/utils/track-type";
 import { useMemo } from "react";
 
-const getColumns = (cars) => {
+const getColumns = ({ cars, setSelectedRow }) => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -65,7 +65,10 @@ const getColumns = (cars) => {
         const carClasses = cell.getValue();
 
         return (
-          <div className="w-fill cursor-pointer hover:bg-slate-900">
+          <div
+            className="w-fill cursor-pointer hover:bg-slate-900"
+            onClick={() => setSelectedRow(cell.row.original)}
+          >
             {carClasses.map((carClass) => carClass?.shortName).join(", ")}
           </div>
         );
