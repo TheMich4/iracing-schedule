@@ -25,6 +25,7 @@ const ScheduleTable = () => {
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
+  const [columnVisibility, setColumnVisibility] = useState({});
   const [filter, setFilter] = useFilter();
   const cars = useCars();
   const columns = useColumns({ cars, setSelectedRow });
@@ -39,10 +40,12 @@ const ScheduleTable = () => {
   const table = useReactTable({
     columns,
     data,
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
     state: {
+      columnVisibility,
       sorting,
     },
   });
@@ -120,6 +123,7 @@ const ScheduleTable = () => {
       </div>
 
       <ScheduleTableDialogs
+        columns={table.getAllLeafColumns()}
         selectedRow={selectedRow}
         setSelectedRow={setSelectedRow}
         showConfig={showConfig}

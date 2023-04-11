@@ -6,6 +6,7 @@ const ScheduleTableDialogs = ({
   setSelectedRow,
   showConfig,
   setShowConfig,
+  columns,
 }) => {
   return (
     <>
@@ -14,7 +15,11 @@ const ScheduleTableDialogs = ({
         isOpen={Boolean(selectedRow)}
         series={selectedRow}
       />
-      <ConfigDialog close={() => setShowConfig(false)} isOpen={showConfig} />
+      <ConfigDialog
+        close={() => setShowConfig(false)}
+        isOpen={showConfig}
+        columns={columns}
+      />
     </>
   );
 };
