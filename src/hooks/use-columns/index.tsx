@@ -34,31 +34,6 @@ const getColumns = ({ cars, setSelectedRow }) => {
       cell: (cell) => cell.getValue(),
       header: () => "Series name",
     }),
-    columnHelper.accessor("startDate", {
-      id: "startDate",
-      cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
-      header: () => "Start date",
-    }),
-    // columnHelper.accessor("scheduleDescription", {
-    //   id: "scheduleDescription",
-    //   cell: (cell) => cell.getValue(),
-    //   header: () => "Schedule",
-    // }),
-    columnHelper.accessor("trackName", {
-      id: "trackName",
-      cell: (cell) => cell.getValue() ?? "Unknown",
-      header: () => "Track name",
-    }),
-    columnHelper.accessor("trackType", {
-      id: "trackType",
-      cell: (cell) => trackTypesMap[cell.getValue()]?.name,
-      header: () => "Track type",
-    }),
-    columnHelper.accessor("fixedSetup", {
-      id: "fixedSetup",
-      cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
-      header: () => "Setup",
-    }),
     columnHelper.accessor("carClasses", {
       id: "carClasses",
       cell: (cell) => {
@@ -75,6 +50,32 @@ const getColumns = ({ cars, setSelectedRow }) => {
       },
       header: () => "Car classes",
     }),
+    columnHelper.accessor("trackName", {
+      id: "trackName",
+      cell: (cell) => cell.getValue() ?? "Unknown",
+      header: () => "Track name",
+    }),
+    columnHelper.accessor("trackType", {
+      id: "trackType",
+      cell: (cell) => trackTypesMap[cell.getValue()]?.name,
+      header: () => "Track type",
+    }),
+    columnHelper.accessor("startDate", {
+      id: "startDate",
+      cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
+      header: () => "Start date",
+    }),
+    // columnHelper.accessor("scheduleDescription", {
+    //   id: "scheduleDescription",
+    //   cell: (cell) => cell.getValue(),
+    //   header: () => "Schedule",
+    // }),
+    columnHelper.accessor("fixedSetup", {
+      id: "fixedSetup",
+      cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
+      header: () => "Setup",
+    }),
+
     columnHelper.display({
       id: "raceLength",
       cell: ({ row }) => {
