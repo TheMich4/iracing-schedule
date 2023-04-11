@@ -10,6 +10,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { format } from "date-fns";
 import getLastTuesday from "~/utils/get-last-tuesday";
+import importSchedule from "~/utils/import-schedule";
 
 interface ScheduleData {
   schedule: Array<Schedule>;
@@ -26,10 +27,7 @@ const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
 
   const [schedule, setSchedule] = useState<Array<Schedule>>([]);
 
-  const scheduleMap = useMemo<ScheduleMap>(
-    () => JSON.parse(localStorage.getItem("schedule") ?? "{}") || {},
-    []
-  );
+  const scheduleMap = useMemo<ScheduleMap>(() => importSchedule() || {}, []);
 
   const tuesday = useMemo<string>(
     () => format(getLastTuesday(date), "yyyy-MM-dd") ?? "",
