@@ -44,7 +44,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
         )}
       </div>
       {isExpanded ? (
-        <>
+        <div className="flex flex-row flex-wrap gap-4">
           <div>
             Class:
             {Object.entries(licenseGroups).map(([licenseId, value]) => (
@@ -132,9 +132,9 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
               />
             ))}
           </div>
-        </>
+        </div>
       ) : (
-        <div>TEST</div>
+        <div>Filters</div>
       )}
     </div>
   );

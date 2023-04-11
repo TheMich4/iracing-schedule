@@ -50,7 +50,7 @@ const ScheduleTable = () => {
   return (
     <>
       <div className="flex h-full flex-col gap-2 p-2">
-        <div className="flex flex-row justify-between gap-2">
+        <div className="flex flex-col justify-between gap-2 lg:flex-row">
           <Filters filter={filter} setFilter={setFilter} />
           <Calendar
             initialDate={date}
