@@ -21,6 +21,7 @@ import useSchedule from "~/hooks/use-schedule";
 
 const ScheduleTable = () => {
   const [selectedRow, setSelectedRow] = useState<number | null>(null);
+  const [showConfig, setShowConfig] = useState<boolean>(false);
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -60,6 +61,7 @@ const ScheduleTable = () => {
           <Button
             className="dark:bg-slate-800 dark:hover:bg-slate-800/60"
             variant="subtle"
+            onClick={() => setShowConfig(true)}
           >
             <Cog6ToothIcon className="h-5 w-5" />
           </Button>
@@ -117,6 +119,8 @@ const ScheduleTable = () => {
       <ScheduleTableDialogs
         selectedRow={selectedRow}
         setSelectedRow={setSelectedRow}
+        showConfig={showConfig}
+        setShowConfig={setShowConfig}
       />
     </>
   );

@@ -1,6 +1,12 @@
 import CarsDialog from "./cars-dialog";
+import ConfigDialog from "./config-dialog";
 
-const ScheduleTableDialogs = ({ selectedRow, setSelectedRow }) => {
+const ScheduleTableDialogs = ({
+  selectedRow,
+  setSelectedRow,
+  showConfig,
+  setShowConfig,
+}) => {
   return (
     <>
       <CarsDialog
@@ -8,6 +14,7 @@ const ScheduleTableDialogs = ({ selectedRow, setSelectedRow }) => {
         isOpen={Boolean(selectedRow)}
         series={selectedRow}
       />
+      <ConfigDialog close={() => setShowConfig(false)} isOpen={showConfig} />
     </>
   );
 };
