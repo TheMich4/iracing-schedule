@@ -10,25 +10,24 @@ import Button from "../button";
 import Calendar from "./calendar";
 import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 import Filters from "./filters";
+import type { Schedule } from "~/types";
 import ScheduleTableDialogs from "./dialogs";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import { getFilteredSchedule } from "./helpers";
-import useCars from "~/hooks/use-cars";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
 
 const ScheduleTable = () => {
-  const [selectedRow, setSelectedRow] = useState<number | null>(null);
+  const [selectedRow, setSelectedRow] = useState<Schedule | null>(null);
   const [showConfig, setShowConfig] = useState<boolean>(false);
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnVisibility, setColumnVisibility] = useState({});
   const [filter, setFilter] = useFilter();
-  const cars = useCars();
-  const columns = useColumns({ cars, setSelectedRow });
+  const columns = useColumns({ setSelectedRow });
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 

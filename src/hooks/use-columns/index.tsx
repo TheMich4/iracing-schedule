@@ -1,4 +1,5 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
+import type { ColumnProps } from "./types";
 import type { Schedule } from "~/types";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
@@ -6,7 +7,7 @@ import { licenseGroupMap } from "~/utils/license";
 import { trackTypesMap } from "~/utils/track-type";
 import { useMemo } from "react";
 
-const getColumns = ({ cars, setSelectedRow }) => {
+const getColumns = ({ setSelectedRow }: ColumnProps) => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -57,7 +58,10 @@ const getColumns = ({ cars, setSelectedRow }) => {
     }),
     columnHelper.accessor("trackType", {
       id: "trackType",
-      cell: (cell) => trackTypesMap[cell.getValue()]?.name,
+      cell: (cell) => {
+        const value = cell.getValue();
+        return value ? trackTypesMap[value]?.name : "Unknown";
+      },
       header: () => "Track type",
     }),
     columnHelper.accessor("startDate", {
@@ -136,8 +140,8 @@ const getColumns = ({ cars, setSelectedRow }) => {
   ];
 };
 
-const useColumns = (cars) => {
-  const columns = useMemo(() => getColumns(cars), [cars]);
+const useColumns = (props: ColumnProps) => {
+  const columns = useMemo(() => getColumns(props), [props]);
 
   return columns;
 };

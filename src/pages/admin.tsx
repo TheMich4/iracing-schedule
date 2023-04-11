@@ -1,7 +1,6 @@
 import Button from "~/components/button";
 import Head from "next/head";
 import type { NextPage } from "next";
-import importCars from "~/utils/import-cars";
 import importSchedule from "~/utils/import-schedule";
 
 const AdminPage: NextPage = () => {
@@ -21,13 +20,13 @@ const AdminPage: NextPage = () => {
           >
             Import schedule
           </Button>
-          <Button
+          {/* <Button
             className="w-48"
             onClick={() => void importCars()}
             variant="subtle"
           >
             Import cars
-          </Button>
+          </Button> */}
         </div>
       </main>
     </>

@@ -1,5 +1,6 @@
 import CarsDialog from "./cars-dialog";
 import ConfigDialog from "./config-dialog";
+import type { ScheduleTableDialogsProps } from "./types";
 
 const ScheduleTableDialogs = ({
   selectedRow,
@@ -7,7 +8,7 @@ const ScheduleTableDialogs = ({
   showConfig,
   setShowConfig,
   columns,
-}) => {
+}: ScheduleTableDialogsProps) => {
   return (
     <>
       <CarsDialog

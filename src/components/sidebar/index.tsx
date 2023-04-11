@@ -15,7 +15,7 @@ const Sidebar = () => {
   const router = useRouter();
   const { data: sessionData } = useSession();
 
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const handleAuth = () => {
     if (sessionData) {
