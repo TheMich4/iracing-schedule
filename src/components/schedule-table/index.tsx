@@ -71,7 +71,7 @@ const ScheduleTable = () => {
         </div>
         <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800">
           <table className="min-w-full divide-y divide-slate-700 rounded-sm">
-            <thead className="sticky bg-slate-900/40">
+            <thead className="sticky top-0 bg-[#151c30] bg-slate-900/40">
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
