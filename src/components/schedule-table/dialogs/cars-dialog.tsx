@@ -17,7 +17,7 @@ const CarsDialog = ({ isOpen, close, series }) => {
   }, [series]);
 
   return (
-    <Dialog open={isOpen} onOpenChange={close}>
+    <Dialog onOpenChange={close} open={isOpen}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Cars</DialogTitle>

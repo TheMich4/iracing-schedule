@@ -17,8 +17,8 @@ const ScheduleTableDialogs = ({
       />
       <ConfigDialog
         close={() => setShowConfig(false)}
-        isOpen={showConfig}
         columns={columns}
+        isOpen={showConfig}
       />
     </>
   );

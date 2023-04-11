@@ -63,8 +63,8 @@ const ScheduleTable = () => {
           />
           <Button
             className="dark:bg-slate-800 dark:hover:bg-slate-800/60"
-            variant="subtle"
             onClick={() => setShowConfig(true)}
+            variant="subtle"
           >
             <div className="flex flex-row gap-2">
               <Cog6ToothIcon className="h-5 w-5" />
@@ -126,8 +126,8 @@ const ScheduleTable = () => {
         columns={table.getAllLeafColumns()}
         selectedRow={selectedRow}
         setSelectedRow={setSelectedRow}
-        showConfig={showConfig}
         setShowConfig={setShowConfig}
+        showConfig={showConfig}
       />
     </>
   );

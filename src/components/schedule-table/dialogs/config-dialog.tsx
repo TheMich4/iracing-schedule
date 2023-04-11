@@ -10,7 +10,7 @@ import Checkbox from "~/components/checkbox";
 
 const ConfigDialog = ({ isOpen, close, columns }) => {
   return (
-    <Dialog open={isOpen} onOpenChange={close}>
+    <Dialog onOpenChange={close} open={isOpen}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Config</DialogTitle>
@@ -20,7 +20,7 @@ const ConfigDialog = ({ isOpen, close, columns }) => {
         <div>
           {columns.map((column) => {
             return (
-              <div key={column.id} className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2" key={column.id}>
                 <Checkbox
                   checked={column.getIsVisible()}
                   label={column.id}
