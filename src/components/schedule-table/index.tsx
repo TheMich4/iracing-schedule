@@ -50,7 +50,7 @@ const ScheduleTable = () => {
   return (
     <>
       <div className="flex h-full flex-col gap-2 p-2">
-        <div className="flex flex-col justify-between gap-2 lg:flex-row">
+        <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
           <Filters filter={filter} setFilter={setFilter} />
           <Calendar
             initialDate={date}
@@ -63,7 +63,10 @@ const ScheduleTable = () => {
             variant="subtle"
             onClick={() => setShowConfig(true)}
           >
-            <Cog6ToothIcon className="h-5 w-5" />
+            <div className="flex flex-row gap-2">
+              <Cog6ToothIcon className="h-5 w-5" />
+              <div className="lg:hidden">Configure</div>
+            </div>
           </Button>
         </div>
         <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800">
