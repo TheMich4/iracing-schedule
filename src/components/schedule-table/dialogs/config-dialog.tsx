@@ -7,7 +7,7 @@ import {
 } from "~/components/dialog";
 
 import Checkbox from "~/components/checkbox";
-import { ConfigDialogProps } from "./types";
+import { type ConfigDialogProps } from "./types";
 
 const ConfigDialog = ({ isOpen, close, columns }: ConfigDialogProps) => {
   return (
@@ -23,8 +23,8 @@ const ConfigDialog = ({ isOpen, close, columns }: ConfigDialogProps) => {
             return (
               <div className="flex flex-row gap-2" key={column.id}>
                 <Checkbox
-                  id={column.id}
                   checked={column.getIsVisible()}
+                  id={column.id}
                   label={column.id}
                   // onChange={column.getToggleVisibilityHandler()}
                 />
