@@ -6,13 +6,13 @@ import {
   DialogTitle,
 } from "~/components/dialog";
 
-import type { Car } from "~/types";
+import type { CarData } from "iracing-api/lib/types/car";
 import type { CarsDialogProps } from "./types";
 import { cars } from "~/consts/cars";
 import { useMemo } from "react";
 
 const CarsDialog = ({ isOpen, close, series }: CarsDialogProps) => {
-  const carData = useMemo<Array<Car>>(() => {
+  const carData = useMemo<Array<CarData>>(() => {
     return series?.carIds?.map((carId) =>
       cars.find((car) => car.carId === carId)
     );
