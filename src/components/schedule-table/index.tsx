@@ -25,7 +25,9 @@ const ScheduleTable = () => {
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [columnVisibility, setColumnVisibility] = useState({});
+  const [columnVisibility, setColumnVisibility] = useState({
+    raceWeekNum: false,
+  });
   const [filter, setFilter] = useFilter();
   const columns = useColumns({ setSelectedRow });
 
