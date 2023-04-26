@@ -17,7 +17,8 @@ const Calendar = ({
   const [value, setValue] = useState<Date>(initialDate);
 
   const handleValueChange = (newValue: Date) => {
-    console.log({ newValue });
+    if (!newValue) return;
+
     setValue(newValue);
     setDate(newValue);
   };
