@@ -1,5 +1,5 @@
 {
   "cSpell.words": ["clsx", "datepicker", "heroicons", "kanit", "multiclass"],
-  "editor.fontSize": 12,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
