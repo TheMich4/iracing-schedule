@@ -3,10 +3,10 @@
 import { type Dispatch, type SetStateAction, useState } from "react";
 
 import Checkbox from "@ui/checkbox";
-import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import type { Filter } from "~/hooks/use-filter/types";
 import { licenseGroups } from "~/utils/license";
 import { trackTypes } from "~/utils/track-type";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface FiltersProps {
   filter: Filter;
@@ -38,9 +38,9 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
         onClick={() => setIsExpanded((prev) => !prev)}
       >
         {isExpanded ? (
-          <ChevronUpIcon className="h-4 w-4" />
+          <ChevronUp className="h-4 w-4" />
         ) : (
-          <ChevronDownIcon className="h-4 w-4" />
+          <ChevronDown className="h-4 w-4" />
         )}
       </div>
       {isExpanded ? (
