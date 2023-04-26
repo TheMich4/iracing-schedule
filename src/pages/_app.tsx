@@ -17,9 +17,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <ThemeProvider attribute="class" defaultTheme="dark">
         <div>
-          <div className="flex w-screen flex-row justify-between">
+          <div className="flex h-screen w-screen flex-row justify-between divide-x">
             <Sidebar />
-            <div className="flex h-screen w-full flex-col overflow-auto">
+            <div className="flex h-full w-full flex-col overflow-auto">
               <Navbar />
               <Component {...pageProps} />
             </div>

@@ -1,5 +1,4 @@
 export interface SidebarButtonProps {
-  children: React.ReactNode;
   expanded: boolean;
   Icon: React.ForwardRefExoticComponent<
     React.SVGProps<SVGSVGElement> & {
@@ -7,5 +6,6 @@ export interface SidebarButtonProps {
       titleId?: string | undefined;
     }
   >;
+  label: string;
   onClick?: () => void;
 }

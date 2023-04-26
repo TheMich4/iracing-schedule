@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import type { SidebarButtonProps } from "./types";
+import Button from "../ui/button";
+import cn from "~/utils/cn";
 
 const SidebarButton = ({
-  children,
+  label,
   expanded = true,
   Icon,
   onClick,
+  isActive,
 }: SidebarButtonProps) => {
   // TODO: Find better solution for hydration issue
   const [showIcon, setShowIcon] = useState(false);
@@ -17,13 +20,15 @@ const SidebarButton = ({
   }, []);
 
   return (
-    <button
-      className="flex h-10 w-full cursor-pointer flex-row items-center gap-2 rounded-md p-2 text-start font-medium hover:bg-slate-300/40 dark:hover:bg-slate-800/40"
+    <Button
+      className="flex w-full items-center justify-start gap-2"
       onClick={onClick}
+      size="sm"
+      variant={isActive ? "secondary" : "ghost"}
     >
-      {showIcon && <Icon className="w-5-200 h-5 dark:text-slate-100" />}
-      {expanded && children}
-    </button>
+      {showIcon && <Icon className="h-4 w-4" />}
+      {expanded && label}
+    </Button>
   );
 };
 
