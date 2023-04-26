@@ -63,7 +63,7 @@ const ScheduleTable = () => {
           <Button
             className="dark:bg-slate-800 dark:hover:bg-slate-800/60"
             onClick={() => setShowConfig(true)}
-            variant="subtle"
+            variant="outline"
           >
             <div className="flex flex-row gap-2">
               <Settings className="h-5 w-5" />
@@ -71,9 +71,9 @@ const ScheduleTable = () => {
             </div>
           </Button>
         </div>
-        <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-800">
-          <table className="min-w-full divide-y divide-slate-700 rounded-sm">
-            <thead className="sticky top-0 bg-[#151c30] bg-slate-900/40">
+        <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
+          <table className="min-w-full divide-y divide-slate-200 rounded-sm dark:divide-slate-700">
+            <thead className="sticky top-0 bg-slate-200 dark:bg-[#151c30]">
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
@@ -100,12 +100,12 @@ const ScheduleTable = () => {
                 </tr>
               ))}
             </thead>
-            <tbody className="divide-y divide-slate-800">
+            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
               {table.getRowModel().rows.map((row) => (
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell) => (
                     <td
-                      className="whitespace-nowrap px-4 py-1 text-sm text-slate-200"
+                      className="whitespace-nowrap px-4 py-1 text-sm text-slate-800 dark:text-slate-200"
                       key={cell.id}
                     >
                       {flexRender(
