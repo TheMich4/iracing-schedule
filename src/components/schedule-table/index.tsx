@@ -6,7 +6,7 @@ import {
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
-import Button from "../ui/button";
+import Button from "@ui/button";
 import Calendar from "./calendar";
 import Filters from "./filters";
 import type { Schedule } from "~/types";
@@ -18,6 +18,7 @@ import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
 import { Settings } from "lucide-react";
+import { Card } from "@ui/card";
 
 const ScheduleTable = () => {
   const [selectedRow, setSelectedRow] = useState<Schedule | null>(null);
@@ -71,8 +72,8 @@ const ScheduleTable = () => {
             </div>
           </Button>
         </div>
-        <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
-          <table className="min-w-full divide-y divide-slate-200 rounded-sm dark:divide-slate-700">
+        <Card className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll bg-inherit scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
+          <table className="min-w-full divide-y divide-slate-200 dark:divide-slate-700">
             <thead className="sticky top-0 bg-slate-200 dark:bg-[#151c30]">
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
@@ -118,7 +119,7 @@ const ScheduleTable = () => {
               ))}
             </tbody>
           </table>
-        </div>
+        </Card>
       </div>
 
       <ScheduleTableDialogs
