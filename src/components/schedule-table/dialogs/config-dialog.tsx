@@ -32,7 +32,6 @@ const ConfigDialog = ({
                   id={column.id}
                   label={column.id}
                   onChange={(checked) => {
-                    console.log({ checked, column });
                     setColumnVisibility((prev) => ({
                       ...prev,
                       [column.id]: checked,

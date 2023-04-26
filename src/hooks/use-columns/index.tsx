@@ -142,7 +142,18 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
 };
 
 const defaultColumnVisibility = {
+  carClasses: true,
+  fixedSetup: false,
+  licenseGroup: true,
+  multiclass: false,
+  official: false,
+  raceLength: false,
   raceWeekNum: false,
+  seriesName: true,
+  startDate: false,
+  startType: false,
+  trackName: true,
+  trackType: false,
 };
 
 const useColumns = (props: ColumnProps) => {
