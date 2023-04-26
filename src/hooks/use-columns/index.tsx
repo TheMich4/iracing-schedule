@@ -43,7 +43,7 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
 
         return (
           <div
-            className="w-fill cursor-pointer hover:bg-slate-900"
+            className="w-fill cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900"
             onClick={() => setSelectedRow(cell.row.original)}
           >
             {carClasses.map((carClass) => carClass?.shortName).join(", ")}

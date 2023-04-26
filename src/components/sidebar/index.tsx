@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`z-40 hidden h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-900 p-2 transition-all duration-300 ease-in-out lg:flex ${
+      className={`z-40 hidden h-screen -translate-x-full flex-col justify-between gap-2 rounded-r-md bg-slate-50 p-2 transition-all duration-300 ease-in-out dark:bg-slate-900 lg:flex ${
         expanded ? "w-64 md:translate-x-0" : "w-fit sm:translate-x-0"
       }`}
     >
@@ -58,7 +58,9 @@ const Sidebar = () => {
           onClick={() =>
             theme == "dark" ? setTheme("light") : setTheme("dark")
           }
-        />
+        >
+          {expanded ? "Theme" : ""}
+        </SidebarButton>
         <SidebarButton
           Icon={expanded ? ChevronLeft : ChevronRight}
           expanded={expanded}
