@@ -22,7 +22,7 @@ const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
           <Check className="h-4 w-4" />
         </CheckboxPrimitive.CheckboxIndicator>
       </CheckboxPrimitive.Root>
-      <label className="font-extra-light text-slate-200">{label}</label>
+      <label className="font-extra-light">{label}</label>
     </div>
   );
 };
