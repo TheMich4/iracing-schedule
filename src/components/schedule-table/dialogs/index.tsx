@@ -8,6 +8,7 @@ const ScheduleTableDialogs = ({
   showConfig,
   setShowConfig,
   columns,
+  setColumnVisibility,
 }: ScheduleTableDialogsProps) => {
   return (
     <>
@@ -20,6 +21,7 @@ const ScheduleTableDialogs = ({
         close={() => setShowConfig(false)}
         columns={columns}
         isOpen={showConfig}
+        setColumnVisibility={setColumnVisibility}
       />
     </>
   );

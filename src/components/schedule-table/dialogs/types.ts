@@ -1,3 +1,5 @@
+import type { Dispatch, SetStateAction } from "react";
+
 import type { Column } from "@tanstack/react-table";
 import type { Schedule } from "~/types";
 
@@ -8,6 +10,7 @@ type TableColumns = Array<TableColumn>;
 
 export interface ScheduleTableDialogsProps {
   selectedRow: Schedule | null;
+  setColumnVisibility: Dispatch<SetStateAction<Record<string, boolean>>>;
   setSelectedRow: (row: Schedule | null) => void;
   showConfig: boolean;
   setShowConfig: (show: boolean) => void;
@@ -24,4 +27,5 @@ export interface ConfigDialogProps {
   isOpen: boolean;
   close: () => void;
   columns: TableColumns;
+  setColumnVisibility: Dispatch<SetStateAction<Record<string, boolean>>>;
 }

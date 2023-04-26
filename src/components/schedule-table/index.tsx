@@ -15,7 +15,6 @@ import ScheduleTableDialogs from "./dialogs";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import { getFilteredSchedule } from "./helpers";
-import useColumnVisibility from "~/hooks/use-column-visibility";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
@@ -26,9 +25,10 @@ const ScheduleTable = () => {
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [columnVisibility, setColumnVisibility] = useColumnVisibility();
   const [filter, setFilter] = useFilter();
-  const columns = useColumns({ setSelectedRow });
+  const { columns, columnVisibility, setColumnVisibility } = useColumns({
+    setSelectedRow,
+  });
 
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
@@ -40,7 +40,6 @@ const ScheduleTable = () => {
   const table = useReactTable({
     columns,
     data,
-    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
@@ -128,6 +127,7 @@ const ScheduleTable = () => {
         setSelectedRow={setSelectedRow}
         setShowConfig={setShowConfig}
         showConfig={showConfig}
+        setColumnVisibility={setColumnVisibility}
       />
     </>
   );

@@ -1,3 +1,5 @@
+import { useMemo, useState } from "react";
+
 import { CheckIcon } from "@heroicons/react/24/outline";
 import type { ColumnProps } from "./types";
 import type { Schedule } from "~/types";
@@ -5,7 +7,6 @@ import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
 import { trackTypesMap } from "~/utils/track-type";
-import { useMemo } from "react";
 
 const getColumns = ({ setSelectedRow }: ColumnProps) => {
   const columnHelper = createColumnHelper<Schedule>();
@@ -140,10 +141,17 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
   ];
 };
 
+const defaultColumnVisibility = {
+  raceWeekNum: false,
+};
+
 const useColumns = (props: ColumnProps) => {
   const columns = useMemo(() => getColumns(props), [props]);
+  const [columnVisibility, setColumnVisibility] = useState<
+    Record<string, boolean>
+  >(defaultColumnVisibility);
 
-  return columns;
+  return { columns, columnVisibility, setColumnVisibility };
 };
 
 export default useColumns;

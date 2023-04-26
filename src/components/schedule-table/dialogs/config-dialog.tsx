@@ -9,7 +9,12 @@ import {
 import Checkbox from "~/components/checkbox";
 import { type ConfigDialogProps } from "./types";
 
-const ConfigDialog = ({ isOpen, close, columns }: ConfigDialogProps) => {
+const ConfigDialog = ({
+  isOpen,
+  close,
+  columns,
+  setColumnVisibility,
+}: ConfigDialogProps) => {
   return (
     <Dialog onOpenChange={close} open={isOpen}>
       <DialogContent>
@@ -26,7 +31,13 @@ const ConfigDialog = ({ isOpen, close, columns }: ConfigDialogProps) => {
                   checked={column.getIsVisible()}
                   id={column.id}
                   label={column.id}
-                  // onChange={column.getToggleVisibilityHandler()}
+                  onChange={(checked) => {
+                    console.log({ checked, column });
+                    setColumnVisibility((prev) => ({
+                      ...prev,
+                      [column.id]: checked,
+                    }));
+                  }}
                 />
               </div>
             );
