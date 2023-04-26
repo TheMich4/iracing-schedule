@@ -124,10 +124,10 @@ const ScheduleTable = () => {
       <ScheduleTableDialogs
         columns={table.getAllLeafColumns()}
         selectedRow={selectedRow}
+        setColumnVisibility={setColumnVisibility}
         setSelectedRow={setSelectedRow}
         setShowConfig={setShowConfig}
         showConfig={showConfig}
-        setColumnVisibility={setColumnVisibility}
       />
     </>
   );
