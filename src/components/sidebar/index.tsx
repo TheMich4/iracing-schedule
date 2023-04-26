@@ -5,17 +5,25 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { HomeIcon } from "@heroicons/react/24/solid";
 import SidebarButton from "./sidebar-button";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
   const router = useRouter();
   const { data: sessionData } = useSession();
+  const { systemTheme, theme, setTheme } = useTheme();
 
   const [expanded, setExpanded] = useState(false);
+  const currentTheme = useMemo(
+    () => (theme === "system" ? systemTheme : theme),
+    [theme, systemTheme]
+  );
+
+  console.log({ theme, setTheme });
 
   const handleAuth = () => {
     if (sessionData) {
@@ -50,6 +58,12 @@ const Sidebar = () => {
         )}
       </div>
       <div className="flex flex-col gap-2">
+        <SidebarButton
+          Icon={theme === "dark" ? MoonIcon : SunIcon}
+          onClick={() =>
+            theme == "dark" ? setTheme("light") : setTheme("dark")
+          }
+        />
         <SidebarButton
           Icon={expanded ? ChevronLeftIcon : ChevronRightIcon}
           expanded={expanded}
