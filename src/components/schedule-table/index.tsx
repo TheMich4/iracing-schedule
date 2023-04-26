@@ -61,25 +61,21 @@ const ScheduleTable = () => {
             minDate={minDate}
             setDate={setDate}
           />
-          <Button
-            className="dark:bg-slate-800 dark:hover:bg-slate-800/60"
-            onClick={() => setShowConfig(true)}
-            variant="outline"
-          >
+          <Button onClick={() => setShowConfig(true)} variant="outline">
             <div className="flex flex-row gap-2">
               <Settings className="h-5 w-5" />
               <div className="lg:hidden">Configure</div>
             </div>
           </Button>
         </div>
-        <Card className="h-full w-full overflow-auto overflow-x-auto overflow-y-scroll bg-inherit scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
-          <table className="min-w-full divide-y divide-slate-200 dark:divide-slate-700">
-            <thead className="sticky top-0 bg-slate-200 dark:bg-[#151c30]">
+        <Card className="h-full w-full overflow-auto overflow-x-auto overflow-y-scroll bg-inherit scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-thumb-slate-900">
+          <table className="min-w-full">
+            <thead className="sticky top-0 bg-slate-200 dark:bg-slate-900">
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
                     <th
-                      className="px-4 py-1 text-start text-xs font-medium uppercase tracking-wider text-gray-500"
+                      className="px-4 py-1 text-start text-xs font-medium uppercase tracking-wider text-slate-500"
                       key={header.id}
                     >
                       {header.isPlaceholder ? null : (
@@ -101,7 +97,7 @@ const ScheduleTable = () => {
                 </tr>
               ))}
             </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+            <tbody className="divide-y divide-slate-100 dark:divide-slate-900">
               {table.getRowModel().rows.map((row) => (
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell) => (

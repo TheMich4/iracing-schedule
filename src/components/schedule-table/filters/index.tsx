@@ -33,8 +33,7 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
   };
 
   return (
-    // <div className="flex w-full flex-row gap-2 divide-slate-700 rounded-md bg-slate-800 p-2 text-slate-200">
-    <Card className="flex w-full flex-row gap-2 p-2 dark:divide-slate-700 dark:bg-slate-800 dark:text-slate-200">
+    <Card className="flex w-full flex-row gap-2 p-2 dark:divide-slate-700 dark:bg-inherit dark:text-slate-200">
       <div
         className="cursor-pointer px-2 py-1"
         onClick={() => setIsExpanded((prev) => !prev)}
@@ -139,7 +138,6 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
         <div>Filters</div>
       )}
     </Card>
-    // </div>
   );
 };
 
