@@ -1,7 +1,7 @@
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 
-import { CheckIcon } from "@heroicons/react/24/outline";
 import type { CheckboxProps } from "./types";
+import { Check } from "lucide-react";
 
 const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
   const handleCheckedChange = (checked: CheckboxPrimitive.CheckedState) => {
@@ -19,7 +19,7 @@ const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
         onCheckedChange={handleCheckedChange}
       >
         <CheckboxPrimitive.CheckboxIndicator>
-          <CheckIcon />
+          <Check className="h-4 w-4" />
         </CheckboxPrimitive.CheckboxIndicator>
       </CheckboxPrimitive.Root>
       <label className="font-extra-light text-slate-200">{label}</label>
