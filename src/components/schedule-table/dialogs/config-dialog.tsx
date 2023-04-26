@@ -4,9 +4,9 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "~/components/dialog";
+} from "@ui/dialog";
 
-import Checkbox from "~/components/checkbox";
+import Checkbox from "@ui/checkbox";
 import { type ConfigDialogProps } from "./types";
 
 const ConfigDialog = ({
