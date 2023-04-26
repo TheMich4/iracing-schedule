@@ -1,5 +1,5 @@
-import DatePicker from "react-tailwindcss-datepicker";
 import { useState } from "react";
+import CalendarDatePicker from "../calendar-date-picker";
 
 interface CalendarProps {
   initialDate: Date;
@@ -8,38 +8,28 @@ interface CalendarProps {
   maxDate?: Date;
 }
 
-interface CalendarDate {
-  startDate: Date | string;
-  endDate: Date | string;
-}
-
 const Calendar = ({
   initialDate,
   setDate,
   minDate,
   maxDate,
 }: CalendarProps) => {
-  const [value, setValue] = useState<CalendarDate>({
-    startDate: initialDate,
-    endDate: initialDate,
-  });
+  const [value, setValue] = useState<Date>(initialDate);
 
-  const handleValueChange = (newValue: CalendarDate) => {
+  const handleValueChange = (newValue: Date) => {
+    console.log({ newValue });
     setValue(newValue);
-    setDate(new Date(newValue.startDate));
+    setDate(newValue);
   };
 
   return (
-    <div className="min-w-[315px]">
-      <DatePicker
-        asSingle
-        displayFormat="DD/MM/YYYY"
-        maxDate={maxDate}
-        minDate={minDate}
-        onChange={handleValueChange}
-        startWeekOn="mon"
-        useRange={false}
-        value={value}
+    <div>
+      <CalendarDatePicker
+        date={value}
+        fromDate={minDate}
+        onSelect={handleValueChange}
+        toDate={maxDate}
+        weekStartsOn={1}
       />
     </div>
   );

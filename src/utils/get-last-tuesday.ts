@@ -1,4 +1,7 @@
-const getLastTuesday = (date: Date) => {
+const getLastTuesday = (_date: Date) => {
+  // Create a new date object so we don't mutate the original
+  const date = new Date(_date);
+
   const dayOfWeek = date.getDay();
 
   // If the date is a Tuesday, return the date
