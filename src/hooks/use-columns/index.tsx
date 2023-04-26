@@ -29,12 +29,12 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
           </div>
         );
       },
-      header: () => "Class",
+      header: "Class",
     }),
     columnHelper.accessor("seriesName", {
       id: "seriesName",
       cell: (cell) => cell.getValue(),
-      header: () => "Series name",
+      header: "Series name",
     }),
     columnHelper.accessor("carClasses", {
       id: "carClasses",
@@ -50,12 +50,12 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
           </div>
         );
       },
-      header: () => "Car classes",
+      header: "Car classes",
     }),
     columnHelper.accessor("trackName", {
       id: "trackName",
       cell: (cell) => cell.getValue() ?? "Unknown",
-      header: () => "Track name",
+      header: "Track name",
     }),
     columnHelper.accessor("trackType", {
       id: "trackType",
@@ -63,22 +63,22 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
         const value = cell.getValue();
         return value ? trackTypesMap[value]?.name : "Unknown";
       },
-      header: () => "Track type",
+      header: "Track type",
     }),
     columnHelper.accessor("startDate", {
       id: "startDate",
       cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
-      header: () => "Start date",
+      header: "Start date",
     }),
     // columnHelper.accessor("scheduleDescription", {
     //   id: "scheduleDescription",
     //   cell: (cell) => cell.getValue(),
-    //   header: () => "Schedule",
+    //   header: "Schedule",
     // }),
     columnHelper.accessor("fixedSetup", {
       id: "fixedSetup",
       cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
-      header: () => "Setup",
+      header: "Setup",
     }),
 
     columnHelper.display({
@@ -131,12 +131,12 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
     columnHelper.accessor("startType", {
       id: "startType",
       cell: (cell) => cell.getValue(),
-      header: () => "Start type",
+      header: "Start type",
     }),
     columnHelper.accessor("raceWeekNum", {
       id: "raceWeekNum",
       cell: (cell) => cell.getValue(),
-      header: () => "Week",
+      header: "Week",
     }),
   ];
 };

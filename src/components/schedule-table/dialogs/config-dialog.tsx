@@ -30,7 +30,7 @@ const ConfigDialog = ({
                 <Checkbox
                   checked={column.getIsVisible()}
                   id={column.id}
-                  label={column.id}
+                  label={(column.columnDef.header as string) ?? column.id}
                   onChange={(checked) => {
                     setColumnVisibility((prev) => ({
                       ...prev,
