@@ -8,7 +8,6 @@ import { useMemo, useState } from "react";
 
 import Button from "../ui/button";
 import Calendar from "./calendar";
-import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 import Filters from "./filters";
 import type { Schedule } from "~/types";
 import ScheduleTableDialogs from "./dialogs";
@@ -18,6 +17,7 @@ import { getFilteredSchedule } from "./helpers";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
+import { Settings } from "lucide-react";
 
 const ScheduleTable = () => {
   const [selectedRow, setSelectedRow] = useState<Schedule | null>(null);
@@ -66,7 +66,7 @@ const ScheduleTable = () => {
             variant="subtle"
           >
             <div className="flex flex-row gap-2">
-              <Cog6ToothIcon className="h-5 w-5" />
+              <Settings className="h-5 w-5" />
               <div className="lg:hidden">Configure</div>
             </div>
           </Button>

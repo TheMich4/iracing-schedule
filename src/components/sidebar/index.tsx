@@ -1,15 +1,16 @@
-import {
-  ArrowRightCircleIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  UserIcon,
-} from "@heroicons/react/24/outline";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { HomeIcon } from "@heroicons/react/24/solid";
 import SidebarButton from "./sidebar-button";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { MoonIcon, SunIcon } from "lucide-react";
+import {
+  ArrowRightCircle,
+  ChevronLeft,
+  ChevronRight,
+  Home,
+  MoonIcon,
+  SunIcon,
+  User,
+} from "lucide-react";
 import { useTheme } from "next-themes";
 
 const Sidebar = () => {
@@ -35,7 +36,7 @@ const Sidebar = () => {
     >
       <div className="flex flex-col gap-2">
         <SidebarButton
-          Icon={HomeIcon}
+          Icon={Home}
           expanded={expanded}
           onClick={() => void router.push("/")}
         >
@@ -43,7 +44,7 @@ const Sidebar = () => {
         </SidebarButton>
         {sessionData && (
           <SidebarButton
-            Icon={UserIcon}
+            Icon={User}
             expanded={expanded}
             onClick={() => void router.push("/admin")}
           >
@@ -59,14 +60,14 @@ const Sidebar = () => {
           }
         />
         <SidebarButton
-          Icon={expanded ? ChevronLeftIcon : ChevronRightIcon}
+          Icon={expanded ? ChevronLeft : ChevronRight}
           expanded={expanded}
           onClick={() => setExpanded((prev) => !prev)}
         >
           {expanded ? "Collapse" : "Expand"}
         </SidebarButton>
         <SidebarButton
-          Icon={ArrowRightCircleIcon}
+          Icon={ArrowRightCircle}
           expanded={expanded}
           onClick={handleAuth}
         >
