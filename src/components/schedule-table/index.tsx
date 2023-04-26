@@ -6,7 +6,7 @@ import {
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
-import Button from "../button";
+import Button from "../ui/button";
 import Calendar from "./calendar";
 import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 import Filters from "./filters";
@@ -124,10 +124,10 @@ const ScheduleTable = () => {
       <ScheduleTableDialogs
         columns={table.getAllLeafColumns()}
         selectedRow={selectedRow}
+        setColumnVisibility={setColumnVisibility}
         setSelectedRow={setSelectedRow}
         setShowConfig={setShowConfig}
         showConfig={showConfig}
-        setColumnVisibility={setColumnVisibility}
       />
     </>
   );

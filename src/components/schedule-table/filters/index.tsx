@@ -2,7 +2,7 @@
 
 import { type Dispatch, type SetStateAction, useState } from "react";
 
-import Checkbox from "../../checkbox";
+import Checkbox from "@ui/checkbox";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import type { Filter } from "~/hooks/use-filter/types";
 import { licenseGroups } from "~/utils/license";
