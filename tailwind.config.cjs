@@ -5,7 +5,10 @@ const config = {
     "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
   darkMode: ["class"],
-  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
   safelist: [
     // For class backgrounds
     "bg-red-500",

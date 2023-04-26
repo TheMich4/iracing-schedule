@@ -72,7 +72,7 @@ const ScheduleTable = () => {
             </div>
           </Button>
         </div>
-        <Card className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full h-full w-full overflow-auto overflow-x-auto overflow-y-scroll bg-inherit scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
+        <Card className="h-full w-full overflow-auto overflow-x-auto overflow-y-scroll bg-inherit scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-800">
           <table className="min-w-full divide-y divide-slate-200 dark:divide-slate-700">
             <thead className="sticky top-0 bg-slate-200 dark:bg-[#151c30]">
               {table.getHeaderGroups().map((headerGroup) => (
