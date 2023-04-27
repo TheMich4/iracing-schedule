@@ -8,6 +8,7 @@ import type { CellContext } from "@tanstack/react-table";
 import Image from "next/image";
 import type { Schedule } from "~/types";
 import { Skeleton } from "~/components/ui/skeleton";
+import { Star } from "lucide-react";
 import { useState } from "react";
 
 const SeriesCell = ({
@@ -27,7 +28,7 @@ const SeriesCell = ({
         </HoverCardTrigger>
 
         <HoverCardContent className="w-fit min-w-[300px]">
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-4">
             <div className="relative flex w-[80px] items-start justify-start">
               {!isLoaded && <Skeleton className="h-full w-full" />}
               <Image
@@ -46,6 +47,8 @@ const SeriesCell = ({
                 {seriesData.assets.seriesCopy}
               </div>
             </div>
+            {/* TODO: Customize color if is favorite */}
+            <Star className="m-1 h-4 w-4 cursor-pointer" />
           </div>
         </HoverCardContent>
       </HoverCard>
