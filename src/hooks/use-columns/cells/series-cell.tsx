@@ -25,9 +25,9 @@ const SeriesCell = ({
           <div className="flex flex-row gap-2">
             <div className="relative flex w-[80px]  items-start justify-start">
               <Image
+                alt="Series logo"
                 layout="fill"
                 objectFit="contain"
-                alt="Series logo"
                 src={`https://images-static.iracing.com/img/logos/series/${seriesData.assets.logo}`}
               />
             </div>

@@ -1,13 +1,37 @@
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, MoonIcon, SunIcon } from "lucide-react";
+
+import { Button } from "@ui/button";
 import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const router = useRouter();
+  const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="flex items-center gap-2 rounded-b-md bg-slate-200  p-2 dark:bg-slate-900 lg:hidden">
-      <MenuIcon className="h-6 w-6 cursor-pointer rounded-sm hover:bg-slate-300/40 dark:hover:bg-slate-800/40" />
-      <div onClick={() => void router.push("/")}>iRacing Schedule</div>
+    <nav className="flex flex-row items-center justify-between gap-2 p-2 lg:hidden">
+      <div className="flex flex-row items-center gap-2">
+        <Button size="sm" variant="ghost">
+          <MenuIcon className="h-5 w-5" />
+        </Button>
+        <div
+          className="cursor-pointer font-semibold"
+          onClick={() => void router.push("/")}
+        >
+          iRacing Schedule
+        </div>
+      </div>
+      <Button
+        onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
+        size="sm"
+        variant="ghost"
+      >
+        {theme === "dark" ? (
+          <MoonIcon className="h-5 w-5" />
+        ) : (
+          <SunIcon className="h-5 w-5" />
+        )}
+      </Button>
     </nav>
   );
 };

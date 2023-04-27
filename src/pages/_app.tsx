@@ -26,7 +26,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
             {layoutNeeded ? (
               <>
                 <Sidebar />
-                <div className="flex h-full w-full flex-col overflow-auto">
+                <div className="flex h-full w-full flex-col divide-y overflow-auto">
                   <Navbar />
                   <Component {...pageProps} />
                 </div>
