@@ -1,4 +1,5 @@
 import {
+  ArrowLeftCircle,
   ArrowRightCircle,
   ChevronLeft,
   ChevronRight,
@@ -80,7 +81,7 @@ const Sidebar = () => {
             onClick={() => setExpanded((prev) => !prev)}
           />
           <SidebarButton
-            Icon={ArrowRightCircle}
+            Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
             expanded={expanded}
             label={sessionData ? "Log out" : "Log in"}
             onClick={handleAuth}
