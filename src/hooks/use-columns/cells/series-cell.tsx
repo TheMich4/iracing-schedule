@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@ui/hover-card";
@@ -5,6 +7,8 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@ui/hover-card";
 import type { CellContext } from "@tanstack/react-table";
 import Image from "next/image";
 import type { Schedule } from "~/types";
+import { Skeleton } from "~/components/ui/skeleton";
+import { useState } from "react";
 
 const SeriesCell = ({
   getValue,
@@ -12,8 +16,9 @@ const SeriesCell = ({
 }: CellContext<Schedule, any>) => {
   const seriesName = getValue() ?? "Unknown series";
 
-  // TODO: Fix series logo sizing
+  const [isLoaded, setIsLoaded] = useState(false);
 
+  // TODO: Fix series logo sizing
   return (
     <div>
       <HoverCard>
@@ -23,12 +28,14 @@ const SeriesCell = ({
 
         <HoverCardContent className="w-fit min-w-[300px]">
           <div className="flex flex-row gap-2">
-            <div className="relative flex w-[80px]  items-start justify-start">
+            <div className="relative flex w-[80px] items-start justify-start">
+              {!isLoaded && <Skeleton className="h-full w-full" />}
               <Image
                 alt="Series logo"
                 layout="fill"
                 objectFit="contain"
                 src={`https://images-static.iracing.com/img/logos/series/${seriesData.assets.logo}`}
+                onLoad={() => setIsLoaded(true)}
               />
             </div>
             <div>
