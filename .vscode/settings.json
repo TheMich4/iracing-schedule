@@ -5,7 +5,8 @@
     "kanit",
     "lucide",
     "multiclass",
-    "signin"
+    "signin",
+    "tanstack"
   ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"

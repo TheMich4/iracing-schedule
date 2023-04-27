@@ -8,6 +8,7 @@ import type {
 
 import type { Schedule } from "~/types";
 import { carClasses } from "~/consts/carClasses";
+import { seriesAssets } from "~/consts/series-assets";
 import { seriesData } from "~/consts/series";
 
 const prepareScheduleData = (
@@ -15,6 +16,7 @@ const prepareScheduleData = (
   schedule: IRSchedule
 ): Schedule => {
   return {
+    assets: seriesAssets[series.seriesId],
     carClassIds: series.carClassIds,
     carClasses: series.carClassIds.map((carClassId) => {
       const carClass = carClasses.find(

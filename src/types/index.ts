@@ -28,6 +28,10 @@ export interface SeasonMap {
 }
 
 export interface Schedule {
+  assets: {
+    logo: string | null;
+    seriesCopy: string;
+  };
   carClassIds: Array<number>;
   carClasses: Array<{
     carClassId: number;
@@ -62,7 +66,7 @@ export interface ScheduleMap {
 export type ScheduleKeys = keyof Schedule;
 
 export interface Car {
-  carId:number;
+  carId: number;
   carName: string;
   carNameAbbreviated: string;
 }

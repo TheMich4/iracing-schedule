@@ -1,12 +1,13 @@
 import { useMemo, useState } from "react";
 
+import { Check } from "lucide-react";
 import type { ColumnProps } from "./types";
 import type { Schedule } from "~/types";
+import SeriesCell from "./cells/series-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { licenseGroupMap } from "~/utils/license";
 import { trackTypesMap } from "~/utils/track-type";
-import { Check } from "lucide-react";
 
 const getColumns = ({ setSelectedRow }: ColumnProps) => {
   const columnHelper = createColumnHelper<Schedule>();
@@ -33,7 +34,7 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
     }),
     columnHelper.accessor("seriesName", {
       id: "seriesName",
-      cell: (cell) => cell.getValue(),
+      cell: SeriesCell,
       header: "Series name",
     }),
     columnHelper.accessor("carClasses", {

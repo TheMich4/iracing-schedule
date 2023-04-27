@@ -32,5 +32,9 @@ const config = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+
+  images: {
+    domains: ["images-static.iracing.com"]
+  }
 };
 export default config;
