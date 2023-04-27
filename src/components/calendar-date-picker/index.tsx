@@ -14,6 +14,7 @@ import { format } from "date-fns";
 const CalendarDatePicker = ({
   date,
   onSelect,
+  className,
   ...props
 }: CalendarDatePickerProps) => {
   return (
@@ -22,7 +23,8 @@ const CalendarDatePicker = ({
         <Button
           className={cn(
             "w-[280px] justify-start text-left font-normal",
-            !date && "text-muted-foreground"
+            !date && "text-muted-foreground",
+            className
           )}
           variant={"outline"}
         >

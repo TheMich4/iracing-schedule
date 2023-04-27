@@ -1,5 +1,5 @@
-import { useState } from "react";
 import CalendarDatePicker from "../calendar-date-picker";
+import { useState } from "react";
 
 interface CalendarProps {
   initialDate: Date;
@@ -24,15 +24,14 @@ const Calendar = ({
   };
 
   return (
-    <div>
-      <CalendarDatePicker
-        date={value}
-        fromDate={minDate}
-        onSelect={handleValueChange}
-        toDate={maxDate}
-        weekStartsOn={1}
-      />
-    </div>
+    <CalendarDatePicker
+      className="w-full lg:w-[280px]"
+      date={value}
+      fromDate={minDate}
+      onSelect={handleValueChange}
+      toDate={maxDate}
+      weekStartsOn={1}
+    />
   );
 };
 

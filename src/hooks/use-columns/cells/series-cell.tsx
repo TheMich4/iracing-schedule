@@ -35,8 +35,8 @@ const SeriesCell = ({
                 alt="Series logo"
                 layout="fill"
                 objectFit="contain"
-                src={`https://images-static.iracing.com/img/logos/series/${seriesData.assets.logo}`}
                 onLoad={() => setIsLoaded(true)}
+                src={`https://images-static.iracing.com/img/logos/series/${seriesData.assets.logo}`}
               />
             </div>
             <div>
