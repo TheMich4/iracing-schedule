@@ -1,12 +1,9 @@
 import {
   ArrowLeftCircle,
   ArrowRightCircle,
-  CalendarCheck,
-  CalendarCheck2,
   CalendarDays,
   ChevronLeft,
   ChevronRight,
-  Home,
   MoonIcon,
   SunIcon,
   User,

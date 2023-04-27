@@ -6,19 +6,19 @@ import {
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
-import Button from "@ui/button";
+import { Button } from "@ui/button";
 import Calendar from "./calendar";
+import { Card } from "@ui/card";
 import Filters from "./filters";
 import type { Schedule } from "~/types";
 import ScheduleTableDialogs from "./dialogs";
+import { Settings } from "lucide-react";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import { getFilteredSchedule } from "./helpers";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
 import useSchedule from "~/hooks/use-schedule";
-import { Settings } from "lucide-react";
-import { Card } from "@ui/card";
 
 const ScheduleTable = () => {
   const [selectedRow, setSelectedRow] = useState<Schedule | null>(null);

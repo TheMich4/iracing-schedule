@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
+import { Button } from "@ui/button";
 import type { SidebarButtonProps } from "./types";
-import Button from "../ui/button";
-import cn from "~/utils/cn";
 
 const SidebarButton = ({
   label,

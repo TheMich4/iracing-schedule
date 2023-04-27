@@ -1,4 +1,4 @@
-import Button from "@ui/button";
+import { Button } from "@ui/button";
 import Head from "next/head";
 import type { NextPage } from "next";
 import importSchedule from "~/utils/import-schedule";

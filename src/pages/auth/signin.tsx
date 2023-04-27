@@ -11,7 +11,7 @@ import type {
 } from "next";
 import { getProviders, signIn } from "next-auth/react";
 
-import Button from "@ui/button";
+import { Button } from "@ui/button";
 import { authOptions } from "~/server/auth";
 import { getServerSession } from "next-auth/next";
 
