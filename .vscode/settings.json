@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["clsx", "datepicker", "kanit", "lucide", "multiclass"],
+  "cSpell.words": [
+    "clsx",
+    "datepicker",
+    "kanit",
+    "lucide",
+    "multiclass",
+    "signin"
+  ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

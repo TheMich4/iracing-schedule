@@ -1,26 +1,19 @@
-import { signIn, signOut, useSession } from "next-auth/react";
-// import SidebarButton from "./sidebar-button";
-import { useRouter } from "next/router";
-import { useState } from "react";
-
-import { useTheme } from "next-themes";
 import {
   ArrowRightCircle,
   ChevronLeft,
   ChevronRight,
   Home,
-  LayoutGrid,
-  ListMusic,
   MoonIcon,
-  Music2,
-  PlayCircle,
-  Radio,
   SunIcon,
   User,
 } from "lucide-react";
-import Button from "../ui/button";
+import { signIn, signOut, useSession } from "next-auth/react";
+
 import SidebarButton from "./sidebar-button";
 import cn from "~/utils/cn";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
   const router = useRouter();
@@ -62,6 +55,7 @@ const Sidebar = () => {
               <SidebarButton
                 Icon={User}
                 expanded={expanded}
+                isActive={router.pathname === "/admin"}
                 label="Admin"
                 onClick={() => void router.push("/admin")}
               ></SidebarButton>
