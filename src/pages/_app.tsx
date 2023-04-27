@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
@@ -12,17 +14,26 @@ import Navbar from "~/components/navbar";
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
+  ...appProps
 }) => {
+  const layoutNeeded = !appProps?.router?.pathname?.startsWith("/auth");
+
   return (
     <SessionProvider session={session}>
       <ThemeProvider attribute="class" defaultTheme="dark">
         <div>
           <div className="flex h-screen w-screen flex-row justify-between divide-x">
-            <Sidebar />
-            <div className="flex h-full w-full flex-col overflow-auto">
-              <Navbar />
+            {layoutNeeded ? (
+              <>
+                <Sidebar />
+                <div className="flex h-full w-full flex-col overflow-auto">
+                  <Navbar />
+                  <Component {...pageProps} />
+                </div>
+              </>
+            ) : (
               <Component {...pageProps} />
-            </div>
+            )}
           </div>
         </div>
       </ThemeProvider>
