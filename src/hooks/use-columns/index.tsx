@@ -2,11 +2,11 @@ import { useMemo, useState } from "react";
 
 import { Check } from "lucide-react";
 import type { ColumnProps } from "./types";
+import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
 import SeriesCell from "./cells/series-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
-import { licenseGroupMap } from "~/utils/license";
 import { trackTypesMap } from "~/utils/track-type";
 
 const getColumns = ({ setSelectedRow }: ColumnProps) => {
@@ -15,21 +15,7 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
   return [
     columnHelper.accessor("licenseGroup", {
       id: "licenseGroup",
-      cell: (cell) => {
-        const license = licenseGroupMap[cell.getValue()] as {
-          name: string;
-          color: string;
-          short: string;
-        };
-
-        return (
-          <div className="flex w-full justify-center">
-            <span className={`px-1 bg-${license.color} rounded-sm text-white`}>
-              {license.short}
-            </span>
-          </div>
-        );
-      },
+      cell: LicenseGroupCell,
       header: "Class",
     }),
     columnHelper.accessor("seriesName", {

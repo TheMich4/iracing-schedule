@@ -102,7 +102,7 @@ const ScheduleTable = () => {
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell) => (
                     <td
-                      className="whitespace-nowrap px-4 py-1 text-sm text-slate-800 dark:text-slate-200"
+                      className="w-fit whitespace-nowrap px-4 py-1 text-sm text-slate-800 dark:text-slate-200"
                       key={cell.id}
                     >
                       {flexRender(
