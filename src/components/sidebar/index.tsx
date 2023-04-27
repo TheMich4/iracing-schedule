@@ -1,6 +1,9 @@
 import {
   ArrowLeftCircle,
   ArrowRightCircle,
+  CalendarCheck,
+  CalendarCheck2,
+  CalendarDays,
   ChevronLeft,
   ChevronRight,
   Home,
@@ -46,7 +49,7 @@ const Sidebar = () => {
 
           <div className="space-y-1">
             <SidebarButton
-              Icon={Home}
+              Icon={CalendarDays}
               expanded={expanded}
               isActive={router.pathname === "/"}
               label="Schedule"
