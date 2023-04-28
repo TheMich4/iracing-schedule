@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "~/components/ui/card";
+} from "@ui/card";
 import type {
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
@@ -12,25 +12,68 @@ import type {
 import { getProviders, signIn } from "next-auth/react";
 
 import { Button } from "@ui/button";
+import { Input } from "~/components/ui/input";
 import { authOptions } from "~/server/auth";
 import { getServerSession } from "next-auth/next";
+import { useState } from "react";
+
+const EmailSignIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  return (
+    <>
+      <Input
+        placeholder="name@example.com"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <Input
+        placeholder="password"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button>Sign in with email</Button>
+    </>
+  );
+};
 
 export default function SignIn({
   providers,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
-      <Card className="bg-inherit">
+      <Card className="flex min-w-[350px] flex-col items-center bg-inherit">
         <CardHeader>
-          <CardTitle className="dark:text-slate-50">iRacing Schedule</CardTitle>
-          <CardDescription>Log in to iRacing Schedule</CardDescription>
+          <CardTitle className="self-center dark:text-slate-50">
+            iRacing Schedule
+          </CardTitle>
+          <CardDescription>Sign in to iRacing Schedule</CardDescription>
         </CardHeader>
 
-        <CardContent>
-          <div className="gap-2">
+        <CardContent className="w-full">
+          <div className="flex flex-col gap-2">
+            <EmailSignIn />
+
+            <div className="relative py-2">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">
+                  Or continue with
+                </span>
+              </div>
+            </div>
+
             {Object.values(providers).map((provider) => (
               <div key={provider.name}>
-                <Button onClick={() => void signIn(provider.id)}>
+                <Button
+                  variant="outline"
+                  onClick={() => void signIn(provider.id)}
+                  className="w-full"
+                >
                   Sign in with {provider.name}
                 </Button>
               </div>
