@@ -24,17 +24,19 @@ const EmailSignIn = () => {
   return (
     <>
       <Input
+        disabled
+        onChange={(e) => setEmail(e.target.value)}
         placeholder="name@example.com"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
       />
       <Input
+        disabled
+        onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
         type="password"
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
       />
-      <Button>Sign in with email</Button>
+      <Button disabled>Sign in with email</Button>
     </>
   );
 };
@@ -70,9 +72,9 @@ export default function SignIn({
             {Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <Button
-                  variant="outline"
-                  onClick={() => void signIn(provider.id)}
                   className="w-full"
+                  onClick={() => void signIn(provider.id)}
+                  variant="outline"
                 >
                   Sign in with {provider.name}
                 </Button>
