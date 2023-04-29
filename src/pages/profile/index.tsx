@@ -8,8 +8,6 @@ import { useSession } from "next-auth/react";
 const ProfilePage: NextPage = () => {
   const { data: sessionData } = useSession();
 
-  console.log({ sessionData });
-
   return (
     <>
       <Head>
