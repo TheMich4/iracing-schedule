@@ -27,12 +27,16 @@ const ProfilePage: NextPage = () => {
               <div className="flex flex-row items-center gap-2">
                 <Avatar>
                   <AvatarImage src={sessionData?.user?.image} />
-                  <AvatarFallback>U</AvatarFallback>
+                  <AvatarFallback className="dark:text-slate-200">
+                    {sessionData?.user?.name?.charAt(0) ?? "U"}
+                  </AvatarFallback>
                 </Avatar>
 
                 <div>
-                  <div className="font-bold">{sessionData?.user?.name}</div>
-                  <div className="text-sm font-light text-slate-600">
+                  <div className="font-bold dark:text-slate-50">
+                    {sessionData?.user?.name}
+                  </div>
+                  <div className="text-sm font-light text-slate-600 dark:text-slate-400">
                     {sessionData?.user.email}
                   </div>
                 </div>
