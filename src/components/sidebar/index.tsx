@@ -56,11 +56,20 @@ const Sidebar = () => {
               <SidebarButton
                 Icon={User}
                 expanded={expanded}
+                isActive={router.pathname === "/profile"}
+                label="Profile"
+                onClick={() => void router.push("/profile")}
+              ></SidebarButton>
+            )}
+            {/* {sessionData && (
+              <SidebarButton
+                Icon={User}
+                expanded={expanded}
                 isActive={router.pathname === "/admin"}
                 label="Admin"
                 onClick={() => void router.push("/admin")}
               ></SidebarButton>
-            )}
+            )} */}
           </div>
         </div>
       </div>

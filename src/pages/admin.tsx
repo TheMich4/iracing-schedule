@@ -7,7 +7,7 @@ const AdminPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
+        <title>iRacingSchedule</title>
         <meta content="Plan your iRacing Schedule!" name="description" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
