@@ -4,7 +4,7 @@ import { ScheduleTable } from "./table"
 
 const Schedule = () => {
   return (
-    <div>
+    <div className="h-full p-2">
       <ScheduleTable />
     </div>
   )

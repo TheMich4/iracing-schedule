@@ -43,11 +43,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="relative flex min-h-screen flex-row divide-x">
+            <div className="relative flex max-h-screen flex-row divide-x overflow-auto">
               <Sidebar />
-              <div className="flex w-full flex-col divide-y overflow-auto">
+              <div className="flex max-h-screen w-full flex-col divide-y overflow-auto">
                 <Navbar />
-                <div>{children}</div>
+                {children}
               </div>
             </div>
             <TailwindIndicator />
