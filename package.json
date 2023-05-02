@@ -1,6 +1,6 @@
 {
-  "name": "next-template",
-  "version": "0.0.2",
+  "name": "iracing-schedule",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -43,5 +43,8 @@
     "prettier": "^2.7.1",
     "tailwindcss": "^3.3.1",
     "typescript": "^4.9.3"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.10.0"
   }
 }
