@@ -72,7 +72,7 @@ export default function SignIn({
             {Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <Button
-                  className="w-full"
+                  className="w-full dark:text-slate-300"
                   onClick={() => void signIn(provider.id)}
                   variant="outline"
                 >
