@@ -54,6 +54,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
+        kanit: ["Kanit"],
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
