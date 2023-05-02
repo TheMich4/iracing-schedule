@@ -1,20 +1,20 @@
-"use client"
-
 import {
   flexRender,
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table"
 
-import useColumns from "@/hooks/use-columns"
+import { useColumns } from "@/hooks/use-columns"
+import { useSchedule } from "@/hooks/use-schedule"
 import { Table, Tbody, Td, Th, Thead, Tr } from "@/components/ui/table"
 
 const ScheduleTable = () => {
-  const { columns } = useColumns({})
+  const { columns } = useColumns()
+  const { schedule } = useSchedule({ date: new Date() })
 
   const table = useReactTable({
     columns,
-    data: [],
+    data: schedule,
     getCoreRowModel: getCoreRowModel(),
   })
 

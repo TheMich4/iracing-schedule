@@ -1,22 +1,11 @@
 import { useMemo } from "react"
-import { createColumnHelper } from "@tanstack/react-table"
 
-const getColumns = () => {
-  const columnHelper = createColumnHelper<any>()
+import { getColumns } from "./get-columns"
 
-  return [
-    columnHelper.accessor("id", {
-      id: "id",
-      cell: (cell) => cell.getValue(),
-      header: "Class",
-    }),
-  ]
-}
-
-const useColumns = (props) => {
+const useColumns = () => {
   const columns = useMemo(() => getColumns(), [])
 
   return { columns }
 }
 
-export default useColumns
+export { useColumns }
