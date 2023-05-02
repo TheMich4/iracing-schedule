@@ -1,3 +1,5 @@
+import { Schedule } from "@/components/displays/schedule"
+
 export default function IndexPage() {
-  return <section className="">iRacing Schedule</section>
+  return <Schedule />
 }
