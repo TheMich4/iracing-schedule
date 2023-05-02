@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useMemo, useState } from "react"
 import type { Schedule, ScheduleMap } from "@/types"
 import { getLastTuesday } from "@/utils/date"
@@ -17,6 +18,8 @@ interface UseScheduleArgs {
 }
 
 const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
+  if (typeof window === "undefined") return { schedule: [] }
+
   const [schedule, setSchedule] = useState<Array<Schedule>>([])
 
   const scheduleMap = useMemo<ScheduleMap>(() => importSchedule() || {}, [])

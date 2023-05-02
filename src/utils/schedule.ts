@@ -56,8 +56,6 @@ const prepareScheduleData = (
 }
 
 const importSchedule = () => {
-  console.log("--- import schedule start ---")
-
   const byStartDate = seriesData.reduce((acc, series) => {
     if (!series.active) return acc
 
@@ -82,8 +80,6 @@ const importSchedule = () => {
   }, {})
 
   localStorage.setItem("schedule", JSON.stringify(byStartDate))
-
-  console.log("--- import schedule end ---")
 
   return byStartDate
 }
