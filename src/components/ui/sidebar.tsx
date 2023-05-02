@@ -67,45 +67,43 @@ const Sidebar = () => {
         expanded ? "w-64 md:translate-x-0" : "sm:translate-x-0"
       )}
     >
-      <div className="space-y-4">
-        <div className="px-4 py-2">
-          <h2 className="mb-2 px-2 text-lg font-semibold tracking-tight">
-            {expanded ? "iRacing Schedule" : "iRS"}
-          </h2>
+      <div className="px-4 py-2">
+        <h2 className="mb-2 px-2 text-lg font-semibold tracking-tight">
+          {expanded ? "iRacing Schedule" : "iRS"}
+        </h2>
 
-          <div className="space-y-1">
-            <SidebarButton
-              Icon={CalendarDays}
-              expanded={expanded}
-              //   isActive={router.pathname === "/"}
-              label="Schedule"
-              onClick={() => void router.push("/")}
-            ></SidebarButton>
-          </div>
+        <div className="space-y-1">
+          <SidebarButton
+            Icon={CalendarDays}
+            expanded={expanded}
+            //   isActive={router.pathname === "/"}
+            label="Schedule"
+            onClick={() => void router.push("/")}
+          ></SidebarButton>
         </div>
+      </div>
 
-        <div className="px-4 py-2">
-          <div className="flex flex-col gap-2">
-            <SidebarButton
-              Icon={theme === "dark" ? MoonIcon : SunIcon}
-              label={expanded ? "Theme" : ""}
-              onClick={() =>
-                theme == "dark" ? setTheme("light") : setTheme("dark")
-              }
-            />
-            <SidebarButton
-              Icon={expanded ? ChevronLeft : ChevronRight}
-              expanded={expanded}
-              label={expanded ? "Collapse" : "Expand"}
-              onClick={() => setExpanded((prev) => !prev)}
-            />
-            {/* <SidebarButton
+      <div className="px-4 py-2">
+        <div className="flex flex-col gap-2">
+          <SidebarButton
+            Icon={theme === "dark" ? MoonIcon : SunIcon}
+            label={expanded ? "Theme" : ""}
+            onClick={() =>
+              theme == "dark" ? setTheme("light") : setTheme("dark")
+            }
+          />
+          <SidebarButton
+            Icon={expanded ? ChevronLeft : ChevronRight}
+            expanded={expanded}
+            label={expanded ? "Collapse" : "Expand"}
+            onClick={() => setExpanded((prev) => !prev)}
+          />
+          {/* <SidebarButton
               Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
               expanded={expanded}
               label={sessionData ? "Log out" : "Log in"}
               onClick={handleAuth}
             /> */}
-          </div>
         </div>
       </div>
     </div>

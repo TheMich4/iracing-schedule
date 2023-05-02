@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="relative flex max-h-screen flex-row divide-x overflow-auto">
+            <div className="relative flex h-screen max-h-screen flex-row divide-x overflow-auto">
               <Sidebar />
               <div className="flex max-h-screen w-full flex-col divide-y overflow-auto">
                 <Navbar />
