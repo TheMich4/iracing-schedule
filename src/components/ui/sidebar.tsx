@@ -11,6 +11,7 @@ import {
 } from "lucide-react"
 import { useTheme } from "next-themes"
 
+import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
 interface SidebarButtonProps {
@@ -23,6 +24,7 @@ interface SidebarButtonProps {
   >
   label: string
   onClick?: () => void
+  isActive?: boolean
 }
 
 const SidebarButton = ({
@@ -56,12 +58,15 @@ const Sidebar = () => {
   const router = useRouter()
   const { theme, setTheme } = useTheme()
 
-  console.log({ router })
-
   const [expanded, setExpanded] = useState(true)
 
   return (
-    <div className="hidden h-full flex-col justify-between py-2 lg:flex">
+    <div
+      className={cn(
+        "hidden h-full flex-col justify-between py-2 lg:flex",
+        expanded ? "w-64 md:translate-x-0" : "sm:translate-x-0"
+      )}
+    >
       <div className="space-y-4">
         <div className="px-4 py-2">
           <h2 className="mb-2 px-2 text-lg font-semibold tracking-tight">
