@@ -10,7 +10,9 @@ import Calendar from "./calendar"
 import { Dialogs } from "./dialogs"
 import { ScheduleTable } from "./table"
 
-const Schedule = () => {
+const Schedule = ({ user }) => {
+  console.log({ user })
+
   const [date, setDate] = useState<Date>(new Date())
   const [dialogVisibility, setDialogVisibility] = useState({ config: false })
 

@@ -3,12 +3,15 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import {
+  ArrowLeftCircle,
+  ArrowRightCircle,
   CalendarDays,
   ChevronLeft,
   ChevronRight,
   MoonIcon,
   SunIcon,
 } from "lucide-react"
+import { signIn, signOut } from "next-auth/react"
 import { useTheme } from "next-themes"
 
 import { cn } from "@/lib/utils"
@@ -54,11 +57,21 @@ const SidebarButton = ({
   )
 }
 
+const sessionData = undefined
+
 const Sidebar = () => {
   const router = useRouter()
   const { theme, setTheme } = useTheme()
 
   const [expanded, setExpanded] = useState(true)
+
+  const handleAuth = () => {
+    if (sessionData) {
+      void signOut()
+    } else {
+      void signIn()
+    }
+  }
 
   return (
     <div
@@ -98,12 +111,12 @@ const Sidebar = () => {
             label={expanded ? "Collapse" : "Expand"}
             onClick={() => setExpanded((prev) => !prev)}
           />
-          {/* <SidebarButton
-              Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
-              expanded={expanded}
-              label={sessionData ? "Log out" : "Log in"}
-              onClick={handleAuth}
-            /> */}
+          <SidebarButton
+            Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
+            expanded={expanded}
+            label={sessionData ? "Log out" : "Log in"}
+            onClick={handleAuth}
+          />
         </div>
       </div>
     </div>
