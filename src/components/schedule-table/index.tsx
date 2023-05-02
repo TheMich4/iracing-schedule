@@ -15,6 +15,7 @@ import ScheduleTableDialogs from "./dialogs";
 import { Settings } from "lucide-react";
 import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
+import { api } from "~/utils/api";
 import { getFilteredSchedule } from "./helpers";
 import useColumns from "~/hooks/use-columns";
 import useFilter from "~/hooks/use-filter";
@@ -37,6 +38,10 @@ const ScheduleTable = () => {
     () => getFilteredSchedule(schedule, filter),
     [schedule, filter]
   );
+
+  const { data: favorites } = api.user.getFavorites.useQuery();
+
+  console.log({ favorites });
 
   const table = useReactTable({
     columns,

@@ -9,6 +9,7 @@ import Image from "next/image";
 import type { Schedule } from "~/types";
 import { Skeleton } from "~/components/ui/skeleton";
 import { Star } from "lucide-react";
+import { api } from "~/utils/api";
 import { useState } from "react";
 
 const SeriesCell = ({
@@ -18,6 +19,8 @@ const SeriesCell = ({
   const seriesName = getValue() ?? "Unknown series";
 
   const [isLoaded, setIsLoaded] = useState(false);
+
+  const { mutateAsync: addFavorite } = api.user.addFavorite.useMutation();
 
   // TODO: Fix series logo sizing
   return (
@@ -48,7 +51,12 @@ const SeriesCell = ({
               </div>
             </div>
             {/* TODO: Customize color if is favorite */}
-            <Star className="m-1 h-4 w-4 cursor-pointer" />
+            <Star
+              className="m-1 h-4 w-4 cursor-pointer"
+              onClick={async () =>
+                await addFavorite({ id: seriesData.seriesId, type: "series" })
+              }
+            />
           </div>
         </HoverCardContent>
       </HoverCard>
