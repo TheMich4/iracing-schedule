@@ -9,13 +9,10 @@ export const userRouter = createTRPCRouter({
         id: ctx.session?.user?.id,
       },
     });
-    console.log({ userData });
 
     return userData?.favorites;
   }),
   addFavorite: protectedProcedure
     .input(z.object({ type: z.string(), id: z.number() }))
-    .mutation(async ({ ctx, input }) => {
-      // return userData.favorites;
-    }),
+    .mutation(async ({ ctx, input }) => {}),
 });
