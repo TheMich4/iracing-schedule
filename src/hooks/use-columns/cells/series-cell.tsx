@@ -16,6 +16,7 @@ const SeriesCell = ({
   getValue,
   row: { original: seriesData },
 }: CellContext<Schedule, any>) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const seriesName = getValue() ?? "Unknown series";
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -51,12 +52,16 @@ const SeriesCell = ({
               </div>
             </div>
             {/* TODO: Customize color if is favorite */}
-            <Star
+            {/* <Star
               className="m-1 h-4 w-4 cursor-pointer"
+              // eslint-disable-next-line @typescript-eslint/no-misused-promises
               onClick={async () =>
-                await addFavorite({ id: seriesData.seriesId, type: "series" })
+                await addFavorite({
+                  id: seriesData.seriesId,
+                  type: "series",
+                })
               }
-            />
+            /> */}
           </div>
         </HoverCardContent>
       </HoverCard>

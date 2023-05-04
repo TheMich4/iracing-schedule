@@ -5,6 +5,7 @@ import type { ColumnProps } from "./types";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
 import SeriesCell from "./cells/series-cell";
+import TrackCell from "./cells/track-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
@@ -41,7 +42,7 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
     }),
     columnHelper.accessor("trackName", {
       id: "trackName",
-      cell: (cell) => cell.getValue() ?? "Unknown",
+      cell: TrackCell,
       header: "Track name",
     }),
     columnHelper.accessor("trackType", {
