@@ -8,8 +8,6 @@ import type { CellContext } from "@tanstack/react-table";
 import Image from "next/image";
 import type { Schedule } from "~/types";
 import { Skeleton } from "~/components/ui/skeleton";
-import { Star } from "lucide-react";
-import { api } from "~/utils/api";
 import { useState } from "react";
 
 const SeriesCell = ({
@@ -20,8 +18,6 @@ const SeriesCell = ({
   const seriesName = getValue() ?? "Unknown series";
 
   const [isLoaded, setIsLoaded] = useState(false);
-
-  const { mutateAsync: addFavorite } = api.user.addFavorite.useMutation();
 
   // TODO: Fix series logo sizing
   return (
