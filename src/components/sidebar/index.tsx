@@ -10,7 +10,7 @@ import {
   SunIcon,
   User,
 } from "lucide-react";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 
 import SidebarButton from "./sidebar-button";
@@ -18,21 +18,20 @@ import cn from "~/utils/cn";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 
-const Sidebar = () => {
+const Sidebar = ({ user }) => {
   const router = useRouter();
   const pathname = usePathname();
-  // const { data: sessionData } = useSession();
   const { theme, setTheme } = useTheme();
 
   const [expanded, setExpanded] = useState(true);
 
-  // const handleAuth = () => {
-  //   if (sessionData) {
-  //     void signOut();
-  //   } else {
-  //     void signIn();
-  //   }
-  // };
+  const handleAuth = () => {
+    //   if (sessionData) {
+    //     void signOut();
+    //   } else {
+    //     void signIn();
+    //   }
+  };
 
   return (
     <div
@@ -55,7 +54,7 @@ const Sidebar = () => {
               label="Schedule"
               onClick={() => void router.push("/")}
             ></SidebarButton>
-            {/* {sessionData && (
+            {user && (
               <SidebarButton
                 Icon={User}
                 expanded={expanded}
@@ -63,8 +62,8 @@ const Sidebar = () => {
                 label="Profile"
                 onClick={() => void router.push("/profile")}
               ></SidebarButton>
-            )} */}
-            {/* {sessionData && (
+            )}
+            {/* {user && (
               <SidebarButton
                 Icon={User}
                 expanded={expanded}
@@ -92,12 +91,12 @@ const Sidebar = () => {
             label={expanded ? "Collapse" : "Expand"}
             onClick={() => setExpanded((prev) => !prev)}
           />
-          {/* <SidebarButton
-            Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
+          <SidebarButton
+            Icon={user ? ArrowLeftCircle : ArrowRightCircle}
             expanded={expanded}
-            label={sessionData ? "Log out" : "Log in"}
+            label={user ? "Log out" : "Log in"}
             onClick={handleAuth}
-          /> */}
+          />
         </div>
       </div>
     </div>
