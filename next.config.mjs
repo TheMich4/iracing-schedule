@@ -34,7 +34,7 @@ const config = {
   },
 
   images: {
-    domains: ["images-static.iracing.com"]
-  }
+    domains: ["images-static.iracing.com"],
+  },
 };
 export default config;
