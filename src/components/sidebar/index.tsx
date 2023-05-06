@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ArrowLeftCircle,
   ArrowRightCircle,
@@ -9,27 +11,28 @@ import {
   User,
 } from "lucide-react";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { usePathname, useRouter } from "next/navigation";
 
 import SidebarButton from "./sidebar-button";
 import cn from "~/utils/cn";
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 
 const Sidebar = () => {
   const router = useRouter();
-  const { data: sessionData } = useSession();
+  const pathname = usePathname();
+  // const { data: sessionData } = useSession();
   const { theme, setTheme } = useTheme();
 
   const [expanded, setExpanded] = useState(true);
 
-  const handleAuth = () => {
-    if (sessionData) {
-      void signOut();
-    } else {
-      void signIn();
-    }
-  };
+  // const handleAuth = () => {
+  //   if (sessionData) {
+  //     void signOut();
+  //   } else {
+  //     void signIn();
+  //   }
+  // };
 
   return (
     <div
@@ -48,24 +51,24 @@ const Sidebar = () => {
             <SidebarButton
               Icon={CalendarDays}
               expanded={expanded}
-              isActive={router.pathname === "/"}
+              isActive={pathname === "/"}
               label="Schedule"
               onClick={() => void router.push("/")}
             ></SidebarButton>
-            {sessionData && (
-              <SidebarButton
-                Icon={User}
-                expanded={expanded}
-                isActive={router.pathname === "/profile"}
-                label="Profile"
-                onClick={() => void router.push("/profile")}
-              ></SidebarButton>
-            )}
             {/* {sessionData && (
               <SidebarButton
                 Icon={User}
                 expanded={expanded}
-                isActive={router.pathname === "/admin"}
+                isActive={pathname === "/profile"}
+                label="Profile"
+                onClick={() => void router.push("/profile")}
+              ></SidebarButton>
+            )} */}
+            {/* {sessionData && (
+              <SidebarButton
+                Icon={User}
+                expanded={expanded}
+                isActive={pathname === "/admin"}
                 label="Admin"
                 onClick={() => void router.push("/admin")}
               ></SidebarButton>
@@ -89,12 +92,12 @@ const Sidebar = () => {
             label={expanded ? "Collapse" : "Expand"}
             onClick={() => setExpanded((prev) => !prev)}
           />
-          <SidebarButton
+          {/* <SidebarButton
             Icon={sessionData ? ArrowLeftCircle : ArrowRightCircle}
             expanded={expanded}
             label={sessionData ? "Log out" : "Log in"}
             onClick={handleAuth}
-          />
+          /> */}
         </div>
       </div>
     </div>
