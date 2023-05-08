@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 import { Button } from "@ui/button";
 import type { SidebarButtonProps } from "./types";
 
@@ -10,15 +6,8 @@ const SidebarButton = ({
   expanded = true,
   Icon,
   onClick,
-  isActive,
+  isActive = false,
 }: SidebarButtonProps) => {
-  // TODO: Find better solution for hydration issue
-  const [showIcon, setShowIcon] = useState(false);
-
-  useEffect(() => {
-    setShowIcon(true);
-  }, []);
-
   return (
     <Button
       className="flex w-full items-center justify-start gap-2"
@@ -26,7 +15,7 @@ const SidebarButton = ({
       size="sm"
       variant={isActive ? "secondary" : "ghost"}
     >
-      {showIcon && <Icon className="h-4 w-4" />}
+      <Icon className="h-4 w-4" />
       {expanded && label}
     </Button>
   );

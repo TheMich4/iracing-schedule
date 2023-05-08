@@ -1,37 +1,22 @@
-"use client";
+"use server";
 
 import {
   ArrowLeftCircle,
   ArrowRightCircle,
   CalendarDays,
-  ChevronLeft,
-  ChevronRight,
-  MoonIcon,
-  SunIcon,
   User,
 } from "lucide-react";
-import { signIn, signOut } from "next-auth/react";
-import { usePathname, useRouter } from "next/navigation";
 
+import LoginButton from "./login-button";
 import SidebarButton from "./sidebar-button";
+import ThemeSwitch from "../theme-switch";
 import cn from "~/utils/cn";
-import { useState } from "react";
-import { useTheme } from "next-themes";
+import { getCurrentUser } from "~/utils/session";
 
-const Sidebar = ({ user }) => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
+const expanded = true;
 
-  const [expanded, setExpanded] = useState(true);
-
-  const handleAuth = () => {
-    //   if (sessionData) {
-    //     void signOut();
-    //   } else {
-    //     void signIn();
-    //   }
-  };
+const Sidebar = async () => {
+  const user = await getCurrentUser();
 
   return (
     <div
@@ -49,54 +34,26 @@ const Sidebar = ({ user }) => {
           <div className="space-y-1">
             <SidebarButton
               Icon={CalendarDays}
-              expanded={expanded}
-              isActive={pathname === "/"}
+              // isActive={pathname === "/"}
               label="Schedule"
-              onClick={() => void router.push("/")}
+              // onClick={() => void router.push("/")}
             ></SidebarButton>
             {user && (
               <SidebarButton
                 Icon={User}
-                expanded={expanded}
-                isActive={pathname === "/profile"}
+                // isActive={pathname === "/profile"}
                 label="Profile"
-                onClick={() => void router.push("/profile")}
+                // onClick={() => void router.push("/profile")}
               ></SidebarButton>
             )}
-            {/* {user && (
-              <SidebarButton
-                Icon={User}
-                expanded={expanded}
-                isActive={pathname === "/admin"}
-                label="Admin"
-                onClick={() => void router.push("/admin")}
-              ></SidebarButton>
-            )} */}
           </div>
         </div>
       </div>
 
       <div className="px-4 py-2">
         <div className="flex flex-col gap-2">
-          <SidebarButton
-            Icon={theme === "dark" ? MoonIcon : SunIcon}
-            label={expanded ? "Theme" : ""}
-            onClick={() =>
-              theme == "dark" ? setTheme("light") : setTheme("dark")
-            }
-          />
-          <SidebarButton
-            Icon={expanded ? ChevronLeft : ChevronRight}
-            expanded={expanded}
-            label={expanded ? "Collapse" : "Expand"}
-            onClick={() => setExpanded((prev) => !prev)}
-          />
-          <SidebarButton
-            Icon={user ? ArrowLeftCircle : ArrowRightCircle}
-            expanded={expanded}
-            label={user ? "Log out" : "Log in"}
-            onClick={handleAuth}
-          />
+          <ThemeSwitch />
+          <LoginButton user={user} />
         </div>
       </div>
     </div>

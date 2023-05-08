@@ -8,4 +8,5 @@ export interface SidebarButtonProps {
   >;
   label: string;
   onClick?: () => void;
+  isActive?: boolean;
 }
