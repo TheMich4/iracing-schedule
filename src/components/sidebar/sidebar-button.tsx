@@ -1,17 +1,40 @@
+"use client";
+
+import { CalendarDays, User } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+
 import { Button } from "@ui/button";
 import type { SidebarButtonProps } from "./types";
+import { useMemo } from "react";
+
+const iconMap = {
+  "/": CalendarDays,
+  "/profile": User,
+};
 
 const SidebarButton = ({
   label,
   expanded = true,
-  Icon,
-  onClick,
-  isActive = false,
+  pathname,
 }: SidebarButtonProps) => {
+  const router = useRouter();
+  const currentPathname = usePathname();
+
+  const isActive = useMemo(
+    () => pathname === currentPathname,
+    [pathname, currentPathname]
+  );
+
+  const Icon = useMemo(() => iconMap[pathname], [pathname]);
+
+  const handleClick = () => {
+    router.push(pathname);
+  };
+
   return (
     <Button
       className="flex w-full items-center justify-start gap-2"
-      onClick={onClick}
+      onClick={handleClick}
       size="sm"
       variant={isActive ? "secondary" : "ghost"}
     >

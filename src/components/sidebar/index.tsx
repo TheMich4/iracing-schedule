@@ -1,12 +1,5 @@
 "use server";
 
-import {
-  ArrowLeftCircle,
-  ArrowRightCircle,
-  CalendarDays,
-  User,
-} from "lucide-react";
-
 import LoginButton from "./login-button";
 import SidebarButton from "./sidebar-button";
 import ThemeSwitch from "../theme-switch";
@@ -32,20 +25,8 @@ const Sidebar = async () => {
           </h2>
 
           <div className="space-y-1">
-            <SidebarButton
-              Icon={CalendarDays}
-              // isActive={pathname === "/"}
-              label="Schedule"
-              // onClick={() => void router.push("/")}
-            ></SidebarButton>
-            {user && (
-              <SidebarButton
-                Icon={User}
-                // isActive={pathname === "/profile"}
-                label="Profile"
-                // onClick={() => void router.push("/profile")}
-              ></SidebarButton>
-            )}
+            <SidebarButton pathname="/" label="Schedule" />
+            {user && <SidebarButton pathname="/profile" label="Profile" />}
           </div>
         </div>
       </div>
