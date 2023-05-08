@@ -1,32 +1,44 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { CalendarDays, User } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 
 import { Button } from "@ui/button";
 import type { SidebarButtonProps } from "./types";
+import { useMemo } from "react";
+
+const iconMap = {
+  "/": CalendarDays,
+  "/profile": User,
+};
 
 const SidebarButton = ({
   label,
   expanded = true,
-  Icon,
-  onClick,
-  isActive,
+  pathname,
 }: SidebarButtonProps) => {
-  // TODO: Find better solution for hydration issue
-  const [showIcon, setShowIcon] = useState(false);
+  const router = useRouter();
+  const currentPathname = usePathname();
 
-  useEffect(() => {
-    setShowIcon(true);
-  }, []);
+  const isActive = useMemo(
+    () => pathname === currentPathname,
+    [pathname, currentPathname]
+  );
+
+  const Icon = useMemo(() => iconMap[pathname], [pathname]);
+
+  const handleClick = () => {
+    router.push(pathname);
+  };
 
   return (
     <Button
       className="flex w-full items-center justify-start gap-2"
-      onClick={onClick}
+      onClick={handleClick}
       size="sm"
       variant={isActive ? "secondary" : "ghost"}
     >
-      {showIcon && <Icon className="h-4 w-4" />}
+      <Icon className="h-4 w-4" />
       {expanded && label}
     </Button>
   );

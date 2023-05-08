@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   plugins: [
     require("tailwindcss-animate"),

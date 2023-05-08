@@ -1,7 +1,9 @@
+"use client";
+
 import { MenuIcon, MoonIcon, SunIcon } from "lucide-react";
 
 import { Button } from "@ui/button";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
