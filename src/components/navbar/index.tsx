@@ -1,15 +1,17 @@
-import { Button } from "@ui/button";
-import { MenuIcon } from "lucide-react";
+"use server";
+
+import NavbarMenu from "./navbar-menu";
 import NavbarTitle from "./navbar-title";
 import ThemeSwitch from "../theme-switch";
+import { getCurrentUser } from "~/utils/session";
 
-const Navbar = () => {
+const Navbar = async () => {
+  const user = await getCurrentUser();
+
   return (
     <nav className="flex flex-row items-center justify-between gap-2 p-2 lg:hidden">
       <div className="flex flex-row items-center gap-2">
-        <Button size="sm" variant="ghost">
-          <MenuIcon className="h-5 w-5" />
-        </Button>
+        <NavbarMenu user={user} />
         <NavbarTitle />
       </div>
 
