@@ -16,7 +16,7 @@ const NavbarMenu = ({ user }) => {
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent>
+      <PopoverContent className="mx-2 my-3">
         <div className="flex flex-col gap-2">
           <NavbarButton label="Schedule" pathname="/" />
           {user && <NavbarButton label="Profile" pathname="/profile" />}
