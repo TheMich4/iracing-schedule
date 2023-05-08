@@ -25,8 +25,8 @@ const Sidebar = async () => {
           </h2>
 
           <div className="space-y-1">
-            <SidebarButton pathname="/" label="Schedule" />
-            {user && <SidebarButton pathname="/profile" label="Profile" />}
+            <SidebarButton label="Schedule" pathname="/" />
+            {user && <SidebarButton label="Profile" pathname="/profile" />}
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export const metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="flex h-screen w-screen flex-row justify-between divide-x">
+      <body className="flex h-screen w-screen flex-row justify-between divide-x font-kanit">
         <Providers>
           <Sidebar />
           <div className="flex h-full w-full flex-col divide-y overflow-auto">

@@ -1,5 +1,5 @@
 export interface SidebarButtonProps {
-  expanded: boolean;
+  expanded?: boolean;
   label: string;
   pathname: string;
 }
