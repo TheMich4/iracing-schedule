@@ -6,9 +6,20 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
 import { Button } from "../ui/button";
+import cn from "~/utils/cn";
 import { useTheme } from "next-themes";
 
-const ThemeSwitch = () => {
+interface ThemeSwitchProps {
+  className?: string;
+  fullWidth?: boolean;
+  withLabel?: boolean;
+}
+
+const ThemeSwitch = ({
+  className,
+  fullWidth = false,
+  withLabel = false,
+}: ThemeSwitchProps) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -28,13 +39,17 @@ const ThemeSwitch = () => {
 
   return (
     <Button
-      className="flex w-full items-center justify-start gap-2"
+      className={cn(
+        "flex items-center justify-start gap-2",
+        fullWidth && "w-full",
+        className
+      )}
       onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
       size="sm"
       variant="ghost"
     >
       <ThemeIcon className="h-4 w-4" />
-      <span>Theme</span>
+      {withLabel && <span>Theme</span>}
     </Button>
   );
 };
