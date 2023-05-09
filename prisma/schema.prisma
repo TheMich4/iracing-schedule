@@ -17,12 +17,6 @@ datasource db {
     relationMode = "prisma"
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
 // Necessary for Next auth
 model Account {
     id                String  @id @default(cuid())
@@ -58,6 +52,8 @@ model User {
     image           String?
     accounts        Account[]
     sessions        Session[]
+
+    isAdmin         Boolean   @default(false)
 
     favorites       Json? // Json with lists of favorite cars, series and tracks
 }
