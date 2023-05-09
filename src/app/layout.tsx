@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Navbar from "~/components/layout/navbar";
 import Providers from "~/components/providers";
 import Sidebar from "~/components/layout/sidebar";
+import { TailwindIndicator } from "~/components/dev/tailwind-indicator";
 
 export const metadata = {
   title: "iRacing Schedule",
@@ -23,6 +24,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {children}
           </div>
         </Providers>
+
+        <TailwindIndicator />
         <Analytics />
       </body>
     </html>
