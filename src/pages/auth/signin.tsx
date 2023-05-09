@@ -6,14 +6,14 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/card";
+} from "~/components/ui/card";
 import type {
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
 } from "next";
 import { getProviders, signIn } from "next-auth/react";
 
-import { Button } from "@ui/button";
+import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import Providers from "~/components/providers";
 import { authOptions } from "~/server/auth";

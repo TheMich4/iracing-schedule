@@ -4,7 +4,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@ui/dialog";
+} from "~/components/ui/dialog";
 
 import type { CarData } from "iracing-api/lib/types/car";
 import type { CarsDialogProps } from "./types";

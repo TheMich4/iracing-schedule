@@ -2,7 +2,11 @@
 
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@ui/hover-card";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "~/components/ui/hover-card";
 
 import type { CellContext } from "@tanstack/react-table";
 import Image from "next/image";

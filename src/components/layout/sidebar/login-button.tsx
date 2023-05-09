@@ -3,7 +3,7 @@
 import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 import { signIn, signOut } from "next-auth/react";
 
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import type { User } from "next-auth";
 import { useMemo } from "react";
 

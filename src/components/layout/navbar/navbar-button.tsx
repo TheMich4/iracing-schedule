@@ -2,7 +2,7 @@
 
 import { CalendarDays, User } from "lucide-react";
 
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { useMemo } from "react";
 import { useRouter } from "next/navigation";
 

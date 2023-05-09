@@ -1,7 +1,13 @@
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 
-import type { CheckboxProps } from "./types";
 import { Check } from "lucide-react";
+
+interface CheckboxProps {
+  checked?: boolean;
+  label: string;
+  onChange?: (checked: boolean, id: string) => void;
+  id: string;
+}
 
 const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
   const handleCheckedChange = (checked: CheckboxPrimitive.CheckedState) => {
