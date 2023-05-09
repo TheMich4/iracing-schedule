@@ -4,9 +4,10 @@ import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 import { signIn, signOut } from "next-auth/react";
 
 import { Button } from "../ui/button";
+import type { User } from "next-auth";
 import { useMemo } from "react";
 
-const LoginButton = ({ user }) => {
+const LoginButton = ({ user }: { user: User }) => {
   const handleAuth = () => {
     if (user) {
       void signOut();

@@ -33,7 +33,7 @@ const Sidebar = async () => {
 
       <div className="px-4 py-2">
         <div className="flex flex-col gap-2">
-          <ThemeSwitch />
+          <ThemeSwitch fullWidth withLabel />
           <LoginButton user={user} />
         </div>
       </div>
