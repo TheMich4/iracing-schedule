@@ -22,7 +22,7 @@ const NavbarMenu = ({ user }: { user: User }) => {
           <NavbarButton label="Schedule" pathname="/" />
           {user && <NavbarButton label="Profile" pathname="/profile" />}
 
-          {user.isAdmin && <NavbarButton label="Admin" pathname="/admin" />}
+          {user?.isAdmin && <NavbarButton label="Admin" pathname="/admin" />}
 
           <LoginButton user={user} />
         </div>
