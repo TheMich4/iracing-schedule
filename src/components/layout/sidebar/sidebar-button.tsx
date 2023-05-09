@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, User } from "lucide-react";
+import { CalendarDays, Lock, User } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 import { Button } from "~/components/ui/button";
@@ -10,6 +10,7 @@ import { useMemo } from "react";
 const iconMap = {
   "/": CalendarDays,
   "/profile": User,
+  "/admin": Lock,
 };
 
 const SidebarButton = ({

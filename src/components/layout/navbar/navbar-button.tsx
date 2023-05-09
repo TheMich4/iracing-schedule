@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, User } from "lucide-react";
+import { CalendarDays, Lock, User } from "lucide-react";
 
 import { Button } from "../../ui/button";
 import { useMemo } from "react";
@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 const iconMap = {
   "/": CalendarDays,
   "/profile": User,
+  "/admin": Lock,
 };
 
 interface NavbarButtonProps {
