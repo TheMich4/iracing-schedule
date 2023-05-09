@@ -31,8 +31,12 @@ declare module "next-auth" {
     email?: string | null | undefined;
     image?: string | null | undefined;
     isAdmin?: boolean;
-    //     // ...other properties
-    // role: UserRole;
+  }
+
+  interface UserContent {
+    cars: {};
+    series: {};
+    tracks: {};
   }
 }
 
@@ -47,7 +51,11 @@ export const authOptions: NextAuthOptions = {
       if (session.user) {
         session.user.id = user.id;
         session.user.isAdmin = user.isAdmin ?? false;
-        // session.user.role = user.role; <-- put other properties on the session here
+        session.user.content = user.content ?? {
+          cars: {},
+          series: {},
+          tracks: {},
+        };
       }
       return session;
     },

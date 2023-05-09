@@ -55,7 +55,7 @@ model User {
 
     isAdmin         Boolean   @default(false)
 
-    favorites       Json? // Json with lists of favorite cars, series and tracks
+    content         Json?     @default("{ \"cars\": {}, \"series\": {}, \"tracks\": {} }")
 }
 
 model VerificationToken {

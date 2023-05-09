@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
+import UserContent from "~/displays/profile/user-content";
 import { getCurrentUser } from "~/utils/session";
 
 const ProfilePage = async () => {
@@ -32,6 +33,8 @@ const ProfilePage = async () => {
           </div>
         </CardContent>
       </Card>
+
+      <UserContent user={user} />
     </div>
   );
 };
