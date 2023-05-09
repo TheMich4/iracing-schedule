@@ -24,6 +24,7 @@
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "dayjs": "^1.11.7",
+    "deasync": "^0.1.28",
     "iracing-api": "^0.1.6",
     "lucide-react": "^0.180.0",
     "next": "^13.4.1",

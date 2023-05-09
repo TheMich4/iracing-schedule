@@ -15,11 +15,18 @@ import { importContent } from "~/pages/api/import-content";
 import { useState } from "react";
 
 const ImportDialog = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSignIn = async () => {
-    await importContent(email, password);
+  const handleImport = async () => {
+    setIsLoading(true);
+
+    const x = await importContent(email, password);
+    console.log({ x });
+
+    setIsLoading(false);
   };
 
   return (
@@ -46,17 +53,21 @@ const ImportDialog = () => {
         </DialogHeader>
 
         <Input
+          disabled={isLoading}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="name@example.com"
           value={email}
         />
         <Input
+          disabled={isLoading}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="password"
           type="password"
           value={password}
         />
-        <Button>Import content</Button>
+        <Button disabled={isLoading} onClick={handleImport}>
+          Import content
+        </Button>
       </DialogContent>
     </Dialog>
   );
