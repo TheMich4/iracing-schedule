@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "~/components/layout/navbar";
 import Providers from "~/components/providers";
 import Sidebar from "~/components/layout/sidebar";
@@ -22,6 +23,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {children}
           </div>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
