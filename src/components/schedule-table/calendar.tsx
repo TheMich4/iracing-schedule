@@ -1,4 +1,4 @@
-import CalendarDatePicker from "../calendar-date-picker";
+import CalendarDatePicker from "../ui/calendar-date-picker";
 import { useState } from "react";
 
 interface CalendarProps {

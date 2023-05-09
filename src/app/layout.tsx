@@ -1,8 +1,8 @@
 import "~/styles/globals.css";
 
-import Navbar from "~/components/navbar";
+import Navbar from "~/components/layout/navbar";
 import Providers from "~/components/providers";
-import Sidebar from "~/components/sidebar";
+import Sidebar from "~/components/layout/sidebar";
 
 export const metadata = {
   title: "iRacing Schedule",
