@@ -2,12 +2,12 @@
 
 import { type Dispatch, type SetStateAction, useState } from "react";
 
-import Checkbox from "@ui/checkbox";
+import Checkbox from "~/components/ui/checkbox";
 import type { Filter } from "~/hooks/use-filter/types";
 import { licenseGroups } from "~/utils/license";
 import { trackTypes } from "~/utils/track-type";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { Card } from "@ui/card";
+import { Card } from "~/components/ui/card";
 
 interface FiltersProps {
   filter: Filter;

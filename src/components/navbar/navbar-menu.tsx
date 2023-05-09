@@ -2,7 +2,7 @@
 
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
-import { Button } from "@ui/button";
+import { Button } from "~/components/ui/button";
 import LoginButton from "../sidebar/login-button";
 import { MenuIcon } from "lucide-react";
 import NavbarButton from "./navbar-button";

@@ -8,9 +8,9 @@ import {
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
 
-import { Button } from "@ui/button";
+import { Button } from "~/components/ui/button";
 import Calendar from "./calendar";
-import { Card } from "@ui/card";
+import { Card } from "~/components/ui/card";
 import Filters from "./filters";
 import type { Schedule } from "~/types";
 import ScheduleTableDialogs from "./dialogs";

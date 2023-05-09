@@ -3,7 +3,7 @@
 import { CalendarDays, User } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Button } from "@ui/button";
+import { Button } from "~/components/ui/button";
 import type { SidebarButtonProps } from "./types";
 import { useMemo } from "react";
 

@@ -2,9 +2,13 @@
 
 import * as React from "react";
 
-import { Popover, PopoverContent, PopoverTrigger } from "@ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "~/components/ui/popover";
 
-import { Button } from "@ui/button";
+import { Button } from "~/components/ui/button";
 import { Calendar } from "@ui/calendar";
 import type { CalendarDatePickerProps } from "./types";
 import { Calendar as CalendarIcon } from "lucide-react";
