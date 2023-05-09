@@ -6,8 +6,9 @@ import { Button } from "@ui/button";
 import LoginButton from "../sidebar/login-button";
 import { MenuIcon } from "lucide-react";
 import NavbarButton from "./navbar-button";
+import type { User } from "next-auth";
 
-const NavbarMenu = ({ user }) => {
+const NavbarMenu = ({ user }: { user: User }) => {
   return (
     <Popover>
       <PopoverTrigger>
