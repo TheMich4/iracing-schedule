@@ -14,8 +14,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en" suppressHydrationWarning>
       <body className="flex h-screen w-screen flex-row justify-between divide-x font-kanit">
         <Providers>
+          {/* @ts-expect-error Server Component */}
           <Sidebar />
-          <div className="flex h-full w-full flex-col divide-y overflow-auto">
+          <div className="flex h-full w-full flex-col divide-y overflow-hidden">
+            {/* @ts-expect-error Server Component */}
             <Navbar />
             {children}
           </div>
