@@ -24,7 +24,6 @@ const ImportDialog = () => {
     setIsLoading(true);
 
     const x = await importContent(email, password);
-    console.log({ x });
 
     setIsLoading(false);
   };

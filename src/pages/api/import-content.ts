@@ -8,5 +8,10 @@ export const importContent = async (email: string, password: string) => {
 
   const memberInfo = await ir.getMemberInfo();
 
-  return memberInfo;
+  if (!memberInfo) return;
+
+  const ownedCars = memberInfo.carPackages.map((car) => car.packageId);
+  const ownedTracks = memberInfo.trackPackages.map((track) => track.packageId);
+
+  return { ownedCars, ownedTracks };
 };
