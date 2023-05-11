@@ -11,10 +11,19 @@ import {
 
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
+import { User } from "next-auth";
 import { importContent } from "~/pages/api/import-content";
 import { useState } from "react";
 
-const ImportDialog = () => {
+const ImportDialog = ({
+  user,
+  isOpen,
+  close,
+}: {
+  user: User;
+  isOpen: boolean;
+  close: () => void;
+}) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const [email, setEmail] = useState("");
@@ -23,18 +32,18 @@ const ImportDialog = () => {
   const handleImport = async () => {
     setIsLoading(true);
 
-    const x = await importContent(email, password);
+    // TODO: Add error handling
+    const x = await importContent(user, { email, password });
 
     setIsLoading(false);
+    close();
+
+    // TODO: Add showing toast
   };
 
   return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button>Import your owned content from iRacing</Button>
-      </DialogTrigger>
-
-      <DialogContent>
+    <Dialog open={isOpen}>
+      <DialogContent close={close}>
         <DialogHeader>
           <DialogTitle>Import your owned content</DialogTitle>
           <DialogDescription className="flex flex-col ">
