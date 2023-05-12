@@ -11,9 +11,9 @@ const ProfilePage = async () => {
 
   return (
     <div className="flex flex-col gap-2 overflow-auto p-4">
-      <Card className="bg-inherit">
+      <Card>
         <CardHeader>
-          <CardTitle className="dark:text-slate-50">Profile</CardTitle>
+          <CardTitle>Profile</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex flex-row items-center gap-2">
@@ -34,7 +34,7 @@ const ProfilePage = async () => {
         </CardContent>
       </Card>
 
-      <UserContent user={user} />
+      {/* <UserContent user={user} /> */}
     </div>
   );
 };
