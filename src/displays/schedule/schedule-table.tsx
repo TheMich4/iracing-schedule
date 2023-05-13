@@ -13,7 +13,7 @@ const ScheduleTable = () => {
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
   return (
-    <div className="flex flex-col gap-2 p-2">
+    <div className="flex h-full flex-col gap-2 p-2">
       <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
         <Calendar
           initialDate={date}
@@ -23,7 +23,9 @@ const ScheduleTable = () => {
         />
       </div>
 
-      <DataTable columns={columns} data={schedule} />
+      <div className="h-full overflow-auto scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-thumb-slate-900">
+        <DataTable columns={columns} data={schedule} />
+      </div>
     </div>
   );
 };

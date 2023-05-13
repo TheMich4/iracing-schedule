@@ -2,7 +2,7 @@ import ScheduleTable from "~/displays/schedule/schedule-table";
 
 const NewSchedulePage = () => {
   return (
-    <div>
+    <div className="h-full">
       <ScheduleTable />
     </div>
   );
