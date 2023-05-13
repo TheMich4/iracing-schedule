@@ -4,13 +4,11 @@ import { Check } from "lucide-react";
 import type { ColumnProps } from "./types";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
-import SeriesCell from "./cells/series-cell";
-import TrackCell from "./cells/track-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
 
-const getColumns = ({ setSelectedRow }: ColumnProps) => {
+export const getColumns = () => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -21,7 +19,7 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
     }),
     columnHelper.accessor("seriesName", {
       id: "seriesName",
-      cell: SeriesCell,
+      cell: (cell) => cell.getValue(),
       header: "Series name",
     }),
     columnHelper.accessor("carClasses", {
@@ -30,19 +28,16 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
         const carClasses = cell.getValue();
 
         return (
-          <div
-            className="w-fill cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900"
-            onClick={() => setSelectedRow(cell.row.original)}
-          >
+          <span>
             {carClasses.map((carClass) => carClass?.shortName).join(", ")}
-          </div>
+          </span>
         );
       },
       header: "Car classes",
     }),
     columnHelper.accessor("trackName", {
       id: "trackName",
-      cell: TrackCell,
+      cell: (cell) => cell.getValue(),
       header: "Track name",
     }),
     columnHelper.accessor("trackType", {
@@ -58,11 +53,6 @@ const getColumns = ({ setSelectedRow }: ColumnProps) => {
       cell: (cell) => format(new Date(cell.getValue()), "dd/MM/yyyy"),
       header: "Start date",
     }),
-    // columnHelper.accessor("scheduleDescription", {
-    //   id: "scheduleDescription",
-    //   cell: (cell) => cell.getValue(),
-    //   header: "Schedule",
-    // }),
     columnHelper.accessor("fixedSetup", {
       id: "fixedSetup",
       cell: (cell) => <span>{cell.getValue() ? "Fixed" : "Open"}</span>,
@@ -144,8 +134,8 @@ const defaultColumnVisibility = {
   trackType: false,
 };
 
-const useColumns = (props: ColumnProps) => {
-  const columns = useMemo(() => getColumns(props), [props]);
+const useColumns = () => {
+  const columns = useMemo(() => getColumns(), []);
   const [columnVisibility, setColumnVisibility] = useState<
     Record<string, boolean>
   >(defaultColumnVisibility);
