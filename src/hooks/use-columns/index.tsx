@@ -15,6 +15,7 @@ export const getColumns = () => {
     columnHelper.accessor("licenseGroup", {
       id: "licenseGroup",
       cell: LicenseGroupCell,
+      name: "Class",
       header: () => <div className="w-full text-center">Class</div>,
     }),
     columnHelper.accessor("seriesName", {

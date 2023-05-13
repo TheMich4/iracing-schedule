@@ -49,7 +49,7 @@ export function ScheduleColumnToggle<TData>({
                 checked={column.getIsVisible()}
                 onCheckedChange={(value) => column.toggleVisibility(!!value)}
               >
-                {column.id}
+                {column.columnDef.name ?? column.columnDef.header ?? column.id}
               </DropdownMenuCheckboxItem>
             );
           })}
