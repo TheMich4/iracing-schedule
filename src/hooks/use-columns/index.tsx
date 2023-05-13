@@ -1,12 +1,17 @@
 import { useMemo, useState } from "react";
 
 import { Check } from "lucide-react";
-import type { ColumnProps } from "./types";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
+
+const multiSelectFilter = (row, columnId, filterValue) => {
+  return filterValue.length === 0
+    ? true
+    : filterValue.includes(String(row.original[columnId]));
+};
 
 export const getColumns = () => {
   const columnHelper = createColumnHelper<Schedule>();
@@ -17,6 +22,7 @@ export const getColumns = () => {
       cell: LicenseGroupCell,
       name: "Class",
       header: () => <div className="w-full text-center">Class</div>,
+      filterFn: multiSelectFilter,
     }),
     columnHelper.accessor("seriesName", {
       id: "seriesName",
