@@ -10,6 +10,7 @@ import {
 
 import Calendar from "~/components/schedule-table/calendar";
 import { DataTable } from "~/components/ui/data-table";
+import { ScheduleColumnToggle } from "./schedule-column-toggle";
 import { SchedulePagination } from "./schedule-pagination";
 import useColumns from "~/hooks/use-columns";
 import useSchedule from "~/hooks/use-schedule";
@@ -19,7 +20,7 @@ const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
 
-  const { columns } = useColumns();
+  const { columns, columnVisibility, setColumnVisibility } = useColumns();
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
   const table = useReactTable({
@@ -29,7 +30,9 @@ const ScheduleTable = () => {
     getPaginationRowModel: getPaginationRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
+    onColumnVisibilityChange: setColumnVisibility,
     state: {
+      columnVisibility,
       sorting,
     },
   });
@@ -43,6 +46,7 @@ const ScheduleTable = () => {
           minDate={minDate}
           setDate={setDate}
         />
+        <ScheduleColumnToggle table={table} />
       </div>
 
       <div className="h-full overflow-auto rounded-md border scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-thumb-slate-900">
