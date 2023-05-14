@@ -1,4 +1,4 @@
-import type { Filter } from "~/hooks/use-filter/types";
+import type { Filter } from "~/hooks/use-column-filters/types";
 import type { Schedule } from "~/types";
 
 const matchesLicenseGroup = (

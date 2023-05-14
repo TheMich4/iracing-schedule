@@ -1,7 +1,11 @@
-import ScheduleTable from "~/components/schedule-table";
+import ScheduleTable from "~/displays/schedule/schedule-table";
 
-const HomePage = () => {
-  return <ScheduleTable />;
+const NewSchedulePage = () => {
+  return (
+    <div className="h-full">
+      <ScheduleTable />
+    </div>
+  );
 };
 
-export default HomePage;
+export default NewSchedulePage;

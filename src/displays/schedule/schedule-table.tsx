@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ColumnFiltersState,
   SortingState,
   getCoreRowModel,
   getFilteredRowModel,
@@ -15,6 +14,7 @@ import { DataTable } from "~/components/ui/data-table";
 import { ScheduleColumnToggle } from "./schedule-column-toggle";
 import ScheduleFilters from "./schedule-filters";
 import { SchedulePagination } from "./schedule-pagination";
+import useColumnFilters from "~/hooks/use-column-filters";
 import useColumns from "~/hooks/use-columns";
 import useSchedule from "~/hooks/use-schedule";
 import { useState } from "react";
@@ -22,7 +22,7 @@ import { useState } from "react";
 const ScheduleTable = () => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+  const [columnFilters, setColumnFilters] = useColumnFilters();
   const { columns, columnVisibility, setColumnVisibility } = useColumns();
   const { schedule, minDate, maxDate } = useSchedule({ date });
 

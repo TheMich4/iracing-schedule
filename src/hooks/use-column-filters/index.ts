@@ -2,29 +2,32 @@ import { type Dispatch, type SetStateAction, useEffect } from "react";
 
 import type { Filter } from "./types";
 import { licenseGroups } from "~/utils/license";
-import { trackTypes } from "~/utils/track-type";
 import { useState } from "react";
+import { ColumnFiltersState } from "@tanstack/react-table";
 
-const defaultFilter: Filter = {
-  licenseGroup: Object.keys(licenseGroups),
-  official: ["Official", "Unofficial"],
-  setup: ["Fixed", "Open"],
-  trackType: Object.keys(trackTypes),
-};
+const defaultFilter: ColumnFiltersState = [
+  {
+    id: "licenseGroup",
+    value: Object.keys(licenseGroups),
+  },
+];
 
-const getInitialFilter = (): Filter => {
+const getInitialFilter = (): ColumnFiltersState => {
   const lsFilter =
     typeof window !== "undefined" && localStorage.getItem("filter");
 
-  if (lsFilter && lsFilter !== "{}") {
+  if (lsFilter && lsFilter !== "[]") {
     return (JSON.parse(lsFilter) as Filter) || defaultFilter;
   }
 
   return defaultFilter;
 };
 
-const useFilter = (): [Filter, Dispatch<SetStateAction<Filter>>] => {
-  const [filter, setFilter] = useState<Filter>(getInitialFilter());
+const useColumnFilters = (): [
+  ColumnFiltersState,
+  Dispatch<SetStateAction<ColumnFiltersState>>
+] => {
+  const [filter, setFilter] = useState<ColumnFiltersState>(getInitialFilter());
 
   useEffect(() => {
     localStorage.setItem("filter", JSON.stringify(filter));
@@ -33,4 +36,4 @@ const useFilter = (): [Filter, Dispatch<SetStateAction<Filter>>] => {
   return [filter, setFilter];
 };
 
-export default useFilter;
+export default useColumnFilters;
