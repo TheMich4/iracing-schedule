@@ -31,7 +31,7 @@ export function ScheduleColumnToggle<TData>({
           Columns
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[150px]">
+      <DropdownMenuContent align="start" className="w-[150px] lg:mr-2">
         <DropdownMenuLabel>Toggle columns</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {table
