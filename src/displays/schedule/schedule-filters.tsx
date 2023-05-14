@@ -3,9 +3,11 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "~/components/ui/collapsible";
+import { Dispatch, SetStateAction, useState } from "react";
 
 import { Button } from "~/components/ui/button";
 import { ChevronsUpDown } from "lucide-react";
+import { ColumnFiltersState } from "@tanstack/react-table";
 import { ScheduleFilterMenu } from "./schedule-filter-menu";
 import { trackTypes } from "~/utils/track-type";
 
@@ -46,15 +48,24 @@ const config = [
   },
 ];
 
-const ScheduleFilters = ({ columnFilters, setColumnFilters }) => {
+const ScheduleFilters = ({
+  columnFilters,
+  setColumnFilters,
+}: {
+  columnFilters: ColumnFiltersState;
+  setColumnFilters: Dispatch<SetStateAction<ColumnFiltersState>>;
+}) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Collapsible className="w-full">
+    <Collapsible className="w-full" open={open}>
       <div className="flex h-full flex-row items-center gap-2 rounded-md border">
         <CollapsibleTrigger asChild>
           <Button
             variant="ghost"
             size="sm"
             className="w-full justify-start text-left font-normal"
+            onClick={() => setOpen((prevOpen) => !prevOpen)}
           >
             <ChevronsUpDown className="mr-2 h-4 w-4" />
             <span className="sr-only">Toggle</span>
@@ -63,16 +74,18 @@ const ScheduleFilters = ({ columnFilters, setColumnFilters }) => {
         </CollapsibleTrigger>
       </div>
 
-      <CollapsibleContent className="absolute z-10 mt-2 flex flex-row gap-2 rounded-md border bg-background p-2">
-        {config.map((filter) => (
-          <ScheduleFilterMenu
-            key={filter.name}
-            {...filter}
-            columnFilters={columnFilters}
-            setColumnFilters={setColumnFilters}
-          />
-        ))}
-      </CollapsibleContent>
+      {open && (
+        <CollapsibleContent className="absolute z-10 mt-2 flex flex-row gap-2 rounded-md border bg-background p-2">
+          {config.map((filter) => (
+            <ScheduleFilterMenu
+              key={filter.name}
+              {...filter}
+              columnFilters={columnFilters}
+              setColumnFilters={setColumnFilters}
+            />
+          ))}
+        </CollapsibleContent>
+      )}
     </Collapsible>
   );
 };
