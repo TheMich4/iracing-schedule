@@ -18,9 +18,8 @@ const CarsTab = ({ user }: any) => {
     );
   }, []);
 
-  console.log({ user, carNames });
   return (
-    <div className="rounded-md border p-2">
+    <div className="rounded-md border p-2 dark:text-primary">
       {carNames.sort().map((carName) => (
         <div>{carName}</div>
       ))}
