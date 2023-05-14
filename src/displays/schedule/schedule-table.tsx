@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  SortingState,
+  type SortingState,
   getCoreRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
@@ -60,7 +60,7 @@ const ScheduleTable = () => {
       </div>
 
       <div className="h-full overflow-auto rounded-md border scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-thumb-slate-900">
-        <DataTable table={table} columns={columns} />
+        <DataTable columns={columns} table={table} />
       </div>
 
       <SchedulePagination table={table} />

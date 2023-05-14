@@ -55,8 +55,8 @@ const DialogContent = React.forwardRef<
     >
       {children}
       <DialogPrimitive.Close
-        onClick={() => close()}
         className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-slate-100 hover:opacity-100 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900 dark:data-[state=open]:bg-slate-800"
+        onClick={() => close()}
       >
         <X className="h-4 w-4" />
         <span className="sr-only">Close</span>

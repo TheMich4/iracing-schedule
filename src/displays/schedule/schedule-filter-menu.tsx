@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useMemo } from "react";
+import { type Dispatch, type SetStateAction, useMemo } from "react";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -8,7 +8,7 @@ import {
 
 import { Badge } from "~/components/ui/badge";
 import { Button } from "~/components/ui/button";
-import { ColumnFiltersState } from "@tanstack/react-table";
+import { type ColumnFiltersState } from "@tanstack/react-table";
 import { SlidersHorizontal } from "lucide-react";
 
 export const ScheduleFilterMenu = ({
@@ -48,11 +48,11 @@ export const ScheduleFilterMenu = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="ml-auto flex h-full">
+        <Button className="ml-auto flex h-full" variant="outline">
           <SlidersHorizontal className="mr-2 h-4 w-4" />
           {name}
           {values.length > 0 && (
-            <Badge variant="secondary" className="ml-2">
+            <Badge className="ml-2" variant="secondary">
               {values.length}
             </Badge>
           )}
@@ -66,9 +66,9 @@ export const ScheduleFilterMenu = ({
         {options.map((option) => {
           return (
             <DropdownMenuCheckboxItem
-              key={option.value}
-              className="capitalize"
               checked={values.includes(option.value)}
+              className="capitalize"
+              key={option.value}
               onClick={() => handleFilterClick(option.value)}
             >
               {option.label}

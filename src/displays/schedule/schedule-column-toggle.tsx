@@ -11,7 +11,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { SlidersHorizontal } from "lucide-react";
-import { Table } from "@tanstack/react-table";
+import { type Table } from "@tanstack/react-table";
 
 interface DataTableViewOptionsProps<TData> {
   table: Table<TData>;
@@ -24,8 +24,8 @@ export function ScheduleColumnToggle<TData>({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="outline"
           className="ml-auto flex h-full w-full justify-start lg:w-auto"
+          variant="outline"
         >
           <SlidersHorizontal className="mr-2 h-4 w-4" />
           Columns
@@ -43,9 +43,9 @@ export function ScheduleColumnToggle<TData>({
           .map((column) => {
             return (
               <DropdownMenuCheckboxItem
-                key={column.id}
-                className="capitalize"
                 checked={column.getIsVisible()}
+                className="capitalize"
+                key={column.id}
                 onCheckedChange={(value) => column.toggleVisibility(!!value)}
               >
                 {column.columnDef.name ?? column.columnDef.header ?? column.id}

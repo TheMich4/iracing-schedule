@@ -1,8 +1,8 @@
 "use server";
 
 import IracingAPI from "iracing-api";
-import { Prisma } from "@prisma/client";
-import { User } from "next-auth";
+import { type Prisma } from "@prisma/client";
+import { type User } from "next-auth";
 import { prisma } from "~/server/db";
 
 interface Content {

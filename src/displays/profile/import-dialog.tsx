@@ -11,7 +11,7 @@ import {
 
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
-import { User } from "next-auth";
+import { type User } from "next-auth";
 import { importContent } from "~/pages/api/import-content";
 import { useState } from "react";
 

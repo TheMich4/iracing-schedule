@@ -3,11 +3,11 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "~/components/ui/collapsible";
-import { Dispatch, SetStateAction, useState } from "react";
+import { type Dispatch, type SetStateAction, useState } from "react";
 
 import { Button } from "~/components/ui/button";
 import { ChevronsUpDown } from "lucide-react";
-import { ColumnFiltersState } from "@tanstack/react-table";
+import { type ColumnFiltersState } from "@tanstack/react-table";
 import { ScheduleFilterMenu } from "./schedule-filter-menu";
 import { trackTypes } from "~/utils/track-type";
 
@@ -62,10 +62,10 @@ const ScheduleFilters = ({
       <div className="flex h-full flex-row items-center gap-2 rounded-md border">
         <CollapsibleTrigger asChild>
           <Button
-            variant="ghost"
-            size="sm"
             className="w-full justify-start text-left font-normal"
             onClick={() => setOpen((prevOpen) => !prevOpen)}
+            size="sm"
+            variant="ghost"
           >
             <ChevronsUpDown className="mr-2 h-4 w-4" />
             <span className="sr-only">Toggle</span>

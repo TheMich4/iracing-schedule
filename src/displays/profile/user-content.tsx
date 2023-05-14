@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { Button } from "~/components/ui/button";
 import CarsTab from "./content-tabs/cars";
 import ImportDialog from "./import-dialog";
-import { User } from "next-auth";
+import { type User } from "next-auth";
 import { useState } from "react";
 
 const UserContent = ({ user }: { user: User }) => {
@@ -21,8 +21,8 @@ const UserContent = ({ user }: { user: User }) => {
 
         <CardContent className="flex flex-col gap-2">
           <Button
-            onClick={() => setIsImportDialogOpen(true)}
             className="max-w-[400px]"
+            onClick={() => setIsImportDialogOpen(true)}
           >
             Import your owned content from iRacing
           </Button>
@@ -41,9 +41,9 @@ const UserContent = ({ user }: { user: User }) => {
       </Card>
 
       <ImportDialog
-        user={user}
-        isOpen={isImportDialogOpen}
         close={() => setIsImportDialogOpen(false)}
+        isOpen={isImportDialogOpen}
+        user={user}
       />
     </>
   );

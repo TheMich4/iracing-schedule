@@ -3,7 +3,7 @@ import { type Dispatch, type SetStateAction, useEffect } from "react";
 import type { Filter } from "./types";
 import { licenseGroups } from "~/utils/license";
 import { useState } from "react";
-import { ColumnFiltersState } from "@tanstack/react-table";
+import { type ColumnFiltersState } from "@tanstack/react-table";
 import { trackTypes } from "~/utils/track-type";
 
 const defaultFilter: ColumnFiltersState = [
