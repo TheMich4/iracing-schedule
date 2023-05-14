@@ -1,6 +1,6 @@
 "use client";
 
-import { ColumnDef, type Table as TTable, flexRender } from "@tanstack/react-table";
+import { type Table as TTable, flexRender } from "@tanstack/react-table";
 import {
   Table,
   TableBody,
@@ -26,12 +26,12 @@ export function DataTable({
           <TableRow key={headerGroup.id}>
             {headerGroup.headers.map((header) => {
               return (
-                <TableHead key={header.id}>
+                <TableHead className="h-10 p-0" key={header.id}>
                   {header.isPlaceholder ? null : (
                     <div
-                      className={`flex h-full flex-row items-center gap-1 rounded-md ${
+                      className={`flex h-full flex-row items-center gap-1 bg-secondary px-2 py-0 transition-colors ${
                         header.column.getCanSort()
-                          ? "cursor-pointer hover:bg-accent hover:text-accent-foreground"
+                          ? "cursor-pointer hover:bg-secondary/80 hover:text-secondary-foreground"
                           : ""
                       }`}
                       onClick={header.column.getToggleSortingHandler()}
@@ -57,7 +57,7 @@ export function DataTable({
               key={row.id}
             >
               {row.getVisibleCells().map((cell) => (
-                <TableCell key={cell.id}>
+                <TableCell className="p-2" key={cell.id}>
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </TableCell>
               ))}
