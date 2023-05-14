@@ -33,7 +33,7 @@ const UserContent = ({ user }: { user: User }) => {
               <TabsTrigger value="tracks">Tracks</TabsTrigger>
             </TabsList>
             <TabsContent value="cars">
-              <CarsTab />
+              <CarsTab user={user} />
             </TabsContent>
             <TabsContent value="tracks">Tracks</TabsContent>
           </Tabs>
