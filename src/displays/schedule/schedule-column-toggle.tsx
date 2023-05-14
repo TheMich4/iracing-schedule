@@ -25,8 +25,7 @@ export function ScheduleColumnToggle<TData>({
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          size="sm"
-          className="ml-auto hidden h-full lg:flex"
+          className="ml-auto flex h-full w-full justify-start lg:w-auto"
         >
           <SlidersHorizontal className="mr-2 h-4 w-4" />
           Columns

@@ -7,6 +7,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { ChevronsUpDown } from "lucide-react";
 import { ScheduleFilterMenu } from "./schedule-filter-menu";
+import { trackTypes } from "~/utils/track-type";
 
 const config = [
   {
@@ -35,11 +36,17 @@ const config = [
       },
     ],
   },
+  {
+    id: "trackType",
+    name: "Track Type",
+    options: Object.entries(trackTypes).map(([key, value]) => ({
+      value: key,
+      label: value.name,
+    })),
+  },
 ];
 
 const ScheduleFilters = ({ columnFilters, setColumnFilters }) => {
-  console.log({ columnFilters });
-
   return (
     <Collapsible className="w-full">
       <div className="flex h-full flex-row items-center gap-2 rounded-md border">

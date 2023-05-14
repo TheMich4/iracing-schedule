@@ -9,7 +9,7 @@ import { trackTypesMap } from "~/utils/track-type";
 
 const multiSelectFilter = (row, columnId, filterValue) => {
   return filterValue.length === 0
-    ? true
+    ? false
     : filterValue.includes(String(row.original[columnId]));
 };
 
@@ -54,6 +54,7 @@ export const getColumns = () => {
         return value ? trackTypesMap[value]?.name : "Unknown";
       },
       header: "Track type",
+      filterFn: multiSelectFilter,
     }),
     columnHelper.accessor("startDate", {
       id: "startDate",
