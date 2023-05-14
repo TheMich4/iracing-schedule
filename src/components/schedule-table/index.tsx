@@ -19,7 +19,7 @@ import SortIcon from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import { getFilteredSchedule } from "./helpers";
 import useColumns from "~/hooks/use-columns";
-import useFilter from "~/hooks/use-filter";
+import useFilter from "~/hooks/use-column-filters";
 import useSchedule from "~/hooks/use-schedule";
 
 const ScheduleTable = () => {
