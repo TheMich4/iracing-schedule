@@ -14,7 +14,9 @@ const TrackCell = ({ row, content }) => {
   }, [trackId, content]);
 
   return (
-    <div className={cn(isOwned && "-m-2 bg-green-100/40 p-2")}>
+    <div
+      className={cn(isOwned && "-m-2 bg-green-100/40 p-2 dark:bg-green-900/40")}
+    >
       {trackName ?? "Unknown"}
     </div>
   );
