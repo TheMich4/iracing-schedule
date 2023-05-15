@@ -18,12 +18,12 @@ const defaultFilter: ColumnFiltersState = [
 ];
 
 const getInitialFilter = (): ColumnFiltersState => {
-  // const lsFilter =
-  //   typeof window !== "undefined" && localStorage.getItem("filter");
-  //
-  // if (lsFilter && lsFilter !== "[]") {
-  //   return (JSON.parse(lsFilter) as Filter) || defaultFilter;
-  // }
+  const lsFilter =
+    typeof window !== "undefined" && localStorage.getItem("filter");
+
+  if (lsFilter && lsFilter !== "[]") {
+    return (JSON.parse(lsFilter) as Filter) || defaultFilter;
+  }
 
   return defaultFilter;
 };
