@@ -8,6 +8,7 @@ import TrackCell from "./cells/track-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
+import { useColumnVisibility } from "../use-column-visibility";
 
 const multiSelectFilter = (
   row: { original: Record<string, unknown> },
@@ -133,26 +134,9 @@ export const getColumns = ({ content }: { content: Content }) => {
   ];
 };
 
-const defaultColumnVisibility = {
-  carClasses: true,
-  fixedSetup: false,
-  licenseGroup: true,
-  multiclass: false,
-  official: false,
-  raceLength: false,
-  raceWeekNum: false,
-  seriesName: true,
-  startDate: false,
-  startType: false,
-  trackName: true,
-  trackType: false,
-};
-
 const useColumns = ({ content }: { content: Content }) => {
   const columns = useMemo(() => getColumns({ content }), []);
-  const [columnVisibility, setColumnVisibility] = useState<
-    Record<string, boolean>
-  >(defaultColumnVisibility);
+  const [columnVisibility, setColumnVisibility] = useColumnVisibility();
 
   return { columns, columnVisibility, setColumnVisibility };
 };
