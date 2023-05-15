@@ -6,11 +6,18 @@ import {
 } from "~/components/ui/context-menu";
 import { useMemo, useState } from "react";
 
+import type { Content } from "~/pages/api/content/get-user-content";
 import { Star } from "lucide-react";
 import cn from "~/utils/cn";
 import { useTheme } from "next-themes";
 
-const TrackCell = ({ row, content }) => {
+const TrackCell = ({
+  row,
+  content,
+}: {
+  row: { original: { track: { trackId: number }; trackName: string } };
+  content: Content;
+}) => {
   const { theme } = useTheme();
 
   const { trackId, trackName } = useMemo(
@@ -49,7 +56,7 @@ const TrackCell = ({ row, content }) => {
           </div>
         </ContextMenuTrigger>
 
-        <ContextMenuContent>
+        {/* <ContextMenuContent>
           <ContextMenuItem onClick={() => setIsFavorite((prev) => !prev)}>
             <Star
               className="mr-2 h-4 w-4"
@@ -57,7 +64,7 @@ const TrackCell = ({ row, content }) => {
             />
             {isFavorite ? "Remove favorite track" : "Add favorite track"}
           </ContextMenuItem>
-        </ContextMenuContent>
+        </ContextMenuContent> */}
       </ContextMenu>
     </div>
   );

@@ -3,7 +3,7 @@
 import type { User } from "next-auth";
 import { prisma } from "~/server/db";
 
-interface Content {
+export interface Content {
   cars: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
   tracks: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
 }

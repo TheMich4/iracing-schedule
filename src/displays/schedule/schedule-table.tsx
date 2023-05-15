@@ -18,8 +18,9 @@ import useColumnFilters from "~/hooks/use-column-filters";
 import useColumns from "~/hooks/use-columns";
 import useSchedule from "~/hooks/use-schedule";
 import { useState } from "react";
+import type { Content } from "~/pages/api/content/get-user-content";
 
-const ScheduleTable = ({ content }) => {
+const ScheduleTable = ({ content }: { content: Content }) => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useColumnFilters();

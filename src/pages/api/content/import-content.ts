@@ -25,8 +25,6 @@ export const importContent = async (
 
   const currentContent = await getUserContent(user);
 
-  console.log({ currentContent });
-
   const cars = memberInfo.carPackages.reduce((acc, car) => {
     acc[car.packageId] = {
       ...(currentContent?.cars?.[car.packageId] || {}),
