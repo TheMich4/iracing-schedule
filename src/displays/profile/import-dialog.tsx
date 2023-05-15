@@ -12,7 +12,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { type User } from "next-auth";
-import { importContent } from "~/pages/api/import-content";
+import { importContent } from "~/pages/api/content/import-content";
 import { useState } from "react";
 
 const ImportDialog = ({
