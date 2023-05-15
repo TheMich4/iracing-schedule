@@ -7,7 +7,7 @@ import type {
 } from "iracing-api/lib/types/series";
 
 import type { Schedule } from "~/types";
-import { carClasses } from "~/consts/carClasses";
+import { carClasses } from "~/consts/car-classes";
 import { seriesAssets } from "~/consts/series-assets";
 import { seriesData } from "~/consts/series";
 
