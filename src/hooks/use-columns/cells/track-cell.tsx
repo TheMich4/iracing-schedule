@@ -4,12 +4,15 @@ import {
   ContextMenuItem,
   ContextMenuTrigger,
 } from "~/components/ui/context-menu";
+import { useMemo, useState } from "react";
 
 import { Star } from "lucide-react";
 import cn from "~/utils/cn";
-import { useMemo } from "react";
+import { useTheme } from "next-themes";
 
 const TrackCell = ({ row, content }) => {
+  const { theme } = useTheme();
+
   const { trackId, trackName } = useMemo(
     () => ({
       trackId: row.original.track.trackId,
@@ -17,13 +20,14 @@ const TrackCell = ({ row, content }) => {
     }),
     [row.original]
   );
-  const isOwned = useMemo(() => {
-    return content?.tracks?.[trackId]?.owned ?? false;
-  }, [trackId, content]);
+  const isOwned = useMemo(
+    () => content?.tracks?.[trackId]?.owned ?? false,
+    [trackId, content]
+  );
 
-  const isFavorite = useMemo(() => {
-    return content?.tracks?.[trackId]?.favorite ?? false;
-  }, [trackId, content]);
+  const [isFavorite, setIsFavorite] = useState(
+    content?.tracks?.[trackId]?.favorite ?? false
+  );
 
   // TODO: Fix full width
   return (
@@ -34,12 +38,23 @@ const TrackCell = ({ row, content }) => {
     >
       <ContextMenu>
         <ContextMenuTrigger className=" cursor-pointer">
-          {trackName ?? "Unknown"}
+          <div className="flex flex-row items-center">
+            {isFavorite && (
+              <Star
+                className="mr-2 h-4 w-4"
+                fill={theme === "dark" ? "#E1E7EF" : "#0F172A"}
+              />
+            )}
+            {trackName ?? "Unknown"}
+          </div>
         </ContextMenuTrigger>
 
         <ContextMenuContent>
-          <ContextMenuItem>
-            <Star className="mr-2 h-4 w-4" />
+          <ContextMenuItem onClick={() => setIsFavorite((prev) => !prev)}>
+            <Star
+              className="mr-2 h-4 w-4"
+              fill={theme === "dark" ? "#94A3B8" : "#0F172A"}
+            />
             {isFavorite ? "Remove favorite track" : "Add favorite track"}
           </ContextMenuItem>
         </ContextMenuContent>
