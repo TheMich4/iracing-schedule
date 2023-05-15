@@ -40,9 +40,6 @@ export const importContent = async (
       tracks: {},
     } as Content);
 
-  // const cars = memberInfo.carPackages.map((car) => car.packageId);
-  // const ownedTracks = memberInfo.trackPackages.map((track) => track.packageId);
-
   const cars = memberInfo.carPackages.reduce((acc, car) => {
     acc[car.packageId] = {
       ...(currentContent?.cars?.[car.packageId] || {}),
@@ -52,10 +49,12 @@ export const importContent = async (
   }, {} as Content);
 
   const tracks = memberInfo.trackPackages.reduce((acc, track) => {
-    acc[track.packageId] = {
-      ...(currentContent?.tracks?.[track.packageId] || {}),
-      owned: true,
-    };
+    track.contentIds.forEach((contentId) => {
+      acc[contentId] = {
+        ...(currentContent?.tracks?.[contentId] || {}),
+        owned: true,
+      };
+    });
     return acc;
   }, {} as Content);
 
@@ -70,6 +69,4 @@ export const importContent = async (
       content: newContent,
     },
   });
-
-  return { cars, tracks, currentContent, newContent };
 };

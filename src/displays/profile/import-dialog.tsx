@@ -33,7 +33,7 @@ const ImportDialog = ({
     setIsLoading(true);
 
     // TODO: Add error handling
-    const x = await importContent(user, { email, password });
+    await importContent(user, { email, password });
 
     setIsLoading(false);
     close();

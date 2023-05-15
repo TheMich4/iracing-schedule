@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { Check } from "lucide-react";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
+import TrackCell from "./cells/track-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
@@ -13,8 +14,10 @@ const multiSelectFilter = (row, columnId, filterValue) => {
     : filterValue.includes(String(row.original[columnId]));
 };
 
-export const getColumns = () => {
+export const getColumns = ({ content }) => {
   const columnHelper = createColumnHelper<Schedule>();
+
+  console.log({ content });
 
   return [
     columnHelper.accessor("licenseGroup", {
@@ -44,7 +47,7 @@ export const getColumns = () => {
     }),
     columnHelper.accessor("trackName", {
       id: "trackName",
-      cell: (cell) => cell.getValue(),
+      cell: ({ row }) => <TrackCell row={row} content={content} />,
       header: "Track name",
     }),
     columnHelper.accessor("trackType", {
@@ -142,8 +145,8 @@ const defaultColumnVisibility = {
   trackType: false,
 };
 
-const useColumns = () => {
-  const columns = useMemo(() => getColumns(), []);
+const useColumns = ({ content }) => {
+  const columns = useMemo(() => getColumns({ content }), []);
   const [columnVisibility, setColumnVisibility] = useState<
     Record<string, boolean>
   >(defaultColumnVisibility);

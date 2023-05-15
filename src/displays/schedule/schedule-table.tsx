@@ -19,11 +19,13 @@ import useColumns from "~/hooks/use-columns";
 import useSchedule from "~/hooks/use-schedule";
 import { useState } from "react";
 
-const ScheduleTable = () => {
+const ScheduleTable = ({ content }) => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useColumnFilters();
-  const { columns, columnVisibility, setColumnVisibility } = useColumns();
+  const { columns, columnVisibility, setColumnVisibility } = useColumns({
+    content,
+  });
   const { schedule, minDate, maxDate } = useSchedule({ date });
 
   const table = useReactTable({

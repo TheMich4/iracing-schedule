@@ -1,9 +1,12 @@
 import ScheduleTable from "~/displays/schedule/schedule-table";
+import { getCurrentUser } from "~/utils/session";
 
-const NewSchedulePage = () => {
+const NewSchedulePage = async () => {
+  const user = await getCurrentUser();
+
   return (
     <div className="h-full">
-      <ScheduleTable />
+      <ScheduleTable content={user?.content} />
     </div>
   );
 };
