@@ -43,6 +43,11 @@ const ScheduleTable = ({ content }) => {
       columnFilters,
       sorting,
     },
+    initialState: {
+      pagination: {
+        pageSize: 30,
+      },
+    },
   });
 
   return (
