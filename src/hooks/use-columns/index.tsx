@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { Check } from "lucide-react";
+import type { Content } from "~/pages/api/content/get-user-content";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
 import TrackCell from "./cells/track-cell";
@@ -8,13 +9,17 @@ import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
 
-const multiSelectFilter = (row, columnId, filterValue) => {
+const multiSelectFilter = (
+  row: { original: Record<string, unknown> },
+  columnId: string,
+  filterValue: Array<string>
+) => {
   return filterValue.length === 0
     ? false
     : filterValue.includes(String(row.original[columnId]));
 };
 
-export const getColumns = ({ content }) => {
+export const getColumns = ({ content }: { content: Content }) => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -143,7 +148,7 @@ const defaultColumnVisibility = {
   trackType: false,
 };
 
-const useColumns = ({ content }) => {
+const useColumns = ({ content }: { content: Content }) => {
   const columns = useMemo(() => getColumns({ content }), []);
   const [columnVisibility, setColumnVisibility] = useState<
     Record<string, boolean>

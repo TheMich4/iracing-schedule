@@ -4,11 +4,7 @@ import IracingAPI from "iracing-api";
 import { type Prisma } from "@prisma/client";
 import { type User } from "next-auth";
 import { prisma } from "~/server/db";
-
-interface Content {
-  cars: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
-  tracks: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
-}
+import { getUserContent } from "./get-user-content";
 
 export const importContent = async (
   user: User,
@@ -27,18 +23,7 @@ export const importContent = async (
 
   if (!memberInfo) return;
 
-  const data = await prisma.user.findUnique({
-    where: { id: user.id },
-    select: {
-      content: true,
-    },
-  });
-  const currentContent =
-    data?.content ||
-    ({
-      cars: {},
-      tracks: {},
-    } as Content);
+  const currentContent = await getUserContent(user);
 
   const cars = memberInfo.carPackages.reduce((acc, car) => {
     acc[car.packageId] = {
@@ -46,7 +31,7 @@ export const importContent = async (
       owned: true,
     };
     return acc;
-  }, {} as Content);
+  }, {});
 
   const tracks = memberInfo.trackPackages.reduce((acc, track) => {
     track.contentIds.forEach((contentId) => {
@@ -56,7 +41,7 @@ export const importContent = async (
       };
     });
     return acc;
-  }, {} as Content);
+  }, {});
 
   const newContent = {
     cars,
