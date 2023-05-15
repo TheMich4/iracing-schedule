@@ -17,8 +17,6 @@ const multiSelectFilter = (row, columnId, filterValue) => {
 export const getColumns = ({ content }) => {
   const columnHelper = createColumnHelper<Schedule>();
 
-  console.log({ content });
-
   return [
     columnHelper.accessor("licenseGroup", {
       id: "licenseGroup",
