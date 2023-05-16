@@ -6,8 +6,8 @@ import {
 } from "~/components/ui/context-menu";
 import { useMemo, useState } from "react";
 
-import type { Content } from "~/pages/api/content/get-user-content";
 import { Star } from "lucide-react";
+import type { UserContent } from "next-auth";
 import cn from "~/utils/cn";
 import { useTheme } from "next-themes";
 
@@ -16,7 +16,7 @@ const TrackCell = ({
   content,
 }: {
   row: { original: { track: { trackId: number }; trackName: string } };
-  content: Content;
+  content: UserContent;
 }) => {
   const { theme } = useTheme();
 

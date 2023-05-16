@@ -1,7 +1,9 @@
+import { Button } from "~/components/ui/button";
+import type { User } from "next-auth";
 import { cars } from "~/consts/cars";
 import { useMemo } from "react";
 
-const CarsTab = ({ user }: any) => {
+const CarsTab = ({ user }: { user: User }) => {
   const carNames = useMemo(() => {
     return Object.entries(user.content?.cars ?? {}).reduce(
       (acc, [carId, value]) => {
@@ -19,9 +21,11 @@ const CarsTab = ({ user }: any) => {
   }, []);
 
   return (
-    <div className="rounded-md border p-2 dark:text-primary">
+    <div className="grid auto-rows-max grid-cols-1 gap-x-2 gap-y-1 dark:text-primary md:grid-cols-2 2xl:grid-cols-3">
       {carNames.sort().map((carName) => (
-        <div>{carName}</div>
+        <Button className="justify-start" key={carName} variant="outline">
+          {carName}
+        </Button>
       ))}
     </div>
   );

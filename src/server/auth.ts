@@ -34,9 +34,8 @@ declare module "next-auth" {
   }
 
   interface UserContent {
-    cars: {};
-    series: {};
-    tracks: {};
+    cars: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
+    tracks: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
   }
 }
 

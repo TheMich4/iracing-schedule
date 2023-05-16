@@ -17,9 +17,9 @@ import { SchedulePagination } from "./schedule-pagination";
 import { useColumns } from "~/hooks/use-columns";
 import useSchedule from "~/hooks/use-schedule";
 import { useState } from "react";
-import type { Content } from "~/pages/api/content/get-user-content";
+import type { UserContent } from "next-auth";
 
-const ScheduleTable = ({ content }: { content: Content }) => {
+const ScheduleTable = ({ content }: { content: UserContent }) => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const {

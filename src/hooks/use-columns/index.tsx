@@ -1,8 +1,8 @@
 import { Check } from "lucide-react";
-import type { Content } from "~/pages/api/content/get-user-content";
 import LicenseGroupCell from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
 import TrackCell from "./cells/track-cell";
+import type { UserContent } from "next-auth";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
@@ -20,7 +20,7 @@ const multiSelectFilter = (
     : filterValue.includes(String(row.original[columnId]));
 };
 
-export const getColumns = ({ content }: { content: Content }) => {
+export const getColumns = ({ content }: { content: UserContent }) => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -134,7 +134,7 @@ export const getColumns = ({ content }: { content: Content }) => {
   ];
 };
 
-export const useColumns = ({ content }: { content: Content }) => {
+export const useColumns = ({ content }: { content: UserContent }) => {
   const columns = useMemo(() => getColumns({ content }), []);
   const { columnFilters, setColumnFilters } = useColumnFilters();
   const { columnVisibility, setColumnVisibility } = useColumnVisibility();

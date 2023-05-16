@@ -1,12 +1,8 @@
 "use server";
 
-import type { User } from "next-auth";
-import { prisma } from "~/server/db";
+import type { User, UserContent } from "next-auth";
 
-export interface Content {
-  cars: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
-  tracks: { [packageId: string]: { owned?: boolean; favorite?: boolean } };
-}
+import { prisma } from "~/server/db";
 
 export const getUserContent = async (user: User) => {
   const data = (await prisma.user.findUnique({
@@ -14,13 +10,13 @@ export const getUserContent = async (user: User) => {
     select: {
       content: true,
     },
-  })) as { content?: Content } | null;
+  })) as { content?: UserContent } | null;
 
   return (
     data?.content ||
     ({
       cars: {},
       tracks: {},
-    } as Content)
+    } as UserContent)
   );
 };

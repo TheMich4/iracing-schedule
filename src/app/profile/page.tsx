@@ -10,7 +10,7 @@ const ProfilePage = async () => {
   if (!user) return null;
 
   return (
-    <div className="flex flex-col gap-2 overflow-auto p-4">
+    <div className="custom-scrollbar flex flex-col gap-2 overflow-auto p-4">
       <Card>
         <CardHeader>
           <CardTitle>Profile</CardTitle>
