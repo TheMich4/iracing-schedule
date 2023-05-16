@@ -14,11 +14,11 @@ export const metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="custom-scrollbar flex w-full flex-row justify-between divide-x font-kanit lg:h-screen">
+      <body className="custom-scrollbar flex w-full flex-row justify-between font-kanit lg:h-screen lg:divide-x">
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Sidebar />
-          <div className="flex h-full w-full flex-col divide-y overflow-hidden">
+          <div className="flex h-full w-full flex-col overflow-hidden lg:divide-y">
             {/* @ts-expect-error Server Component */}
             <Navbar />
             {children}
