@@ -35,7 +35,7 @@ const UserContent = ({ user }: { user: User }) => {
             <TabsContent value="cars">
               <CarsTab user={user} />
             </TabsContent>
-            <TabsContent value="tracks">Tracks</TabsContent>
+            <TabsContent value="tracks"></TabsContent>
           </Tabs>
         </CardContent>
       </Card>

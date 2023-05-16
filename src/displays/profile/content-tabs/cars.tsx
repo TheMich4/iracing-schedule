@@ -27,25 +27,29 @@ const CarsTab = ({ user }: { user: User }) => {
 
   return (
     <div className="grid auto-rows-max grid-cols-1 gap-x-2 gap-y-1 dark:text-primary md:grid-cols-2 2xl:grid-cols-3">
-      {carNames.sort().map((carName) => (
-        <Button
-          className="flex flex-row items-center justify-start gap-2"
-          key={carName}
-          variant="outline"
-        >
-          {isOwned && (
-            <Button className="p-0" size="sm" variant="ghost">
-              <Check className="h-4 w-4" />
-            </Button>
-          )}
-          <span>{carName}</span>
-          {isFavorite && (
-            <Button className="p-0" size="sm" variant="ghost">
-              <Star className="h-4 w-4" />
-            </Button>
-          )}
-        </Button>
-      ))}
+      {carNames.length > 0 ? (
+        carNames.sort().map((carName) => (
+          <Button
+            className="flex flex-row items-center justify-start gap-2"
+            key={carName}
+            variant="outline"
+          >
+            {isOwned && (
+              <Button className="p-0" size="sm" variant="ghost">
+                <Check className="h-4 w-4" />
+              </Button>
+            )}
+            <span>{carName}</span>
+            {isFavorite && (
+              <Button className="p-0" size="sm" variant="ghost">
+                <Star className="h-4 w-4" />
+              </Button>
+            )}
+          </Button>
+        ))
+      ) : (
+        <span className="text-slate-400">No cars to display</span>
+      )}
     </div>
   );
 };
