@@ -1,5 +1,3 @@
-import { useMemo, useState } from "react";
-
 import { Check } from "lucide-react";
 import type { Content } from "~/pages/api/content/get-user-content";
 import LicenseGroupCell from "./cells/license-group-cell";
@@ -8,7 +6,9 @@ import TrackCell from "./cells/track-cell";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
+import useColumnFilters from "../use-column-filters";
 import { useColumnVisibility } from "../use-column-visibility";
+import { useMemo } from "react";
 
 const multiSelectFilter = (
   row: { original: Record<string, unknown> },
@@ -134,11 +134,16 @@ export const getColumns = ({ content }: { content: Content }) => {
   ];
 };
 
-const useColumns = ({ content }: { content: Content }) => {
+export const useColumns = ({ content }: { content: Content }) => {
   const columns = useMemo(() => getColumns({ content }), []);
-  const [columnVisibility, setColumnVisibility] = useColumnVisibility();
+  const { columnFilters, setColumnFilters } = useColumnFilters();
+  const { columnVisibility, setColumnVisibility } = useColumnVisibility();
 
-  return { columns, columnVisibility, setColumnVisibility };
+  return {
+    columnFilters,
+    columnVisibility,
+    columns,
+    setColumnFilters,
+    setColumnVisibility,
+  };
 };
-
-export default useColumns;

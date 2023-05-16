@@ -1,21 +1,8 @@
 import { useEffect, useState } from "react";
 
-interface ColumnVisibility {
-  carClasses: boolean;
-  fixedSetup: boolean;
-  licenseGroup: boolean;
-  multiclass: boolean;
-  official: boolean;
-  raceLength: boolean;
-  raceWeekNum: boolean;
-  seriesName: boolean;
-  startDate: boolean;
-  startType: boolean;
-  trackName: boolean;
-  trackType: boolean;
-}
+import type { VisibilityState } from "@tanstack/react-table";
 
-const defaultColumnVisibility = {
+const defaultColumnVisibility: VisibilityState = {
   carClasses: true,
   fixedSetup: false,
   licenseGroup: true,
@@ -36,7 +23,7 @@ const getInitialColumnVisibility = () => {
 
   if (lsColumnVisibility && lsColumnVisibility !== "{}") {
     return (
-      (JSON.parse(lsColumnVisibility) as ColumnVisibility) ||
+      (JSON.parse(lsColumnVisibility) as VisibilityState) ||
       defaultColumnVisibility
     );
   }
@@ -45,7 +32,7 @@ const getInitialColumnVisibility = () => {
 };
 
 export const useColumnVisibility = () => {
-  const [columnVisibility, setColumnVisibility] = useState(
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     getInitialColumnVisibility()
   );
 
@@ -53,5 +40,5 @@ export const useColumnVisibility = () => {
     localStorage.setItem("columnVisibility", JSON.stringify(columnVisibility));
   }, [columnVisibility]);
 
-  return [columnVisibility, setColumnVisibility];
+  return { columnVisibility, setColumnVisibility };
 };

@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction, useEffect } from "react";
+import { useEffect } from "react";
 
 import type { Filter } from "./types";
 import { licenseGroups } from "~/utils/license";
@@ -28,17 +28,16 @@ const getInitialFilter = (): ColumnFiltersState => {
   return defaultFilter;
 };
 
-const useColumnFilters = (): [
-  ColumnFiltersState,
-  Dispatch<SetStateAction<ColumnFiltersState>>
-] => {
-  const [filter, setFilter] = useState<ColumnFiltersState>(getInitialFilter());
+const useColumnFilters = () => {
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
+    getInitialFilter()
+  );
 
   useEffect(() => {
-    localStorage.setItem("filter", JSON.stringify(filter));
-  }, [filter]);
+    localStorage.setItem("filter", JSON.stringify(columnFilters));
+  }, [columnFilters]);
 
-  return [filter, setFilter];
+  return { columnFilters, setColumnFilters };
 };
 
 export default useColumnFilters;
