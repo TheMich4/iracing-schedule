@@ -81,3 +81,13 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@layer base {
+  .custom-scrollbar {
+    @apply scrollbar-thin;
+    @apply scrollbar-thumb-slate-200;
+    @apply scrollbar-track-rounded-md;
+    @apply scrollbar-thumb-rounded-md;
+    @apply dark:scrollbar-thumb-slate-900;
+  }
+}

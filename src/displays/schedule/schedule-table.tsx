@@ -56,7 +56,7 @@ const ScheduleTable = ({ content }: { content: Content }) => {
   });
 
   return (
-    <div className="flex h-full flex-col gap-2 p-2">
+    <div className="flex flex-col gap-2 p-2 lg:h-full">
       <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
         <ScheduleFilters
           columnFilters={columnFilters}
@@ -71,7 +71,7 @@ const ScheduleTable = ({ content }: { content: Content }) => {
         <ScheduleColumnToggle table={table} />
       </div>
 
-      <div className="h-full overflow-auto rounded-md border scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-rounded-md scrollbar-thumb-rounded-md dark:scrollbar-thumb-slate-900">
+      <div className="custom-scrollbar h-full overflow-auto rounded-md border">
         <DataTable columns={columns} table={table} />
       </div>
 
