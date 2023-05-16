@@ -1,3 +1,5 @@
+import { Check, Star } from "lucide-react";
+
 import { Button } from "~/components/ui/button";
 import type { User } from "next-auth";
 import { cars } from "~/consts/cars";
@@ -20,11 +22,28 @@ const CarsTab = ({ user }: { user: User }) => {
     );
   }, []);
 
+  const isFavorite = false;
+  const isOwned = true;
+
   return (
     <div className="grid auto-rows-max grid-cols-1 gap-x-2 gap-y-1 dark:text-primary md:grid-cols-2 2xl:grid-cols-3">
       {carNames.sort().map((carName) => (
-        <Button className="justify-start" key={carName} variant="outline">
-          {carName}
+        <Button
+          className="flex flex-row items-center justify-start gap-2"
+          key={carName}
+          variant="outline"
+        >
+          {isOwned && (
+            <Button className="p-0" size="sm" variant="ghost">
+              <Check className="h-4 w-4" />
+            </Button>
+          )}
+          <span>{carName}</span>
+          {isFavorite && (
+            <Button className="p-0" size="sm" variant="ghost">
+              <Star className="h-4 w-4" />
+            </Button>
+          )}
         </Button>
       ))}
     </div>
