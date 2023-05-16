@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Sidebar />
-          <div className="flex h-full w-full flex-col overflow-hidden lg:divide-y">
+          <div className="flex h-full w-full flex-col divide-y overflow-hidden">
             {/* @ts-expect-error Server Component */}
             <Navbar />
             {children}
