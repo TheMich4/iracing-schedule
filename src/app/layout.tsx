@@ -14,7 +14,7 @@ export const metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="flex h-screen w-screen flex-row justify-between divide-x font-kanit">
+      <body className="custom-scrollbar flex w-full flex-row justify-between divide-x font-kanit lg:h-screen">
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Sidebar />
