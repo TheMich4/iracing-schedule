@@ -13,7 +13,7 @@ const iconMap = {
   "/admin": Lock,
 };
 
-const SidebarButton = ({
+export const SidebarButton = ({
   label,
   expanded = true,
   pathname,
@@ -44,5 +44,3 @@ const SidebarButton = ({
     </Button>
   );
 };
-
-export default SidebarButton;

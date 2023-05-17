@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
 import { UserAvatar } from "~/displays/profile/user-avatar";
-import UserContent from "~/displays/profile/user-content";
+import { UserContent } from "~/displays/profile/user-content";
 import { getCurrentUser } from "~/utils/session";
 
 const ProfilePage = async () => {

@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-const NavbarTitle = () => {
+export const NavbarTitle = () => {
   const router = useRouter();
 
   return (
@@ -14,5 +14,3 @@ const NavbarTitle = () => {
     </a>
   );
 };
-
-export default NavbarTitle;

@@ -5,7 +5,7 @@ import type { User } from "next-auth";
 import { cars } from "~/consts/cars";
 import { useMemo } from "react";
 
-const CarsTab = ({ user }: { user: User }) => {
+export const CarsTab = ({ user }: { user: User }) => {
   const carNames = useMemo(() => {
     return Object.entries(user.content?.cars ?? {}).reduce(
       (acc, [carId, value]) => {
@@ -53,5 +53,3 @@ const CarsTab = ({ user }: { user: User }) => {
     </div>
   );
 };
-
-export default CarsTab;

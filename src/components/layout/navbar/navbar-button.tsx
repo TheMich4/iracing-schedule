@@ -17,7 +17,7 @@ interface NavbarButtonProps {
   pathname: string;
 }
 
-const NavbarButton = ({ label, pathname }: NavbarButtonProps) => {
+export const NavbarButton = ({ label, pathname }: NavbarButtonProps) => {
   const router = useRouter();
 
   const Icon = useMemo(() => iconMap[pathname], [pathname]);
@@ -34,5 +34,3 @@ const NavbarButton = ({ label, pathname }: NavbarButtonProps) => {
     </Button>
   );
 };
-
-export default NavbarButton;

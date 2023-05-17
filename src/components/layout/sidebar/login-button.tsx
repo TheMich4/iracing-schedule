@@ -7,7 +7,7 @@ import { Button } from "../../ui/button";
 import type { User } from "next-auth";
 import { useMemo } from "react";
 
-const LoginButton = ({ user }: { user: User }) => {
+export const LoginButton = ({ user }: { user: User }) => {
   const handleAuth = () => {
     if (user) {
       void signOut();
@@ -33,5 +33,3 @@ const LoginButton = ({ user }: { user: User }) => {
     </Button>
   );
 };
-
-export default LoginButton;

@@ -6,7 +6,6 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "~/components/ui/dialog";
 
 import { Button } from "~/components/ui/button";
@@ -15,7 +14,7 @@ import { type User } from "next-auth";
 import { importContent } from "~/pages/api/content/import-content";
 import { useState } from "react";
 
-const ImportDialog = ({
+export const ImportDialog = ({
   user,
   isOpen,
   close,
@@ -80,5 +79,3 @@ const ImportDialog = ({
     </Dialog>
   );
 };
-
-export default ImportDialog;

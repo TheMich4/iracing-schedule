@@ -1,4 +1,4 @@
-import ScheduleTable from "~/displays/schedule/schedule-table";
+import { ScheduleTable } from "~/displays/schedule/schedule-table";
 import { getCurrentUser } from "~/utils/session";
 
 const NewSchedulePage = async () => {

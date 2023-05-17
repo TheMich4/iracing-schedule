@@ -15,7 +15,7 @@ interface ThemeSwitchProps {
   withLabel?: boolean;
 }
 
-const ThemeSwitch = ({
+export const ThemeSwitch = ({
   className,
   fullWidth = false,
   withLabel = false,
@@ -53,5 +53,3 @@ const ThemeSwitch = ({
     </Button>
   );
 };
-
-export default ThemeSwitch;

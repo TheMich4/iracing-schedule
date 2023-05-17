@@ -48,7 +48,7 @@ const config = [
   },
 ];
 
-const ScheduleFilters = ({
+export const ScheduleFilters = ({
   columnFilters,
   setColumnFilters,
 }: {
@@ -89,5 +89,3 @@ const ScheduleFilters = ({
     </Collapsible>
   );
 };
-
-export default ScheduleFilters;
