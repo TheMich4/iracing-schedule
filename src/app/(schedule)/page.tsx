@@ -1,7 +1,7 @@
 import { ScheduleTable } from "~/displays/schedule/schedule-table";
 import { getCurrentUser } from "~/utils/session";
 
-const NewSchedulePage = async () => {
+const SchedulePage = async () => {
   const user = await getCurrentUser();
 
   return (
@@ -11,4 +11,4 @@ const NewSchedulePage = async () => {
   );
 };
 
-export default NewSchedulePage;
+export default SchedulePage;

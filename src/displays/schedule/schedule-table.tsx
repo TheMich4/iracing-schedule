@@ -9,7 +9,7 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
-import { Calendar } from "~/components/schedule-table/calendar";
+import { ScheduleCalendar } from "./schedule-calendar";
 import { DataTable } from "~/components/ui/data-table";
 import { ScheduleColumnToggle } from "./schedule-column-toggle";
 import { ScheduleFilters } from "./schedule-filters";
@@ -19,7 +19,11 @@ import { useSchedule } from "~/hooks/use-schedule";
 import { useState } from "react";
 import type { UserContent } from "next-auth";
 
-export const ScheduleTable = ({ content }: { content: UserContent }) => {
+export const ScheduleTable = ({
+  content,
+}: {
+  content: UserContent | undefined;
+}) => {
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
   const {
@@ -62,7 +66,7 @@ export const ScheduleTable = ({ content }: { content: UserContent }) => {
           columnFilters={columnFilters}
           setColumnFilters={setColumnFilters}
         />
-        <Calendar
+        <ScheduleCalendar
           initialDate={date}
           maxDate={maxDate}
           minDate={minDate}
