@@ -20,7 +20,11 @@ const multiSelectFilter = (
     : filterValue.includes(String(row.original[columnId]));
 };
 
-export const getColumns = ({ content }: { content: UserContent }) => {
+export const getColumns = ({
+  content,
+}: {
+  content: UserContent | undefined;
+}) => {
   const columnHelper = createColumnHelper<Schedule>();
 
   return [
@@ -134,7 +138,11 @@ export const getColumns = ({ content }: { content: UserContent }) => {
   ];
 };
 
-export const useColumns = ({ content }: { content: UserContent }) => {
+export const useColumns = ({
+  content,
+}: {
+  content: UserContent | undefined;
+}) => {
   const columns = useMemo(() => getColumns({ content }), []);
   const { columnFilters, setColumnFilters } = useColumnFilters();
   const { columnVisibility, setColumnVisibility } = useColumnVisibility();

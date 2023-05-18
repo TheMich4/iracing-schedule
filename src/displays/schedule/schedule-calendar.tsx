@@ -1,4 +1,4 @@
-import CalendarDatePicker from "../ui/calendar-date-picker";
+import CalendarDatePicker from "../../components/ui/calendar-date-picker";
 import { useState } from "react";
 
 interface CalendarProps {
@@ -8,7 +8,7 @@ interface CalendarProps {
   maxDate?: Date;
 }
 
-export const Calendar = ({
+export const ScheduleCalendar = ({
   initialDate,
   setDate,
   minDate,
