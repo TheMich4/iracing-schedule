@@ -9,13 +9,13 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
-import Calendar from "~/components/schedule-table/calendar";
+import { Calendar } from "~/components/schedule-table/calendar";
 import { DataTable } from "~/components/ui/data-table";
 import { ScheduleColumnToggle } from "./schedule-column-toggle";
 import { ScheduleFilters } from "./schedule-filters";
 import { SchedulePagination } from "./schedule-pagination";
 import { useColumns } from "~/hooks/use-columns";
-import useSchedule from "~/hooks/use-schedule";
+import { useSchedule } from "~/hooks/use-schedule";
 import { useState } from "react";
 import type { UserContent } from "next-auth";
 

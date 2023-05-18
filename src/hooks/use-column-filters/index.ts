@@ -28,7 +28,7 @@ const getInitialFilter = (): ColumnFiltersState => {
   return defaultFilter;
 };
 
-const useColumnFilters = () => {
+export const useColumnFilters = () => {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     getInitialFilter()
   );
@@ -39,5 +39,3 @@ const useColumnFilters = () => {
 
   return { columnFilters, setColumnFilters };
 };
-
-export default useColumnFilters;

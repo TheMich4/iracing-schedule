@@ -11,7 +11,7 @@ import type { UserContent } from "next-auth";
 import { cn } from "~/utils/cn";
 import { useTheme } from "next-themes";
 
-const TrackCell = ({
+export const TrackCell = ({
   row,
   content,
 }: {
@@ -69,5 +69,3 @@ const TrackCell = ({
     </div>
   );
 };
-
-export default TrackCell;

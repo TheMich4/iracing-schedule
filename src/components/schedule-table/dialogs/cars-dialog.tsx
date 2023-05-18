@@ -11,7 +11,7 @@ import type { CarsDialogProps } from "./types";
 import { cars } from "~/consts/cars";
 import { useMemo } from "react";
 
-const CarsDialog = ({ isOpen, close, series }: CarsDialogProps) => {
+export const CarsDialog = ({ isOpen, close, series }: CarsDialogProps) => {
   const carData = useMemo<Array<CarData>>(() => {
     return series?.carIds?.map((carId) =>
       cars.find((car) => car.carId === carId)
@@ -35,5 +35,3 @@ const CarsDialog = ({ isOpen, close, series }: CarsDialogProps) => {
     </Dialog>
   );
 };
-
-export default CarsDialog;

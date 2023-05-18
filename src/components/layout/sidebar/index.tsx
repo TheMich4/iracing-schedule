@@ -8,7 +8,7 @@ import { getCurrentUser } from "~/utils/session";
 
 const expanded = true;
 
-const Sidebar = async () => {
+export const Sidebar = async () => {
   const user = await getCurrentUser();
 
   return (
@@ -41,5 +41,3 @@ const Sidebar = async () => {
     </div>
   );
 };
-
-export default Sidebar;

@@ -1,4 +1,4 @@
-const getLastTuesday = (_date: Date) => {
+export const getLastTuesday = (_date: Date) => {
   // Create a new date object so we don't mutate the original
   const date = new Date(_date);
 
@@ -15,5 +15,3 @@ const getLastTuesday = (_date: Date) => {
 
   return date;
 };
-
-export default getLastTuesday;

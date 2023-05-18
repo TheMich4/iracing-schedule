@@ -1,8 +1,8 @@
-import CarsDialog from "./cars-dialog";
-import ConfigDialog from "./config-dialog";
+import { CarsDialog } from "./cars-dialog";
+import { ConfigDialog } from "./config-dialog";
 import type { ScheduleTableDialogsProps } from "./types";
 
-const ScheduleTableDialogs = ({
+export const ScheduleTableDialogs = ({
   selectedRow,
   setSelectedRow,
   showConfig,
@@ -26,5 +26,3 @@ const ScheduleTableDialogs = ({
     </>
   );
 };
-
-export default ScheduleTableDialogs;

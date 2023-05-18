@@ -1,6 +1,6 @@
 import { licenseGroupMap } from "~/utils/license";
 
-const LicenseGroupCell = ({ getValue }) => {
+export const LicenseGroupCell = ({ getValue }) => {
   const license = licenseGroupMap[getValue()] as {
     name: string;
     color: string;
@@ -15,5 +15,3 @@ const LicenseGroupCell = ({ getValue }) => {
     </div>
   );
 };
-
-export default LicenseGroupCell;

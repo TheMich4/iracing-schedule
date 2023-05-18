@@ -2,7 +2,7 @@
 
 import { type Dispatch, type SetStateAction, useState } from "react";
 
-import Checkbox from "~/components/ui/checkbox";
+import { Checkbox } from "~/components/ui/checkbox";
 import type { Filter } from "~/hooks/use-column-filters/types";
 import { licenseGroups } from "~/utils/license";
 import { trackTypes } from "~/utils/track-type";
@@ -14,7 +14,7 @@ interface FiltersProps {
   setFilter: Dispatch<SetStateAction<Filter>>;
 }
 
-const Filters = ({ filter, setFilter }: FiltersProps) => {
+export const Filters = ({ filter, setFilter }: FiltersProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const handleClassChange = (checked: boolean, id: string) => {
@@ -140,5 +140,3 @@ const Filters = ({ filter, setFilter }: FiltersProps) => {
     </Card>
   );
 };
-
-export default Filters;

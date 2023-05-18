@@ -9,7 +9,12 @@ interface CheckboxProps {
   id: string;
 }
 
-const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
+export const Checkbox = ({
+  checked = false,
+  label,
+  onChange,
+  id,
+}: CheckboxProps) => {
   const handleCheckedChange = (checked: CheckboxPrimitive.CheckedState) => {
     if (!onChange) return;
     if (typeof checked !== "boolean") return;
@@ -32,5 +37,3 @@ const Checkbox = ({ checked = false, label, onChange, id }: CheckboxProps) => {
     </div>
   );
 };
-
-export default Checkbox;

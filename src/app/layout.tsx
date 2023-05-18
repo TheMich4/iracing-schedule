@@ -1,9 +1,9 @@
 import "~/styles/globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "~/components/layout/navbar";
+import { Navbar } from "~/components/layout/navbar";
 import { Providers } from "~/components/providers";
-import Sidebar from "~/components/layout/sidebar";
+import { Sidebar } from "~/components/layout/sidebar";
 import { TailwindIndicator } from "~/components/dev/tailwind-indicator";
 
 export const metadata = {

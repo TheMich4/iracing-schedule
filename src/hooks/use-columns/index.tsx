@@ -1,12 +1,12 @@
 import { Check } from "lucide-react";
-import LicenseGroupCell from "./cells/license-group-cell";
+import { LicenseGroupCell } from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
-import TrackCell from "./cells/track-cell";
+import { TrackCell } from "./cells/track-cell";
 import type { UserContent } from "next-auth";
 import { createColumnHelper } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { trackTypesMap } from "~/utils/track-type";
-import useColumnFilters from "../use-column-filters";
+import { useColumnFilters } from "../use-column-filters";
 import { useColumnVisibility } from "../use-column-visibility";
 import { useMemo } from "react";
 

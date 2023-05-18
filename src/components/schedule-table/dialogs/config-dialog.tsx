@@ -6,10 +6,10 @@ import {
   DialogTitle,
 } from "~/components/ui/dialog";
 
-import Checkbox from "~/components/ui/checkbox";
-import { type ConfigDialogProps } from "./types";
+import { Checkbox } from "~/components/ui/checkbox";
+import type { ConfigDialogProps } from "./types";
 
-const ConfigDialog = ({
+export const ConfigDialog = ({
   isOpen,
   close,
   columns,
@@ -46,5 +46,3 @@ const ConfigDialog = ({
     </Dialog>
   );
 };
-
-export default ConfigDialog;

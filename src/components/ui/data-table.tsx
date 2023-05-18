@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "~/components/ui/table";
 
-import SortIcon from "../schedule-table/sort-icon";
+import { SortIcon } from "../schedule-table/sort-icon";
 
 export function DataTable({
   columns,

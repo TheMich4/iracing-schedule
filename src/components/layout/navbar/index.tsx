@@ -5,7 +5,7 @@ import { NavbarTitle } from "./navbar-title";
 import { ThemeSwitch } from "../theme-switch";
 import { getCurrentUser } from "~/utils/session";
 
-const Navbar = async () => {
+export const Navbar = async () => {
   const user = await getCurrentUser();
 
   return (
@@ -19,5 +19,3 @@ const Navbar = async () => {
     </nav>
   );
 };
-
-export default Navbar;
