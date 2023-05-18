@@ -8,10 +8,10 @@ import { useMemo, useState } from "react";
 
 import { Star } from "lucide-react";
 import type { UserContent } from "next-auth";
-import cn from "~/utils/cn";
+import { cn } from "~/utils/cn";
 import { useTheme } from "next-themes";
 
-const TrackCell = ({
+export const TrackCell = ({
   row,
   content,
 }: {
@@ -69,5 +69,3 @@ const TrackCell = ({
     </div>
   );
 };
-
-export default TrackCell;

@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 
 import { Button } from "~/components/ui/button";
-import CarsTab from "./content-tabs/cars";
-import ImportDialog from "./import-dialog";
+import { CarsTab } from "./content-tabs/cars";
+import { ImportDialog } from "./import-dialog";
 import { type User } from "next-auth";
 import { useState } from "react";
 
-const UserContent = ({ user }: { user: User }) => {
+export const UserContent = ({ user }: { user: User }) => {
   const [isImportDialogOpen, setIsImportDialogOpen] = useState(false);
 
   return (
@@ -48,5 +48,3 @@ const UserContent = ({ user }: { user: User }) => {
     </>
   );
 };
-
-export default UserContent;

@@ -3,12 +3,12 @@
 import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 
 import { Button } from "~/components/ui/button";
-import LoginButton from "../sidebar/login-button";
+import { LoginButton } from "../sidebar/login-button";
 import { MenuIcon } from "lucide-react";
-import NavbarButton from "./navbar-button";
+import { NavbarButton } from "./navbar-button";
 import type { User } from "next-auth";
 
-const NavbarMenu = ({ user }: { user: User }) => {
+export const NavbarMenu = ({ user }: { user: User }) => {
   return (
     <Popover>
       <PopoverTrigger>
@@ -30,5 +30,3 @@ const NavbarMenu = ({ user }: { user: User }) => {
     </Popover>
   );
 };
-
-export default NavbarMenu;

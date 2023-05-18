@@ -7,12 +7,10 @@ import { ThemeProvider } from "next-themes";
 
 const queryClient = new QueryClient();
 
-const Providers = ({ children }: { children: ReactNode }) => {
+export const Providers = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </ThemeProvider>
   );
 };
-
-export default Providers;

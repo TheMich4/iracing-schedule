@@ -9,26 +9,26 @@ import {
 import { useMemo, useState } from "react";
 
 import { Button } from "~/components/ui/button";
-import Calendar from "./calendar";
+import { Calendar } from "./calendar";
 import { Card } from "~/components/ui/card";
-import Filters from "./filters";
+import { Filters } from "./filters";
 import type { Schedule } from "~/types";
-import ScheduleTableDialogs from "./dialogs";
+import { ScheduleTableDialogs } from "./dialogs";
 import { Settings } from "lucide-react";
-import SortIcon from "./sort-icon";
+import { SortIcon } from "./sort-icon";
 import type { SortingState } from "@tanstack/react-table";
 import { getFilteredSchedule } from "./helpers";
-import useColumns from "~/hooks/use-columns";
-import useFilter from "~/hooks/use-column-filters";
-import useSchedule from "~/hooks/use-schedule";
+import { useColumnFilters } from "~/hooks/use-column-filters";
+import { useColumns } from "~/hooks/use-columns";
+import { useSchedule } from "~/hooks/use-schedule";
 
-const ScheduleTable = () => {
+export const ScheduleTable = () => {
   const [selectedRow, setSelectedRow] = useState<Schedule | null>(null);
   const [showConfig, setShowConfig] = useState<boolean>(false);
 
   const [date, setDate] = useState<Date>(new Date());
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [filter, setFilter] = useFilter();
+  const [filter, setFilter] = useColumnFilters();
   const { columns, columnVisibility, setColumnVisibility } = useColumns({
     setSelectedRow,
   });
@@ -131,5 +131,3 @@ const ScheduleTable = () => {
     </>
   );
 };
-
-export default ScheduleTable;

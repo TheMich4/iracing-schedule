@@ -12,7 +12,7 @@ import { Button } from "~/components/ui/button";
 import { Calendar } from "@ui/calendar";
 import { Calendar as CalendarIcon } from "lucide-react";
 import type { SelectSingleEventHandler } from "react-day-picker";
-import cn from "~/utils/cn";
+import { cn } from "~/utils/cn";
 import { format } from "date-fns";
 
 export interface CalendarDatePickerProps {

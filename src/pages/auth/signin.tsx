@@ -15,7 +15,7 @@ import { getProviders, signIn } from "next-auth/react";
 
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
-import Providers from "~/components/providers";
+import { Providers } from "~/components/providers";
 import { authOptions } from "~/server/auth";
 import { getServerSession } from "next-auth/next";
 import { useState } from "react";

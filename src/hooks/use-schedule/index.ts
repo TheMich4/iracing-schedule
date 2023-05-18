@@ -9,8 +9,8 @@ import { getNewWeekSchedule, getScheduleDateRange } from "./helpers";
 import { useEffect, useMemo, useState } from "react";
 
 import { format } from "date-fns";
-import getLastTuesday from "~/utils/get-last-tuesday";
-import importSchedule from "~/utils/import-schedule";
+import { getLastTuesday } from "~/utils/get-last-tuesday";
+import { importSchedule } from "~/utils/import-schedule";
 
 interface ScheduleData {
   schedule: Array<Schedule>;
@@ -22,7 +22,7 @@ interface UseScheduleArgs {
   date: Date;
 }
 
-const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
+export const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
   if (typeof window === "undefined") return { schedule: [] };
 
   const [schedule, setSchedule] = useState<Array<Schedule>>([]);
@@ -51,5 +51,3 @@ const useSchedule = ({ date }: UseScheduleArgs): ScheduleData => {
     maxDate,
   };
 };
-
-export default useSchedule;

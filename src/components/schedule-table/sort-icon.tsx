@@ -4,7 +4,7 @@ interface SortIconProps {
   isSorted: "asc" | "desc" | false | null | undefined;
 }
 
-const SortIcon = ({ isSorted }: SortIconProps) => {
+export const SortIcon = ({ isSorted }: SortIconProps) => {
   if (!isSorted) return null;
 
   if (isSorted === "asc") return <ArrowUp className="h-4 w-4" />;
@@ -13,5 +13,3 @@ const SortIcon = ({ isSorted }: SortIconProps) => {
 
   return null;
 };
-
-export default SortIcon;

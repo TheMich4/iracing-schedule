@@ -59,7 +59,7 @@ const prepareScheduleData = (
   };
 };
 
-const importSchedule = () => {
+export const importSchedule = () => {
   const byStartDate = seriesData.reduce((acc, series) => {
     if (!series.active) return acc;
 
@@ -88,4 +88,3 @@ const importSchedule = () => {
   return byStartDate;
 };
 
-export default importSchedule;

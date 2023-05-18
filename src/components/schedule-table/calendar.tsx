@@ -8,7 +8,7 @@ interface CalendarProps {
   maxDate?: Date;
 }
 
-const Calendar = ({
+export const Calendar = ({
   initialDate,
   setDate,
   minDate,
@@ -34,5 +34,3 @@ const Calendar = ({
     />
   );
 };
-
-export default Calendar;

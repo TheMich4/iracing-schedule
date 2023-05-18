@@ -6,7 +6,7 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
 import { Button } from "../../ui/button";
-import cn from "~/utils/cn";
+import { cn } from "~/utils/cn";
 import { useTheme } from "next-themes";
 
 interface ThemeSwitchProps {
@@ -15,7 +15,7 @@ interface ThemeSwitchProps {
   withLabel?: boolean;
 }
 
-const ThemeSwitch = ({
+export const ThemeSwitch = ({
   className,
   fullWidth = false,
   withLabel = false,
@@ -53,5 +53,3 @@ const ThemeSwitch = ({
     </Button>
   );
 };
-
-export default ThemeSwitch;

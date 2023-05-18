@@ -1,14 +1,14 @@
 "use server";
 
-import LoginButton from "./login-button";
-import SidebarButton from "./sidebar-button";
-import ThemeSwitch from "../theme-switch";
-import cn from "~/utils/cn";
+import { LoginButton } from "./login-button";
+import { SidebarButton } from "./sidebar-button";
+import { ThemeSwitch } from "../theme-switch";
+import { cn } from "~/utils/cn";
 import { getCurrentUser } from "~/utils/session";
 
 const expanded = true;
 
-const Sidebar = async () => {
+export const Sidebar = async () => {
   const user = await getCurrentUser();
 
   return (
@@ -41,5 +41,3 @@ const Sidebar = async () => {
     </div>
   );
 };
-
-export default Sidebar;
