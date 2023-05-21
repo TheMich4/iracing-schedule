@@ -13,6 +13,8 @@ import { Input } from "~/components/ui/input";
 import { type User } from "next-auth";
 import { importContent } from "~/pages/api/content/import-content";
 import { useState } from "react";
+import { useToast } from "~/components/ui/use-toast";
+import { Loader2 } from "lucide-react";
 
 export const ImportDialog = ({
   user,
@@ -28,14 +30,24 @@ export const ImportDialog = ({
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const { toast } = useToast();
+
   const handleImport = async () => {
     setIsLoading(true);
 
-    // TODO: Add error handling
-    await importContent(user, { email, password });
+    await importContent(user, { email, password })
+      .then(() => {
+        close();
+        toast({
+          title: "Imported content",
+          description: "Your content has been imported!",
+        });
+      })
+      .catch((e) => {
+        console.error(e);
+      });
 
     setIsLoading(false);
-    close();
 
     // TODO: Add showing toast
   };
@@ -73,7 +85,8 @@ export const ImportDialog = ({
           value={password}
         />
         <Button disabled={isLoading} onClick={handleImport}>
-          Import content
+          {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+          <span>Import content</span>
         </Button>
       </DialogContent>
     </Dialog>

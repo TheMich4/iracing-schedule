@@ -4,13 +4,18 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import type { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "./toaster";
 
 const queryClient = new QueryClient();
 
 export const Providers = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      <QueryClientProvider client={queryClient}>
+        <Toaster />
+
+        {children}
+      </QueryClientProvider>
     </ThemeProvider>
   );
 };
