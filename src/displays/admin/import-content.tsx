@@ -28,8 +28,7 @@ export const ImportContent = () => {
   const [password, setPassword] = useState("");
 
   const handleImportTracks = async () => {
-    const tracks = await importTracks(email, password);
-    console.log("---", { tracks });
+    await importTracks(email, password);
   };
 
   return (
