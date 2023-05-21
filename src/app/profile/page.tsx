@@ -3,9 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { UserAvatar } from "~/displays/profile/user-avatar";
 import { UserContent } from "~/displays/profile/user-content";
 import { getCurrentUser } from "~/utils/session";
+import { getTracks } from "~/pages/api/content/get-tracks";
 
 const ProfilePage = async () => {
   const user = await getCurrentUser();
+  const tracks = await getTracks();
 
   if (!user) return null;
 
@@ -29,7 +31,7 @@ const ProfilePage = async () => {
         </CardContent>
       </Card>
 
-      <UserContent user={user} />
+      <UserContent user={user} tracks={tracks} />
     </div>
   );
 };

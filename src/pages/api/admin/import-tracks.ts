@@ -3,9 +3,13 @@
 import IracingAPI from "iracing-api";
 import { prisma } from "~/server/db";
 
-export const importTracks = async (email: string, password: string) => {
-  console.log("importTracks", { email, password });
+interface Track {
+  packageId: number;
+  trackName: string;
+  trackIds: number[];
+}
 
+export const importTracks = async (email: string, password: string) => {
   const ir = new IracingAPI();
   await ir.login(email, password);
 
@@ -21,26 +25,26 @@ export const importTracks = async (email: string, password: string) => {
         trackIds: [trackId],
       };
     } else {
-      acc[packageId].trackIds.push(trackId);
+      acc[packageId]?.trackIds.push(trackId);
     }
 
     return acc;
-  }, {});
-
-  const tracks = Object.values(trackMap);
-
+  }, {} as { [packageId: string]: Track });
+  2;
   await Promise.all(
-    tracks.map(async (track: any) => {
+    Object.values(trackMap).map(async (track: Track) => {
+      const { packageId, trackName, trackIds } = track;
+
       await prisma.track.upsert({
-        where: { packageId: track.packageId },
+        where: { packageId },
         update: {
-          trackName: track.trackName,
-          trackIds: track.trackIds,
+          trackName,
+          trackIds,
         },
         create: {
-          packageId: track.packageId,
-          trackName: track.trackName,
-          trackIds: track.trackIds,
+          packageId,
+          trackName,
+          trackIds,
         },
       });
     })
