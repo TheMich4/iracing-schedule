@@ -50,12 +50,11 @@ export const ImportContent = () => {
   };
 
   const handleImportCars = async () => {
-    console.log("import cars");
-    const data = await importCars(email, password).catch((e) => {
+    setIsImporting(true);
+    await importCars(email, password).catch((e) => {
       console.error(e);
     });
-
-    console.log({ data });
+    setIsImporting(false);
   };
 
   return (

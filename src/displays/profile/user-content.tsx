@@ -9,14 +9,16 @@ import { ImportDialog } from "./import-dialog";
 import { type User } from "next-auth";
 import { useState } from "react";
 import { TracksTab } from "./content-tabs/tracks-tab";
-import type { Track } from "@prisma/client";
+import type { Car, Track } from "@prisma/client";
 
 export const UserContent = ({
   user,
   tracks,
+  cars,
 }: {
   user: User;
   tracks: Array<Track>;
+  cars: Array<Car>;
 }) => {
   const [isImportDialogOpen, setIsImportDialogOpen] = useState(false);
 
@@ -41,10 +43,10 @@ export const UserContent = ({
               <TabsTrigger value="tracks">Tracks</TabsTrigger>
             </TabsList>
             <TabsContent value="cars">
-              <CarsTab user={user} />
+              <CarsTab cars={cars} user={user} />
             </TabsContent>
             <TabsContent value="tracks">
-              <TracksTab user={user} tracks={tracks} />
+              <TracksTab tracks={tracks} user={user} />
             </TabsContent>
           </Tabs>
         </CardContent>
