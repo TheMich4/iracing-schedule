@@ -37,6 +37,8 @@ export interface Schedule {
     carClassId: number;
     name: string;
     shortName: string;
+    carIds: Array<number>;
+    carPackageIds: Array<number | undefined>;
   }>;
   carIds: Array<number>;
   carRestrictions: Array<CarRestriction> | undefined;

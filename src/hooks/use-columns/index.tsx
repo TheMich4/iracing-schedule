@@ -1,3 +1,4 @@
+import { CarClassesCell } from "./cells/car-classes-cell";
 import { Check } from "lucide-react";
 import { LicenseGroupCell } from "./cells/license-group-cell";
 import type { Schedule } from "~/types";
@@ -42,15 +43,7 @@ export const getColumns = ({
     }),
     columnHelper.accessor("carClasses", {
       id: "carClasses",
-      cell: (cell) => {
-        const carClasses = cell.getValue();
-
-        return (
-          <span>
-            {carClasses.map((carClass) => carClass?.shortName).join(", ")}
-          </span>
-        );
-      },
+      cell: ({ row }) => <CarClassesCell row={row} content={content} />,
       header: "Car classes",
     }),
     columnHelper.accessor("trackName", {

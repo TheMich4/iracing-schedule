@@ -8,6 +8,7 @@ import type {
 
 import type { Schedule } from "~/types";
 import { carClasses } from "~/consts/car-classes";
+import { cars } from "~/consts/cars";
 import { seriesAssets } from "~/consts/series-assets";
 import { seriesData } from "~/consts/series";
 
@@ -28,6 +29,10 @@ const prepareScheduleData = (
         carClassId: carClass.carClassId,
         name: carClass.name,
         shortName: carClass.shortName,
+        carIds: carClass.carsInClass.map((car) => car.carId),
+        carPackageIds: carClass.carsInClass.map(
+          (car) => cars.find((c) => c.carId === car.carId)?.packageId
+        ),
       };
     }),
     carRestrictions: schedule.carRestrictions,
@@ -87,4 +92,3 @@ export const importSchedule = () => {
 
   return byStartDate;
 };
-

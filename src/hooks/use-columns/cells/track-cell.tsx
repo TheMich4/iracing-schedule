@@ -16,7 +16,7 @@ export const TrackCell = ({
   content,
 }: {
   row: { original: { track: { trackId: number }; trackName: string } };
-  content: UserContent;
+  content: UserContent | undefined;
 }) => {
   const { theme } = useTheme();
 
