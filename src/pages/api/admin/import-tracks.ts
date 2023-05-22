@@ -30,7 +30,7 @@ export const importTracks = async (email: string, password: string) => {
 
     return acc;
   }, {} as { [packageId: string]: Track });
-  2;
+
   await Promise.all(
     Object.values(trackMap).map(async (track: Track) => {
       const { packageId, trackName, trackIds } = track;

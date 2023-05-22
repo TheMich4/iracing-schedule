@@ -67,7 +67,13 @@ model VerificationToken {
 }
 
 model Track {
-    packageId   Int   @id
+    packageId   Int     @id
     trackName   String
     trackIds    Json
+}
+
+model Car {
+    packageId   Int     @id
+    carName     String
+    carIds      Json
 }
