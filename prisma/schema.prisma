@@ -24,12 +24,12 @@ model Account {
     type              String
     provider          String
     providerAccountId String
-    refresh_token     String? // @db.Text
-    access_token      String? // @db.Text
+    refresh_token     String? @db.Text
+    access_token      String? @db.Text
     expires_at        Int?
     token_type        String?
     scope             String?
-    id_token          String? // @db.Text
+    id_token          String? @db.Text
     session_state     String?
     user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -69,11 +69,46 @@ model VerificationToken {
 model Track {
     packageId   Int     @id
     trackName   String
-    trackIds    Json
+
+    schedules   ScheduleItem[]
 }
 
 model Car {
     packageId   Int     @id
     carName     String
     carIds      Json
+
+    carClasses  CarClass[]
+}
+
+model CarClass {
+    id          Int     @id
+    name        String
+    shortName   String
+    cars        Car[]
+
+    schedules   ScheduleItem[]
+}
+
+model ScheduleItem {
+    id              String          @id @default(cuid()) @unique
+    carClasses      CarClass[]
+    fixedSetup      Boolean
+    licenseGroup    Int
+    multiclass      Boolean
+    official        Boolean
+    seriesId        Int
+    seriesName      String
+    startType       String
+    trackPackageId  Int
+    weekStartDate   String          
+
+    track           Track           @relation(fields: [trackPackageId], references: [packageId])
+    week            WeekSchedule    @relation(fields: [weekStartDate], references: [startDate])
+
+}
+
+model WeekSchedule {
+    startDate      String           @id @unique
+    schedules      ScheduleItem[] 
 }
