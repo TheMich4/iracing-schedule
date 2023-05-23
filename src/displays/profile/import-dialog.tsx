@@ -48,8 +48,6 @@ export const ImportDialog = ({
       });
 
     setIsLoading(false);
-
-    // TODO: Add showing toast
   };
 
   return (

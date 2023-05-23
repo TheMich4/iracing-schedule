@@ -34,12 +34,10 @@ export const importContent = async (
   }, {});
 
   const tracks = memberInfo.trackPackages.reduce((acc, track) => {
-    track.contentIds.forEach((contentId) => {
-      acc[contentId] = {
-        ...(currentContent?.tracks?.[contentId] || {}),
-        owned: true,
-      };
-    });
+    acc[track.packageId] = {
+      ...(currentContent?.cars?.[track.packageId] || {}),
+      owned: true,
+    };
     return acc;
   }, {});
 
