@@ -17,7 +17,7 @@ export const NavbarMenu = ({ user }: { user: User }) => {
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent className="mx-2 my-3">
+      <PopoverContent className="mx-2 my-3 p-2">
         <div className="flex flex-col gap-2">
           <NavbarButton label="Schedule" pathname="/" />
           {user && <NavbarButton label="Profile" pathname="/profile" />}
