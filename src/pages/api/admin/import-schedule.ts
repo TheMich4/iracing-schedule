@@ -37,20 +37,7 @@ export const importSchedule = async (email: string, password: string) => {
         [schedule.startDate]: [
           ...(acc[schedule.startDate] || []),
           {
-            carClasses: series.carClassIds.map((carClassId) => {
-              const carClass = carClasses?.find(
-                (carClass) => carClass.carClassId === carClassId
-              );
-              return {
-                id: carClassId,
-                name: carClass?.name,
-                shortName: carClass?.shortName,
-                carsInClass: carClass?.carsInClass.map((car) => {
-                  const carData = cars?.find((c) => c.carId === car.carId);
-                  return carData?.packageId;
-                }),
-              };
-            }),
+            carClasses: series.carClassIds,
             fixedSetup: series.fixedSetup,
             licenseGroup: series.licenseGroup,
             multiclass: series.multiclass,
@@ -61,6 +48,7 @@ export const importSchedule = async (email: string, password: string) => {
             trackPackageId: tracks?.find(
               (track) => track.trackId === schedule.track?.trackId
             )?.packageId,
+            weekStartDate: schedule.startDate,
           },
         ],
       };
@@ -70,21 +58,52 @@ export const importSchedule = async (email: string, password: string) => {
   }, {});
 
   // Create new weeks with startDate
+  // await Promise.all(
+  //   Object.keys(byStartDate).map(async (startDate: string) => {
+  //     await prisma.weekSchedule.upsert({
+  //       where: { startDate },
+  //       create: {
+  //         startDate,
+  //       },
+  //       update: {},
+  //     });
+  //   })
+  // );
+
   await Promise.all(
-    Object.keys(byStartDate).map(async (startDate: string) => {
-      await prisma.weekSchedule.upsert({
-        where: { startDate },
-        create: {
-          startDate,
-        },
-        update: {},
-      });
+    Object.entries(byStartDate).map(async ([startDate, schedules]) => {
+      await Promise.all(
+        schedules.map(async (schedule) => {
+          await prisma.scheduleItem.upsert({
+            where: {
+              weekStartDate: startDate,
+            },
+            create: {
+              // carClasses: schedule.carClasses.map((carClassId) => ({
+              //   connect: { id: carClassId },
+              // })),
+              fixedSetup: schedule.fixedSetup,
+              licenseGroup: schedule.licenseGroup,
+              multiclass: schedule.multiclass,
+              official: schedule.official,
+              seriesId: schedule.seriesId,
+              seriesName: schedule.seriesName,
+              startType: schedule.startType,
+              track: {
+                connect: {
+                  packageId: schedule.trackPackageId,
+                },
+              },
+              week: {
+                connect: { startDate },
+              },
+            },
+            update: {},
+          });
+        })
+      );
     })
   );
-
-  // await Promise.all(
-  //   Object.entries(byStartDate).map(async ([startDate, schedules]) => {})
-  // );
 
   return { byStartDate };
 };
