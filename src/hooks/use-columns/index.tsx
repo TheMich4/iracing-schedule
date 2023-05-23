@@ -43,12 +43,12 @@ export const getColumns = ({
     }),
     columnHelper.accessor("carClasses", {
       id: "carClasses",
-      cell: ({ row }) => <CarClassesCell row={row} content={content} />,
+      cell: ({ row }) => <CarClassesCell content={content} row={row} />,
       header: "Car classes",
     }),
     columnHelper.accessor("trackName", {
       id: "trackName",
-      cell: ({ row }) => <TrackCell row={row} content={content} />,
+      cell: ({ row }) => <TrackCell content={content} row={row} />,
       header: "Track name",
     }),
     columnHelper.accessor("trackType", {

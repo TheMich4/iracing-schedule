@@ -1,4 +1,4 @@
-import { Car } from "@prisma/client";
+import type { Car } from "@prisma/client";
 import { TabItem } from "./tab-item";
 import type { User } from "next-auth";
 

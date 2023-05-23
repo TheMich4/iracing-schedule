@@ -33,7 +33,7 @@ const ProfilePage = async () => {
         </CardContent>
       </Card>
 
-      <UserContent user={user} tracks={tracks} cars={cars} />
+      <UserContent cars={cars} tracks={tracks} user={user} />
     </div>
   );
 };
