@@ -3,10 +3,10 @@
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Loader2 } from "lucide-react";
-import { importCarClasses } from "~/pages/api/admin/import-car-classes";
-import { importCars } from "~/pages/api/admin/import-cars";
-import { importSchedule } from "~/pages/api/admin/import-schedule";
-import { importTracks } from "~/pages/api/admin/import-tracks";
+import { importCarClasses } from "~/server/api/admin/import-car-classes";
+import { importCars } from "~/server/api/admin/import-cars";
+import { importSchedule } from "~/server/api/admin/import-schedule";
+import { importTracks } from "~/server/api/admin/import-tracks";
 import { useState } from "react";
 
 const IracingForm = ({

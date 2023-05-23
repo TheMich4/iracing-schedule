@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
 import { UserAvatar } from "~/displays/profile/user-avatar";
 import { UserContent } from "~/displays/profile/user-content";
-import { getCars } from "~/pages/api/content/get-cars";
+import { getCars } from "~/server/api/content/get-cars";
 import { getCurrentUser } from "~/utils/session";
-import { getTracks } from "~/pages/api/content/get-tracks";
+import { getTracks } from "~/server/api/content/get-tracks";
 
 const ProfilePage = async () => {
   const user = await getCurrentUser();
