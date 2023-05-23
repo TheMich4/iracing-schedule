@@ -82,5 +82,9 @@ export const importSchedule = async (email: string, password: string) => {
     })
   );
 
+  // await Promise.all(
+  //   Object.entries(byStartDate).map(async ([startDate, schedules]) => {})
+  // );
+
   return { byStartDate };
 };

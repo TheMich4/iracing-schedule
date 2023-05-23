@@ -3,6 +3,7 @@
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Loader2 } from "lucide-react";
+import { importCarClasses } from "~/pages/api/admin/import-car-classes";
 import { importCars } from "~/pages/api/admin/import-cars";
 import { importSchedule } from "~/pages/api/admin/import-schedule";
 import { importTracks } from "~/pages/api/admin/import-tracks";
@@ -58,6 +59,15 @@ export const ImportContent = () => {
     setIsImporting(false);
   };
 
+  const handleImportCarClasses = async () => {
+    setIsImporting(true);
+    const data = await importCarClasses(email, password).catch((e) => {
+      console.error(e);
+    });
+    console.log({ data });
+    setIsImporting(false);
+  };
+
   const handleImportSchedule = async () => {
     setIsImporting(true);
     const data = await importSchedule(email, password).catch((e) => {
@@ -81,11 +91,18 @@ export const ImportContent = () => {
 
       <Button disabled={isImporting} onClick={() => void handleImportTracks()}>
         {isImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-        <span>Import tracks</span>
+        <span>Import Tracks</span>
       </Button>
       <Button disabled={isImporting} onClick={() => void handleImportCars()}>
         {isImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
         <span>Import Cars</span>
+      </Button>
+      <Button
+        disabled={isImporting}
+        onClick={() => void handleImportCarClasses()}
+      >
+        {isImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+        <span>Import Car Classes</span>
       </Button>
       <Button
         disabled={isImporting}

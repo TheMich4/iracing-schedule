@@ -84,6 +84,7 @@ model Car {
 model CarClass {
     id          Int     @id
     name        String
+    shortName   String
     cars        Car[]
 
     schedules   ScheduleItem[]
