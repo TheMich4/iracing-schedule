@@ -101,7 +101,7 @@ model ScheduleItem {
     seriesName      String
     startType       String
     trackPackageId  Int
-    weekStartDate   String          @unique
+    weekStartDate   String          
 
     track           Track           @relation(fields: [trackPackageId], references: [packageId])
     week            WeekSchedule    @relation(fields: [weekStartDate], references: [startDate])

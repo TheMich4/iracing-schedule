@@ -57,53 +57,55 @@ export const importSchedule = async (email: string, password: string) => {
     return acc;
   }, {});
 
-  // Create new weeks with startDate
-  // await Promise.all(
-  //   Object.keys(byStartDate).map(async (startDate: string) => {
-  //     await prisma.weekSchedule.upsert({
-  //       where: { startDate },
-  //       create: {
-  //         startDate,
-  //       },
-  //       update: {},
-  //     });
-  //   })
-  // );
+  // Delete all old schedules
+  await prisma.scheduleItem.deleteMany({ where: {} });
 
+  // Create new weeks with startDate
   await Promise.all(
-    Object.entries(byStartDate).map(async ([startDate, schedules]) => {
-      await Promise.all(
-        schedules.map(async (schedule) => {
-          await prisma.scheduleItem.upsert({
-            where: {
-              weekStartDate: startDate,
-            },
-            create: {
-              // carClasses: schedule.carClasses.map((carClassId) => ({
-              //   connect: { id: carClassId },
-              // })),
-              fixedSetup: schedule.fixedSetup,
-              licenseGroup: schedule.licenseGroup,
-              multiclass: schedule.multiclass,
-              official: schedule.official,
-              seriesId: schedule.seriesId,
-              seriesName: schedule.seriesName,
-              startType: schedule.startType,
-              track: {
-                connect: {
-                  packageId: schedule.trackPackageId,
-                },
-              },
-              week: {
-                connect: { startDate },
-              },
-            },
-            update: {},
-          });
-        })
-      );
+    Object.keys(byStartDate).map(async (startDate: string) => {
+      await prisma.weekSchedule.upsert({
+        where: { startDate },
+        create: {
+          startDate,
+        },
+        update: {},
+      });
     })
   );
+
+  for (const [startDate, schedules] of Object.entries(byStartDate)) {
+    await Promise.all(
+      schedules.map(async (schedule) => {
+        await prisma.scheduleItem.create({
+          data: {
+            // carClasses: schedule.carClasses.map((carClassId) => ({
+            //   connect: { id: carClassId },
+            // })),
+            fixedSetup: schedule.fixedSetup,
+            licenseGroup: schedule.licenseGroup,
+            multiclass: schedule.multiclass,
+            official: schedule.official,
+            seriesId: schedule.seriesId,
+            seriesName: schedule.seriesName,
+            startType: schedule.startType,
+            track: {
+              connect: {
+                packageId: schedule.trackPackageId,
+              },
+            },
+            week: {
+              connect: { startDate },
+            },
+          },
+        });
+      })
+    );
+
+    console.log("Waiting 500ms");
+
+    // Throttle writes to not overload the database
+    await new Promise((resolve) => setTimeout(resolve, 500));
+  }
 
   return { byStartDate };
 };
