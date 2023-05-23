@@ -24,12 +24,12 @@ model Account {
     type              String
     provider          String
     providerAccountId String
-    refresh_token     String? // @db.Text
-    access_token      String? // @db.Text
+    refresh_token     String? @db.Text
+    access_token      String? @db.Text
     expires_at        Int?
     token_type        String?
     scope             String?
-    id_token          String? // @db.Text
+    id_token          String? @db.Text
     session_state     String?
     user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -100,16 +100,14 @@ model ScheduleItem {
     seriesName      String
     startType       String
     trackPackageId  Int
-    weekId          String          @unique
+    weekStartDate   String          @unique
 
     track           Track           @relation(fields: [trackPackageId], references: [packageId])
-    weeks           WeekSchedule[]
+    week            WeekSchedule    @relation(fields: [weekStartDate], references: [startDate])
 
 }
 
 model WeekSchedule {
-    id             String       @id @default(cuid()) @unique
-    scheduleId     String
-    @@index([scheduleId])
-    schedule       ScheduleItem @relation(fields: [scheduleId], references: [id])
+    startDate      String           @id @unique
+    schedules      ScheduleItem[] 
 }

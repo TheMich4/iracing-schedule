@@ -2,6 +2,7 @@
 
 import IracingAPI from "iracing-api";
 import { prisma } from "~/server/db";
+import { track } from "@vercel/analytics/react";
 
 export const importSchedule = async (email: string, password: string) => {
   const ir = new IracingAPI();
@@ -57,7 +58,9 @@ export const importSchedule = async (email: string, password: string) => {
             seriesId: series.seriesId,
             seriesName: schedule.seriesName,
             startType: schedule.startType,
-            track: getTrackData(schedule.track?.trackId),
+            trackPackageId: tracks?.find(
+              (track) => track.trackId === schedule.track?.trackId
+            )?.packageId,
           },
         ],
       };
@@ -66,5 +69,18 @@ export const importSchedule = async (email: string, password: string) => {
     return acc;
   }, {});
 
-  return { seriesSeasons, byStartDate, carClasses, cars, tracks };
+  // Create new weeks with startDate
+  await Promise.all(
+    Object.keys(byStartDate).map(async (startDate: string) => {
+      await prisma.weekSchedule.upsert({
+        where: { startDate },
+        create: {
+          startDate,
+        },
+        update: {},
+      });
+    })
+  );
+
+  return { byStartDate };
 };
