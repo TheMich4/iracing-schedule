@@ -4,6 +4,19 @@ import IracingAPI from "iracing-api";
 import { prisma } from "~/server/db";
 import { track } from "@vercel/analytics/react";
 
+interface ScheduleItem {
+  carClasses: number[];
+  fixedSetup: boolean;
+  licenseGroup: number;
+  multiclass: boolean;
+  official: boolean;
+  seriesId: number;
+  seriesName: string;
+  startType: string;
+  trackPackageId: number;
+  weekStartDate: string;
+}
+
 export const importSchedule = async (email: string, password: string) => {
   const ir = new IracingAPI();
   await ir.login(email, password);
@@ -12,20 +25,7 @@ export const importSchedule = async (email: string, password: string) => {
 
   if (!seriesSeasons) return;
 
-  const cars = await ir.getCars();
-  const carClasses = await ir.getCarClasses();
   const tracks = await ir.getTracks();
-
-  const getTrackData = (trackId: number | undefined) => {
-    const track = tracks?.find((track) => track.trackId === trackId);
-
-    if (!trackId || !track) return null;
-
-    return {
-      packageId: track.packageId,
-      trackName: track.trackName,
-    };
-  };
 
   const byStartDate = seriesSeasons.reduce((acc, series) => {
     // Only import active sessions
@@ -74,37 +74,32 @@ export const importSchedule = async (email: string, password: string) => {
   );
 
   for (const [startDate, schedules] of Object.entries(byStartDate)) {
-    await Promise.all(
-      schedules.map(async (schedule) => {
-        await prisma.scheduleItem.create({
-          data: {
-            // carClasses: schedule.carClasses.map((carClassId) => ({
-            //   connect: { id: carClassId },
-            // })),
-            fixedSetup: schedule.fixedSetup,
-            licenseGroup: schedule.licenseGroup,
-            multiclass: schedule.multiclass,
-            official: schedule.official,
-            seriesId: schedule.seriesId,
-            seriesName: schedule.seriesName,
-            startType: schedule.startType,
-            track: {
-              connect: {
-                packageId: schedule.trackPackageId,
-              },
-            },
-            week: {
-              connect: { startDate },
+    for (const schedule of schedules as Array<ScheduleItem>) {
+      await prisma.scheduleItem.create({
+        data: {
+          fixedSetup: schedule.fixedSetup,
+          licenseGroup: schedule.licenseGroup,
+          multiclass: schedule.multiclass,
+          official: schedule.official,
+          seriesId: schedule.seriesId,
+          seriesName: schedule.seriesName,
+          startType: schedule.startType,
+          track: {
+            connect: {
+              packageId: schedule.trackPackageId,
             },
           },
-        });
-      })
-    );
+          week: {
+            connect: { startDate },
+          },
+        },
+      });
 
-    console.log("Waiting 500ms");
+      console.log("Waiting 100ms");
 
-    // Throttle writes to not overload the database
-    await new Promise((resolve) => setTimeout(resolve, 500));
+      // Throttle writes to not overload the database
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
   }
 
   return { byStartDate };
