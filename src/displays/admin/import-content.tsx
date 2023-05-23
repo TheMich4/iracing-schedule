@@ -4,6 +4,7 @@ import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Loader2 } from "lucide-react";
 import { importCars } from "~/pages/api/admin/import-cars";
+import { importSchedule } from "~/pages/api/admin/import-schedule";
 import { importTracks } from "~/pages/api/admin/import-tracks";
 import { useState } from "react";
 
@@ -57,6 +58,16 @@ export const ImportContent = () => {
     setIsImporting(false);
   };
 
+  const handleImportSchedule = async () => {
+    setIsImporting(true);
+    const data = await importSchedule(email, password).catch((e) => {
+      console.error(e);
+    });
+
+    console.log({ data });
+    setIsImporting(false);
+  };
+
   return (
     <div className="m-2 flex flex-col gap-2 rounded-md border p-2">
       <h1>Import Content</h1>
@@ -75,6 +86,13 @@ export const ImportContent = () => {
       <Button disabled={isImporting} onClick={() => void handleImportCars()}>
         {isImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
         <span>Import Cars</span>
+      </Button>
+      <Button
+        disabled={isImporting}
+        onClick={() => void handleImportSchedule()}
+      >
+        {isImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+        <span>Import Schedule</span>
       </Button>
     </div>
   );

@@ -12,7 +12,7 @@ import { cars } from "~/consts/cars";
 import { seriesAssets } from "~/consts/series-assets";
 import { seriesData } from "~/consts/series";
 
-const prepareScheduleData = (
+export const prepareScheduleData = (
   series: SeriesSeason,
   schedule: IRSchedule
 ): Schedule => {
