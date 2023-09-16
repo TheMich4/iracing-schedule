@@ -1,14 +1,3 @@
 {
-  "cSpell.words": [
-    "clsx",
-    "datepicker",
-    "iracing",
-    "kanit",
-    "lucide",
-    "multiclass",
-    "signin",
-    "tanstack"
-  ],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "cSpell.words": ["clsx", "iracing", "tailwindcss"]
 }
