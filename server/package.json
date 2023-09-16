@@ -1,0 +1,17 @@
+{
+  "name": "iracing-schedule-server",
+  "version": "0.2.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --hot run src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5.2.2"
+  }
+}

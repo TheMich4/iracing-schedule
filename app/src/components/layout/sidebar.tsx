@@ -3,6 +3,7 @@ import {
   DotsHorizontalIcon,
   GearIcon,
   HomeIcon,
+  PersonIcon,
 } from "@radix-ui/react-icons";
 
 import { Button } from "../ui/button";
@@ -12,17 +13,19 @@ import { ThemeSwitch } from "../theme-switch";
 const SidebarButton = ({
   children,
   IconComponent,
+  href = "#",
 }: {
   children: React.ReactNode;
   IconComponent: React.ForwardRefExoticComponent<
     IconProps & React.RefAttributes<SVGSVGElement>
   >;
+  href?: string;
 }) => {
   return (
     <li>
       <Button asChild className="w-full" variant="ghost">
         <a
-          href="#"
+          href={href}
           className="flex items-center rounded-md px-3 py-2 text-foreground hover:bg-accent"
         >
           <IconComponent className="h-[1.2rem] w-[1.2rem]" />
@@ -49,8 +52,13 @@ export const Sidebar = () => {
           <span className="ml-3 text-base font-semibold">iRacing Schedule</span>
         </a>
         <ul className="space-y-2 text-sm font-medium">
-          <SidebarButton IconComponent={HomeIcon}>Home</SidebarButton>
+          <SidebarButton IconComponent={HomeIcon} href="#">
+            Home
+          </SidebarButton>
           <SidebarButton IconComponent={GearIcon}>Settings</SidebarButton>
+          <SidebarButton IconComponent={PersonIcon} href="admin">
+            Admin
+          </SidebarButton>
         </ul>
 
         <div className="mt-auto flex flex-col gap-2">
