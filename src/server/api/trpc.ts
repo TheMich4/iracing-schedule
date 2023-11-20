@@ -12,8 +12,8 @@ import { type NextRequest } from "next/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
 
-import { getServerAuthSession } from "~/server/auth";
-import { db } from "~/server/db";
+import { getServerAuthSession } from "@/server/auth";
+import { db } from "@/server/db";
 
 /**
  * 1. CONTEXT
