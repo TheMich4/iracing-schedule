@@ -1,4 +1,4 @@
-import { Season } from "@/types/iracing";
+import type { Season } from "@/types/iracing";
 import { SeasonCard } from "./_components/season-card";
 import seasons from "../../data/seasons.json";
 
