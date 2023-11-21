@@ -19,8 +19,8 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
   }
 
   return (
-    <main className="container bg-background py-2">
-      <p className="flex items-center gap-2">
+    <main className="container flex flex-col gap-2 bg-background py-2">
+      <div className="flex items-center gap-2">
         <Badge
           className={cn(
             "text-center align-baseline",
@@ -32,9 +32,10 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
         <span className="flex align-baseline text-2xl font-bold tracking-tighter">
           {season.season_name}
         </span>
-      </p>
+      </div>
 
-      <div className="flex flex-col gap-1">
+      {/* TODO: Make carousel */}
+      <div className=" flex h-32 w-full flex-row gap-1 overflow-x-scroll">
         {season.schedules.map((schedule) => (
           <Week schedule={schedule} key={schedule.race_week_num} />
         ))}
