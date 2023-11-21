@@ -5,8 +5,12 @@ export const siteConfig = {
   description: "Schedule for iRacing series",
   mainNav: [
     {
-      title: "Home",
+      title: "Schedule",
       href: "/",
+    },
+    {
+      title: "Series",
+      href: "/series",
     },
   ],
 };

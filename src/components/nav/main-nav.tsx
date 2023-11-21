@@ -16,11 +16,13 @@ export function MainNav({ items }: MainNavProps) {
       <MobileNavMenu items={items} />
       <Link
         href="/"
-        className="hidden items-center space-x-2 dark:text-primary md:flex"
+        className="hidden items-center space-x-2 text-primary md:flex"
       >
-        <span className="inline-block font-bold">{siteConfig.name}</span>
+        <span className="inline-block font-bold text-white">
+          {siteConfig.name}
+        </span>
       </Link>
-      <nav className="hidden gap-2 md:flex">
+      <nav className="hidden gap-4 md:flex">
         {items?.map(
           (item, index) => item.href && <NavLink key={index} item={item} />,
         )}
