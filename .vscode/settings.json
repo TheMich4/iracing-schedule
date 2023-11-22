@@ -5,9 +5,11 @@
     "iracing",
     "kanit",
     "lucide",
+    "Mantine",
     "multiclass",
     "signin",
-    "tanstack"
+    "tanstack",
+    "TRPC"
   ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"

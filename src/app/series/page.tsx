@@ -1,28 +1,31 @@
+"use client";
+
+import { CategoryDropdown } from "./_components/category-dropdown";
+import { LicenseDropdown } from "./_components/license-dropdown";
 import type { Season } from "@/types/iracing";
 import { SeasonCard } from "./_components/season-card";
 import seasons from "../../data/seasons.json";
-
-export function sortSeasons(seasons: Array<Season>): Array<Season> {
-  return seasons.sort((a, b) => {
-    if (a.license_group !== b.license_group) {
-      return a.license_group - b.license_group;
-    }
-
-    if (a.season_name !== b.season_name) {
-      return a.season_name.localeCompare(b.season_name);
-    }
-
-    return 0;
-  });
-}
+import { sortSeasons } from "@/lib/season";
+import { useFilters } from "./_hooks/use-filters";
+import { useMemo } from "react";
 
 export default function SeriesPage() {
   const sortedSeasons = sortSeasons(seasons as Array<Season>);
+  const { filters, setFilters } = useFilters();
+
+  const seasonsData = useMemo(
+    () => sortedSeasons.filter(() => true),
+    [sortedSeasons, filters],
+  );
 
   return (
-    <main className="container bg-background py-2">
+    <main className="container flex flex-col gap-2 bg-background py-2">
+      <div className="flex flex-row justify-center gap-2">
+        <CategoryDropdown filters={filters} setFilters={setFilters} />
+        <LicenseDropdown filters={filters} setFilters={setFilters} />
+      </div>
       <div className="grid grid-cols-4 gap-2">
-        {sortedSeasons.map((season) => (
+        {seasonsData.map((season) => (
           <SeasonCard season={season} key={season.season_id} />
         ))}
       </div>
