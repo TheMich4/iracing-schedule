@@ -1,22 +1,20 @@
 "use client";
 
 import type { ColumnDef } from "@tanstack/react-table";
+import { type Season } from "@/types/iracing";
+import { LicenseGroupCell } from "./cells/license-group-cell";
 
-export interface TableData {
-  hello: string;
-}
-
-export const columns: ColumnDef<TableData>[] = [
+export const columns: ColumnDef<Season>[] = [
   {
-    accessorKey: "hello",
-    header: "Hello",
+    cell: LicenseGroupCell,
+    header: "Class",
   },
   {
-    accessorKey: "hello",
-    header: "Hello",
+    accessorFn: (row) => row.schedules[0]?.series_name,
+    header: "Series name",
   },
   {
-    accessorKey: "hello",
-    header: "Hello",
+    accessorFn: (row) => row.schedules[0]?.track?.track_name,
+    header: "Track",
   },
 ];
