@@ -11,6 +11,7 @@ export const LicenseColors = new Proxy(
   },
   {
     get: (target, key) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
       return target[key] ?? "gray-600";
     },
   },
