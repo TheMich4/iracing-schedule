@@ -8,7 +8,8 @@
     "db:studio": "dotenv drizzle-kit studio",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "data:update": "bun run src/server/data/update-data.ts"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^0.3.5",
@@ -25,11 +26,12 @@
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "add": "^2.0.6",
-    "bunx": "^0.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "drizzle-orm": "^0.28.5",
     "embla-carousel-react": "^7.1.0",
+    "iracing-api": "^0.3.0",
+    "lucide-react": "^0.293.0",
     "next": "^14.0.0",
     "next-auth": "^4.24.4",
     "next-themes": "^0.2.1",
@@ -42,6 +44,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "bun-types": "latest",
     "@types/eslint": "^8.44.2",
     "@types/node": "^18.16.0",
     "@types/react": "^18.2.33",

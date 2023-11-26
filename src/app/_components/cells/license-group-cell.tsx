@@ -9,7 +9,6 @@ export const LicenseGroupCell = ({ row }: { row: { original: Season } }) => {
     [row.original.license_group],
   );
 
-  console.log(cn(`bg-${row.original.license_group}`), { o: row.original });
   return (
     <span
       className={cn(

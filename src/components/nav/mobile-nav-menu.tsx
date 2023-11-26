@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import Link from "next/link";
-import { MainNavProps } from "./main-nav";
+import { type MainNavProps } from "./main-nav";
 import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";

@@ -38,5 +38,8 @@
     "**/*.mjs",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "types": [
+    "bun-types" // add Bun global
+  ]
 }
