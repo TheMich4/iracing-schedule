@@ -24,20 +24,20 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
         <Badge
           className={cn(
             "text-center align-baseline",
-            `bg-${LicenseColors[season.license_group]}`,
+            `bg-${LicenseColors[season.licenseGroup]}`,
           )}
         >
-          {LicenseGroupNames[season.license_group]}
+          {LicenseGroupNames[season.licenseGroup]}
         </Badge>
         <span className="flex align-baseline text-2xl font-bold tracking-tighter">
-          {season.season_name}
+          {season.seasonName}
         </span>
       </div>
 
       {/* TODO: Make carousel */}
       <div className=" flex h-32 w-full flex-row gap-1 overflow-x-scroll">
         {season.schedules.map((schedule) => (
-          <Week schedule={schedule} key={schedule.race_week_num} />
+          <Week schedule={schedule} key={schedule.raceWeekNum} />
         ))}
       </div>
     </main>

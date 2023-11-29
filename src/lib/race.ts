@@ -1,17 +1,17 @@
-import type { Schedule } from "@/types/iracing";
+import { type SeriesSeason } from "iracing-api";
 
-export const getRaceLimit = (schedule: Schedule) => {
-  if (schedule.race_lap_limit) {
+export const getRaceLimit = (schedule: SeriesSeason["schedules"][0]) => {
+  if (schedule.raceLapLimit) {
     return {
       type: "laps",
-      limit: schedule.race_lap_limit,
+      limit: schedule.raceLapLimit,
     };
   }
 
-  if (schedule.race_time_limit) {
+  if (schedule.raceTimeLimit) {
     return {
       type: "minutes",
-      limit: schedule.race_time_limit,
+      limit: schedule.raceTimeLimit,
     };
   }
 };

@@ -1,17 +1,17 @@
-import type { Season } from "@/types/iracing";
+import { type SeriesSeason } from "iracing-api";
 import seasons from "../data/seasons.json";
 
 export const getSeasonData = (seasonId: number) =>
-  seasons.find((season) => season.season_id === seasonId);
+  seasons.find((season) => season.seasonId === seasonId);
 
-export const sortSeasons = (seasons: Array<Season>) => {
+export const sortSeasons = (seasons: Array<SeriesSeason>) => {
   return seasons.sort((a, b) => {
-    if (a.license_group !== b.license_group) {
-      return a.license_group - b.license_group;
+    if (a.licenseGroup !== b.licenseGroup) {
+      return a.licenseGroup - b.licenseGroup;
     }
 
-    if (a.season_name !== b.season_name) {
-      return a.season_name.localeCompare(b.season_name);
+    if (a.seasonName !== b.seasonName) {
+      return a.seasonName.localeCompare(b.seasonName);
     }
 
     return 0;

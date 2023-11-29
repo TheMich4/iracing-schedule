@@ -2,15 +2,15 @@
 
 import { CategoryDropdown } from "./_components/category-dropdown";
 import { LicenseDropdown } from "./_components/license-dropdown";
-import type { Season } from "@/types/iracing";
 import { SeasonCard } from "./_components/season-card";
+import { type SeriesSeason } from "iracing-api";
 import seasons from "../../data/seasons.json";
 import { sortSeasons } from "@/lib/season";
 import { useFilters } from "./_hooks/use-filters";
 import { useMemo } from "react";
 
 export default function SeriesPage() {
-  const sortedSeasons = sortSeasons(seasons as Array<Season>);
+  const sortedSeasons = sortSeasons(seasons as Array<SeriesSeason>);
   const { filters, setFilters } = useFilters();
 
   const seasonsData = useMemo(
@@ -26,7 +26,7 @@ export default function SeriesPage() {
       </div>
       <div className="grid grid-cols-4 gap-2">
         {seasonsData.map((season) => (
-          <SeasonCard season={season} key={season.season_id} />
+          <SeasonCard season={season} key={season.seasonId} />
         ))}
       </div>
     </main>
