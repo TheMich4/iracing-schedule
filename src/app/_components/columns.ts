@@ -27,6 +27,14 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     header: "Cars",
   },
   {
+    accessorFn: (row) => row.multiclass,
+    cell: CheckmarkCell,
+    header: "Multi class",
+    meta: {
+      center: true,
+    },
+  },
+  {
     accessorFn: (row) => row.official,
     cell: CheckmarkCell,
     header: "Official",
