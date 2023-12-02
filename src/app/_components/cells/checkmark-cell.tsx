@@ -7,8 +7,12 @@ interface CheckmarkCellProps {
 
 export const CheckmarkCell = ({ getValue }: CheckmarkCellProps) => {
   const Icon = useMemo(() => {
-    return getValue() ? <Check className="h-4 w-4" /> : null;
+    return getValue() ? <Check className="h-4 w-4 self-center" /> : null;
   }, [getValue]);
 
-  return <div>{Icon}</div>;
+  if (!Icon) {
+    return null;
+  }
+
+  return <div className="flex w-full justify-center">{Icon}</div>;
 };

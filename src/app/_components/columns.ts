@@ -10,6 +10,9 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   {
     cell: LicenseGroupCell,
     header: "Class",
+    meta: {
+      center: true,
+    },
   },
   {
     accessorFn: (row) => row.schedules[0]?.seriesName,
@@ -27,10 +30,23 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     accessorFn: (row) => row.official,
     cell: CheckmarkCell,
     header: "Official",
+    meta: {
+      center: true,
+    },
   },
   {
     accessorFn: (row) => row.fixedSetup,
     cell: CheckmarkCell,
     header: "Fixed",
+    meta: {
+      center: true,
+    },
+  },
+  {
+    accessorFn: (row) => row.incidentLimit,
+    header: "Max inc",
+    meta: {
+      center: true,
+    },
   },
 ];

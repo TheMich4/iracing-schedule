@@ -15,13 +15,15 @@ export const LicenseGroupCell = ({
   );
 
   return (
-    <span
-      className={cn(
-        "flex w-fit items-center justify-center rounded-sm px-1 text-center text-sm font-bold text-white",
-        `bg-${licenseColor}`,
-      )}
-    >
-      {LicenseGroupNames[row.original.licenseGroup].charAt(0)}
-    </span>
+    <div className="flex w-full justify-center">
+      <span
+        className={cn(
+          "flex w-fit items-center justify-center rounded-sm px-1 text-center text-sm font-bold text-white",
+          `bg-${licenseColor}`,
+        )}
+      >
+        {LicenseGroupNames[row.original.licenseGroup].charAt(0)}
+      </span>
+    </div>
   );
 };
