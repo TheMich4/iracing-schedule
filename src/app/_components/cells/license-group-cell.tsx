@@ -17,7 +17,7 @@ export const LicenseGroupCell = ({
   return (
     <span
       className={cn(
-        "flex w-fit items-center justify-center rounded-sm px-1 text-center text-sm font-bold",
+        "flex w-fit items-center justify-center rounded-sm px-1 text-center text-sm font-bold text-white",
         `bg-${licenseColor}`,
       )}
     >

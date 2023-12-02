@@ -33,7 +33,7 @@ export function DataTable<TData, TValue>({
   console.log({ data, columns });
 
   return (
-    <div className="h-full w-full rounded-md border">
+    <div className="h-full w-full rounded-md border text-foreground">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
