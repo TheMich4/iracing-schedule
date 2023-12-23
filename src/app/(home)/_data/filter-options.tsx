@@ -33,3 +33,14 @@ export const classOptions = [
     icon: () => <ClassIcon licenseGroup={LicenseGroup.Pro} />,
   },
 ];
+
+export const setupOptions = [
+  {
+    value: true,
+    label: "Fixed",
+  },
+  {
+    value: false,
+    label: "Open",
+  },
+];

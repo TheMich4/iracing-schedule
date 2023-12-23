@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
-import { classOptions } from "../_data/filter-options";
+import { classOptions, setupOptions } from "../_data/filter-options";
 
 interface DataTableToolbarProps {
   table: Table<Array<SeriesSeason>>;
@@ -41,11 +41,11 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             options={classOptions}
           />
         )}
-        {table.getColumn("priority") && (
+        {table.getColumn("fixed") && (
           <DataTableFacetedFilter
-            column={table.getColumn("priority")}
-            title="Priority"
-            options={priorities}
+            column={table.getColumn("fixed")}
+            title="Setup"
+            options={setupOptions}
           />
         )}
         {isFiltered && (

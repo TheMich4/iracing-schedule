@@ -55,6 +55,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     accessorFn: (row) => row.fixedSetup,
     cell: CheckmarkCell,
     header: "Fixed",
+    filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
     meta: {
       center: true,
     },
