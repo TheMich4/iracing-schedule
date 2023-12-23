@@ -12,6 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface SeasonCardProps {
   season: SeriesSeason;
@@ -39,9 +40,14 @@ export const SeasonCard = ({ season }: SeasonCardProps) => {
           <CardDescription>
             {season.official ? "Official" : "Unofficial"}
           </CardDescription>
-          <CardDescription
-            className={cn("text-sm", `text-${licenseColor}`)}
-          >{`${LicenseGroupNames[season.licenseGroup]}`}</CardDescription>
+          <CardDescription className={cn("text-sm", `text-${licenseColor}`)}>
+            <Badge
+              className={cn(
+                `bg-${LicenseColors[season.licenseGroup]}`,
+                `hover:bg-${LicenseColors[season.licenseGroup]}`,
+              )}
+            >{`${LicenseGroupNames[season.licenseGroup]}`}</Badge>
+          </CardDescription>
         </CardHeader>
       </Card>
     </a>
