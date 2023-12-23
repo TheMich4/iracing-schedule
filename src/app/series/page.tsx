@@ -24,7 +24,7 @@ export default function SeriesPage() {
         <CategoryDropdown filters={filters} setFilters={setFilters} />
         <LicenseDropdown filters={filters} setFilters={setFilters} />
       </div>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-4">
         {seasonsData.map((season) => (
           <SeasonCard season={season} key={season.seasonId} />
         ))}
