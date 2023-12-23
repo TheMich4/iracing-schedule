@@ -15,6 +15,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
+import { LicenseColors } from "@/config/license";
 import { cn } from "@/lib/utils";
 
 interface DataTableProps<TData, TValue> {
@@ -64,6 +65,9 @@ export function DataTable<TData, TValue>({
               <TableRow
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
+                className={cn(
+                  `hover:bg-${LicenseColors[row.original.licenseGroup]}/10`,
+                )}
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell
