@@ -1,7 +1,7 @@
 "use client";
 
 import { DataTable } from "./_components/data-table";
-import { columns } from "./_components/data-table-columns";
+import { columns } from "./_data/columns";
 import seasons from "@/data/seasons.json";
 
 export default function Home() {

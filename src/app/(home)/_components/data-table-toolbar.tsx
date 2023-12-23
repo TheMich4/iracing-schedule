@@ -53,6 +53,14 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
+        <Input
+          placeholder="Filter tracks..."
+          value={(table.getColumn("track")?.getFilterValue() as string) ?? ""}
+          onChange={(event) =>
+            table.getColumn("track")?.setFilterValue(event.target.value)
+          }
+          className="h-8 w-[150px] lg:w-[250px]"
+        />
         {table.getColumn("class") && (
           <DataTableFacetedFilter
             column={table.getColumn("class")}

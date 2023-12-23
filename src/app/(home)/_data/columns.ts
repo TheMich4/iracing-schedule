@@ -1,9 +1,9 @@
 "use client";
 
-import { CarClassesCell } from "./cells/car-classes-cell";
-import { CheckmarkCell } from "./cells/checkmark-cell";
+import { CarClassesCell } from "../_components/cells/car-classes-cell";
+import { CheckmarkCell } from "../_components/cells/checkmark-cell";
 import type { ColumnDef } from "@tanstack/react-table";
-import { LicenseGroupCell } from "./cells/license-group-cell";
+import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import type { SeriesSeason } from "iracing-api";
 
 export const columns: ColumnDef<SeriesSeason>[] = [
