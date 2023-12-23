@@ -8,6 +8,7 @@ import type { SeriesSeason } from "iracing-api";
 
 export const columns: ColumnDef<SeriesSeason>[] = [
   {
+    id: "class",
     cell: LicenseGroupCell,
     header: "Class",
     meta: {
@@ -15,18 +16,22 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     },
   },
   {
+    id: "seriesName",
     accessorFn: (row) => row.schedules[0]?.seriesName,
     header: "Series name",
   },
   {
+    id: "track",
     accessorFn: (row) => row.schedules[0]?.track?.trackName,
     header: "Track",
   },
   {
+    id: "cars",
     cell: CarClassesCell,
     header: "Cars",
   },
   {
+    id: "multiClass",
     accessorFn: (row) => row.multiclass,
     cell: CheckmarkCell,
     header: "Multi class",
@@ -35,6 +40,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     },
   },
   {
+    id: "official",
     accessorFn: (row) => row.official,
     cell: CheckmarkCell,
     header: "Official",
@@ -43,6 +49,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     },
   },
   {
+    id: "fixed",
     accessorFn: (row) => row.fixedSetup,
     cell: CheckmarkCell,
     header: "Fixed",
@@ -51,6 +58,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     },
   },
   {
+    id: "maxIncidents",
     accessorFn: (row) => row.incidentLimit,
     header: "Max inc",
     meta: {

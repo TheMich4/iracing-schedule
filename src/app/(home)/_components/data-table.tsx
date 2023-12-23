@@ -5,6 +5,10 @@ import {
   flexRender,
   getCoreRowModel,
   useReactTable,
+  type ColumnFiltersState,
+  getFacetedRowModel,
+  getFilteredRowModel,
+  getFacetedUniqueValues,
 } from "@tanstack/react-table";
 import { getLicenseColor } from "@/config/license";
 import {
@@ -18,6 +22,8 @@ import {
 
 import { type SeriesSeason } from "iracing-api";
 import { cn } from "@/lib/utils";
+import { DataTableToolbar } from "./data-table-toolbar";
+import { useState } from "react";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -28,14 +34,23 @@ export function DataTable({
   columns,
   data,
 }: DataTableProps<Array<SeriesSeason>, any>) {
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const table = useReactTable({
     data,
     columns,
+    state: {
+      columnFilters,
+    },
+    onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
+    getFacetedRowModel: getFacetedRowModel(),
+    getFacetedUniqueValues: getFacetedUniqueValues(),
+    getFilteredRowModel: getFilteredRowModel(),
   });
 
   return (
-    <div className="h-full w-full p-2">
+    <div className="flex h-full w-full flex-col gap-2">
+      <DataTableToolbar table={table} />
       <div className="h-full w-full overflow-auto rounded-md border text-foreground">
         <Table>
           <TableHeader>
