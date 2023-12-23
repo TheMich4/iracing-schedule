@@ -32,8 +32,6 @@ export function DataTable<TData, TValue>({
     getCoreRowModel: getCoreRowModel(),
   });
 
-  console.log({ data, columns });
-
   return (
     <div className="h-full w-full rounded-md border text-foreground">
       <Table>
