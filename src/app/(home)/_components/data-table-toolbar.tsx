@@ -3,6 +3,35 @@ import { type Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Cross2Icon } from "@radix-ui/react-icons";
+import { DataTableFacetedFilter } from "./data-table-faceted-filter";
+import { LicenseGroup } from "@/types/iracing";
+
+const classes = [
+  {
+    value: `${LicenseGroup.Rookie}`,
+    label: "Rookie",
+  },
+  {
+    value: `${LicenseGroup.D}`,
+    label: "D",
+  },
+  {
+    value: `${LicenseGroup.C}`,
+    label: "C",
+  },
+  {
+    value: `${LicenseGroup.B}`,
+    label: "B",
+  },
+  {
+    value: `${LicenseGroup.A}`,
+    label: "A",
+  },
+  {
+    value: `${LicenseGroup.Pro}`,
+    label: "Pro",
+  },
+];
 
 interface DataTableToolbarProps {
   table: Table<Array<SeriesSeason>>;
@@ -24,14 +53,14 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
-        {/* {table.getColumn("status") && (
+        {table.getColumn("class") && (
           <DataTableFacetedFilter
-            column={table.getColumn("status")}
-            title="Status"
-            options={statuses}
+            column={table.getColumn("class")}
+            title="Class"
+            options={classes}
           />
         )}
-        {table.getColumn("priority") && (
+        {/* {table.getColumn("priority") && (
           <DataTableFacetedFilter
             column={table.getColumn("priority")}
             title="Priority"

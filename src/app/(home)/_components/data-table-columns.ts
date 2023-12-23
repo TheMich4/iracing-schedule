@@ -9,8 +9,10 @@ import type { SeriesSeason } from "iracing-api";
 export const columns: ColumnDef<SeriesSeason>[] = [
   {
     id: "class",
+    accessorFn: (row) => `${row.licenseGroup}`,
     cell: LicenseGroupCell,
     header: "Class",
+    filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
     meta: {
       center: true,
     },
