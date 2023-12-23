@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { LicenseColors } from "@/config/license";
 import { LicenseGroupNames } from "@/types/iracing";
-import { Week } from "./_components/week";
+import { WeeksCarousel } from "./_components/weeks-carousel";
 import { cn } from "@/lib/utils";
 import { getSeasonData } from "@/lib/season";
 
@@ -34,11 +34,8 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
         </span>
       </div>
 
-      {/* TODO: Make carousel */}
-      <div className=" flex h-32 w-full flex-row gap-1 overflow-x-scroll">
-        {season.schedules.map((schedule) => (
-          <Week schedule={schedule} key={schedule.raceWeekNum} />
-        ))}
+      <div className="container">
+        <WeeksCarousel schedules={season.schedules} />
       </div>
     </main>
   );
