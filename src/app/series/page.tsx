@@ -1,7 +1,5 @@
 "use client";
 
-import { CategoryDropdown } from "./_components/category-dropdown";
-import { LicenseDropdown } from "./_components/license-dropdown";
 import { SeasonCard } from "./_components/season-card";
 import { type SeriesSeason } from "iracing-api";
 import seasons from "../../data/seasons.json";

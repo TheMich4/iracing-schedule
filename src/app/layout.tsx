@@ -1,13 +1,14 @@
 import "@/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import { SiteHeader } from "@/components/nav/site-header";
 import { TRPCReactProvider } from "@/trpc/react";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { cookies } from "next/headers";
 
-const inter = Inter({
+const kanit = Kanit({
+  weight: "600",
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -25,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`flex h-screen flex-col font-sans ${inter.variable}`}>
+      <body className={`flex h-screen flex-col font-sans ${kanit.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
           <ThemeProvider
             attribute="class"
