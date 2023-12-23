@@ -1,5 +1,5 @@
 import { type SeriesSeason } from "iracing-api";
-import carClasses from "../../../data/car-classes.json";
+import carClasses from "@/data/car-classes.json";
 import { useMemo } from "react";
 
 interface CarClassesCellProps {
