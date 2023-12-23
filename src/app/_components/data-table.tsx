@@ -34,7 +34,7 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div className="h-full w-full rounded-md border text-foreground">
+    <div className="h-full w-full overflow-auto rounded-md border text-foreground">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -44,6 +44,7 @@ export function DataTable<TData, TValue>({
                   <TableHead
                     key={header.id}
                     className={cn(
+                      "cursor-pointer",
                       header.column.columnDef.meta?.center && "text-center",
                     )}
                   >

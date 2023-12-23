@@ -4,7 +4,7 @@ import seasons from "../data/seasons.json";
 
 export default function Home() {
   return (
-    <main className="flex h-full flex-col items-center justify-center p-2 text-white">
+    <main className="flex h-full flex-col items-center justify-center overflow-hidden p-2 text-white">
       <DataTable data={seasons} columns={columns} />
     </main>
   );
