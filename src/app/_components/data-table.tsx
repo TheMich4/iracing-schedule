@@ -6,6 +6,7 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import { getLicenseColor } from "@/config/license";
 import {
   Table,
   TableBody,
@@ -15,7 +16,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { LicenseColors } from "@/config/license";
+import { type SeriesSeason } from "iracing-api";
 import { cn } from "@/lib/utils";
 
 interface DataTableProps<TData, TValue> {
@@ -23,10 +24,10 @@ interface DataTableProps<TData, TValue> {
   data: TData[];
 }
 
-export function DataTable<TData, TValue>({
+export function DataTable({
   columns,
   data,
-}: DataTableProps<TData, TValue>) {
+}: DataTableProps<Array<SeriesSeason>, any>) {
   const table = useReactTable({
     data,
     columns,
@@ -67,7 +68,9 @@ export function DataTable<TData, TValue>({
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
                 className={cn(
-                  `hover:bg-${LicenseColors[row.original.licenseGroup]}/10`,
+                  `hover:bg-${getLicenseColor(
+                    (row.original as unknown as SeriesSeason).licenseGroup,
+                  )}/10`,
                 )}
               >
                 {row.getVisibleCells().map((cell) => (

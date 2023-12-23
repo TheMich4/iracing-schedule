@@ -16,3 +16,7 @@ export const LicenseColors = new Proxy(
     },
   },
 );
+
+export const getLicenseColor = (license: number) => {
+  return LicenseColors[license as LicenseGroup];
+};
