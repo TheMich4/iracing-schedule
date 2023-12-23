@@ -4,34 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
-import { LicenseGroup } from "@/types/iracing";
-
-const classes = [
-  {
-    value: `${LicenseGroup.Rookie}`,
-    label: "Rookie",
-  },
-  {
-    value: `${LicenseGroup.D}`,
-    label: "D",
-  },
-  {
-    value: `${LicenseGroup.C}`,
-    label: "C",
-  },
-  {
-    value: `${LicenseGroup.B}`,
-    label: "B",
-  },
-  {
-    value: `${LicenseGroup.A}`,
-    label: "A",
-  },
-  {
-    value: `${LicenseGroup.Pro}`,
-    label: "Pro",
-  },
-];
+import { classOptions } from "../_data/filter-options";
 
 interface DataTableToolbarProps {
   table: Table<Array<SeriesSeason>>;
@@ -65,16 +38,16 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
           <DataTableFacetedFilter
             column={table.getColumn("class")}
             title="Class"
-            options={classes}
+            options={classOptions}
           />
         )}
-        {/* {table.getColumn("priority") && (
+        {table.getColumn("priority") && (
           <DataTableFacetedFilter
             column={table.getColumn("priority")}
             title="Priority"
             options={priorities}
           />
-        )} */}
+        )}
         {isFiltered && (
           <Button
             variant="ghost"
