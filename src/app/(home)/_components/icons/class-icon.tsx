@@ -18,7 +18,7 @@ export const ClassIcon = ({ licenseGroup }: ClassIconProps) => {
   return (
     <span
       className={cn(
-        "mr-2 flex h-4 w-4 items-start justify-center rounded-sm font-mono text-xs leading-[18px]",
+        "mr-2 flex h-4 w-4 items-start justify-center rounded-sm font-mono text-xs leading-[18px] text-white",
         `bg-${licenseColor}`,
       )}
     >
