@@ -25,6 +25,7 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
           className={cn(
             "text-center align-baseline",
             `bg-${LicenseColors[season.licenseGroup]}`,
+            `hover:bg-${LicenseColors[season.licenseGroup]}`,
           )}
         >
           {LicenseGroupNames[season.licenseGroup]}
