@@ -1,5 +1,11 @@
 import { type SeriesSeason } from "iracing-api";
 import { getRaceLimit } from "@/lib/race";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 interface WeekProps {
   schedule: SeriesSeason["schedules"][0];
@@ -10,10 +16,12 @@ export const Week = ({ schedule }: WeekProps) => {
   const raceLimit = getRaceLimit(schedule);
 
   return (
-    <div className="flex flex-col items-baseline gap-1 rounded-sm bg-muted/50 px-2 py-1 text-sm">
-      <div className="font-bold">Week {schedule.raceWeekNum + 1}:</div>
-      <div className="text-sm">{schedule.track?.trackName}</div>
-      <div className="text-xs text-muted-foreground">{`${raceLimit?.limit} ${raceLimit?.type}`}</div>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>{schedule.track?.trackName}</CardTitle>
+        <CardDescription>{`Week ${schedule.raceWeekNum + 1}`}</CardDescription>
+        <CardDescription>{`${raceLimit?.limit} ${raceLimit?.type}`}</CardDescription>
+      </CardHeader>
+    </Card>
   );
 };

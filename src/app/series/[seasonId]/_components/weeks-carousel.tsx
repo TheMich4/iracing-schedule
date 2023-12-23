@@ -7,11 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
 import { type SeriesSeason } from "iracing-api";
 import { Week } from "./week";
 
 interface WeeksCarouselProps {
-  schedule?: SeriesSeason["schedules"];
+  schedules?: SeriesSeason["schedules"];
 }
 
 export const WeeksCarousel = ({ schedules }: WeeksCarouselProps) => {
