@@ -4,14 +4,18 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
-import { classOptions, setupOptions } from "../_data/filter-options";
+import {
+  categoryOptions,
+  classOptions,
+  setupOptions,
+} from "../_data/filter-options";
 
 interface DataTableToolbarProps {
   table: Table<Array<SeriesSeason>>;
 }
 
 export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
-  const isFiltered = false;
+  const isFiltered = table.getState().columnFilters.length > 0;
 
   return (
     <div className="flex items-center justify-between">
@@ -34,11 +38,19 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
+
         {table.getColumn("class") && (
           <DataTableFacetedFilter
             column={table.getColumn("class")}
             title="Class"
             options={classOptions}
+          />
+        )}
+        {table.getColumn("category") && (
+          <DataTableFacetedFilter
+            column={table.getColumn("category")}
+            title="Category"
+            options={categoryOptions}
           />
         )}
         {table.getColumn("fixed") && (

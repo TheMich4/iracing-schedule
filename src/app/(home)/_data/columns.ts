@@ -5,6 +5,7 @@ import { CheckmarkCell } from "../_components/cells/checkmark-cell";
 import type { ColumnDef } from "@tanstack/react-table";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import type { SeriesSeason } from "iracing-api";
+import { categoryToName } from "@/data/iracing-consts";
 
 export const columns: ColumnDef<SeriesSeason>[] = [
   {
@@ -31,6 +32,17 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     id: "cars",
     cell: CarClassesCell,
     header: "Cars",
+  },
+  {
+    id: "category",
+    accessorFn: (row) => {
+      const category = (
+        row.schedules[0]?.track as unknown as { category: string }
+      ).category;
+      return categoryToName[category] ?? "Unknown";
+    },
+    header: "Category",
+    filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
   },
   {
     id: "multiClass",
