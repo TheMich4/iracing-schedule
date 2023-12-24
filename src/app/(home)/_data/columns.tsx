@@ -11,6 +11,13 @@ import { categoryToName } from "@/data/iracing-consts";
 
 export const columns: ColumnDef<SeriesSeason>[] = [
   {
+    id: "id",
+    accessorFn: (row) => row.seriesId,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Id" />
+    ),
+  },
+  {
     id: "class",
     accessorFn: (row) => `${row.licenseGroup}`,
     cell: LicenseGroupCell,
@@ -87,5 +94,20 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Max inc" />
     ),
+  },
+  {
+    id: "startType",
+    accessorFn: (row) => row.schedules[0]?.startType,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Start type" />
+    ),
+  },
+  {
+    id: "scheduleDescription",
+    accessorFn: (row) => row.scheduleDescription,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Schedule" />
+    ),
+    enableSorting: false,
   },
 ];

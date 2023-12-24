@@ -10,6 +10,7 @@ import {
   multiClassOptions,
   officialOptions,
   setupOptions,
+  startTypeOptions,
 } from "../_data/filter-options";
 import { DataTableViewOptions } from "./data-table-view-options";
 
