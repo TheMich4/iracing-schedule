@@ -1,6 +1,7 @@
 "use client";
 
 import { CarClassesCell } from "../_components/cells/car-classes-cell";
+import { CategoryCell } from "../_components/cells/category-cell";
 import { CheckmarkCell } from "../_components/cells/checkmark-cell";
 import type { ColumnDef } from "@tanstack/react-table";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
@@ -41,6 +42,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
       ).category;
       return categoryToName[category] ?? "Unknown";
     },
+    cell: CategoryCell,
     header: "Category",
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
   },
