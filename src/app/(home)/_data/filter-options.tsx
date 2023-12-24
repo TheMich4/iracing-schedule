@@ -1,4 +1,5 @@
 import { Categories } from "@/data/iracing-consts";
+import { CategoryIcon } from "../_components/icons/category-icons";
 import { ClassIcon } from "../_components/icons/class-icon";
 import { LicenseGroup } from "@/types/iracing";
 
@@ -50,17 +51,21 @@ export const categoryOptions = [
   {
     value: Categories.OVAL,
     label: Categories.OVAL,
+    icon: () => <CategoryIcon category={Categories.OVAL} />,
   },
   {
     value: Categories.ROAD,
     label: Categories.ROAD,
+    icon: () => <CategoryIcon category={Categories.ROAD} />,
   },
   {
     value: Categories.DIRT_OVAL,
     label: Categories.DIRT_OVAL,
+    icon: () => <CategoryIcon category={Categories.DIRT_OVAL} />,
   },
   {
     value: Categories.DIRT_ROAD,
     label: Categories.DIRT_ROAD,
+    icon: () => <CategoryIcon category={Categories.DIRT_ROAD} />,
   },
 ];
