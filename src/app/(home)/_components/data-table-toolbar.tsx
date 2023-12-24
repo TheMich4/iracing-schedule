@@ -7,6 +7,8 @@ import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 import {
   categoryOptions,
   classOptions,
+  multiClassOptions,
+  officialOptions,
   setupOptions,
 } from "../_data/filter-options";
 
@@ -51,6 +53,20 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             column={table.getColumn("category")}
             title="Category"
             options={categoryOptions}
+          />
+        )}
+        {table.getColumn("multiClass") && (
+          <DataTableFacetedFilter
+            column={table.getColumn("multiClass")}
+            title="Multi-Class"
+            options={multiClassOptions}
+          />
+        )}
+        {table.getColumn("official") && (
+          <DataTableFacetedFilter
+            column={table.getColumn("official")}
+            title="Official"
+            options={officialOptions}
           />
         )}
         {table.getColumn("fixed") && (

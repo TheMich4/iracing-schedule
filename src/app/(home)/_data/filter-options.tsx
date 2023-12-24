@@ -69,3 +69,25 @@ export const categoryOptions = [
     icon: () => <CategoryIcon category={Categories.DIRT_ROAD} />,
   },
 ];
+
+export const officialOptions = [
+  {
+    value: true,
+    label: "Official",
+  },
+  {
+    value: false,
+    label: "Unofficial",
+  },
+];
+
+export const multiClassOptions = [
+  {
+    value: true,
+    label: "Multi-Class",
+  },
+  {
+    value: false,
+    label: "Single-Class",
+  },
+];

@@ -50,7 +50,8 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     id: "multiClass",
     accessorFn: (row) => row.multiclass,
     cell: CheckmarkCell,
-    header: "Multi class",
+    header: "Multi-class",
+    filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
     meta: {
       center: true,
     },
@@ -60,6 +61,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     accessorFn: (row) => row.official,
     cell: CheckmarkCell,
     header: "Official",
+    filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
     meta: {
       center: true,
     },
