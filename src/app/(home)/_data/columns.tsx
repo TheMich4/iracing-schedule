@@ -4,6 +4,7 @@ import { CarClassesCell } from "../_components/cells/car-classes-cell";
 import { CategoryCell } from "../_components/cells/category-cell";
 import { CheckmarkCell } from "../_components/cells/checkmark-cell";
 import type { ColumnDef } from "@tanstack/react-table";
+import { DataTableColumnHeader } from "../_components/data-table-column-header";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import type { SeriesSeason } from "iracing-api";
 import { categoryToName } from "@/data/iracing-consts";
@@ -13,26 +14,31 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     id: "class",
     accessorFn: (row) => `${row.licenseGroup}`,
     cell: LicenseGroupCell,
-    header: "Class",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Class" />
+    ),
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
-    meta: {
-      center: true,
-    },
   },
   {
     id: "seriesName",
     accessorFn: (row) => row.schedules[0]?.seriesName,
-    header: "Series name",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Series name" />
+    ),
   },
   {
     id: "track",
     accessorFn: (row) => row.schedules[0]?.track?.trackName,
-    header: "Track",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Track" />
+    ),
   },
   {
     id: "cars",
     cell: CarClassesCell,
-    header: "Cars",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Cars" />
+    ),
   },
   {
     id: "category",
@@ -43,45 +49,43 @@ export const columns: ColumnDef<SeriesSeason>[] = [
       return categoryToName[category] ?? "Unknown";
     },
     cell: CategoryCell,
-    header: "Category",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Category" />
+    ),
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
   },
   {
     id: "multiClass",
     accessorFn: (row) => row.multiclass,
     cell: CheckmarkCell,
-    header: "Multi-class",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Multi-class" />
+    ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
-    meta: {
-      center: true,
-    },
   },
   {
     id: "official",
     accessorFn: (row) => row.official,
     cell: CheckmarkCell,
-    header: "Official",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Official" />
+    ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
-    meta: {
-      center: true,
-    },
   },
   {
     id: "fixed",
     accessorFn: (row) => row.fixedSetup,
     cell: CheckmarkCell,
-    header: "Fixed",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Fixed" />
+    ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
-    meta: {
-      center: true,
-    },
   },
   {
     id: "maxIncidents",
     accessorFn: (row) => row.incidentLimit,
-    header: "Max inc",
-    meta: {
-      center: true,
-    },
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Max inc" />
+    ),
   },
 ];

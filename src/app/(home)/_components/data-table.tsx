@@ -9,6 +9,8 @@ import {
   getFacetedRowModel,
   getFilteredRowModel,
   getFacetedUniqueValues,
+  type SortingState,
+  getSortedRowModel,
 } from "@tanstack/react-table";
 import { getLicenseColor } from "@/config/license";
 import {
@@ -35,17 +37,22 @@ export function DataTable({
   data,
 }: DataTableProps<Array<SeriesSeason>, any>) {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+  const [sorting, setSorting] = useState<SortingState>([]);
+
   const table = useReactTable({
     data,
     columns,
     state: {
       columnFilters,
+      sorting,
     },
     onColumnFiltersChange: setColumnFilters,
+    onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
     getFacetedRowModel: getFacetedRowModel(),
     getFacetedUniqueValues: getFacetedUniqueValues(),
+    getFilteredRowModel: getFilteredRowModel(),
+    getSortedRowModel: getSortedRowModel(),
   });
 
   return (
@@ -93,6 +100,7 @@ export function DataTable({
                     <TableCell
                       key={cell.id}
                       className={cn(
+                        "px-4",
                         cell.column.columnDef.meta?.center &&
                           "text-center align-middle",
                       )}

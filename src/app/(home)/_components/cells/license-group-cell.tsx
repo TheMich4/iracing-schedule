@@ -15,7 +15,7 @@ export const LicenseGroupCell = ({
   );
 
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex w-full">
       <span
         className={cn(
           "flex w-fit items-center justify-center rounded-sm px-1 text-center text-sm font-bold text-white",
