@@ -11,6 +11,7 @@ import {
   officialOptions,
   setupOptions,
 } from "../_data/filter-options";
+import { DataTableViewOptions } from "./data-table-view-options";
 
 interface DataTableToolbarProps {
   table: Table<Array<SeriesSeason>>;
@@ -21,7 +22,7 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
 
   return (
     <div className="flex items-center justify-between">
-      <div className="flex flex-1 flex-col justify-center gap-1">
+      <div className="flex flex-1 flex-col justify-center gap-1 lg:flex-row lg:justify-normal">
         <div className="flex flex-row gap-2">
           <Input
             placeholder="Filter series..."
@@ -31,7 +32,7 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             onChange={(event) =>
               table.getColumn("seriesName")?.setFilterValue(event.target.value)
             }
-            className="h-8 w-[150px] lg:w-[250px]"
+            className="h-8 w-[150px] sm:w-[250px]"
           />
           <Input
             placeholder="Filter tracks..."
@@ -39,11 +40,11 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             onChange={(event) =>
               table.getColumn("track")?.setFilterValue(event.target.value)
             }
-            className="h-8 w-[150px] lg:w-[250px]"
+            className="h-8 w-[150px] sm:w-[250px]"
           />
         </div>
 
-        <div className="inline-block space-x-2 space-y-1">
+        <div className="inline-block space-x-2 space-y-1 lg:space-y-0">
           {table.getColumn("class") && (
             <DataTableFacetedFilter
               column={table.getColumn("class")}
@@ -91,7 +92,7 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
           )}
         </div>
       </div>
-      {/* <DataTableViewOptions table={table} /> */}
+      <DataTableViewOptions table={table} />
     </div>
   );
 };
