@@ -6,6 +6,7 @@ import { CheckmarkCell } from "../_components/cells/checkmark-cell";
 import type { ColumnDef } from "@tanstack/react-table";
 import { DataTableColumnHeader } from "../_components/data-table-column-header";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
+import { LinkCell } from "../_components/cells/link-cell";
 import type { SeriesSeason } from "iracing-api";
 import { categoryToName } from "@/data/iracing-consts";
 
@@ -29,6 +30,17 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   {
     id: "seriesName",
     accessorFn: (row) => row.schedules[0]?.seriesName,
+    cell: ({
+      getValue,
+      row: {
+        original: { seasonId },
+      },
+    }) => (
+      <LinkCell
+        getValue={getValue as () => string}
+        href={`/series/${seasonId}`}
+      />
+    ),
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Series name" />
     ),

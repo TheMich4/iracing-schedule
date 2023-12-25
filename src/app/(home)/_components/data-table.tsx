@@ -1,18 +1,5 @@
 "use client";
 
-import {
-  type ColumnDef,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
-  type ColumnFiltersState,
-  getFacetedRowModel,
-  getFilteredRowModel,
-  getFacetedUniqueValues,
-  type SortingState,
-  getSortedRowModel,
-  type VisibilityState,
-} from "@tanstack/react-table";
 import { getLicenseColor } from "@/config/license";
 import {
   Table,
@@ -26,7 +13,8 @@ import {
 import { type SeriesSeason } from "iracing-api";
 import { cn } from "@/lib/utils";
 import { DataTableToolbar } from "./data-table-toolbar";
-import { useState } from "react";
+import { useTable } from "../_hooks/use-table";
+import { flexRender, type ColumnDef } from "@tanstack/react-table";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -36,33 +24,8 @@ interface DataTableProps<TData, TValue> {
 export function DataTable({
   columns,
   data,
-}: DataTableProps<Array<SeriesSeason>, any>) {
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({
-    id: false,
-    scheduleDescription: false,
-  });
-  const [sorting, setSorting] = useState<SortingState>([]);
-
-  console.log({ data });
-
-  const table = useReactTable({
-    data,
-    columns,
-    state: {
-      columnFilters,
-      columnVisibility,
-      sorting,
-    },
-    onColumnFiltersChange: setColumnFilters,
-    onColumnVisibilityChange: setColumnVisibility,
-    onSortingChange: setSorting,
-    getCoreRowModel: getCoreRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-  });
+}: DataTableProps<SeriesSeason[], any>) {
+  const table = useTable(columns, data);
 
   return (
     <div className="flex h-full w-full flex-col gap-2">

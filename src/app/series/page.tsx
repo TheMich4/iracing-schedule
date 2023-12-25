@@ -8,7 +8,7 @@ import { useFilters } from "./_hooks/use-filters";
 import { useMemo } from "react";
 
 export default function SeriesPage() {
-  const sortedSeasons = sortSeasons(seasons as Array<SeriesSeason>);
+  const sortedSeasons = sortSeasons(seasons as SeriesSeason[]);
   const { filters, setFilters } = useFilters();
 
   const seasonsData = useMemo(

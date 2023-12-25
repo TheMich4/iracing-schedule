@@ -4,7 +4,7 @@ import seasons from "../data/seasons.json";
 export const getSeasonData = (seasonId: number) =>
   seasons.find((season) => season.seasonId === seasonId);
 
-export const sortSeasons = (seasons: Array<SeriesSeason>) => {
+export const sortSeasons = (seasons: SeriesSeason[]) => {
   return seasons.sort((a, b) => {
     if (a.licenseGroup !== b.licenseGroup) {
       return a.licenseGroup - b.licenseGroup;
