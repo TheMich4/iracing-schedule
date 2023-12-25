@@ -168,6 +168,20 @@
     "shortName": "Cup"
   },
   {
+    "carClassId": 22,
+    "carsInClass": [
+      {
+        "carDirpath": "lotus79",
+        "carId": 25,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Lotus 79",
+    "relativeSpeed": 125,
+    "shortName": "Lotus 79"
+  },
+  {
     "carClassId": 0,
     "carsInClass": [
       {
@@ -924,26 +938,17 @@
         "carDirpath": "stockcars\\pontiacgrandprix87",
         "carId": 175,
         "retired": false
+      },
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "retired": false
       }
     ],
     "custId": 0,
     "name": "Hosted All Cars Class",
     "relativeSpeed": 100,
     "shortName": "Hosted All Cars"
-  },
-  {
-    "carClassId": 22,
-    "carsInClass": [
-      {
-        "carDirpath": "lotus79",
-        "carId": 25,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Lotus 79",
-    "relativeSpeed": 125,
-    "shortName": "Lotus 79"
   },
   {
     "carClassId": 23,
@@ -1822,20 +1827,6 @@
     "name": "[Legacy] Mercedes-AMG GT3",
     "relativeSpeed": 52,
     "shortName": "[L] AMG GT3"
-  },
-  {
-    "carClassId": 80,
-    "carsInClass": [
-      {
-        "carDirpath": "audir8gt3",
-        "carId": 73,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Audi R8 GT3",
-    "relativeSpeed": 52,
-    "shortName": "Audi R8 GT3"
   },
   {
     "carClassId": 81,
@@ -3685,44 +3676,6 @@
     "shortName": "[L] DallaraIR05"
   },
   {
-    "carClassId": 4039,
-    "carsInClass": [
-      {
-        "carDirpath": "lotus49",
-        "carId": 42,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Ring Meister 2023S4",
-    "relativeSpeed": 56,
-    "shortName": "RingMeister23S4"
-  },
-  {
-    "carClassId": 4040,
-    "carsInClass": [
-      {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Draft Master 2023S4",
-    "relativeSpeed": 52,
-    "shortName": "DraftMaster23S4"
-  },
-  {
     "carClassId": 2269,
     "carsInClass": [
       {
@@ -3750,6 +3703,83 @@
     "name": "NASCAR Legends 1987",
     "relativeSpeed": 52,
     "shortName": "NASCAR 1987"
+  },
+  {
+    "carClassId": 80,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8gt3",
+        "carId": 73,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "[Legacy] Audi R8 GT3",
+    "relativeSpeed": 52,
+    "shortName": "[L] Audi R8 GT3"
+  },
+  {
+    "carClassId": 2708,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt3",
+        "carId": 132,
+        "retired": false
+      },
+      {
+        "carDirpath": "lamborghinievogt3",
+        "carId": 133,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche992rgt3",
+        "carId": 169,
+        "retired": false
+      },
+      {
+        "carDirpath": "mclarenmp4",
+        "carId": 43,
+        "retired": false
+      },
+      {
+        "carDirpath": "fordgt\\gt3",
+        "carId": 59,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamgevogt3",
+        "carId": 156,
+        "retired": false
+      },
+      {
+        "carDirpath": "ferrari296gt3",
+        "carId": 173,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "GT3 Class",
+    "relativeSpeed": 52,
+    "shortName": "GT3 Class"
+  },
+  {
+    "carClassId": 4046,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Audi R8 LMS EVO II GT3",
+    "relativeSpeed": 52,
+    "shortName": "Audi R8 EVO2 GT3"
   },
   {
     "carClassId": 4014,
@@ -3879,6 +3909,20 @@
     "shortName": "Late Model Stock"
   },
   {
+    "carClassId": 4039,
+    "carsInClass": [
+      {
+        "carDirpath": "lotus49",
+        "carId": 42,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Ring Meister 2023S4",
+    "relativeSpeed": 56,
+    "shortName": "RingMeister23S4"
+  },
+  {
     "carClassId": 21,
     "carsInClass": [
       {
@@ -3936,58 +3980,56 @@
     "shortName": "USAC Sprint"
   },
   {
-    "carClassId": 2708,
+    "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "bmwm4gt3",
-        "carId": 132,
-        "retired": false
-      },
-      {
-        "carDirpath": "lamborghinievogt3",
-        "carId": 133,
-        "retired": false
-      },
-      {
-        "carDirpath": "audir8gt3",
-        "carId": 73,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche992rgt3",
-        "carId": 169,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclarenmp4",
-        "carId": 43,
-        "retired": false
-      },
-      {
-        "carDirpath": "fordgt\\gt3",
-        "carId": 59,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamgevogt3",
-        "carId": 156,
-        "retired": false
-      },
-      {
-        "carDirpath": "ferrari296gt3",
-        "carId": 173,
+        "carDirpath": "stockcars\\impala",
+        "carId": 22,
         "retired": false
       }
     ],
     "custId": 0,
-    "name": "GT3 Class",
+    "name": "Draft Master 2023S4",
     "relativeSpeed": 52,
-    "shortName": "GT3 Class"
+    "shortName": "DraftMaster23S4"
+  },
+  {
+    "carClassId": 4047,
+    "carsInClass": [
+      {
+        "carDirpath": "raygr22",
+        "carId": 163,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Special2024",
+    "relativeSpeed": 52,
+    "shortName": "Special2024"
+  },
+  {
+    "carClassId": 4048,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Ring Meister 2024S1",
+    "relativeSpeed": 52,
+    "shortName": "RingMeister24S1"
   },
   {
     "carClassId": 4011,
     "carsInClass": [
       {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "retired": false
+      },
+      {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
         "retired": false
@@ -3995,11 +4037,6 @@
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
-        "retired": false
-      },
-      {
-        "carDirpath": "audir8gt3",
-        "carId": 73,
         "retired": false
       },
       {
