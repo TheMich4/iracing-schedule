@@ -27,7 +27,7 @@ const DEFAULT_SORTING: SortingState = [];
 
 export const useTable = (
   columns: ColumnDef<SeriesSeason[], any>[],
-  data: SeriesSeason[][],
+  data: SeriesSeason[],
 ) => {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     DEFAULT_COLUMN_FILTERS,

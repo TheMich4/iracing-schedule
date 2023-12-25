@@ -1,5 +1,6 @@
 import IRacingAPI from "iracing-api";
 import { env } from "@/env.mjs";
+import { parseSeasons } from "./parse-seasons";
 
 const writeToFile = async (name: string, data?: Record<string, any>) => {
   if (!data) {
@@ -29,6 +30,9 @@ export const updateData = async () => {
 
   const carClasses = await ir.getCarClasses();
   await writeToFile("car-classes", carClasses);
+
+  const parsedData = parseSeasons(seasons);
+  await writeToFile("seasons-data", parsedData);
 };
 
 await updateData();
