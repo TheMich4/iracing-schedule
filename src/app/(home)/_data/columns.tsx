@@ -122,4 +122,11 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     ),
     enableSorting: false,
   },
+  {
+    id: "startDate",
+    accessorFn: (row) => row.schedules[0]?.startDate,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Start date" />
+    ),
+  },
 ];
