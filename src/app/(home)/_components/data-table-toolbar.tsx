@@ -12,6 +12,9 @@ import {
   setupOptions,
 } from "../_data/filter-options";
 import { DataTableViewOptions } from "./data-table-view-options";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverTrigger } from "@/components/ui/popover";
+import { DataTableCalendar } from "./data-table-calendar";
 
 interface DataTableToolbarProps {
   table: Table<SeriesSeason[]>;
@@ -42,6 +45,7 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             }
             className="h-8 w-[150px] sm:w-[250px]"
           />
+          <DataTableCalendar />
         </div>
 
         <div className="inline-block space-x-2 space-y-1 lg:space-y-0">
