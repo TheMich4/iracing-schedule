@@ -28,6 +28,20 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
   },
   {
+    id: "category",
+    accessorFn: (row) => {
+      const category = (
+        row.schedules[0]?.track as unknown as { category: string }
+      ).category;
+      return categoryToName[category] ?? "Unknown";
+    },
+    cell: CategoryCell,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Category" />
+    ),
+    filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
+  },
+  {
     id: "seriesName",
     accessorFn: (row) => row.schedules[0]?.seriesName,
     cell: ({
@@ -58,20 +72,6 @@ export const columns: ColumnDef<SeriesSeason>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Cars" />
     ),
-  },
-  {
-    id: "category",
-    accessorFn: (row) => {
-      const category = (
-        row.schedules[0]?.track as unknown as { category: string }
-      ).category;
-      return categoryToName[category] ?? "Unknown";
-    },
-    cell: CategoryCell,
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Category" />
-    ),
-    filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
   },
   {
     id: "multiClass",
