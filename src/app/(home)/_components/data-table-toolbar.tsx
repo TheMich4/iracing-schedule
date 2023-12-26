@@ -1,4 +1,3 @@
-import { type SeriesSeason } from "iracing-api";
 import { type Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -12,15 +11,18 @@ import {
   setupOptions,
 } from "../_data/filter-options";
 import { DataTableViewOptions } from "./data-table-view-options";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverTrigger } from "@/components/ui/popover";
 import { DataTableCalendar } from "./data-table-calendar";
+import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 
 interface DataTableToolbarProps {
-  table: Table<SeriesSeason[]>;
+  table: Table<ParsedSeasonsData[]>;
+  updateWeekDate: (date: Date) => void;
 }
 
-export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
+export const DataTableToolbar = ({
+  table,
+  updateWeekDate,
+}: DataTableToolbarProps) => {
   const isFiltered = table.getState().columnFilters.length > 0;
 
   return (
@@ -45,7 +47,7 @@ export const DataTableToolbar = ({ table }: DataTableToolbarProps) => {
             }
             className="h-8 w-[150px] sm:w-[250px]"
           />
-          <DataTableCalendar />
+          <DataTableCalendar updateWeekDate={updateWeekDate} />
         </div>
 
         <div className="inline-block space-x-2 space-y-1 lg:space-y-0">

@@ -15,6 +15,7 @@ import {
 } from "@tanstack/react-table";
 import { type SeriesSeason } from "iracing-api";
 import { api } from "@/trpc/react";
+import { getPreviousTuesdayString } from "@/lib/week";
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -27,7 +28,11 @@ const DEFAULT_COLUMN_VISIBILITY = {
 const DEFAULT_SORTING: SortingState = [];
 
 export const useTable = (columns: ColumnDef<SeriesSeason[], any>[]) => {
-  const { data } = api.schedule.get.useQuery("2023-12-26", {
+  const [weekString, setWeekString] = useState<string>(
+    getPreviousTuesdayString(new Date()),
+  );
+
+  const { data } = api.schedule.get.useQuery(weekString, {
     initialData: [],
   });
 
@@ -57,5 +62,9 @@ export const useTable = (columns: ColumnDef<SeriesSeason[], any>[]) => {
     getSortedRowModel: getSortedRowModel(),
   });
 
-  return table;
+  const updateWeekDate = (date: Date) => {
+    setWeekString(getPreviousTuesdayString(date));
+  };
+
+  return { table, updateWeekDate };
 };

@@ -13,9 +13,21 @@ import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
+import { useCallback } from "react";
 
-export function DataTableCalendar() {
-  const [date, setDate] = React.useState<Date>();
+interface DataTableCalendarProps {
+  updateWeekDate: (date: Date) => void;
+}
+
+export function DataTableCalendar({ updateWeekDate }: DataTableCalendarProps) {
+  const [date, setDate] = React.useState<Date>(new Date());
+
+  const handleDateChange = useCallback((date: Date | undefined) => {
+    if (!date) return;
+
+    setDate(date);
+    updateWeekDate(date);
+  }, []);
 
   return (
     <Popover>
@@ -35,7 +47,7 @@ export function DataTableCalendar() {
         <Calendar
           mode="single"
           selected={date}
-          onSelect={setDate}
+          onSelect={handleDateChange}
           initialFocus
         />
       </PopoverContent>

@@ -18,11 +18,11 @@ import { flexRender } from "@tanstack/react-table";
 import { columns } from "../_data/columns";
 
 export function DataTable() {
-  const table = useTable(columns);
+  const { table, updateWeekDate } = useTable(columns);
 
   return (
     <div className="flex h-full w-full flex-col gap-2">
-      <DataTableToolbar table={table} />
+      <DataTableToolbar table={table} updateWeekDate={updateWeekDate} />
       <div className="h-full w-full overflow-auto rounded-md border text-foreground">
         <Table>
           <TableHeader>
