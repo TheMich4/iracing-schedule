@@ -14,18 +14,11 @@ import { type SeriesSeason } from "iracing-api";
 import { cn } from "@/lib/utils";
 import { DataTableToolbar } from "./data-table-toolbar";
 import { useTable } from "../_hooks/use-table";
-import { flexRender, type ColumnDef } from "@tanstack/react-table";
+import { flexRender } from "@tanstack/react-table";
+import { columns } from "../_data/columns";
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
-}
-
-export function DataTable({
-  columns,
-  data,
-}: DataTableProps<SeriesSeason[], any>) {
-  const table = useTable(columns, data);
+export function DataTable() {
+  const table = useTable(columns);
 
   return (
     <div className="flex h-full w-full flex-col gap-2">

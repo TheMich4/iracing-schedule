@@ -8,7 +8,9 @@ import {
 
 interface SeasonData {
   carClassIds: number[];
+  fixedSetup: boolean;
   incidentLimit: number;
+  licenseGroup: number;
   multiclass: boolean;
   official: boolean;
   scheduleDescription: string;
@@ -27,6 +29,7 @@ interface ScheduleData {
   raceWeekNum: number;
   restartType: string;
   seriesName: string;
+  startDate: string;
   startType: string;
   track: SeriesSeason["schedules"][0]["track"];
   weather: SeriesSeason["schedules"][0]["weather"];
@@ -44,7 +47,9 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
   for (const season of seasons) {
     const seasonData: SeasonData = {
       carClassIds: season.carClassIds,
+      fixedSetup: season.fixedSetup,
       incidentLimit: season.incidentLimit,
+      licenseGroup: season.licenseGroup,
       multiclass: season.multiclass,
       official: season.official,
       scheduleDescription: season.scheduleDescription,
@@ -68,6 +73,7 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
           raceWeekNum: schedule.raceWeekNum,
           restartType: schedule.restartType,
           seriesName: schedule.seriesName,
+          startDate: schedule.startDate,
           startType: schedule.startType,
           track: schedule.track,
           weather: schedule.weather,

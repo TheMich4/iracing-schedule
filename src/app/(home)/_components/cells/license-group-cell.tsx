@@ -1,13 +1,13 @@
 import { LicenseColors } from "@/config/license";
 import { LicenseGroupNames } from "@/types/iracing";
-import type { SeriesSeason } from "iracing-api";
 import { cn } from "@/lib/utils";
 import { useMemo } from "react";
+import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 
 export const LicenseGroupCell = ({
   row,
 }: {
-  row: { original: SeriesSeason };
+  row: { original: ParsedSeasonsData };
 }) => {
   const licenseColor = useMemo(
     () => LicenseColors[row.original.licenseGroup],
@@ -22,7 +22,7 @@ export const LicenseGroupCell = ({
           `bg-${licenseColor}`,
         )}
       >
-        {LicenseGroupNames[row.original.licenseGroup].charAt(0)}
+        {LicenseGroupNames[row.original.licenseGroup]?.charAt(0)}
       </span>
     </div>
   );

@@ -3,14 +3,14 @@
 import { CarClassesCell } from "../_components/cells/car-classes-cell";
 import { CategoryCell } from "../_components/cells/category-cell";
 import { CheckmarkCell } from "../_components/cells/checkmark-cell";
-import type { ColumnDef } from "@tanstack/react-table";
+import { type ColumnDef } from "@tanstack/react-table";
 import { DataTableColumnHeader } from "../_components/data-table-column-header";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import { LinkCell } from "../_components/cells/link-cell";
-import type { SeriesSeason } from "iracing-api";
 import { categoryToName } from "@/data/iracing-consts";
+import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 
-export const columns: ColumnDef<SeriesSeason>[] = [
+export const columns: ColumnDef<ParsedSeasonsData>[] = [
   {
     id: "id",
     accessorFn: (row) => row.seriesId,
@@ -30,9 +30,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   {
     id: "category",
     accessorFn: (row) => {
-      const category = (
-        row.schedules[0]?.track as unknown as { category: string }
-      ).category;
+      const category = row.track?.category;
       return categoryToName[category] ?? "Unknown";
     },
     cell: CategoryCell,
@@ -43,7 +41,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   },
   {
     id: "seriesName",
-    accessorFn: (row) => row.schedules[0]?.seriesName,
+    accessorFn: (row) => row.seriesName,
     cell: ({
       getValue,
       row: {
@@ -61,7 +59,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   },
   {
     id: "track",
-    accessorFn: (row) => row.schedules[0]?.track?.trackName,
+    accessorFn: (row) => row.track?.trackName,
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Track" />
     ),
@@ -109,7 +107,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   },
   {
     id: "startType",
-    accessorFn: (row) => row.schedules[0]?.startType,
+    accessorFn: (row) => row.startType,
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Start type" />
     ),
@@ -124,7 +122,7 @@ export const columns: ColumnDef<SeriesSeason>[] = [
   },
   {
     id: "startDate",
-    accessorFn: (row) => row.schedules[0]?.startDate,
+    accessorFn: (row) => row.startDate,
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Start date" />
     ),

@@ -26,10 +26,11 @@ const DEFAULT_COLUMN_VISIBILITY = {
 };
 const DEFAULT_SORTING: SortingState = [];
 
-export const useTable = (
-  columns: ColumnDef<SeriesSeason[], any>[],
-  data: SeriesSeason[],
-) => {
+export const useTable = (columns: ColumnDef<SeriesSeason[], any>[]) => {
+  const { data } = api.schedule.get.useQuery("2023-12-26", {
+    initialData: [],
+  });
+
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     DEFAULT_COLUMN_FILTERS,
   );
@@ -55,10 +56,6 @@ export const useTable = (
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });
-
-  const { data: x } = api.schedule.get.useQuery("2023-12-26");
-
-  console.log({ x, data });
 
   return table;
 };

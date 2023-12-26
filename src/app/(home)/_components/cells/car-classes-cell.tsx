@@ -1,9 +1,9 @@
-import { type SeriesSeason } from "iracing-api";
 import carClasses from "@/data/car-classes.json";
 import { useMemo } from "react";
+import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 
 interface CarClassesCellProps {
-  row: { original: SeriesSeason };
+  row: { original: ParsedSeasonsData };
 }
 
 export const CarClassesCell = ({
