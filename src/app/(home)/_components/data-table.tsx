@@ -16,9 +16,10 @@ import { DataTableToolbar } from "./data-table-toolbar";
 import { useTable } from "../_hooks/use-table";
 import { flexRender } from "@tanstack/react-table";
 import { columns } from "../_data/columns";
+import { DataTableEmptyRow } from "./data-table-empty-row";
 
 export function DataTable() {
-  const { table, updateWeekDate } = useTable(columns);
+  const { table, updateWeekDate, isFetching } = useTable(columns);
 
   return (
     <div className="flex h-full w-full flex-col gap-2">
@@ -79,14 +80,7 @@ export function DataTable() {
                 </TableRow>
               ))
             ) : (
-              <TableRow>
-                <TableCell
-                  colSpan={columns.length}
-                  className="h-24 text-center"
-                >
-                  No results.
-                </TableCell>
-              </TableRow>
+              <DataTableEmptyRow columns={columns} isFetching={isFetching} />
             )}
           </TableBody>
         </Table>

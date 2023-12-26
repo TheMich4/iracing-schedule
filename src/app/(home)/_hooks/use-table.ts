@@ -13,9 +13,9 @@ import {
   getSortedRowModel,
   type VisibilityState,
 } from "@tanstack/react-table";
-import { type SeriesSeason } from "iracing-api";
 import { api } from "@/trpc/react";
 import { getPreviousTuesdayString } from "@/lib/week";
+import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -27,12 +27,12 @@ const DEFAULT_COLUMN_VISIBILITY = {
 };
 const DEFAULT_SORTING: SortingState = [];
 
-export const useTable = (columns: ColumnDef<SeriesSeason[], any>[]) => {
+export const useTable = (columns: ColumnDef<ParsedSeasonsData, any>[]) => {
   const [weekString, setWeekString] = useState<string>(
     getPreviousTuesdayString(new Date()),
   );
 
-  const { data } = api.schedule.get.useQuery(weekString, {
+  const { data, isFetching } = api.schedule.get.useQuery(weekString, {
     initialData: [],
   });
 
@@ -66,5 +66,5 @@ export const useTable = (columns: ColumnDef<SeriesSeason[], any>[]) => {
     setWeekString(getPreviousTuesdayString(date));
   };
 
-  return { table, updateWeekDate };
+  return { table, updateWeekDate, isFetching };
 };
