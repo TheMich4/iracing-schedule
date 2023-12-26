@@ -16,6 +16,7 @@ interface SeasonData {
   seasonName: string;
   seasonQuarter: number;
   seasonYear: number;
+  seriesId: number;
 }
 
 interface ScheduleData {
@@ -31,14 +32,14 @@ interface ScheduleData {
   weather: SeriesSeason["schedules"][0]["weather"];
 }
 
-interface Parsed {
+export interface ParsedSeasonsData {
   [startDate: string]: {
     [seriesId: string]: SeasonData & ScheduleData;
   };
 }
 
 export const parseSeasons = (seasons: SeriesSeason[]) => {
-  const parsed: Parsed = {};
+  const parsed: ParsedSeasonsData = {};
 
   for (const season of seasons) {
     const seasonData: SeasonData = {
@@ -51,12 +52,13 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
       seasonName: season.seasonName,
       seasonQuarter: season.seasonQuarter,
       seasonYear: season.seasonYear,
+      seriesId: season.seriesId,
     };
 
     for (const schedule of season.schedules) {
-      parsed[schedule.startDate] = {
-        ...parsed[schedule.startDate],
-        [schedule.seriesId]: {
+      parsed[schedule.startDate] = [
+        ...(parsed[schedule.startDate] ?? []),
+        {
           ...seasonData,
 
           carRestrictions: schedule.carRestrictions,
@@ -70,7 +72,7 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
           track: schedule.track,
           weather: schedule.weather,
         },
-      };
+      ];
     }
   }
 

@@ -3980,25 +3980,11 @@
     "shortName": "USAC Sprint"
   },
   {
-    "carClassId": 4040,
-    "carsInClass": [
-      {
-        "carDirpath": "stockcars\\impala",
-        "carId": 22,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Draft Master 2023S4",
-    "relativeSpeed": 52,
-    "shortName": "DraftMaster23S4"
-  },
-  {
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "raygr22",
-        "carId": 163,
+        "carDirpath": "porsche992cup",
+        "carId": 143,
         "retired": false
       }
     ],
@@ -4008,11 +3994,35 @@
     "shortName": "Special2024"
   },
   {
+    "carClassId": 4040,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars2\\camaro2019",
+        "carId": 114,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\mustang2019",
+        "carId": 115,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\supra2019",
+        "carId": 116,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Draft Master 2023S4",
+    "relativeSpeed": 52,
+    "shortName": "DraftMaster23S4"
+  },
+  {
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "audir8lmsevo2gt3",
-        "carId": 176,
+        "carDirpath": "hyundaielantracn7",
+        "carId": 146,
         "retired": false
       }
     ],

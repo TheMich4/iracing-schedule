@@ -14,6 +14,7 @@ import {
   type VisibilityState,
 } from "@tanstack/react-table";
 import { type SeriesSeason } from "iracing-api";
+import { api } from "@/trpc/react";
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -54,6 +55,10 @@ export const useTable = (
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });
+
+  const { data: x } = api.schedule.get.useQuery("2023-12-26");
+
+  console.log({ x, data });
 
   return table;
 };
