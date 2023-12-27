@@ -16,7 +16,7 @@ export const Week = ({ schedule }: WeekProps) => {
   const raceLimit = getRaceLimit(schedule);
 
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader>
         <CardTitle>{schedule.track?.trackName}</CardTitle>
         <CardDescription>{`Week ${schedule.raceWeekNum + 1}`}</CardDescription>

@@ -18,11 +18,11 @@ interface WeeksCarouselProps {
 export const WeeksCarousel = ({ schedules }: WeeksCarouselProps) => {
   return (
     <Carousel>
-      <CarouselContent>
+      <CarouselContent className="h-36">
         {schedules.map((schedule) => (
           <CarouselItem
             key={schedule.raceWeekNum}
-            className="sm:basis-1/2 lg:basis-1/4"
+            className="sm:basis-1/1 h-full lg:basis-1/3 "
           >
             <Week schedule={schedule} key={schedule.raceWeekNum} />
           </CarouselItem>
