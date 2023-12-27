@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface WeekProps {
   car: TCar;
@@ -15,7 +16,11 @@ export const Car = ({ car }: WeekProps) => {
     <Card className="h-full">
       <CardHeader>
         <CardTitle>{car.carName}</CardTitle>
-        {/* <CardDescription>{`Week ${schedule.raceWeekNum + 1}`}</CardDescription> */}
+        {car.freeWithSubscription && (
+          <CardDescription>
+            <Badge>{"Free"}</Badge>
+          </CardDescription>
+        )}
       </CardHeader>
     </Card>
   );
