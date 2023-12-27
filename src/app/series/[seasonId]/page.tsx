@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { CarsCarousel } from "./_components/cars-carousel";
 import { LicenseColors } from "@/config/license";
 import { LicenseGroupNames } from "@/types/iracing";
 import { WeeksCarousel } from "./_components/weeks-carousel";
@@ -12,7 +13,7 @@ interface SeasonPageProps {
 }
 
 export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
-  const season = getSeasonData(parseInt(seasonId));
+  const { season, cars } = getSeasonData(parseInt(seasonId));
 
   if (!season) {
     return <div>Season not found</div>;
@@ -37,6 +38,10 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
 
       <div className="container">
         <WeeksCarousel schedules={season.schedules} />
+      </div>
+
+      <div className="container">
+        <CarsCarousel cars={cars} />
       </div>
     </main>
   );

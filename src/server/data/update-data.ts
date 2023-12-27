@@ -33,6 +33,12 @@ export const updateData = async () => {
 
   const parsedData = parseSeasons(seasons);
   await writeToFile("seasons-data", parsedData);
+
+  const cars = await ir.getCars();
+  await writeToFile("cars", cars);
+
+  const tracks = await ir.getTracks();
+  await writeToFile("tracks", tracks);
 };
 
 await updateData();
