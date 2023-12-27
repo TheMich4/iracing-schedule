@@ -20,7 +20,7 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
   }
 
   return (
-    <main className="container flex flex-col gap-2 bg-background py-2">
+    <main className="container flex flex-col gap-4 bg-background py-4">
       <div className="flex items-center gap-2">
         <Badge
           className={cn(
@@ -36,11 +36,13 @@ export default function SeasonPage({ params: { seasonId } }: SeasonPageProps) {
         </span>
       </div>
 
-      <div className="container">
+      <div className="container flex flex-col gap-1">
+        <p className="text-2xl font-semibold">Schedule:</p>
         <WeeksCarousel schedules={season.schedules} />
       </div>
 
-      <div className="container">
+      <div className="container flex flex-col gap-1">
+        <p className="text-2xl font-semibold">Cars:</p>
         <CarsCarousel cars={cars} />
       </div>
     </main>
