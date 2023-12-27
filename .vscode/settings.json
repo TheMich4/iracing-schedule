@@ -9,6 +9,8 @@
     "lucide",
     "Mantine",
     "multiclass",
+    "pageview",
+    "posthog",
     "signin",
     "tanstack",
     "TRPC"

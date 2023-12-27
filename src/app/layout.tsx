@@ -1,7 +1,9 @@
 import "@/styles/globals.css";
 
 import { Kanit } from "next/font/google";
+import { PostHogPageView } from "@/components/providers/ph-provider";
 import { SiteHeader } from "@/components/nav/site-header";
+import { Suspense } from "react";
 import { TRPCReactProvider } from "@/trpc/react";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/providers/theme-provider";
@@ -26,6 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Suspense>
+        <PostHogPageView />
+      </Suspense>
+
       <body className={`flex h-screen flex-col font-sans ${kanit.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
           <ThemeProvider
