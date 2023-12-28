@@ -6,7 +6,7 @@ import {
   type SeriesSeason,
 } from "iracing-api";
 
-interface SeasonData {
+export interface SeasonData {
   carClassIds: number[];
   fixedSetup: boolean;
   incidentLimit: number;
@@ -21,7 +21,7 @@ interface SeasonData {
   seriesId: number;
 }
 
-interface ScheduleData {
+export interface ScheduleData {
   carRestrictions: CarRestriction[];
   raceLapLimit: number | null;
   raceTimeDescriptors: RaceTimeDescriptor[];
@@ -35,10 +35,10 @@ interface ScheduleData {
   weather: SeriesSeason["schedules"][0]["weather"];
 }
 
+export type ParsedData = SeasonData & ScheduleData;
+
 export interface ParsedSeasonsData {
-  [startDate: string]: {
-    [seriesId: string]: SeasonData & ScheduleData;
-  };
+  [startDate: string]: ParsedData[];
 }
 
 export const parseSeasons = (seasons: SeriesSeason[]) => {
