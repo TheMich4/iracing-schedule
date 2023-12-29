@@ -60,6 +60,19 @@ export const columns: ColumnDef<ParsedSeasonsData>[] = [
   {
     id: "track",
     accessorFn: (row) => row.track?.trackName,
+    cell: ({
+      getValue,
+      row: {
+        original: {
+          track: { trackId },
+        },
+      },
+    }) => (
+      <LinkCell
+        getValue={getValue as () => string}
+        href={`/track/${trackId}`}
+      />
+    ),
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Track" />
     ),
