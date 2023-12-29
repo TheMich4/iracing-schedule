@@ -1,6 +1,7 @@
 "use client";
+import { useDebounce } from "usehooks-ts";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   type ColumnDef,
   getCoreRowModel,
@@ -27,6 +28,22 @@ const DEFAULT_COLUMN_VISIBILITY = {
 };
 const DEFAULT_SORTING: SortingState = [];
 
+const getInitialTableState = () => {
+  const storedState = localStorage.getItem("tableState");
+  if (storedState) {
+    return JSON.parse(storedState) as {
+      columnFilters: ColumnFiltersState;
+      columnVisibility: VisibilityState;
+      sorting: SortingState;
+    };
+  }
+  return {
+    columnFilters: DEFAULT_COLUMN_FILTERS,
+    columnVisibility: DEFAULT_COLUMN_VISIBILITY,
+    sorting: DEFAULT_SORTING,
+  };
+};
+
 export const useTable = (columns: ColumnDef<ParsedSeasonsData, any>[]) => {
   const [weekString, setWeekString] = useState<string>(
     getPreviousTuesdayString(new Date()),
@@ -37,12 +54,27 @@ export const useTable = (columns: ColumnDef<ParsedSeasonsData, any>[]) => {
   });
 
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
-    DEFAULT_COLUMN_FILTERS,
+    getInitialTableState().columnFilters,
   );
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
-    DEFAULT_COLUMN_VISIBILITY,
+    getInitialTableState().columnVisibility,
   );
-  const [sorting, setSorting] = useState<SortingState>(DEFAULT_SORTING);
+  const [sorting, setSorting] = useState<SortingState>(
+    getInitialTableState().sorting,
+  );
+
+  const debouncedValue = useDebounce(
+    { columnFilters, columnVisibility, sorting },
+    500,
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tableState", JSON.stringify(debouncedValue));
+  }, [
+    debouncedValue.columnFilters,
+    debouncedValue.columnVisibility,
+    debouncedValue.sorting,
+  ]);
 
   const table = useReactTable({
     data,
