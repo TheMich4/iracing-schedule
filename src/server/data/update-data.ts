@@ -2,7 +2,7 @@ import IRacingAPI from "iracing-api";
 import { env } from "@/env.mjs";
 import { parseSeasons } from "./parse-seasons";
 
-const writeToFile = async (name: string, data?: Record<string, any>) => {
+const writeToFile = async (name: string, data?: Record<string, unknown>) => {
   if (!data) {
     console.error(`No data for ${name}`);
     return;
@@ -31,18 +31,18 @@ export const updateData = async () => {
   const carClasses = await ir.getCarClasses();
   await writeToFile("car-classes", carClasses);
 
-  const parsedData = parseSeasons(seasons);
-  await writeToFile("seasons-data", parsedData);
-
-  const cars = await ir.getCars();
-  await writeToFile("cars", cars);
-
   const tracks = await ir.getTracks();
   const parsedTracks = tracks?.reduce((acc, track) => {
     acc[track.trackId] = track;
     return acc;
   }, {});
   await writeToFile("tracks", parsedTracks);
+
+  const cars = await ir.getCars();
+  await writeToFile("cars", cars);
+
+  const parsedData = parseSeasons(seasons, parsedTracks);
+  await writeToFile("seasons-data", parsedData);
 };
 
 await updateData();

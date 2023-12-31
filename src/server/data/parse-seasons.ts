@@ -4,6 +4,7 @@ import {
   type RaceTimeDescriptor,
   type CarRestriction,
   type SeriesSeason,
+  Track,
 } from "iracing-api";
 
 export interface SeasonData {
@@ -31,7 +32,7 @@ export interface ScheduleData {
   seriesName: string;
   startDate: string;
   startType: string;
-  track: SeriesSeason["schedules"][0]["track"];
+  track: SeriesSeason["schedules"][0]["track"] & { isFree: boolean };
   weather: SeriesSeason["schedules"][0]["weather"];
 }
 
@@ -41,7 +42,10 @@ export interface ParsedSeasonsData {
   [startDate: string]: ParsedData[];
 }
 
-export const parseSeasons = (seasons: SeriesSeason[]) => {
+export const parseSeasons = (
+  seasons: SeriesSeason[],
+  trackData: Record<string, Track>,
+) => {
   const parsed: ParsedSeasonsData = {};
 
   for (const season of seasons) {
@@ -61,6 +65,8 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
     };
 
     for (const schedule of season.schedules) {
+      const track = trackData[schedule.track.trackId];
+
       parsed[schedule.startDate] = [
         ...(parsed[schedule.startDate] ?? []),
         {
@@ -75,7 +81,10 @@ export const parseSeasons = (seasons: SeriesSeason[]) => {
           seriesName: schedule.seriesName,
           startDate: schedule.startDate,
           startType: schedule.startType,
-          track: schedule.track,
+          track: {
+            ...schedule.track,
+            isFree: track?.freeWithSubscription ?? false,
+          },
           weather: schedule.weather,
         },
       ];
