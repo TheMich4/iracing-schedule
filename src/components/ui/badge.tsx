@@ -23,6 +23,7 @@ const badgeVariants = cva(
     },
     defaultVariants: {
       variant: "default",
+      size: "default",
     },
   },
 );

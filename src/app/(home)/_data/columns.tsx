@@ -9,6 +9,7 @@ import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import { LinkCell } from "../_components/cells/link-cell";
 import { categoryToName } from "@/data/iracing-consts";
 import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
+import { Badge } from "@/components/ui/badge";
 
 export const columns: ColumnDef<ParsedSeasonsData>[] = [
   {
@@ -64,15 +65,24 @@ export const columns: ColumnDef<ParsedSeasonsData>[] = [
       getValue,
       row: {
         original: {
-          track: { trackId },
+          track: { trackId, isFree },
         },
       },
-    }) => (
-      <LinkCell
-        getValue={getValue as () => string}
-        href={`/track/${trackId}`}
-      />
-    ),
+    }) => {
+      const icons = isFree ? (
+        <Badge variant="secondary" size="xs">
+          FREE
+        </Badge>
+      ) : null;
+
+      return (
+        <LinkCell
+          getValue={getValue as () => string}
+          href={`/track/${trackId}`}
+          icons={icons}
+        />
+      );
+    },
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Track" />
     ),
