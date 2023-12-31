@@ -29,7 +29,11 @@ export const updateData = async () => {
   await writeToFile("seasons", seasons);
 
   const carClasses = await ir.getCarClasses();
-  await writeToFile("car-classes", carClasses);
+  const parsedCarClasses = carClasses?.reduce((acc, carClass) => {
+    acc[carClass.carClassId] = carClass;
+    return acc;
+  }, {});
+  await writeToFile("car-classes", parsedCarClasses);
 
   const tracks = await ir.getTracks();
   const parsedTracks = tracks?.reduce((acc, track) => {
@@ -39,9 +43,18 @@ export const updateData = async () => {
   await writeToFile("tracks", parsedTracks);
 
   const cars = await ir.getCars();
-  await writeToFile("cars", cars);
+  const parsedCars = cars?.reduce((acc, car) => {
+    acc[car.carId] = car;
+    return acc;
+  }, {});
+  await writeToFile("cars", parsedCars);
 
-  const parsedData = parseSeasons(seasons, parsedTracks);
+  const parsedData = parseSeasons(
+    seasons,
+    parsedTracks,
+    parsedCars,
+    parsedCarClasses,
+  );
   await writeToFile("seasons-data", parsedData);
 };
 

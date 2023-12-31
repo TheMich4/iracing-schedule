@@ -10,6 +10,7 @@ import { LinkCell } from "../_components/cells/link-cell";
 import { categoryToName } from "@/data/iracing-consts";
 import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 import { Badge } from "@/components/ui/badge";
+import { FreeIcon } from "../_components/icons/free-icon";
 
 export const columns: ColumnDef<ParsedSeasonsData>[] = [
   {
@@ -69,11 +70,7 @@ export const columns: ColumnDef<ParsedSeasonsData>[] = [
         },
       },
     }) => {
-      const icons = isFree ? (
-        <Badge variant="secondary" size="xs">
-          FREE
-        </Badge>
-      ) : null;
+      const icons = isFree ? <FreeIcon /> : null;
 
       return (
         <LinkCell

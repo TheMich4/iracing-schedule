@@ -4,12 +4,15 @@ import {
   type RaceTimeDescriptor,
   type CarRestriction,
   type SeriesSeason,
-  Track,
+  type Track,
+  type Car,
+  CarClass,
 } from "iracing-api";
 
 export interface SeasonData {
   carClassIds: number[];
   fixedSetup: boolean;
+  hasFreeCar: boolean;
   incidentLimit: number;
   licenseGroup: number;
   multiclass: boolean;
@@ -45,14 +48,30 @@ export interface ParsedSeasonsData {
 export const parseSeasons = (
   seasons: SeriesSeason[],
   trackData: Record<string, Track>,
+  carData: Record<string, Car>,
+  carClassData: Record<string, CarClass>,
 ) => {
   const parsed: ParsedSeasonsData = {};
 
   for (const season of seasons) {
+    const carClassIds = season.carClassIds ?? [];
+    const carIds = carClassIds.reduce((acc, carClassId) => {
+      const carClass = carClassData[carClassId];
+      if (!carClass) {
+        return acc;
+      }
+
+      return [...acc, ...carClass.carsInClass.map((car) => car.carId)];
+    }, [] as number[]);
+    const hasFreeCar = carIds.some(
+      (carId) => carData[carId]?.freeWithSubscription ?? false,
+    );
+
     const seasonData: SeasonData = {
-      carClassIds: season.carClassIds,
+      carClassIds: carClassIds,
       fixedSetup: season.fixedSetup,
       incidentLimit: season.incidentLimit,
+      hasFreeCar,
       licenseGroup: season.licenseGroup,
       multiclass: season.multiclass,
       official: season.official,

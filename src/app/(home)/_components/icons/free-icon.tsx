@@ -1,8 +1,8 @@
-import { Badge } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export const FreeIcon = () => {
   return (
-    <Badge className="w-fit" size="xs">
+    <Badge className="w-fit" size="xs" variant="secondary">
       FREE
     </Badge>
   );
