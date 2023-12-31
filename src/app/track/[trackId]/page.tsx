@@ -10,7 +10,11 @@ interface TrackPageProps {
 export default async function TrackPage({
   params: { trackId },
 }: TrackPageProps) {
-  const track = await api.track.get.query(+trackId);
+  const track = await api.track.get.query(trackId);
+
+  if (!track) {
+    return <div>Track not found</div>;
+  }
 
   return (
     <main className="container flex flex-col gap-2 bg-background py-4">

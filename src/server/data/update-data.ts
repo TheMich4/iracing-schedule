@@ -38,7 +38,11 @@ export const updateData = async () => {
   await writeToFile("cars", cars);
 
   const tracks = await ir.getTracks();
-  await writeToFile("tracks", tracks);
+  const parsedTracks = tracks?.reduce((acc, track) => {
+    acc[track.trackId] = track;
+    return acc;
+  }, {});
+  await writeToFile("tracks", parsedTracks);
 };
 
 await updateData();
