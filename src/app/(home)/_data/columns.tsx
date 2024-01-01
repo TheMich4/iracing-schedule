@@ -8,12 +8,11 @@ import { DataTableColumnHeader } from "../_components/data-table-column-header";
 import { LicenseGroupCell } from "../_components/cells/license-group-cell";
 import { LinkCell } from "../_components/cells/link-cell";
 import { categoryToName } from "@/data/iracing-consts";
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
-import { Badge } from "@/components/ui/badge";
+import { type ParsedData } from "@/server/data/parse-seasons";
 import { FreeIcon } from "../_components/icons/free-icon";
-import { FavoriteIcon } from "../_components/icons/favorite-icon";
+import { FavoritableCell } from "../_components/cells/favoritable-cell";
 
-export const columns: ColumnDef<ParsedSeasonsData>[] = [
+export const columns: ColumnDef<ParsedData>[] = [
   {
     id: "id",
     accessorFn: (row) => row.seriesId,
@@ -51,10 +50,12 @@ export const columns: ColumnDef<ParsedSeasonsData>[] = [
         original: { seasonId },
       },
     }) => (
-      <LinkCell
-        getValue={getValue as () => string}
-        href={`/series/${seasonId}`}
-      />
+      <FavoritableCell type="seriesName" id={seasonId}>
+        <LinkCell
+          getValue={getValue as () => string}
+          href={`/series/${seasonId}`}
+        />
+      </FavoritableCell>
     ),
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Series name" />
