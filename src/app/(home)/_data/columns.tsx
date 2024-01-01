@@ -11,6 +11,7 @@ import { categoryToName } from "@/data/iracing-consts";
 import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
 import { Badge } from "@/components/ui/badge";
 import { FreeIcon } from "../_components/icons/free-icon";
+import { FavoriteIcon } from "../_components/icons/favorite-icon";
 
 export const columns: ColumnDef<ParsedSeasonsData>[] = [
   {
