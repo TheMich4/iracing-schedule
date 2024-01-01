@@ -16,7 +16,7 @@ import {
 } from "@tanstack/react-table";
 import { api } from "@/trpc/react";
 import { getPreviousTuesdayString } from "@/lib/week";
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
+import { type ParsedData } from "@/server/data/parse-seasons";
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -44,7 +44,7 @@ const getInitialTableState = () => {
   };
 };
 
-export const useTable = (columns: ColumnDef<ParsedSeasonsData, any>[]) => {
+export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
   const [weekString, setWeekString] = useState<string>(
     getPreviousTuesdayString(new Date()),
   );
@@ -70,6 +70,7 @@ export const useTable = (columns: ColumnDef<ParsedSeasonsData, any>[]) => {
 
   useEffect(() => {
     localStorage.setItem("tableState", JSON.stringify(debouncedValue));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     debouncedValue.columnFilters,
     debouncedValue.columnVisibility,
