@@ -12,10 +12,10 @@ import {
 } from "../_data/filter-options";
 import { DataTableViewOptions } from "./data-table-view-options";
 import { DataTableCalendar } from "./data-table-calendar";
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
+import { type ParsedData } from "@/server/data/parse-seasons";
 
 interface DataTableToolbarProps {
-  table: Table<ParsedSeasonsData[]>;
+  table: Table<ParsedData[]>;
   updateWeekDate: (date: Date) => void;
 }
 

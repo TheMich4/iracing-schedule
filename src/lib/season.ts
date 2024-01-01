@@ -7,13 +7,9 @@ import carClasses from "../data/car-classes.json";
 export const getSeasonData = (seasonId: number) => {
   const season = seasons.find((season) => season.seasonId === seasonId);
   const carIds = season?.carClassIds.flatMap(
-    (carClassId) =>
-      carClasses.find((carClass) => carClass.carClassId === carClassId)
-        ?.carsInClass,
+    (carClassId) => carClasses[carClassId]?.carsInClass,
   );
-  const cars =
-    carIds?.map((carId) => carsJson.find((car) => car.carId === carId.carId)) ??
-    [];
+  const cars = carIds?.map((carId) => carsJson[carId] ?? []);
 
   return { season, cars };
 };
