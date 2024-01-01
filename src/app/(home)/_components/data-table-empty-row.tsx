@@ -1,12 +1,12 @@
 import { TableCell, TableRow } from "@/components/ui/table";
 
 import { type ColumnDef } from "@tanstack/react-table";
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
+import { type ParsedData } from "@/server/data/parse-seasons";
 import { Loader2 } from "lucide-react";
 
 interface DataTableEmptyRowProps {
   isFetching: boolean;
-  columns: ColumnDef<ParsedSeasonsData>[];
+  columns: ColumnDef<ParsedData>[];
 }
 
 export const DataTableEmptyRow = ({
