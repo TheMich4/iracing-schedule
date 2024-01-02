@@ -35,7 +35,7 @@ export function DataTableCalendar({ updateWeekDate }: DataTableCalendarProps) {
         <Button
           variant={"outline"}
           className={cn(
-            "h-8  w-[150px] justify-start text-left font-normal sm:w-[250px]",
+            "h-8 w-[150px] justify-start text-left font-normal text-foreground sm:w-[250px]",
             !date && "text-muted-foreground",
           )}
         >
