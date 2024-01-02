@@ -37,6 +37,7 @@ export interface ScheduleData {
   startType: string;
   track: SeriesSeason["schedules"][0]["track"] & { isFree: boolean };
   weather: SeriesSeason["schedules"][0]["weather"];
+  week: number;
 }
 
 export type ParsedData = SeasonData & ScheduleData;
@@ -105,6 +106,7 @@ export const parseSeasons = (
             isFree: track?.freeWithSubscription ?? false,
           },
           weather: schedule.weather,
+          week: schedule.raceWeekNum,
         },
       ];
     }

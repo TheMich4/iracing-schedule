@@ -4193,18 +4193,23 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars2\\camaro2019",
-        "carId": 114,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
         "retired": false
       },
       {
-        "carDirpath": "stockcars2\\mustang2019",
-        "carId": 115,
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
         "retired": false
       },
       {
-        "carDirpath": "stockcars2\\supra2019",
-        "carId": 116,
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "retired": false
       }
     ],
@@ -4273,8 +4278,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "porsche992cup",
-        "carId": 143,
+        "carDirpath": "rt2000",
+        "carId": 1,
         "retired": false
       }
     ],
@@ -4287,8 +4292,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "hyundaielantracn7",
-        "carId": 146,
+        "carDirpath": "streetstock",
+        "carId": 36,
         "retired": false
       }
     ],

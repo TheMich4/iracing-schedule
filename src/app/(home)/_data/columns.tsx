@@ -151,4 +151,11 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Start date" />
     ),
   },
+  {
+    id: "week",
+    accessorFn: (row) => row.week,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Week" />
+    ),
+  },
 ];
