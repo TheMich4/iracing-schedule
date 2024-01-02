@@ -50,7 +50,7 @@ export const columns: ColumnDef<ParsedData>[] = [
         original: { seasonId },
       },
     }) => (
-      <FavoritableCell type="seriesName" id={seasonId}>
+      <FavoritableCell type="series" id={seasonId}>
         <LinkCell
           getValue={getValue as () => string}
           href={`/series/${seasonId}`}

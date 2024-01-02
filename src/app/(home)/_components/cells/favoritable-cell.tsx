@@ -4,11 +4,13 @@ import {
   ContextMenuItem,
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
-import { useCallback, type ReactNode } from "react";
+import { type ReactNode } from "react";
+import { useFavorite } from "../../_hooks/use-favorite";
+import { FavoriteIcon } from "../icons/favorite-icon";
 
 interface FavoritableCellProps {
   children: ReactNode;
-  id: string | number;
+  id: number;
   type: string;
 }
 
@@ -17,17 +19,18 @@ export const FavoritableCell = ({
   type,
   id,
 }: FavoritableCellProps) => {
-  return children;
-
-  const handleFavorite = useCallback(() => {
-    console.log("favorite", type, id);
-  }, []);
+  const { isFavorite, addFavorite } = useFavorite(type, id);
 
   return (
     <ContextMenu>
-      <ContextMenuTrigger>{children}</ContextMenuTrigger>
+      <ContextMenuTrigger>
+        <div className="flex flex-row items-center gap-2">
+          {isFavorite && <FavoriteIcon />}
+          {children}
+        </div>
+      </ContextMenuTrigger>
       <ContextMenuContent>
-        <ContextMenuItem onClick={handleFavorite}>Favorite</ContextMenuItem>
+        <ContextMenuItem onClick={addFavorite}>Favorite</ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
   );

@@ -1,0 +1,17 @@
+import { useCallback, useContext, useMemo } from "react";
+import { FavoriteContext } from "../_providers/favorite-provider";
+
+export const useFavorite = (type: string, id: number) => {
+  const context = useContext(FavoriteContext);
+
+  const isFavorite = useMemo(
+    () => context.favorites[type]?.some((fId) => fId === id) ?? false,
+    [context, type, id],
+  );
+
+  const addFavorite = useCallback(() => {
+    context.addFavorite(type, id);
+  }, [context, type, id]);
+
+  return { addFavorite, isFavorite };
+};

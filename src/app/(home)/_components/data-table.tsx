@@ -17,7 +17,7 @@ import { useTable } from "../_hooks/use-table";
 import { flexRender } from "@tanstack/react-table";
 import { columns } from "../_data/columns";
 import { DataTableEmptyRow } from "./data-table-empty-row";
-import { FavoriteProvider } from "@/components/providers/favorite-provider";
+import { FavoriteProvider } from "../_providers/favorite-provider";
 
 export function DataTable() {
   const { table, updateWeekDate, isFetching } = useTable(columns);

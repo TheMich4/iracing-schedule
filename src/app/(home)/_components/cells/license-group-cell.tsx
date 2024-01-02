@@ -2,12 +2,12 @@ import { LicenseColors } from "@/config/license";
 import { LicenseGroupNames } from "@/types/iracing";
 import { cn } from "@/lib/utils";
 import { useMemo } from "react";
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
+import { type ParsedData } from "@/server/data/parse-seasons";
 
 export const LicenseGroupCell = ({
   row,
 }: {
-  row: { original: ParsedSeasonsData };
+  row: { original: ParsedData };
 }) => {
   const licenseColor = useMemo(
     () => LicenseColors[row.original.licenseGroup],
