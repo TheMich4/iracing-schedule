@@ -75,11 +75,13 @@ export const columns: ColumnDef<ParsedData>[] = [
       const icons = isFree ? <FreeIcon /> : null;
 
       return (
-        <LinkCell
-          getValue={getValue as () => string}
-          href={`/track/${trackId}`}
-          icons={icons}
-        />
+        <FavoritableCell type="track" id={trackId}>
+          <LinkCell
+            getValue={getValue as () => string}
+            href={`/track/${trackId}`}
+            icons={icons}
+          />
+        </FavoritableCell>
       );
     },
     header: ({ column }) => (
