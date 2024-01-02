@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { type ReactNode, createContext, useState } from "react";
+import { type ReactNode, createContext, useState, useEffect } from "react";
 
 export type FavoriteData = Record<string, number[]>;
 
@@ -13,11 +13,22 @@ export const FavoriteContext = createContext({
   removeFavorite: (_type: string, _id: number) => {},
 });
 
+const getFavorites = () => {
+  const data = localStorage.getItem("favorites");
+  if (data) {
+    return JSON.parse(data) as FavoriteData;
+  }
+  return DEFAULT_FAVORITES;
+};
+
 export const FavoriteProvider = ({ children }: { children: ReactNode }) => {
-  const [favorites, setValue] = useState<FavoriteData>(DEFAULT_FAVORITES);
+  const [favorites, setValue] = useState<FavoriteData>(getFavorites());
+
+  useEffect(() => {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
 
   const addFavorite = (type: string, id: number) => {
-    console.log({ type, id, favorites });
     setValue((prev) => {
       return {
         ...prev,
