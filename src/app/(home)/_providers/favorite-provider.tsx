@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { type ReactNode, createContext, useState } from "react";
 
 export type FavoriteData = Record<string, number[]>;
@@ -8,8 +9,8 @@ const DEFAULT_FAVORITES: FavoriteData = {
 
 export const FavoriteContext = createContext({
   favorites: DEFAULT_FAVORITES,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  addFavorite: (type: string, id: number) => {},
+  addFavorite: (_type: string, _id: number) => {},
+  removeFavorite: (_type: string, _id: number) => {},
 });
 
 export const FavoriteProvider = ({ children }: { children: ReactNode }) => {
@@ -25,10 +26,19 @@ export const FavoriteProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  console.log({ favorites });
+  const removeFavorite = (type: string, id: number) => {
+    setValue((prev) => {
+      return {
+        ...prev,
+        [type]: (prev[type] ?? []).filter((i) => i !== id),
+      };
+    });
+  };
 
   return (
-    <FavoriteContext.Provider value={{ favorites, addFavorite }}>
+    <FavoriteContext.Provider
+      value={{ favorites, addFavorite, removeFavorite }}
+    >
       {children}
     </FavoriteContext.Provider>
   );

@@ -19,7 +19,15 @@ export const FavoritableCell = ({
   type,
   id,
 }: FavoritableCellProps) => {
-  const { isFavorite, addFavorite } = useFavorite(type, id);
+  const { isFavorite, addFavorite, removeFavorite } = useFavorite(type, id);
+
+  const handleFavorite = () => {
+    if (isFavorite) {
+      removeFavorite();
+    } else {
+      addFavorite();
+    }
+  };
 
   return (
     <ContextMenu>
@@ -30,7 +38,7 @@ export const FavoritableCell = ({
         </div>
       </ContextMenuTrigger>
       <ContextMenuContent>
-        <ContextMenuItem onClick={addFavorite}>Favorite</ContextMenuItem>
+        <ContextMenuItem onClick={handleFavorite}>Favorite</ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
   );

@@ -13,5 +13,9 @@ export const useFavorite = (type: string, id: number) => {
     context.addFavorite(type, id);
   }, [context, type, id]);
 
-  return { addFavorite, isFavorite };
+  const removeFavorite = useCallback(() => {
+    context.removeFavorite(type, id);
+  }, [context, type, id]);
+
+  return { addFavorite, isFavorite, removeFavorite };
 };
