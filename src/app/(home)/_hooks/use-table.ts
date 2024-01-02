@@ -1,5 +1,4 @@
 "use client";
-import { useDebounce } from "usehooks-ts";
 
 import { useEffect, useState } from "react";
 import {
@@ -63,19 +62,13 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
     getInitialTableState().sorting,
   );
 
-  const debouncedValue = useDebounce(
-    { columnFilters, columnVisibility, sorting },
-    500,
-  );
-
   useEffect(() => {
-    localStorage.setItem("tableState", JSON.stringify(debouncedValue));
+    localStorage.setItem(
+      "tableState",
+      JSON.stringify({ columnFilters, columnVisibility, sorting }),
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    debouncedValue.columnFilters,
-    debouncedValue.columnVisibility,
-    debouncedValue.sorting,
-  ]);
+  }, [columnFilters, columnVisibility, sorting]);
 
   const table = useReactTable({
     data,
