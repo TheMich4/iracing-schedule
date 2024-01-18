@@ -38,7 +38,9 @@ export const FavoritableCell = ({
         </div>
       </ContextMenuTrigger>
       <ContextMenuContent>
-        <ContextMenuItem onClick={handleFavorite}>Favorite</ContextMenuItem>
+        <ContextMenuItem onClick={handleFavorite}>
+          {isFavorite ? "Unfavorite" : "Favorite"}
+        </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
   );
