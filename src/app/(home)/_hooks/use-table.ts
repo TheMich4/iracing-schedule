@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   type ColumnDef,
   getCoreRowModel,
@@ -16,6 +16,11 @@ import {
 import { api } from "@/trpc/react";
 import { getPreviousTuesdayString } from "@/lib/week";
 import { type ParsedData } from "@/server/data/parse-seasons";
+import { useFavorites } from "./use-favorite";
+
+export interface GlobalFilter {
+  favorite: { series: boolean };
+}
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -48,10 +53,15 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
     getPreviousTuesdayString(new Date()),
   );
 
+  const favorites = useFavorites();
+
   const { data, isFetching } = api.schedule.get.useQuery(weekString, {
     initialData: [],
   });
 
+  const [globalFilter, setGlobalFilter] = useState<{
+    favorite: { series: boolean };
+  }>({ favorite: { series: false } });
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     getInitialTableState().columnFilters,
   );
@@ -70,6 +80,21 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [columnFilters, columnVisibility, sorting]);
 
+  const globalFilterFn = useCallback(
+    (row) => {
+      if (globalFilter.favorite.series) {
+        const { seasonId } = row.original;
+
+        if (!favorites.series?.some((sId) => sId === seasonId)) {
+          return false;
+        }
+      }
+
+      return true;
+    },
+    [globalFilter, favorites],
+  );
+
   const table = useReactTable({
     data,
     columns,
@@ -77,9 +102,12 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
       columnFilters,
       columnVisibility,
       sorting,
+      globalFilter,
     },
+    globalFilterFn,
     onColumnFiltersChange: setColumnFilters,
     onColumnVisibilityChange: setColumnVisibility,
+    onGlobalFilterChange: setGlobalFilter,
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getFacetedRowModel: getFacetedRowModel(),

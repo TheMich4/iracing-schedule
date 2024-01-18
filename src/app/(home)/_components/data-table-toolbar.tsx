@@ -13,6 +13,7 @@ import {
 import { DataTableViewOptions } from "./data-table-view-options";
 import { DataTableCalendar } from "./data-table-calendar";
 import { type ParsedData } from "@/server/data/parse-seasons";
+import { DataTableFavoriteFilter } from "./data-table-favorite-filter";
 
 interface DataTableToolbarProps {
   table: Table<ParsedData[]>;
@@ -86,6 +87,8 @@ export const DataTableToolbar = ({
               options={setupOptions}
             />
           )}
+          <DataTableFavoriteFilter table={table} />
+
           {isFiltered && (
             <Button
               variant="ghost"

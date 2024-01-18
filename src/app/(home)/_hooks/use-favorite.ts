@@ -19,3 +19,9 @@ export const useFavorite = (type: string, id: number) => {
 
   return { addFavorite, isFavorite, removeFavorite };
 };
+
+export const useFavorites = () => {
+  const context = useContext(FavoriteContext);
+
+  return useMemo(() => context.favorites, [context]);
+};
