@@ -21,7 +21,7 @@ interface DataTableColumnHeaderProps<TData, TValue>
   extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>;
   title: string;
-  withSroting?: boolean;
+  withSorting?: boolean;
 }
 
 export function DataTableColumnHeader<TData, TValue>({
@@ -30,7 +30,7 @@ export function DataTableColumnHeader<TData, TValue>({
   className,
 }: DataTableColumnHeaderProps<TData, TValue>) {
   return (
-    <div className={cn("ml-2 flex items-center space-x-2", className)}>
+    <div className={cn("ml-2 flex items-center gap-x-2", className)}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button

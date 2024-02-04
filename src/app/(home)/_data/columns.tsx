@@ -19,6 +19,7 @@ export const columns: ColumnDef<ParsedData>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Id" />
     ),
+    size: 1,
   },
   {
     id: "class",
@@ -28,6 +29,7 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Class" />
     ),
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
+    size: 1,
   },
   {
     id: "category",
@@ -103,6 +105,7 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Multi-class" />
     ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
+    size: 1,
   },
   {
     id: "official",
@@ -112,6 +115,7 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Official" />
     ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
+    size: 1,
   },
   {
     id: "fixed",
@@ -121,6 +125,7 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Fixed" />
     ),
     filterFn: (row, id, value: boolean[]) => value.includes(row.getValue(id)),
+    size: 1,
   },
   {
     id: "maxIncidents",
@@ -128,6 +133,7 @@ export const columns: ColumnDef<ParsedData>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Max inc" />
     ),
+    size: 1,
   },
   {
     id: "startType",
@@ -157,5 +163,6 @@ export const columns: ColumnDef<ParsedData>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Week" />
     ),
+    size: 1,
   },
 ];

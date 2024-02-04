@@ -30,6 +30,8 @@ export function DataTable() {
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
+                  const size = header.getSize();
+
                   return (
                     <TableHead
                       key={header.id}
@@ -37,6 +39,10 @@ export function DataTable() {
                         "cursor-pointer",
                         header.column.columnDef.meta?.center && "text-center",
                       )}
+                      style={{
+                        width: size ? `${1}px` : undefined,
+                        maxWidth: size ? `${Math.max(size, 80)}px` : undefined,
+                      }}
                     >
                       {header.isPlaceholder
                         ? null

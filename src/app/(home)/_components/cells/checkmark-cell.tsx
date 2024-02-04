@@ -14,5 +14,5 @@ export const CheckmarkCell = ({ getValue }: CheckmarkCellProps) => {
     return null;
   }
 
-  return <div className="flex w-full">{Icon}</div>;
+  return <div className="ml-2 flex w-full">{Icon}</div>;
 };
