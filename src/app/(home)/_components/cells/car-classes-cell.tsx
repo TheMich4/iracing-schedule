@@ -55,7 +55,7 @@ export const CarClassesCell = ({
 
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Cars</DialogTitle>
+          <DialogTitle>{`Cars in ${season.seriesName}`}</DialogTitle>
         </DialogHeader>
 
         {carsMap.map((carClass) => (
