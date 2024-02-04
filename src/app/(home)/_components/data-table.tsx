@@ -41,7 +41,7 @@ export function DataTable() {
                       )}
                       style={{
                         width: size ? `${1}px` : undefined,
-                        maxWidth: size ? `${Math.max(size, 80)}px` : undefined,
+                        maxWidth: size ? `${size}px` : undefined,
                       }}
                     >
                       {header.isPlaceholder

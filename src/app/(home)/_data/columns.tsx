@@ -42,6 +42,7 @@ export const columns: ColumnDef<ParsedData>[] = [
       <DataTableColumnHeader column={column} title="Category" />
     ),
     filterFn: (row, id, value: string[]) => value.includes(row.getValue(id)),
+    size: 1,
   },
   {
     id: "seriesName",
@@ -141,6 +142,7 @@ export const columns: ColumnDef<ParsedData>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Start type" />
     ),
+    size: 1,
   },
   {
     id: "scheduleDescription",
