@@ -21,7 +21,7 @@ export const DataTableFavoriteFilter = ({
   }, [table]);
 
   return (
-    <div className="items-top flex space-x-2">
+    <div className="flex items-center gap-2">
       <Checkbox id="terms1" onClick={handleClick} />
       <label
         htmlFor="terms1"

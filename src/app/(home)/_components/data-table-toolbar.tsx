@@ -28,8 +28,8 @@ export const DataTableToolbar = ({
 
   return (
     <div className="flex items-center justify-between">
-      <div className="flex flex-1 flex-col justify-center gap-1 lg:flex-row lg:justify-normal">
-        <div className="flex flex-row gap-2">
+      <div className="flex flex-1 flex-col justify-center gap-2 lg:justify-normal">
+        <div className="flex flex-row flex-wrap gap-2">
           <Input
             placeholder="Filter series..."
             value={
@@ -49,9 +49,11 @@ export const DataTableToolbar = ({
             className="h-8 w-[150px] sm:w-[250px]"
           />
           <DataTableCalendar updateWeekDate={updateWeekDate} />
+
+          <DataTableFavoriteFilter table={table} />
         </div>
 
-        <div className="inline-block space-x-2 space-y-1 lg:space-y-0">
+        <div className="flex flex-wrap gap-2">
           {table.getColumn("class") && (
             <DataTableFacetedFilter
               column={table.getColumn("class")}
@@ -87,7 +89,6 @@ export const DataTableToolbar = ({
               options={setupOptions}
             />
           )}
-          <DataTableFavoriteFilter table={table} />
 
           {isFiltered && (
             <Button
