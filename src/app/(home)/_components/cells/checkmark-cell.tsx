@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import { useMemo } from "react";
 
 interface CheckmarkCellProps {
-  getValue: () => boolean;
+  getValue: () => unknown;
 }
 
 export const CheckmarkCell = ({ getValue }: CheckmarkCellProps) => {

@@ -11,6 +11,7 @@ import { categoryToName } from "@/data/iracing-consts";
 import { type ParsedData } from "@/server/data/parse-seasons";
 import { FreeIcon } from "../_components/icons/free-icon";
 import { FavoritableCell } from "../_components/cells/favoritable-cell";
+import { TrackCell } from "../_components/cells/track-cell";
 
 export const columns: ColumnDef<ParsedData>[] = [
   {
@@ -67,22 +68,16 @@ export const columns: ColumnDef<ParsedData>[] = [
   {
     id: "track",
     accessorFn: (row) => row.track?.trackName,
-    cell: ({
-      getValue,
-      row: {
-        original: {
-          track: { trackId, isFree },
-        },
-      },
-    }) => {
+    cell: ({ getValue, row }) => {
+      const { trackId, isFree } = row.original.track;
       const icons = isFree ? <FreeIcon /> : null;
 
       return (
         <FavoritableCell type="track" id={trackId}>
-          <LinkCell
+          <TrackCell
             getValue={getValue as () => string}
-            href={`/track/${trackId}`}
             icons={icons}
+            row={row}
           />
         </FavoritableCell>
       );
