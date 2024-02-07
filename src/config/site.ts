@@ -12,6 +12,10 @@ export const siteConfig = {
       title: "Series",
       href: "/series",
     },
+    {
+      title: "Special Events",
+      href: "/special-events",
+    },
   ],
 };
 

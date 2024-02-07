@@ -1,0 +1,122 @@
+[
+  {
+    "date": {
+      "days": "12-14",
+      "month": "JAN"
+    },
+    "name": "Roar",
+    "track": "Daytona International Speedway",
+    "cars": "LMP3, GT4, Touring",
+    "type": null
+  },
+  {
+    "date": {
+      "days": "19-21",
+      "month": "JAN"
+    },
+    "name": "Daytona 24",
+    "track": "Daytona International Speedway",
+    "cars": "GTP, LMP2, GT3",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "13-19",
+      "month": "FEB"
+    },
+    "name": "Daytona 500",
+    "track": "Daytona International Speedway",
+    "cars": "NASCAR Cup",
+    "type": null
+  },
+  {
+    "date": {
+      "days": "23-25",
+      "month": "FEB"
+    },
+    "name": "Bathurst 12",
+    "track": "Mount Panorama Circuit",
+    "cars": "GT3",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "22-24",
+      "month": "MAR"
+    },
+    "name": "Sebring 12",
+    "track": "Sebring International Raceway",
+    "cars": "GTP, LMP2, GT3",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "12-14",
+      "month": "APR"
+    },
+    "name": "Road America 500",
+    "track": "Road America",
+    "cars": "Nissan GTP, Audi 90",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "17-19",
+      "month": "MAY"
+    },
+    "name": "Nurburgring 24h",
+    "track": "Nurburgring-Gesamstrecke 24H",
+    "cars": "GT3, Pcup, GT4, Touring",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "21-27",
+      "month": "MAY"
+    },
+    "name": "Coke 600",
+    "track": "Charlotte Motor Speedway",
+    "cars": "NASCAR Cup",
+    "type": null
+  },
+  {
+    "date": {
+      "days": "14-16",
+      "month": "JUN"
+    },
+    "name": "Watkins Glen 6 Hour",
+    "track": "Watkins Glen International",
+    "cars": "GTP, LMP2, GT3",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "16-22",
+      "month": "JUL"
+    },
+    "name": "Brickyard 400",
+    "track": "Indianapolis Motor Speedway",
+    "cars": "NASCAR Cup",
+    "type": null
+  },
+  {
+    "date": {
+      "days": "0-0",
+      "month": "TBD"
+    },
+    "name": "MS Charity Event",
+    "track": "TBD Track",
+    "cars": "TBD",
+    "type": "Team Event"
+  },
+  {
+    "date": {
+      "days": "19-21",
+      "month": "JUL"
+    },
+    "name": "Spa 24",
+    "track": "Circuit de Spa-Francorchamps",
+    "cars": "GT3",
+    "type": "Team Event"
+  }
+]
