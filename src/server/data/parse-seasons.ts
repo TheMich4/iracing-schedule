@@ -6,7 +6,7 @@ import {
   type SeriesSeason,
   type Track,
   type Car,
-  CarClass,
+  type CarClass,
 } from "iracing-api";
 
 export interface SeasonData {

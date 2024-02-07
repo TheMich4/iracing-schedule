@@ -1,4 +1,4 @@
-import { type SeriesSeason } from "iracing-api";
+import { type Car, type CarClass, type SeriesSeason } from "iracing-api";
 import seasons from "../data/seasons.json";
 import carsJson from "../data/cars.json";
 import carClasses from "../data/car-classes.json";
@@ -7,9 +7,12 @@ import carClasses from "../data/car-classes.json";
 export const getSeasonData = (seasonId: number) => {
   const season = seasons.find((season) => season.seasonId === seasonId);
   const carIds = season?.carClassIds.flatMap(
-    (carClassId) => carClasses[carClassId]?.carsInClass,
+    (carClassId) =>
+      (carClasses as Record<string, CarClass>)[carClassId]?.carsInClass,
   );
-  const cars = carIds?.map((carId) => carsJson[carId] ?? []);
+  const cars = carIds?.map(
+    (carId) => (carsJson as any as Record<string, Car>)[carId] ?? [],
+  ) as Car[];
 
   return { season, cars };
 };
