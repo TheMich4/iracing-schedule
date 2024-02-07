@@ -25,7 +25,7 @@ export const DataTableFavoriteFilter = ({
       <Checkbox id="terms1" onClick={handleClick} />
       <label
         htmlFor="terms1"
-        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        className="text-sm font-medium leading-none text-foreground peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
       >
         Favorites only
       </label>

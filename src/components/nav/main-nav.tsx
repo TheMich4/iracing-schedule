@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import { Badge } from "../ui/badge";
 import Link from "next/link";
 import { MobileNavMenu } from "./mobile-nav-menu";
 import type { NavItem } from "./types";

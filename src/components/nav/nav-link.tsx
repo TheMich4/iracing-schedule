@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavItem } from "./types";
+import { type NavItem } from "./types";
 import { cn } from "@/lib/utils";
 
 export const NavLink = ({ item }: { item: NavItem }) => {
@@ -11,7 +11,7 @@ export const NavLink = ({ item }: { item: NavItem }) => {
     <Link
       href={item.href}
       className={cn(
-        "flex items-center text-lg font-semibold text-muted-foreground sm:text-sm",
+        "flex items-center text-lg font-semibold text-muted-foreground hover:text-white sm:text-sm",
         item.disabled && "cursor-not-allowed opacity-80",
       )}
     >
