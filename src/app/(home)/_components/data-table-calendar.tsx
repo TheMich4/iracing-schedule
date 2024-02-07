@@ -22,12 +22,15 @@ interface DataTableCalendarProps {
 export function DataTableCalendar({ updateWeekDate }: DataTableCalendarProps) {
   const [date, setDate] = React.useState<Date>(new Date());
 
-  const handleDateChange = useCallback((date: Date | undefined) => {
-    if (!date) return;
+  const handleDateChange = useCallback(
+    (date: Date | undefined) => {
+      if (!date) return;
 
-    setDate(date);
-    updateWeekDate(date);
-  }, []);
+      setDate(date);
+      updateWeekDate(date);
+    },
+    [updateWeekDate],
+  );
 
   return (
     <Popover>

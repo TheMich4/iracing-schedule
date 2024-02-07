@@ -12,15 +12,13 @@ import {
   type SortingState,
   getSortedRowModel,
   type VisibilityState,
+  RowModel,
 } from "@tanstack/react-table";
 import { api } from "@/trpc/react";
 import { getPreviousTuesdayString } from "@/lib/week";
 import { type ParsedData } from "@/server/data/parse-seasons";
 import { useFavorites } from "./use-favorite";
-
-export interface GlobalFilter {
-  favorite: { series: boolean };
-}
+import { type GlobalFilter } from "../_types/table";
 
 const DEFAULT_COLUMN_FILTERS: ColumnFiltersState = [];
 const DEFAULT_COLUMN_VISIBILITY = {
@@ -59,9 +57,9 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
     initialData: [],
   });
 
-  const [globalFilter, setGlobalFilter] = useState<{
-    favorite: { series: boolean };
-  }>({ favorite: { series: false } });
+  const [globalFilter, setGlobalFilter] = useState<GlobalFilter>({
+    favorite: { series: false },
+  });
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     getInitialTableState().columnFilters,
   );
@@ -81,7 +79,7 @@ export const useTable = (columns: ColumnDef<ParsedData, any>[]) => {
   }, [columnFilters, columnVisibility, sorting]);
 
   const globalFilterFn = useCallback(
-    (row) => {
+    (row: { original: ParsedData }) => {
       if (globalFilter.favorite.series) {
         const { seasonId } = row.original;
 

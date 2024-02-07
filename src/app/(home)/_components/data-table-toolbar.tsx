@@ -16,7 +16,7 @@ import { type ParsedData } from "@/server/data/parse-seasons";
 import { DataTableFavoriteFilter } from "./data-table-favorite-filter";
 
 interface DataTableToolbarProps {
-  table: Table<ParsedData[]>;
+  table: Table<ParsedData>;
   updateWeekDate: (date: Date) => void;
 }
 

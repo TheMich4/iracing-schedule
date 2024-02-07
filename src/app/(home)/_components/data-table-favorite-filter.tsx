@@ -2,16 +2,17 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { type ParsedData } from "@/server/data/parse-seasons";
 import { type Table } from "@tanstack/react-table";
 import { useCallback } from "react";
+import { type GlobalFilter } from "../_types/table";
 
 interface DataTableFavoriteFilterProps {
-  table: Table<ParsedData[]>;
+  table: Table<ParsedData>;
 }
 
 export const DataTableFavoriteFilter = ({
   table,
 }: DataTableFavoriteFilterProps) => {
   const handleClick = useCallback(() => {
-    table.setGlobalFilter((globalFilter) => ({
+    table.setGlobalFilter((globalFilter: GlobalFilter) => ({
       ...globalFilter,
       favorite: {
         ...globalFilter.favorite,
