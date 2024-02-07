@@ -11,7 +11,7 @@ export default async function SpecialEventsPage() {
     <div className="container flex flex-col gap-4 p-4">
       <h1 className="text-4xl font-bold tracking-tighter">Special Events</h1>
 
-      <div className="grid grid-cols-1 gap-4 font-semibold xl:grid-cols-2">
+      <div className="grid grid-cols-1 gap-2 font-semibold xl:grid-cols-2 xl:gap-4">
         {specialEvents.map((event) => (
           <div
             key={event.name}
@@ -37,7 +37,7 @@ export default async function SpecialEventsPage() {
                   <div className="text-md text-sm font-normal uppercase italic tracking-wider">
                     {event.track}
                   </div>
-                  <div className="text-xs font-normal uppercase tracking-wide">
+                  <div className="text-xs font-normal tracking-wide">
                     {event.cars}
                   </div>
                 </div>
