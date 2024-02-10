@@ -14,7 +14,7 @@ export const siteConfig = {
     },
     {
       title: "Special Events",
-      href: "/special-events",
+      href: "https://special-events.dyczkowski.dev",
     },
   ],
 };
