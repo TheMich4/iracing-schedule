@@ -4193,8 +4193,18 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars2\\chevy\\gen4cup",
-        "carId": 167,
+        "carDirpath": "stockcars\\chevycamarozl12022",
+        "carId": 139,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\fordmustang2022",
+        "carId": 140,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\toyotacamry2022",
+        "carId": 141,
         "retired": false
       }
     ],
@@ -4263,43 +4273,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "audir8lmsevo2gt3",
-        "carId": 176,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt3",
-        "carId": 132,
-        "retired": false
-      },
-      {
-        "carDirpath": "lamborghinievogt3",
-        "carId": 133,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche992rgt3",
-        "carId": 169,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclarenmp4",
-        "carId": 43,
-        "retired": false
-      },
-      {
-        "carDirpath": "fordgt\\gt3",
-        "carId": 59,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamgevogt3",
-        "carId": 156,
-        "retired": false
-      },
-      {
-        "carDirpath": "ferrari296gt3",
-        "carId": 173,
+        "carDirpath": "formulavee",
+        "carId": 142,
         "retired": false
       }
     ],
@@ -4312,8 +4287,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "porsche718gt4",
-        "carId": 119,
+        "carDirpath": "lamborghinievogt3",
+        "carId": 133,
         "retired": false
       }
     ],

@@ -1323,14 +1323,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 109,
+          "carId": 93,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 93,
+          "carId": 109,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -5041,7 +5041,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -10814,14 +10814,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 43,
+          "carId": 59,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 59,
+          "carId": 43,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -14557,7 +14557,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -15566,16 +15566,16 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 119,
-          "raceSetupId": 225166,
+          "carId": 135,
+          "raceSetupId": 224925,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 135,
-          "raceSetupId": 224925,
+          "carId": 119,
+          "raceSetupId": 225166,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -23793,7 +23793,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -28858,19 +28858,19 @@
       "seriesId": 539,
       "carRestrictions": [
         {
-          "carId": 128,
-          "raceSetupId": 224059,
-          "qualSetupId": 224059,
-          "maxPctFuelFill": 68,
+          "carId": 176,
+          "raceSetupId": 223711,
+          "qualSetupId": 223711,
+          "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 176,
-          "raceSetupId": 223711,
-          "qualSetupId": 223711,
-          "maxPctFuelFill": 50,
+          "carId": 128,
+          "raceSetupId": 224059,
+          "qualSetupId": 224059,
+          "maxPctFuelFill": 68,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
@@ -29393,14 +29393,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 93,
+          "carId": 109,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 109,
+          "carId": 93,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -33113,7 +33113,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -38590,19 +38590,19 @@
       "seriesId": 539,
       "carRestrictions": [
         {
-          "carId": 176,
-          "raceSetupId": 223711,
-          "qualSetupId": 223711,
-          "maxPctFuelFill": 50,
+          "carId": 128,
+          "raceSetupId": 224059,
+          "qualSetupId": 224059,
+          "maxPctFuelFill": 68,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 128,
-          "raceSetupId": 224059,
-          "qualSetupId": 224059,
-          "maxPctFuelFill": 68,
+          "carId": 176,
+          "raceSetupId": 223711,
+          "qualSetupId": 223711,
+          "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
@@ -42822,7 +42822,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -48013,17 +48013,17 @@
       "seriesId": 447,
       "carRestrictions": [
         {
-          "carId": 128,
-          "maxPctFuelFill": 85,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": 0,
-          "maxDryTireSets": 0
-        },
-        {
           "carId": 176,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": -1.75,
+          "maxDryTireSets": 0
+        },
+        {
+          "carId": 128,
+          "maxPctFuelFill": 85,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
@@ -48168,21 +48168,21 @@
       "seriesId": 539,
       "carRestrictions": [
         {
-          "carId": 176,
-          "raceSetupId": 223711,
-          "qualSetupId": 223711,
-          "maxPctFuelFill": 50,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -1.75,
-          "maxDryTireSets": 0
-        },
-        {
           "carId": 128,
           "raceSetupId": 224053,
           "qualSetupId": 224053,
           "maxPctFuelFill": 68,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        },
+        {
+          "carId": 176,
+          "raceSetupId": 223711,
+          "qualSetupId": 223711,
+          "maxPctFuelFill": 50,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": -1.75,
           "maxDryTireSets": 0
         },
         {
@@ -48450,16 +48450,16 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 59,
-          "raceSetupId": 224536,
+          "carId": 43,
+          "raceSetupId": 224929,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 43,
-          "raceSetupId": 224929,
+          "carId": 59,
+          "raceSetupId": 224536,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -48586,14 +48586,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 59,
+          "carId": 43,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 43,
+          "carId": 59,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -48704,14 +48704,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 93,
+          "carId": 109,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 109,
+          "carId": 93,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -52343,7 +52343,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -61577,7 +61577,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -66486,15 +66486,15 @@
       "seriesId": 447,
       "carRestrictions": [
         {
-          "carId": 176,
-          "maxPctFuelFill": 50,
+          "carId": 128,
+          "maxPctFuelFill": 85,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 128,
-          "maxPctFuelFill": 85,
+          "carId": 176,
+          "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
@@ -67059,14 +67059,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 43,
+          "carId": 59,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 59,
+          "carId": 43,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -67177,14 +67177,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 93,
+          "carId": 109,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 109,
+          "carId": 93,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -70795,7 +70795,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -80247,7 +80247,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -86130,14 +86130,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 109,
+          "carId": 93,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 93,
+          "carId": 109,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -89855,7 +89855,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -99680,7 +99680,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -100883,16 +100883,16 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 135,
-          "raceSetupId": 224925,
+          "carId": 119,
+          "raceSetupId": 225166,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 119,
-          "raceSetupId": 225166,
+          "carId": 135,
+          "raceSetupId": 224925,
           "maxPctFuelFill": 50,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -104459,12 +104459,12 @@
           "maxDryTireSets": 3
         }
       ],
-      "raceLapLimit": 32,
+      "raceLapLimit": 45,
       "raceTimeDescriptors": [
         {
           "repeating": true,
           "superSession": false,
-          "sessionMinutes": 39,
+          "sessionMinutes": 50,
           "startDate": "2024-02-27",
           "dayOffset": [
             0,
@@ -109117,7 +109117,7 @@
       ],
       "fixedSetup": false,
       "incidentLimit": 25,
-      "hasFreeCar": false,
+      "hasFreeCar": true,
       "licenseGroup": 2,
       "multiclass": false,
       "official": true,
@@ -112227,14 +112227,14 @@
         "skies": 1,
         "weatherVarInitial": 0,
         "weatherVarOngoing": 0,
-        "timeOfDay": 8,
-        "simulatedStartTime": "2024-04-01T19:45:00",
+        "timeOfDay": 2,
+        "simulatedStartTime": "2024-04-01T18:25:00",
         "simulatedTimeOffsets": [
           0,
           0
         ],
         "simulatedTimeMultiplier": 1,
-        "simulatedStartUtcTime": "2024-04-01T23:45:00Z"
+        "simulatedStartUtcTime": "2024-04-01T22:25:00Z"
       },
       "week": 11
     },
@@ -115672,14 +115672,14 @@
           "maxDryTireSets": 0
         },
         {
-          "carId": 119,
+          "carId": 135,
           "maxPctFuelFill": 80,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 0
         },
         {
-          "carId": 135,
+          "carId": 119,
           "maxPctFuelFill": 80,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -119293,6 +119293,89 @@
         "simulatedStartUtcTime": "2024-03-03T20:30:00Z"
       },
       "week": 2
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225119,
+          "qualSetupId": 225120,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 60,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 141,
+          "sessionTimes": [
+            "2024-02-29T10:00:00Z",
+            "2024-02-29T19:00:00Z",
+            "2024-03-01T01:00:00Z",
+            "2024-03-01T04:00:00Z",
+            "2024-03-02T10:00:00Z",
+            "2024-03-02T19:00:00Z",
+            "2024-03-03T01:00:00Z",
+            "2024-03-03T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 0,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-02-29",
+      "startType": "Standing",
+      "track": {
+        "trackId": 250,
+        "trackName": "Nürburgring Grand-Prix-Strecke",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-01T17:02:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-01T15:02:00Z"
+      },
+      "week": 0
     }
   ],
   "2024-03-07": [
@@ -119386,6 +119469,158 @@
         "simulatedStartUtcTime": "2024-03-10T19:30:00Z"
       },
       "week": 3
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225143,
+          "qualSetupId": 225144,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 58,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 123,
+          "sessionTimes": [
+            "2024-03-07T10:00:00Z",
+            "2024-03-07T19:00:00Z",
+            "2024-03-08T01:00:00Z",
+            "2024-03-08T04:00:00Z",
+            "2024-03-09T10:00:00Z",
+            "2024-03-09T19:00:00Z",
+            "2024-03-10T01:00:00Z",
+            "2024-03-10T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 1,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-03-07",
+      "startType": "Standing",
+      "track": {
+        "trackId": 465,
+        "trackName": "Virginia International Raceway",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": true
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-03-10T13:55:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-03-10T17:55:00Z"
+      },
+      "week": 1
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 55,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-03-07T01:00:00Z",
+            "2024-03-08T20:00:00Z",
+            "2024-03-09T18:00:00Z",
+            "2024-03-10T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 0,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-03-07",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 95,
+        "trackName": "Sebring International Raceway",
+        "configName": "International",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-03-10T12:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-03-10T16:00:00Z"
+      },
+      "week": 0
     }
   ],
   "2024-03-14": [
@@ -119572,6 +119807,157 @@
         "simulatedStartUtcTime": "2024-03-24T19:30:00Z"
       },
       "week": 5
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225122,
+          "qualSetupId": 225123,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 69,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 126,
+          "sessionTimes": [
+            "2024-03-21T10:00:00Z",
+            "2024-03-21T19:00:00Z",
+            "2024-03-22T01:00:00Z",
+            "2024-03-22T04:00:00Z",
+            "2024-03-23T10:00:00Z",
+            "2024-03-23T19:00:00Z",
+            "2024-03-24T01:00:00Z",
+            "2024-03-24T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 2,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-03-21",
+      "startType": "Standing",
+      "track": {
+        "trackId": 152,
+        "trackName": "Phillip Island Circuit",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-03-24T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-03-24T02:35:00Z"
+      },
+      "week": 2
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 150,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 180,
+          "sessionTimes": [
+            "2024-03-21T01:00:00Z",
+            "2024-03-22T20:00:00Z",
+            "2024-03-23T18:00:00Z",
+            "2024-03-24T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 1,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-03-21",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 225,
+        "trackName": "Auto Club Speedway",
+        "configName": "Oval",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-01T13:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-01T20:30:00Z"
+      },
+      "week": 1
     }
   ],
   "2024-03-28": [
@@ -119756,6 +120142,89 @@
         "simulatedStartUtcTime": "2024-04-07T19:00:00Z"
       },
       "week": 7
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225140,
+          "qualSetupId": 225141,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 53,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-04-04T10:00:00Z",
+            "2024-04-04T19:00:00Z",
+            "2024-04-05T01:00:00Z",
+            "2024-04-05T04:00:00Z",
+            "2024-04-06T10:00:00Z",
+            "2024-04-06T19:00:00Z",
+            "2024-04-07T01:00:00Z",
+            "2024-04-07T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 3,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-04-04",
+      "startType": "Standing",
+      "track": {
+        "trackId": 168,
+        "trackName": "Suzuka International Racing Course",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-04-07T13:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-07T04:00:00Z"
+      },
+      "week": 3
     }
   ],
   "2024-04-11": [
@@ -119941,6 +120410,157 @@
         "simulatedStartUtcTime": "2024-04-21T19:00:00Z"
       },
       "week": 9
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225116,
+          "qualSetupId": 225117,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 59,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-04-18T10:00:00Z",
+            "2024-04-18T19:00:00Z",
+            "2024-04-19T01:00:00Z",
+            "2024-04-19T04:00:00Z",
+            "2024-04-20T10:00:00Z",
+            "2024-04-20T19:00:00Z",
+            "2024-04-21T01:00:00Z",
+            "2024-04-21T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 4,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-04-18",
+      "startType": "Standing",
+      "track": {
+        "trackId": 498,
+        "trackName": "Autodromo Internazionale del Mugello",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-04-21T13:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-21T11:50:00Z"
+      },
+      "week": 4
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 85,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-04-18T01:00:00Z",
+            "2024-04-19T20:00:00Z",
+            "2024-04-20T18:00:00Z",
+            "2024-04-21T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 2,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-04-18",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 179,
+        "trackName": "Long Beach Street Circuit",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-21T12:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-21T19:00:00Z"
+      },
+      "week": 2
     }
   ],
   "2024-04-25": [
@@ -120033,6 +120653,75 @@
         "simulatedStartUtcTime": "2024-04-28T18:00:00Z"
       },
       "week": 10
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 90,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 151,
+          "sessionTimes": [
+            "2024-04-25T01:00:00Z",
+            "2024-04-26T20:00:00Z",
+            "2024-04-27T18:00:00Z",
+            "2024-04-28T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 3,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-04-25",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 46,
+        "trackName": "Barber Motorsports Park",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-28T14:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-28T19:00:00Z"
+      },
+      "week": 3
     }
   ],
   "2024-05-02": [
@@ -120126,6 +120815,89 @@
         "simulatedStartUtcTime": "2024-05-05T19:00:00Z"
       },
       "week": 11
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225128,
+          "qualSetupId": 225129,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 51,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 123,
+          "sessionTimes": [
+            "2024-05-02T10:00:00Z",
+            "2024-05-02T19:00:00Z",
+            "2024-05-03T01:00:00Z",
+            "2024-05-03T04:00:00Z",
+            "2024-05-04T10:00:00Z",
+            "2024-05-04T19:00:00Z",
+            "2024-05-05T01:00:00Z",
+            "2024-05-05T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 5,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-05-02",
+      "startType": "Standing",
+      "track": {
+        "trackId": 95,
+        "trackName": "Sebring International Raceway",
+        "configName": "International",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-05T15:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-05T19:30:00Z"
+      },
+      "week": 5
     }
   ],
   "2024-05-09": [
@@ -120218,6 +120990,75 @@
         "simulatedStartUtcTime": "2024-05-12T19:00:00Z"
       },
       "week": 12
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 85,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 143,
+          "sessionTimes": [
+            "2024-05-09T01:00:00Z",
+            "2024-05-10T20:00:00Z",
+            "2024-05-11T18:00:00Z",
+            "2024-05-12T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 4,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-05-09",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 448,
+        "trackName": "Indianapolis Motor Speedway",
+        "configName": "Road Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-05-11T14:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-11T18:30:00Z"
+      },
+      "week": 4
     }
   ],
   "2024-05-23": [
@@ -120311,6 +121152,157 @@
         "simulatedStartUtcTime": "2024-05-26T22:00:00Z"
       },
       "week": 13
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225102,
+          "qualSetupId": 225103,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 83,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 128,
+          "sessionTimes": [
+            "2024-05-23T10:00:00Z",
+            "2024-05-23T19:00:00Z",
+            "2024-05-24T01:00:00Z",
+            "2024-05-24T04:00:00Z",
+            "2024-05-25T10:00:00Z",
+            "2024-05-25T19:00:00Z",
+            "2024-05-26T01:00:00Z",
+            "2024-05-26T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 7,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-05-23",
+      "startType": "Standing",
+      "track": {
+        "trackId": 179,
+        "trackName": "Long Beach Street Circuit",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-26T15:05:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-26T22:05:00Z"
+      },
+      "week": 7
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 125,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 194,
+          "sessionTimes": [
+            "2024-05-23T01:00:00Z",
+            "2024-05-24T20:00:00Z",
+            "2024-05-25T18:00:00Z",
+            "2024-05-26T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 5,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-05-23",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 453,
+        "trackName": "Indianapolis Motor Speedway",
+        "configName": "Open Wheel Oval",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-05-26T11:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-26T15:00:00Z"
+      },
+      "week": 5
     }
   ],
   "2024-05-30": [
@@ -120404,6 +121396,75 @@
         "simulatedStartUtcTime": "2024-06-02T19:30:00Z"
       },
       "week": 14
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 127,
+          "sessionTimes": [
+            "2024-05-30T01:00:00Z",
+            "2024-05-31T20:00:00Z",
+            "2024-06-01T18:00:00Z",
+            "2024-06-02T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 6,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-05-30",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 319,
+        "trackName": "Detroit Grand Prix at Belle Isle",
+        "configName": "Belle Isle",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-06-02T15:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-02T19:00:00Z"
+      },
+      "week": 6
     }
   ],
   "2024-06-06": [
@@ -120497,6 +121558,157 @@
         "simulatedStartUtcTime": "2024-06-09T19:30:00Z"
       },
       "week": 15
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225110,
+          "qualSetupId": 225111,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 134,
+          "sessionTimes": [
+            "2024-06-06T10:00:00Z",
+            "2024-06-06T19:00:00Z",
+            "2024-06-07T01:00:00Z",
+            "2024-06-07T04:00:00Z",
+            "2024-06-08T10:00:00Z",
+            "2024-06-08T19:00:00Z",
+            "2024-06-09T01:00:00Z",
+            "2024-06-09T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 8,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-06-06",
+      "startType": "Standing",
+      "track": {
+        "trackId": 218,
+        "trackName": "Circuit Gilles Villeneuve",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-09T14:45:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-09T18:45:00Z"
+      },
+      "week": 8
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 55,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 138,
+          "sessionTimes": [
+            "2024-06-06T01:00:00Z",
+            "2024-06-07T20:00:00Z",
+            "2024-06-08T18:00:00Z",
+            "2024-06-09T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 7,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-06-06",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 18,
+        "trackName": "Road America",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 9,
+        "simulatedStartTime": "2024-06-09T12:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-09T17:00:00Z"
+      },
+      "week": 7
     }
   ],
   "2024-06-13": [
@@ -120683,6 +121895,158 @@
         "simulatedStartUtcTime": "2024-06-23T18:30:00Z"
       },
       "week": 17
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225067,
+          "qualSetupId": 225068,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 65,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 134,
+          "sessionTimes": [
+            "2024-06-20T10:00:00Z",
+            "2024-06-20T19:00:00Z",
+            "2024-06-21T01:00:00Z",
+            "2024-06-21T04:00:00Z",
+            "2024-06-22T10:00:00Z",
+            "2024-06-22T19:00:00Z",
+            "2024-06-23T01:00:00Z",
+            "2024-06-23T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 9,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-06-20",
+      "startType": "Standing",
+      "track": {
+        "trackId": 349,
+        "trackName": "Circuit de Barcelona Catalunya",
+        "configName": "Historic",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-23T16:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-23T14:00:00Z"
+      },
+      "week": 9
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 95,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 160,
+          "sessionTimes": [
+            "2024-06-20T01:00:00Z",
+            "2024-06-21T20:00:00Z",
+            "2024-06-22T18:00:00Z",
+            "2024-06-23T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 8,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-06-20",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 47,
+        "trackName": "WeatherTech Raceway at Laguna Seca",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": true
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-06-23T11:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-23T18:30:00Z"
+      },
+      "week": 8
     }
   ],
   "2024-06-27": [
@@ -120775,6 +122139,89 @@
         "simulatedStartUtcTime": "2024-06-30T19:30:00Z"
       },
       "week": 18
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225137,
+          "qualSetupId": 225138,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 71,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 125,
+          "sessionTimes": [
+            "2024-06-27T10:00:00Z",
+            "2024-06-27T19:00:00Z",
+            "2024-06-28T01:00:00Z",
+            "2024-06-28T04:00:00Z",
+            "2024-06-29T10:00:00Z",
+            "2024-06-29T19:00:00Z",
+            "2024-06-30T01:00:00Z",
+            "2024-06-30T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 10,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-06-27",
+      "startType": "Standing",
+      "track": {
+        "trackId": 403,
+        "trackName": "Red Bull Ring",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-30T14:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-30T12:50:00Z"
+      },
+      "week": 10
     }
   ],
   "2024-07-04": [
@@ -120868,6 +122315,158 @@
         "simulatedStartUtcTime": "2024-07-07T20:30:00Z"
       },
       "week": 19
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225131,
+          "qualSetupId": 225132,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 52,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 131,
+          "sessionTimes": [
+            "2024-07-04T10:00:00Z",
+            "2024-07-04T19:00:00Z",
+            "2024-07-05T01:00:00Z",
+            "2024-07-05T04:00:00Z",
+            "2024-07-06T10:00:00Z",
+            "2024-07-06T19:00:00Z",
+            "2024-07-07T01:00:00Z",
+            "2024-07-07T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 11,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-07-04",
+      "startType": "Standing",
+      "track": {
+        "trackId": 341,
+        "trackName": "Silverstone Circuit",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-07T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-07T13:10:00Z"
+      },
+      "week": 11
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 90,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 148,
+          "sessionTimes": [
+            "2024-07-04T01:00:00Z",
+            "2024-07-05T20:00:00Z",
+            "2024-07-06T18:00:00Z",
+            "2024-07-07T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 9,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-07-04",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 153,
+        "trackName": "Mid-Ohio Sports Car Course",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-07-07T13:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-07T17:30:00Z"
+      },
+      "week": 9
     }
   ],
   "2024-07-11": [
@@ -120960,6 +122559,75 @@
         "simulatedStartUtcTime": "2024-07-14T18:30:00Z"
       },
       "week": 20
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 250,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 173,
+          "sessionTimes": [
+            "2024-07-11T01:00:00Z",
+            "2024-07-12T20:00:00Z",
+            "2024-07-13T18:00:00Z",
+            "2024-07-14T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 10,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-07-11",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 169,
+        "trackName": "Iowa Speedway",
+        "configName": "Oval",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-07-13T14:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-13T19:00:00Z"
+      },
+      "week": 10
     }
   ],
   "2024-07-18": [
@@ -121053,6 +122721,156 @@
         "simulatedStartUtcTime": "2024-07-21T18:30:00Z"
       },
       "week": 21
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225087,
+          "qualSetupId": 225088,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 146,
+          "sessionTimes": [
+            "2024-07-18T10:00:00Z",
+            "2024-07-18T19:00:00Z",
+            "2024-07-19T01:00:00Z",
+            "2024-07-19T04:00:00Z",
+            "2024-07-20T10:00:00Z",
+            "2024-07-20T19:00:00Z",
+            "2024-07-21T01:00:00Z",
+            "2024-07-21T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 12,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-07-18",
+      "startType": "Standing",
+      "track": {
+        "trackId": 413,
+        "trackName": "Hungaroring",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-21T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-21T12:10:00Z"
+      },
+      "week": 12
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 65,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 126,
+          "sessionTimes": [
+            "2024-07-18T01:00:00Z",
+            "2024-07-19T20:00:00Z",
+            "2024-07-20T18:00:00Z",
+            "2024-07-21T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 11,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-07-18",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 218,
+        "trackName": "Circuit Gilles Villeneuve",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-07-21T15:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-21T19:30:00Z"
+      },
+      "week": 11
     }
   ],
   "2024-08-08": [
@@ -121237,6 +123055,75 @@
         "simulatedStartUtcTime": "2024-08-18T18:30:00Z"
       },
       "week": 23
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 260,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 247,
+          "sessionTimes": [
+            "2024-08-15T01:00:00Z",
+            "2024-08-16T20:00:00Z",
+            "2024-08-17T18:00:00Z",
+            "2024-08-18T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 12,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-08-15",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 237,
+        "trackName": "World Wide Technology Raceway (Gateway)",
+        "configName": "Oval",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-08-17T15:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-08-17T20:30:00Z"
+      },
+      "week": 12
     }
   ],
   "2024-08-22": [
@@ -121330,6 +123217,158 @@
         "simulatedStartUtcTime": "2024-08-24T23:30:00Z"
       },
       "week": 24
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225149,
+          "qualSetupId": 225150,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 72,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 137,
+          "sessionTimes": [
+            "2024-08-22T10:00:00Z",
+            "2024-08-22T19:00:00Z",
+            "2024-08-23T01:00:00Z",
+            "2024-08-23T04:00:00Z",
+            "2024-08-24T10:00:00Z",
+            "2024-08-24T19:00:00Z",
+            "2024-08-25T01:00:00Z",
+            "2024-08-25T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 14,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-08-22",
+      "startType": "Standing",
+      "track": {
+        "trackId": 485,
+        "trackName": "Circuit Zandvoort",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-08-25T14:05:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-08-25T12:05:00Z"
+      },
+      "week": 14
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 60,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-08-22T01:00:00Z",
+            "2024-08-23T20:00:00Z",
+            "2024-08-24T18:00:00Z",
+            "2024-08-25T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 13,
+      "restartType": "Double-file Back",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-08-22",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 434,
+        "trackName": "Watkins Glen International",
+        "configName": "Boot",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-08-25T13:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-08-25T17:00:00Z"
+      },
+      "week": 13
     }
   ],
   "2024-08-29": [
@@ -121422,6 +123461,157 @@
         "simulatedStartUtcTime": "2024-08-11T22:00:00Z"
       },
       "week": 25
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225113,
+          "qualSetupId": 225114,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 53,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 116,
+          "sessionTimes": [
+            "2024-08-29T10:00:00Z",
+            "2024-08-29T19:00:00Z",
+            "2024-08-30T01:00:00Z",
+            "2024-08-30T04:00:00Z",
+            "2024-08-31T10:00:00Z",
+            "2024-08-31T19:00:00Z",
+            "2024-09-01T01:00:00Z",
+            "2024-09-01T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 15,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-08-29",
+      "startType": "Standing",
+      "track": {
+        "trackId": 239,
+        "trackName": "Autodromo Nazionale Monza",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-01T13:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-01T11:50:00Z"
+      },
+      "week": 15
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 250,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 215,
+          "sessionTimes": [
+            "2024-08-29T01:00:00Z",
+            "2024-08-30T20:00:00Z",
+            "2024-08-31T18:00:00Z",
+            "2024-09-01T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 14,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-08-29",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 94,
+        "trackName": "The Milwaukee Mile",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-08-31T14:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-08-31T19:30:00Z"
+      },
+      "week": 14
     }
   ],
   "2024-09-05": [
@@ -121608,6 +123798,157 @@
         "simulatedStartUtcTime": "2024-09-15T19:00:00Z"
       },
       "week": 27
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225064,
+          "qualSetupId": 225065,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 61,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 141,
+          "sessionTimes": [
+            "2024-09-12T10:00:00Z",
+            "2024-09-12T19:00:00Z",
+            "2024-09-13T01:00:00Z",
+            "2024-09-13T04:00:00Z",
+            "2024-09-14T10:00:00Z",
+            "2024-09-14T19:00:00Z",
+            "2024-09-15T01:00:00Z",
+            "2024-09-15T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 16,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-09-12",
+      "startType": "Standing",
+      "track": {
+        "trackId": 475,
+        "trackName": "MotorLand Aragón",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-15T14:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-15T12:30:00Z"
+      },
+      "week": 16
+    },
+    {
+      "carClassIds": [
+        117
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "4 timeslots per raceweek",
+      "seasonId": 4831,
+      "seasonName": "INDYCAR iRacing Series - 2024 Season",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 374,
+      "carRestrictions": [],
+      "raceLapLimit": 200,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 178,
+          "sessionTimes": [
+            "2024-09-12T01:00:00Z",
+            "2024-09-13T20:00:00Z",
+            "2024-09-14T18:00:00Z",
+            "2024-09-15T02:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 15,
+      "restartType": "Single-file Maintain",
+      "seriesName": "INDYCAR iRacing Series",
+      "startDate": "2024-09-12",
+      "startType": "Rolling",
+      "track": {
+        "trackId": 400,
+        "trackName": "Nashville Superspeedway",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 9,
+        "simulatedStartTime": "2024-09-15T12:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-15T17:00:00Z"
+      },
+      "week": 15
     }
   ],
   "2024-09-19": [
@@ -121701,6 +124042,89 @@
         "simulatedStartUtcTime": "2024-09-21T23:30:00Z"
       },
       "week": 28
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225080,
+          "qualSetupId": 225081,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 67,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-09-19T10:00:00Z",
+            "2024-09-19T19:00:00Z",
+            "2024-09-20T01:00:00Z",
+            "2024-09-20T04:00:00Z",
+            "2024-09-21T10:00:00Z",
+            "2024-09-21T19:00:00Z",
+            "2024-09-22T01:00:00Z",
+            "2024-09-22T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 17,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-09-19",
+      "startType": "Standing",
+      "track": {
+        "trackId": 444,
+        "trackName": "Fuji International Speedway",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-22T12:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-22T03:10:00Z"
+      },
+      "week": 17
     }
   ],
   "2024-09-26": [
@@ -122072,6 +124496,89 @@
         "simulatedStartUtcTime": "2024-10-20T19:30:00Z"
       },
       "week": 32
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225077,
+          "qualSetupId": 225078,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 56,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 143,
+          "sessionTimes": [
+            "2024-10-17T10:00:00Z",
+            "2024-10-17T19:00:00Z",
+            "2024-10-18T01:00:00Z",
+            "2024-10-18T04:00:00Z",
+            "2024-10-19T10:00:00Z",
+            "2024-10-19T19:00:00Z",
+            "2024-10-20T01:00:00Z",
+            "2024-10-20T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 18,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-10-17",
+      "startType": "Standing",
+      "track": {
+        "trackId": 229,
+        "trackName": "Circuit of the Americas",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-10-20T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-20T18:35:00Z"
+      },
+      "week": 18
     }
   ],
   "2024-10-24": [
@@ -122165,6 +124672,89 @@
         "simulatedStartUtcTime": "2024-10-27T18:30:00Z"
       },
       "week": 33
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225099,
+          "qualSetupId": 225100,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 142,
+          "sessionTimes": [
+            "2024-10-24T10:00:00Z",
+            "2024-10-24T19:00:00Z",
+            "2024-10-25T01:00:00Z",
+            "2024-10-25T04:00:00Z",
+            "2024-10-26T10:00:00Z",
+            "2024-10-26T19:00:00Z",
+            "2024-10-27T01:00:00Z",
+            "2024-10-27T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 19,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-10-24",
+      "startType": "Standing",
+      "track": {
+        "trackId": 473,
+        "trackName": "Circuito de Jerez - Ángel Nieto",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-10-27T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-27T12:35:00Z"
+      },
+      "week": 19
     }
   ],
   "2024-10-31": [
@@ -122257,6 +124847,89 @@
         "simulatedStartUtcTime": "2024-10-31T18:00:00Z"
       },
       "week": 34
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225096,
+          "qualSetupId": 225097,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 71,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 131,
+          "sessionTimes": [
+            "2024-10-31T10:00:00Z",
+            "2024-10-31T19:00:00Z",
+            "2024-11-01T01:00:00Z",
+            "2024-11-01T04:00:00Z",
+            "2024-11-02T10:00:00Z",
+            "2024-11-02T19:00:00Z",
+            "2024-11-03T01:00:00Z",
+            "2024-11-03T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 20,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-10-31",
+      "startType": "Standing",
+      "track": {
+        "trackId": 212,
+        "trackName": "Autódromo José Carlos Pace",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-11-03T14:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-03T17:00:00Z"
+      },
+      "week": 20
     }
   ],
   "2024-11-07": [
@@ -123443,14 +126116,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 3
         },
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -124614,14 +127287,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 4
         },
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -125006,14 +127679,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 5
         },
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -125202,14 +127875,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 4
         },
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -125396,14 +128069,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 4
         },
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -125786,14 +128459,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 3
         },
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -126373,14 +129046,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 4
         },
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -128520,14 +131193,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 5
         },
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -128911,14 +131584,14 @@
       "seriesId": 47,
       "carRestrictions": [
         {
-          "carId": 155,
+          "carId": 123,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
           "maxDryTireSets": 5
         },
         {
-          "carId": 123,
+          "carId": 155,
           "maxPctFuelFill": 100,
           "weightPenaltyKg": 0,
           "powerAdjustPct": 0,
@@ -132812,6 +135485,79 @@
         "simulatedStartUtcTime": "2024-04-01T17:20:00Z"
       },
       "week": 2
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 60,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 141,
+          "sessionTimes": [
+            "2024-03-01T10:00:00Z",
+            "2024-03-01T19:00:00Z",
+            "2024-03-02T01:00:00Z",
+            "2024-03-02T04:00:00Z",
+            "2024-03-03T10:00:00Z",
+            "2024-03-03T19:00:00Z",
+            "2024-03-04T01:00:00Z",
+            "2024-03-04T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 0,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-03-01",
+      "startType": "Standing",
+      "track": {
+        "trackId": 250,
+        "trackName": "Nürburgring Grand-Prix-Strecke",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-01T17:04:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-01T15:04:00Z"
+      },
+      "week": 0
     }
   ],
   "2024-03-15": [
@@ -133510,6 +136256,78 @@
         "simulatedStartUtcTime": "2024-04-06T18:25:00Z"
       },
       "week": 7
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 83,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 128,
+          "sessionTimes": [
+            "2024-05-24T10:00:00Z",
+            "2024-05-24T19:00:00Z",
+            "2024-05-25T01:00:00Z",
+            "2024-05-25T04:00:00Z",
+            "2024-05-26T10:00:00Z",
+            "2024-05-26T19:00:00Z",
+            "2024-05-27T01:00:00Z",
+            "2024-05-27T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 7,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-05-24",
+      "startType": "Standing",
+      "track": {
+        "trackId": 179,
+        "trackName": "Long Beach Street Circuit",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-26T15:05:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-26T22:05:00Z"
+      },
+      "week": 7
     }
   ],
   "2024-02-23": [
@@ -133593,110 +136411,6 @@
         "simulatedStartUtcTime": "2024-04-01T18:00:00Z"
       },
       "week": 1
-    },
-    {
-      "carClassIds": [
-        2708
-      ],
-      "fixedSetup": false,
-      "incidentLimit": 0,
-      "hasFreeCar": false,
-      "licenseGroup": 3,
-      "multiclass": false,
-      "official": true,
-      "scheduleDescription": "22 GMT on Feb 23rd and 7, 12, 16 GMT Feb 24th",
-      "seasonId": 4830,
-      "seasonName": "2024 Bathurst 12 Hour Presented by Coach Dave Delta",
-      "seasonQuarter": 1,
-      "seasonYear": 2024,
-      "seriesId": 329,
-      "carRestrictions": [
-        {
-          "carId": 176,
-          "maxPctFuelFill": 100,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -1,
-          "maxDryTireSets": 0
-        },
-        {
-          "carId": 132,
-          "maxPctFuelFill": 100,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -1.5,
-          "maxDryTireSets": 0
-        },
-        {
-          "carId": 43,
-          "maxPctFuelFill": 100,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -1.75,
-          "maxDryTireSets": 0
-        },
-        {
-          "carId": 156,
-          "maxPctFuelFill": 100,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -2,
-          "maxDryTireSets": 0
-        },
-        {
-          "carId": 173,
-          "maxPctFuelFill": 100,
-          "weightPenaltyKg": 0,
-          "powerAdjustPct": -3,
-          "maxDryTireSets": 0
-        }
-      ],
-      "raceLapLimit": null,
-      "raceTimeDescriptors": [
-        {
-          "repeating": false,
-          "superSession": false,
-          "sessionMinutes": 761,
-          "sessionTimes": [
-            "2024-02-23T22:00:00Z",
-            "2024-02-24T07:00:00Z",
-            "2024-02-24T12:00:00Z",
-            "2024-02-24T16:00:00Z"
-          ]
-        }
-      ],
-      "raceTimeLimit": 720,
-      "raceWeekNum": 0,
-      "restartType": "Single-file Maintain",
-      "seriesName": "Bathurst 12 Hour",
-      "startDate": "2024-02-23",
-      "startType": "Rolling",
-      "track": {
-        "trackId": 219,
-        "trackName": "Mount Panorama Circuit",
-        "categoryId": 2,
-        "category": "road",
-        "isFree": false
-      },
-      "weather": {
-        "version": 0,
-        "type": 1,
-        "tempUnits": 0,
-        "tempValue": 78,
-        "relHumidity": 45,
-        "fog": 0,
-        "windDir": 0,
-        "windUnits": 0,
-        "windValue": 2,
-        "skies": 1,
-        "weatherVarInitial": 0,
-        "weatherVarOngoing": 0,
-        "timeOfDay": 4,
-        "simulatedStartTime": "2024-02-18T05:05:00",
-        "simulatedTimeOffsets": [
-          0,
-          0
-        ],
-        "simulatedTimeMultiplier": 1,
-        "simulatedStartUtcTime": "2024-02-17T18:05:00Z"
-      },
-      "week": 0
     }
   ],
   "2024-03-08": [
@@ -133780,6 +136494,79 @@
         "simulatedStartUtcTime": "2024-03-09T17:35:00Z"
       },
       "week": 3
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 58,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 123,
+          "sessionTimes": [
+            "2024-03-08T10:00:00Z",
+            "2024-03-08T19:00:00Z",
+            "2024-03-09T01:00:00Z",
+            "2024-03-09T04:00:00Z",
+            "2024-03-10T10:00:00Z",
+            "2024-03-10T19:00:00Z",
+            "2024-03-11T01:00:00Z",
+            "2024-03-11T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 1,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-03-08",
+      "startType": "Standing",
+      "track": {
+        "trackId": 465,
+        "trackName": "Virginia International Raceway",
+        "configName": "Full Course",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": true
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-03-10T13:55:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-03-10T17:55:00Z"
+      },
+      "week": 1
     }
   ],
   "2024-03-22": [
@@ -133863,6 +136650,1999 @@
         "simulatedStartUtcTime": "2024-03-23T13:05:00Z"
       },
       "week": 5
+    },
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 69,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 126,
+          "sessionTimes": [
+            "2024-03-22T10:00:00Z",
+            "2024-03-22T19:00:00Z",
+            "2024-03-23T01:00:00Z",
+            "2024-03-23T04:00:00Z",
+            "2024-03-24T10:00:00Z",
+            "2024-03-24T19:00:00Z",
+            "2024-03-25T01:00:00Z",
+            "2024-03-25T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 2,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-03-22",
+      "startType": "Standing",
+      "track": {
+        "trackId": 152,
+        "trackName": "Phillip Island Circuit",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-03-24T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-03-24T02:35:00Z"
+      },
+      "week": 2
+    }
+  ],
+  "2024-04-05": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 53,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-04-05T10:00:00Z",
+            "2024-04-05T19:00:00Z",
+            "2024-04-06T01:00:00Z",
+            "2024-04-06T04:00:00Z",
+            "2024-04-07T10:00:00Z",
+            "2024-04-07T19:00:00Z",
+            "2024-04-08T01:00:00Z",
+            "2024-04-08T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 3,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-04-05",
+      "startType": "Standing",
+      "track": {
+        "trackId": 168,
+        "trackName": "Suzuka International Racing Course",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-04-07T13:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-07T04:00:00Z"
+      },
+      "week": 3
+    }
+  ],
+  "2024-04-19": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 59,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-04-19T10:00:00Z",
+            "2024-04-19T19:00:00Z",
+            "2024-04-20T01:00:00Z",
+            "2024-04-20T04:00:00Z",
+            "2024-04-21T10:00:00Z",
+            "2024-04-21T19:00:00Z",
+            "2024-04-22T01:00:00Z",
+            "2024-04-22T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 4,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-04-19",
+      "startType": "Standing",
+      "track": {
+        "trackId": 498,
+        "trackName": "Autodromo Internazionale del Mugello",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-04-21T17:05:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-04-21T15:05:00Z"
+      },
+      "week": 4
+    }
+  ],
+  "2024-05-03": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 51,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 123,
+          "sessionTimes": [
+            "2024-05-03T10:00:00Z",
+            "2024-05-03T19:00:00Z",
+            "2024-05-04T01:00:00Z",
+            "2024-05-04T04:00:00Z",
+            "2024-05-05T10:00:00Z",
+            "2024-05-05T19:00:00Z",
+            "2024-05-06T01:00:00Z",
+            "2024-05-06T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 5,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-05-03",
+      "startType": "Standing",
+      "track": {
+        "trackId": 95,
+        "trackName": "Sebring International Raceway",
+        "configName": "International",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-05T15:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-05T19:30:00Z"
+      },
+      "week": 5
+    }
+  ],
+  "2024-05-17": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 63,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-05-17T10:00:00Z",
+            "2024-05-17T19:00:00Z",
+            "2024-05-18T01:00:00Z",
+            "2024-05-18T04:00:00Z",
+            "2024-05-19T10:00:00Z",
+            "2024-05-19T19:00:00Z",
+            "2024-05-20T01:00:00Z",
+            "2024-05-20T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 6,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-05-17",
+      "startType": "Standing",
+      "track": {
+        "trackId": 266,
+        "trackName": "Autodromo Internazionale Enzo e Dino Ferrari",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-19T14:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-19T12:50:00Z"
+      },
+      "week": 6
+    }
+  ],
+  "2024-06-07": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 134,
+          "sessionTimes": [
+            "2024-06-07T10:00:00Z",
+            "2024-06-07T19:00:00Z",
+            "2024-06-08T01:00:00Z",
+            "2024-06-08T04:00:00Z",
+            "2024-06-09T10:00:00Z",
+            "2024-06-09T19:00:00Z",
+            "2024-06-10T01:00:00Z",
+            "2024-06-10T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 8,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-06-07",
+      "startType": "Standing",
+      "track": {
+        "trackId": 218,
+        "trackName": "Circuit Gilles Villeneuve",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-09T14:45:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-09T18:45:00Z"
+      },
+      "week": 8
+    }
+  ],
+  "2024-06-21": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 65,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 134,
+          "sessionTimes": [
+            "2024-06-21T10:00:00Z",
+            "2024-06-21T19:00:00Z",
+            "2024-06-22T01:00:00Z",
+            "2024-06-22T04:00:00Z",
+            "2024-06-23T10:00:00Z",
+            "2024-06-23T19:00:00Z",
+            "2024-06-24T01:00:00Z",
+            "2024-06-24T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 9,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-06-21",
+      "startType": "Standing",
+      "track": {
+        "trackId": 349,
+        "trackName": "Circuit de Barcelona Catalunya",
+        "configName": "Historic",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-23T16:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-23T14:00:00Z"
+      },
+      "week": 9
+    }
+  ],
+  "2024-06-28": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 71,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 125,
+          "sessionTimes": [
+            "2024-06-28T10:00:00Z",
+            "2024-06-28T19:00:00Z",
+            "2024-06-29T01:00:00Z",
+            "2024-06-29T04:00:00Z",
+            "2024-06-30T10:00:00Z",
+            "2024-06-30T19:00:00Z",
+            "2024-07-01T01:00:00Z",
+            "2024-07-01T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 10,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-06-28",
+      "startType": "Standing",
+      "track": {
+        "trackId": 403,
+        "trackName": "Red Bull Ring",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-06-30T14:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-06-30T12:50:00Z"
+      },
+      "week": 10
+    }
+  ],
+  "2024-07-05": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 52,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 131,
+          "sessionTimes": [
+            "2024-07-05T10:00:00Z",
+            "2024-07-05T19:00:00Z",
+            "2024-07-06T01:00:00Z",
+            "2024-07-06T04:00:00Z",
+            "2024-07-07T10:00:00Z",
+            "2024-07-07T19:00:00Z",
+            "2024-07-08T01:00:00Z",
+            "2024-07-08T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 11,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-07-05",
+      "startType": "Standing",
+      "track": {
+        "trackId": 341,
+        "trackName": "Silverstone Circuit",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-07T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-07T13:10:00Z"
+      },
+      "week": 11
+    }
+  ],
+  "2024-07-19": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 146,
+          "sessionTimes": [
+            "2024-07-19T10:00:00Z",
+            "2024-07-19T19:00:00Z",
+            "2024-07-20T01:00:00Z",
+            "2024-07-20T04:00:00Z",
+            "2024-07-21T10:00:00Z",
+            "2024-07-21T19:00:00Z",
+            "2024-07-22T01:00:00Z",
+            "2024-07-22T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 12,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-07-19",
+      "startType": "Standing",
+      "track": {
+        "trackId": 413,
+        "trackName": "Hungaroring",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-21T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-21T12:10:00Z"
+      },
+      "week": 12
+    }
+  ],
+  "2024-07-26": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 44,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 125,
+          "sessionTimes": [
+            "2024-07-26T10:00:00Z",
+            "2024-07-26T19:00:00Z",
+            "2024-07-27T01:00:00Z",
+            "2024-07-27T04:00:00Z",
+            "2024-07-28T10:00:00Z",
+            "2024-07-28T19:00:00Z",
+            "2024-07-29T01:00:00Z",
+            "2024-07-29T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 13,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-07-26",
+      "startType": "Standing",
+      "track": {
+        "trackId": 163,
+        "trackName": "Circuit de Spa-Francorchamps",
+        "configName": "Grand Prix Pits",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-28T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-28T12:10:00Z"
+      },
+      "week": 13
+    }
+  ],
+  "2024-08-23": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 72,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 137,
+          "sessionTimes": [
+            "2024-08-23T10:00:00Z",
+            "2024-08-23T19:00:00Z",
+            "2024-08-24T01:00:00Z",
+            "2024-08-24T04:00:00Z",
+            "2024-08-25T10:00:00Z",
+            "2024-08-25T19:00:00Z",
+            "2024-08-26T01:00:00Z",
+            "2024-08-26T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 14,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-08-23",
+      "startType": "Standing",
+      "track": {
+        "trackId": 485,
+        "trackName": "Circuit Zandvoort",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-08-25T14:05:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-08-25T12:05:00Z"
+      },
+      "week": 14
+    }
+  ],
+  "2024-08-30": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 53,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 116,
+          "sessionTimes": [
+            "2024-08-30T10:00:00Z",
+            "2024-08-30T19:00:00Z",
+            "2024-08-31T01:00:00Z",
+            "2024-08-31T04:00:00Z",
+            "2024-09-01T10:00:00Z",
+            "2024-09-01T19:00:00Z",
+            "2024-09-02T01:00:00Z",
+            "2024-09-02T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 15,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-08-30",
+      "startType": "Standing",
+      "track": {
+        "trackId": 239,
+        "trackName": "Autodromo Nazionale Monza",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-01T13:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-01T11:50:00Z"
+      },
+      "week": 15
+    }
+  ],
+  "2024-09-13": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 61,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 141,
+          "sessionTimes": [
+            "2024-09-13T10:00:00Z",
+            "2024-09-13T19:00:00Z",
+            "2024-09-14T01:00:00Z",
+            "2024-09-14T04:00:00Z",
+            "2024-09-15T10:00:00Z",
+            "2024-09-15T19:00:00Z",
+            "2024-09-16T01:00:00Z",
+            "2024-09-16T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 16,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-09-13",
+      "startType": "Standing",
+      "track": {
+        "trackId": 475,
+        "trackName": "MotorLand Aragón",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-15T14:30:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-15T12:30:00Z"
+      },
+      "week": 16
+    }
+  ],
+  "2024-09-20": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 67,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 130,
+          "sessionTimes": [
+            "2024-09-20T10:00:00Z",
+            "2024-09-20T19:00:00Z",
+            "2024-09-21T01:00:00Z",
+            "2024-09-21T04:00:00Z",
+            "2024-09-22T10:00:00Z",
+            "2024-09-22T19:00:00Z",
+            "2024-09-23T01:00:00Z",
+            "2024-09-23T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 17,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-09-20",
+      "startType": "Standing",
+      "track": {
+        "trackId": 444,
+        "trackName": "Fuji International Speedway",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-09-22T12:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-09-22T03:10:00Z"
+      },
+      "week": 17
+    }
+  ],
+  "2024-10-18": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 56,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 143,
+          "sessionTimes": [
+            "2024-10-18T10:00:00Z",
+            "2024-10-18T19:00:00Z",
+            "2024-10-19T01:00:00Z",
+            "2024-10-19T04:00:00Z",
+            "2024-10-20T10:00:00Z",
+            "2024-10-20T19:00:00Z",
+            "2024-10-21T01:00:00Z",
+            "2024-10-21T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 18,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-10-18",
+      "startType": "Standing",
+      "track": {
+        "trackId": 229,
+        "trackName": "Circuit of the Americas",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-10-20T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-20T18:35:00Z"
+      },
+      "week": 18
+    }
+  ],
+  "2024-10-25": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 142,
+          "sessionTimes": [
+            "2024-10-25T10:00:00Z",
+            "2024-10-25T19:00:00Z",
+            "2024-10-26T01:00:00Z",
+            "2024-10-26T04:00:00Z",
+            "2024-10-27T10:00:00Z",
+            "2024-10-27T19:00:00Z",
+            "2024-10-28T01:00:00Z",
+            "2024-10-28T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 19,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-10-25",
+      "startType": "Standing",
+      "track": {
+        "trackId": 473,
+        "trackName": "Circuito de Jerez - Ángel Nieto",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-10-27T13:35:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-27T12:35:00Z"
+      },
+      "week": 19
+    }
+  ],
+  "2024-11-01": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 71,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 131,
+          "sessionTimes": [
+            "2024-11-01T10:00:00Z",
+            "2024-11-01T19:00:00Z",
+            "2024-11-02T01:00:00Z",
+            "2024-11-02T04:00:00Z",
+            "2024-11-03T10:00:00Z",
+            "2024-11-03T19:00:00Z",
+            "2024-11-04T01:00:00Z",
+            "2024-11-04T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 20,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-11-01",
+      "startType": "Standing",
+      "track": {
+        "trackId": 212,
+        "trackName": "Autódromo José Carlos Pace",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-11-03T14:00:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-03T17:00:00Z"
+      },
+      "week": 20
+    }
+  ],
+  "2024-11-22": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 66,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 36,
+          "sessionTimes": [
+            "2024-11-22T10:00:00Z",
+            "2024-11-22T19:00:00Z",
+            "2024-11-23T01:00:00Z",
+            "2024-11-23T04:00:00Z",
+            "2024-11-24T10:00:00Z",
+            "2024-11-24T19:00:00Z",
+            "2024-11-25T01:00:00Z",
+            "2024-11-25T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 21,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-11-22",
+      "startType": "Standing",
+      "track": {
+        "trackId": 143,
+        "trackName": "Centripetal Circuit",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": true
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-11-23T14:06:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-23T19:06:00Z"
+      },
+      "week": 21
+    }
+  ],
+  "2024-11-29": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 137,
+          "sessionTimes": [
+            "2024-11-29T10:00:00Z",
+            "2024-11-29T19:00:00Z",
+            "2024-11-30T01:00:00Z",
+            "2024-11-30T04:00:00Z",
+            "2024-12-01T10:00:00Z",
+            "2024-12-01T19:00:00Z",
+            "2024-12-02T01:00:00Z",
+            "2024-12-02T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 22,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-11-29",
+      "startType": "Standing",
+      "track": {
+        "trackId": 463,
+        "trackName": "Circuit de Nevers Magny-Cours",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-11-30T13:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-30T12:10:00Z"
+      },
+      "week": 22
+    }
+  ],
+  "2024-12-06": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": false,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Fri & Sun at 10, 19 GMT & Sat & Mon at 1, 4 GMT",
+      "seasonId": 4828,
+      "seasonName": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 495,
+      "carRestrictions": [],
+      "raceLapLimit": 67,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-12-06T10:00:00Z",
+            "2024-12-06T19:00:00Z",
+            "2024-12-07T01:00:00Z",
+            "2024-12-07T04:00:00Z",
+            "2024-12-08T10:00:00Z",
+            "2024-12-08T19:00:00Z",
+            "2024-12-09T01:00:00Z",
+            "2024-12-09T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 23,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour",
+      "startDate": "2024-12-06",
+      "startType": "Standing",
+      "track": {
+        "trackId": 390,
+        "trackName": "Hockenheimring Baden-Württemberg",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-10-31T12:45:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-31T11:45:00Z"
+      },
+      "week": 23
+    }
+  ],
+  "2024-05-16": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225090,
+          "qualSetupId": 225091,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 63,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-05-16T10:00:00Z",
+            "2024-05-16T19:00:00Z",
+            "2024-05-17T01:00:00Z",
+            "2024-05-17T04:00:00Z",
+            "2024-05-18T10:00:00Z",
+            "2024-05-18T19:00:00Z",
+            "2024-05-19T01:00:00Z",
+            "2024-05-19T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 6,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-05-16",
+      "startType": "Standing",
+      "track": {
+        "trackId": 266,
+        "trackName": "Autodromo Internazionale Enzo e Dino Ferrari",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-05-19T14:50:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-05-19T12:50:00Z"
+      },
+      "week": 6
+    }
+  ],
+  "2024-07-25": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225134,
+          "qualSetupId": 225135,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 44,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 125,
+          "sessionTimes": [
+            "2024-07-25T10:00:00Z",
+            "2024-07-25T19:00:00Z",
+            "2024-07-26T01:00:00Z",
+            "2024-07-26T04:00:00Z",
+            "2024-07-27T10:00:00Z",
+            "2024-07-27T19:00:00Z",
+            "2024-07-28T01:00:00Z",
+            "2024-07-28T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 13,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-07-25",
+      "startType": "Standing",
+      "track": {
+        "trackId": 163,
+        "trackName": "Circuit de Spa-Francorchamps",
+        "configName": "Grand Prix Pits",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-07-28T14:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-07-28T12:10:00Z"
+      },
+      "week": 13
+    }
+  ],
+  "2024-11-21": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225069,
+          "qualSetupId": 225069,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 66,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 36,
+          "sessionTimes": [
+            "2024-11-21T10:00:00Z",
+            "2024-11-21T19:00:00Z",
+            "2024-11-22T01:00:00Z",
+            "2024-11-22T04:00:00Z",
+            "2024-11-23T10:00:00Z",
+            "2024-11-23T19:00:00Z",
+            "2024-11-24T01:00:00Z",
+            "2024-11-24T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 21,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-11-21",
+      "startType": "Standing",
+      "track": {
+        "trackId": 143,
+        "trackName": "Centripetal Circuit",
+        "categoryId": 1,
+        "category": "oval",
+        "isFree": true
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 4,
+        "simulatedStartTime": "2024-11-24T14:06:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-24T19:06:00Z"
+      },
+      "week": 21
+    }
+  ],
+  "2024-11-28": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225106,
+          "qualSetupId": 225107,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 70,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 137,
+          "sessionTimes": [
+            "2024-11-28T10:00:00Z",
+            "2024-11-28T19:00:00Z",
+            "2024-11-29T01:00:00Z",
+            "2024-11-29T04:00:00Z",
+            "2024-11-30T10:00:00Z",
+            "2024-11-30T19:00:00Z",
+            "2024-12-01T01:00:00Z",
+            "2024-12-01T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 22,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-11-28",
+      "startType": "Standing",
+      "track": {
+        "trackId": 463,
+        "trackName": "Circuit de Nevers Magny-Cours",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-11-30T13:10:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-11-30T12:10:00Z"
+      },
+      "week": 22
+    }
+  ],
+  "2024-12-05": [
+    {
+      "carClassIds": [
+        4013
+      ],
+      "fixedSetup": true,
+      "incidentLimit": 0,
+      "hasFreeCar": false,
+      "licenseGroup": 3,
+      "multiclass": false,
+      "official": true,
+      "scheduleDescription": "Races Thur & Sat at 10, 19 GMT & Fri & Sun at 1,4 GMT",
+      "seasonId": 4829,
+      "seasonName": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
+      "seasonQuarter": 1,
+      "seasonYear": 2024,
+      "seriesId": 496,
+      "carRestrictions": [
+        {
+          "carId": 161,
+          "raceSetupId": 225084,
+          "qualSetupId": 225085,
+          "maxPctFuelFill": 100,
+          "weightPenaltyKg": 0,
+          "powerAdjustPct": 0,
+          "maxDryTireSets": 0
+        }
+      ],
+      "raceLapLimit": 67,
+      "raceTimeDescriptors": [
+        {
+          "repeating": false,
+          "superSession": false,
+          "sessionMinutes": 132,
+          "sessionTimes": [
+            "2024-12-05T10:00:00Z",
+            "2024-12-05T19:00:00Z",
+            "2024-12-06T01:00:00Z",
+            "2024-12-06T04:00:00Z",
+            "2024-12-07T10:00:00Z",
+            "2024-12-07T19:00:00Z",
+            "2024-12-08T01:00:00Z",
+            "2024-12-08T04:00:00Z"
+          ]
+        }
+      ],
+      "raceTimeLimit": null,
+      "raceWeekNum": 23,
+      "restartType": "Double-file Back",
+      "seriesName": "Formula A - Grand Prix Tour - Fixed",
+      "startDate": "2024-12-05",
+      "startType": "Standing",
+      "track": {
+        "trackId": 390,
+        "trackName": "Hockenheimring Baden-Württemberg",
+        "configName": "Grand Prix",
+        "categoryId": 2,
+        "category": "road",
+        "isFree": false
+      },
+      "weather": {
+        "version": 0,
+        "type": 1,
+        "tempUnits": 0,
+        "tempValue": 78,
+        "relHumidity": 45,
+        "fog": 0,
+        "windDir": 0,
+        "windUnits": 0,
+        "windValue": 2,
+        "skies": 1,
+        "weatherVarInitial": 0,
+        "weatherVarOngoing": 0,
+        "timeOfDay": 0,
+        "simulatedStartTime": "2024-10-31T12:45:00",
+        "simulatedTimeOffsets": [
+          0,
+          0
+        ],
+        "simulatedTimeMultiplier": 1,
+        "simulatedStartUtcTime": "2024-10-31T11:45:00Z"
+      },
+      "week": 23
     }
   ]
 }
