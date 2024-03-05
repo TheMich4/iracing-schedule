@@ -4189,30 +4189,6 @@
     "relativeSpeed": 56,
     "shortName": "RingMeister23S4"
   },
-  "4040": {
-    "carClassId": 4040,
-    "carsInClass": [
-      {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Draft Master 2023S4",
-    "relativeSpeed": 52,
-    "shortName": "DraftMaster23S4"
-  },
   "4042": {
     "carClassId": 4042,
     "carsInClass": [
@@ -4268,33 +4244,5 @@
     "name": "Audi R8 LMS EVO II GT3",
     "relativeSpeed": 52,
     "shortName": "Audi R8 EVO2 GT3"
-  },
-  "4047": {
-    "carClassId": 4047,
-    "carsInClass": [
-      {
-        "carDirpath": "formulavee",
-        "carId": 142,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Special2024",
-    "relativeSpeed": 52,
-    "shortName": "Special2024"
-  },
-  "4048": {
-    "carClassId": 4048,
-    "carsInClass": [
-      {
-        "carDirpath": "lamborghinievogt3",
-        "carId": 133,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Ring Meister 2024S1",
-    "relativeSpeed": 52,
-    "shortName": "RingMeister24S1"
   }
 }
