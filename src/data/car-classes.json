@@ -5,766 +5,943 @@
       {
         "carDirpath": "rt2000",
         "carId": 1,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "skmodified",
         "carId": 2,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "solstice",
         "carId": 3,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "formulamazda",
         "carId": 4,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "solstice\\rookie",
         "carId": 10,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "legends\\ford34c\\rookie",
         "carId": 11,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "radical\\sr8",
         "carId": 13,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "silvercrown",
         "carId": 18,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\silverado",
         "carId": 20,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rileydp",
         "carId": 21,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\impala",
         "carId": 22,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "specracer",
         "carId": 23,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\chevy",
         "carId": 24,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "lotus79",
         "carId": 25,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c6r",
         "carId": 26,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "jettatdi",
         "carId": 27,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordv8sc",
         "carId": 28,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dallara",
         "carId": 29,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fr500s",
         "carId": 30,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "skmodified\\tour",
         "carId": 31,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "williamsfw31",
         "carId": 33,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mx5\\cup",
         "carId": 34,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mx5\\roadster",
         "carId": 35,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "streetstock",
         "carId": 36,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "sprint",
         "carId": 37,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\chevy\\cot",
         "carId": 38,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hpdarx01c",
         "carId": 39,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt",
         "carId": 40,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "cadillacctsvr",
         "carId": 41,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "lotus49",
         "carId": 42,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "kiaoptima",
         "carId": 44,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\chevyss",
         "carId": 45,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordfusion",
         "carId": 46,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\awd",
         "carId": 48,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\rwd",
         "carId": 49,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\track",
         "carId": 50,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\nwford2013",
         "carId": 51,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\track\\cspec",
         "carId": 52,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "superlatemodel",
         "carId": 54,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\toyotacamry",
         "carId": 56,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dallaradw12",
         "carId": 57,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\nwcamaro2014",
         "carId": 58,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\holden2014",
         "carId": 60,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\ford2014",
         "carId": 61,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\tundra2015",
         "carId": 62,
+        "rainEnabled": false,
         "retired": true
       },
       {
         "carDirpath": "trucks\\silverado2015",
         "carId": 63,
+        "rainEnabled": false,
         "retired": true
       },
       {
         "carDirpath": "astonmartin\\dbr9",
         "carId": 64,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mx5\\mx52016",
         "carId": 67,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\camry2015",
         "carId": 69,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c7vettedp",
         "carId": 70,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp430",
         "carId": 71,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "formularenault20",
         "carId": 74,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audi90gto",
         "carId": 76,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "nissangtpzxt",
         "carId": 77,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtlatemodel\\350",
         "carId": 78,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtstreetstock",
         "carId": 79,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\winged\\305",
         "carId": 80,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordfiestarswrc",
         "carId": 81,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "legends\\dirtford34c",
         "carId": 82,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtlatemodel\\358",
         "carId": 83,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtlatemodel\\438",
         "carId": 84,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\winged\\360",
         "carId": 85,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\winged\\410",
         "carId": 86,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\nonwinged\\360",
         "carId": 87,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche911cup",
         "carId": 88,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\nonwinged\\410",
         "carId": 89,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "vwbeetlegrc",
         "carId": 91,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt2017",
         "carId": 92,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gte",
         "carId": 93,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtumpmod",
         "carId": 95,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtmidget",
         "carId": 96,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir18",
         "carId": 98,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dallarair18",
         "carId": 99,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche919",
         "carId": 100,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "subaruwrxsti",
         "carId": 101,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\camarozl12018",
         "carId": 103,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "protrucks\\pro2truck",
         "carId": 104,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "formularenault35",
         "carId": 105,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dallaraf3",
         "carId": 106,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "protrucks\\pro4truck",
         "carId": 107,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm8gte",
         "carId": 109,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordmustang2019",
         "carId": 110,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\silverado2019",
         "carId": 111,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "protrucks\\pro2lite",
         "carId": 113,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\camaro2019",
         "carId": 114,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\mustang2019",
         "carId": 115,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\supra2019",
         "carId": 116,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\holden2019",
         "carId": 117,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\fordmustanggt",
         "carId": 118,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "indypropm18",
         "carId": 120,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "usf2000usf17",
         "carId": 121,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\fordf150",
         "carId": 123,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\chevymontecarlo87",
         "carId": 124,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordthunderbird87",
         "carId": 125,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c8rvettegte",
         "carId": 127,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dallarap217",
         "carId": 128,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "dallarair01",
         "carId": 129,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtmodified\\bigblock",
         "carId": 131,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "dirtmodified\\358",
         "carId": 134,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclaren570sgt4",
         "carId": 135,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche911rgt3",
         "carId": 137,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "vwbeetlegrc\\lite",
         "carId": 138,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\chevycamarozl12022",
         "carId": 139,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordmustang2022",
         "carId": 140,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\toyotacamry2022",
         "carId": 141,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "formulavee",
         "carId": 142,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche992cup",
         "carId": 143,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrarievogt3",
         "carId": 144,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesw12",
         "carId": 145,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hondacivictyper",
         "carId": 147,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "formulair04",
         "carId": 148,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "radicalsr10",
         "carId": 149,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcarbrasil\\cruze",
         "carId": 151,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcarbrasil\\corolla",
         "carId": 152,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaivelostern",
         "carId": 153,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\buicklesabre87",
         "carId": 154,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\toyotatundra2022",
         "carId": 155,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt4",
         "carId": 157,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porschemissionr",
         "carId": 158,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwlmdh",
         "carId": 159,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "toyotagr86",
         "carId": 160,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesw13",
         "carId": 161,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "renaultcliocup",
         "carId": 162,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "raygr22",
         "carId": 163,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "latemodel2023",
         "carId": 164,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ligierjsp320",
         "carId": 165,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\chevy\\gen4cup",
         "carId": 167,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "cadillacvseriesrgtp",
         "carId": 168,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "acuraarx06gtp",
         "carId": 170,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "superformulasf23\\toyota",
         "carId": 171,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "superformulasf23\\honda",
         "carId": 172,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari296gt3",
         "carId": 173,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche963gtp",
         "carId": 174,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\pontiacgrandprix87",
         "carId": 175,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8lmsevo2gt3",
         "carId": 176,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "superformulalights324",
+        "carId": 178,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "srx",
+        "carId": 179,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "dirtmicrosprint\\winged",
+        "carId": 180,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "dirtmicrosprint\\nonwinged",
+        "carId": 181,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Hosted All Cars Class",
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "Hosted All Cars"
   },
@@ -774,11 +951,13 @@
       {
         "carDirpath": "rt2000",
         "carId": 1,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Skip Barber Race Series",
+    "rainEnabled": false,
     "relativeSpeed": 40,
     "shortName": "SBRS"
   },
@@ -788,11 +967,13 @@
       {
         "carDirpath": "skmodified",
         "carId": 2,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "SK Modified",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "SK Modified"
   },
@@ -802,11 +983,13 @@
       {
         "carDirpath": "solstice",
         "carId": 3,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Solstice",
+    "rainEnabled": false,
     "relativeSpeed": 25,
     "shortName": "Solstice"
   },
@@ -816,11 +999,13 @@
       {
         "carDirpath": "formulamazda",
         "carId": 4,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Pro Mazda",
+    "rainEnabled": false,
     "relativeSpeed": 55,
     "shortName": "Pro Mazda"
   },
@@ -830,11 +1015,13 @@
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Legends",
+    "rainEnabled": false,
     "relativeSpeed": 38,
     "shortName": "Legends"
   },
@@ -844,11 +1031,13 @@
       {
         "carDirpath": "legends\\ford34c\\rookie",
         "carId": 11,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Rookie Legends",
+    "rainEnabled": false,
     "relativeSpeed": 20,
     "shortName": "Rookie Legends"
   },
@@ -858,11 +1047,13 @@
       {
         "carDirpath": "solstice\\rookie",
         "carId": 10,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Rookie Solstice",
+    "rainEnabled": false,
     "relativeSpeed": 15,
     "shortName": "Rookie Solstice"
   },
@@ -872,11 +1063,13 @@
       {
         "carDirpath": "latemodel",
         "carId": 12,
+        "rainEnabled": false,
         "retired": true
       }
     ],
     "custId": 0,
     "name": "[Retired] Monte Carlo SS",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "[R] Late Model"
   },
@@ -886,11 +1079,13 @@
       {
         "carDirpath": "radical\\sr8",
         "carId": 13,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Radical SR8",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "SR8"
   },
@@ -900,11 +1095,13 @@
       {
         "carDirpath": "silvercrown",
         "carId": 18,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Silver Crown",
+    "rainEnabled": false,
     "relativeSpeed": 180,
     "shortName": "Silver Crown"
   },
@@ -914,11 +1111,13 @@
       {
         "carDirpath": "trucks\\silverado",
         "carId": 20,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Silverado",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Truck"
   },
@@ -928,11 +1127,13 @@
       {
         "carDirpath": "rileydp",
         "carId": 21,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Riley Daytona Prototype",
+    "rainEnabled": false,
     "relativeSpeed": 90,
     "shortName": "Riley DP"
   },
@@ -942,11 +1143,13 @@
       {
         "carDirpath": "stockcars\\impala",
         "carId": 22,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Impala SS Class A",
+    "rainEnabled": false,
     "relativeSpeed": 80,
     "shortName": "Cup"
   },
@@ -956,11 +1159,13 @@
       {
         "carDirpath": "specracer",
         "carId": 23,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Spec Racer Ford",
+    "rainEnabled": false,
     "relativeSpeed": 39,
     "shortName": "SRF"
   },
@@ -970,11 +1175,13 @@
       {
         "carDirpath": "stockcars2\\chevy",
         "carId": 24,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "ARCA Series",
+    "rainEnabled": false,
     "relativeSpeed": 53,
     "shortName": "ARCA Series"
   },
@@ -984,11 +1191,13 @@
       {
         "carDirpath": "lotus79",
         "carId": 25,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Lotus 79",
+    "rainEnabled": false,
     "relativeSpeed": 125,
     "shortName": "Lotus 79"
   },
@@ -998,11 +1207,13 @@
       {
         "carDirpath": "c6r",
         "carId": 26,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Corvette C6R GT1",
+    "rainEnabled": false,
     "relativeSpeed": 85,
     "shortName": "C6R GT1"
   },
@@ -1012,11 +1223,13 @@
       {
         "carDirpath": "jettatdi",
         "carId": 27,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "VW Jetta TDI Cup",
+    "rainEnabled": false,
     "relativeSpeed": 33,
     "shortName": "Jetta TDI"
   },
@@ -1026,11 +1239,13 @@
       {
         "carDirpath": "fordv8sc",
         "carId": 28,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "FG01 V8 - circa 2012",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "V8SC"
   },
@@ -1040,11 +1255,13 @@
       {
         "carDirpath": "dallara",
         "carId": 29,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Dallara IR-05",
+    "rainEnabled": false,
     "relativeSpeed": 150,
     "shortName": "[L] DallaraIR05"
   },
@@ -1054,11 +1271,13 @@
       {
         "carDirpath": "fr500s",
         "carId": 30,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford Mustang FR500S",
+    "rainEnabled": false,
     "relativeSpeed": 38,
     "shortName": "FR500S"
   },
@@ -1068,11 +1287,13 @@
       {
         "carDirpath": "skmodified\\tour",
         "carId": 31,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Whelen Modified",
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": " Whelen Modified"
   },
@@ -1082,11 +1303,13 @@
       {
         "carDirpath": "williamsfw31",
         "carId": 33,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Williams FW31",
+    "rainEnabled": false,
     "relativeSpeed": 200,
     "shortName": "Williams FW31"
   },
@@ -1096,16 +1319,19 @@
       {
         "carDirpath": "mx5\\cup",
         "carId": 34,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mx5\\roadster",
         "carId": 35,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mazda MX-5",
+    "rainEnabled": false,
     "relativeSpeed": 33,
     "shortName": "MX-5"
   },
@@ -1115,11 +1341,13 @@
       {
         "carDirpath": "mx5\\cup",
         "carId": 34,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mazda MX-5 Cup",
+    "rainEnabled": false,
     "relativeSpeed": 33,
     "shortName": "MX-5 Cup"
   },
@@ -1129,11 +1357,13 @@
       {
         "carDirpath": "mx5\\roadster",
         "carId": 35,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mazda MX-5 Roadster",
+    "rainEnabled": false,
     "relativeSpeed": 33,
     "shortName": "MX-5 Roadster"
   },
@@ -1143,11 +1373,13 @@
       {
         "carDirpath": "streetstock",
         "carId": 36,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Street Stock",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Street Stock"
   },
@@ -1157,11 +1389,13 @@
       {
         "carDirpath": "sprint",
         "carId": 37,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Sprint Car",
+    "rainEnabled": false,
     "relativeSpeed": 195,
     "shortName": "Sprint Car"
   },
@@ -1171,11 +1405,13 @@
       {
         "carDirpath": "stockcars2\\chevy\\cot",
         "carId": 38,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Impala Class B",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Impala Class B"
   },
@@ -1185,11 +1421,13 @@
       {
         "carDirpath": "hpdarx01c",
         "carId": 39,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "HPD ARX-01c",
+    "rainEnabled": false,
     "relativeSpeed": 130,
     "shortName": "HPD ARX-01c"
   },
@@ -1199,11 +1437,13 @@
       {
         "carDirpath": "fordgt",
         "carId": 40,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford GT",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "Ford GT"
   },
@@ -1213,11 +1453,13 @@
       {
         "carDirpath": "cadillacctsvr",
         "carId": 41,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Cadillac CTS-VR",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Cadillac CTS-VR"
   },
@@ -1227,11 +1469,13 @@
       {
         "carDirpath": "lotus49",
         "carId": 42,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Lotus 49",
+    "rainEnabled": false,
     "relativeSpeed": 120,
     "shortName": "Lotus 49"
   },
@@ -1241,11 +1485,13 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "McLaren MP4-12C GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "MP4-12C"
   },
@@ -1255,11 +1501,13 @@
       {
         "carDirpath": "kiaoptima",
         "carId": 44,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Kia Optima",
+    "rainEnabled": false,
     "relativeSpeed": 46,
     "shortName": "Kia Optima"
   },
@@ -1269,11 +1517,13 @@
       {
         "carDirpath": "stockcars\\chevyss",
         "carId": 45,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Chevrolet SS-Gen6",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "SS-Gen6"
   },
@@ -1283,21 +1533,25 @@
       {
         "carDirpath": "stockcars\\camarozl12018",
         "carId": 103,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\toyotacamry",
         "carId": 56,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordmustang2019",
         "carId": 110,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Cup",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "NASCAR Cup"
   },
@@ -1307,11 +1561,13 @@
       {
         "carDirpath": "stockcars\\fordfusion",
         "carId": 46,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford Fusion",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Ford Fusion"
   },
@@ -1321,26 +1577,31 @@
       {
         "carDirpath": "rufrt12r\\awd",
         "carId": 48,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\rwd",
         "carId": 49,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\track",
         "carId": 50,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "rufrt12r\\track\\cspec",
         "carId": 52,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ruf RT 12R",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Ruf RT 12R"
   },
@@ -1350,11 +1611,13 @@
       {
         "carDirpath": "rufrt12r\\awd",
         "carId": 48,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ruf RT 12R AWD",
+    "rainEnabled": false,
     "relativeSpeed": 48,
     "shortName": "Ruf RT 12R AWD"
   },
@@ -1364,11 +1627,13 @@
       {
         "carDirpath": "rufrt12r\\rwd",
         "carId": 49,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ruf RT 12R RWD",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Ruf RT 12R RWD"
   },
@@ -1378,11 +1643,13 @@
       {
         "carDirpath": "rufrt12r\\track",
         "carId": 50,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ruf RT 12R Track",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Ruf RT 12R Track"
   },
@@ -1392,11 +1659,13 @@
       {
         "carDirpath": "stockcars2\\nwford2013",
         "carId": 51,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mustang Class B",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Mustang Class B"
   },
@@ -1406,21 +1675,25 @@
       {
         "carDirpath": "stockcars2\\nwford2013",
         "carId": 51,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\camry2015",
         "carId": 69,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\nwcamaro2014",
         "carId": 58,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Xfinity Series",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "[L] Xfinity"
   },
@@ -1430,11 +1703,13 @@
       {
         "carDirpath": "rufrt12r\\track\\cspec",
         "carId": 52,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ruf RT12R CSpec",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Ruf RT12R CSpec"
   },
@@ -1444,41 +1719,49 @@
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] GT3 Class 3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] GT3 Class 3"
   },
@@ -1488,11 +1771,13 @@
       {
         "carDirpath": "superlatemodel",
         "carId": 54,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Super Late Model",
+    "rainEnabled": false,
     "relativeSpeed": 55,
     "shortName": "Super Late Model"
   },
@@ -1502,11 +1787,13 @@
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] BMW Z4 GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L]  BMW Z4"
   },
@@ -1516,11 +1803,13 @@
       {
         "carDirpath": "stockcars\\toyotacamry",
         "carId": 56,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Toyota Camry-Gen6",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Camry-Gen6"
   },
@@ -1530,11 +1819,13 @@
       {
         "carDirpath": "dallaradw12",
         "carId": 57,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dallara DW12",
+    "rainEnabled": false,
     "relativeSpeed": 150,
     "shortName": "DW12"
   },
@@ -1544,11 +1835,13 @@
       {
         "carDirpath": "stockcars2\\nwcamaro2014",
         "carId": 58,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Chevrolet Camaro Class B",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Camaro Class B"
   },
@@ -1558,11 +1851,13 @@
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford GT GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Ford GT GT3"
   },
@@ -1572,11 +1867,13 @@
       {
         "carDirpath": "v8supercars\\holden2014",
         "carId": 60,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Holden VF Commodore V8",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "[L] Holden V8"
   },
@@ -1586,16 +1883,19 @@
       {
         "carDirpath": "v8supercars\\holden2014",
         "carId": 60,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\ford2014",
         "carId": 61,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] V8Supercars",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "[L] V8Supercars"
   },
@@ -1605,11 +1905,13 @@
       {
         "carDirpath": "v8supercars\\ford2014",
         "carId": 61,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Ford Falcon FG V8",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "[L] Ford FG V8"
   },
@@ -1619,11 +1921,13 @@
       {
         "carDirpath": "trucks\\tundra2015",
         "carId": 62,
+        "rainEnabled": false,
         "retired": true
       }
     ],
     "custId": 0,
     "name": "[Retired] Toyota Tundra",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "[Retired] Tundra"
   },
@@ -1633,11 +1937,13 @@
       {
         "carDirpath": "trucks\\silverado2015",
         "carId": 63,
+        "rainEnabled": false,
         "retired": true
       }
     ],
     "custId": 0,
     "name": "[Retired] Chevrolet Silverado",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "[R] Chevy Silver"
   },
@@ -1647,21 +1953,25 @@
       {
         "carDirpath": "trucks\\fordf150",
         "carId": 123,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\toyotatundra2022",
         "carId": 155,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "trucks\\silverado2019",
         "carId": 111,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Truck Series",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "NASCAR Trucks"
   },
@@ -1671,11 +1981,13 @@
       {
         "carDirpath": "astonmartin\\dbr9",
         "carId": 64,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Aston Martin",
+    "rainEnabled": false,
     "relativeSpeed": 85,
     "shortName": "Aston Martin"
   },
@@ -1685,16 +1997,19 @@
       {
         "carDirpath": "astonmartin\\dbr9",
         "carId": 64,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c6r",
         "carId": 26,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT1 Class",
+    "rainEnabled": false,
     "relativeSpeed": 85,
     "shortName": "GT1 Class"
   },
@@ -1704,11 +2019,13 @@
       {
         "carDirpath": "mx5\\mx52016",
         "carId": 67,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mazda MX-5 Cup 2016",
+    "rainEnabled": false,
     "relativeSpeed": 35,
     "shortName": "MX5 Cup 2016"
   },
@@ -1718,11 +2035,13 @@
       {
         "carDirpath": "stockcars2\\camry2015",
         "carId": 69,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Toyota Camry 2015",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Camry 2015"
   },
@@ -1732,11 +2051,13 @@
       {
         "carDirpath": "c7vettedp",
         "carId": 70,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Corvette C7 Daytona Prototype",
+    "rainEnabled": false,
     "relativeSpeed": 126,
     "shortName": "C7 DP"
   },
@@ -1746,11 +2067,13 @@
       {
         "carDirpath": "mclarenmp430",
         "carId": 71,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "McLaren MP4-30",
+    "rainEnabled": false,
     "relativeSpeed": 196,
     "shortName": "McLaren MP4-30"
   },
@@ -1760,11 +2083,13 @@
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Mercedes-AMG GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] AMG GT3"
   },
@@ -1774,11 +2099,13 @@
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Audi R8 GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] Audi R8 GT3"
   },
@@ -1788,11 +2115,13 @@
       {
         "carDirpath": "formularenault20",
         "carId": 74,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Formula Renault 2.0",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Renault 2.0"
   },
@@ -1802,21 +2131,25 @@
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] GT3 German",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] GT3 German"
   },
@@ -1826,11 +2159,13 @@
       {
         "carDirpath": "audi90gto",
         "carId": 76,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Audi 90 GTO",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "Audi 90 GTO"
   },
@@ -1840,11 +2175,13 @@
       {
         "carDirpath": "nissangtpzxt",
         "carId": 77,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Nissan GTP",
+    "rainEnabled": false,
     "relativeSpeed": 135,
     "shortName": "Nissan GTP"
   },
@@ -1854,11 +2191,13 @@
       {
         "carDirpath": "dirtlatemodel\\350",
         "carId": 78,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Late Model - Limited",
+    "rainEnabled": false,
     "relativeSpeed": 40,
     "shortName": "DLM Limited"
   },
@@ -1868,11 +2207,13 @@
       {
         "carDirpath": "dirtstreetstock",
         "carId": 79,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Street Stock",
+    "rainEnabled": false,
     "relativeSpeed": 30,
     "shortName": "Dirt StreetStock"
   },
@@ -1882,11 +2223,13 @@
       {
         "carDirpath": "dirtsprint\\winged\\305",
         "carId": 80,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt SprintCar - 305",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "DSC 305"
   },
@@ -1896,11 +2239,13 @@
       {
         "carDirpath": "fordfiestarswrc",
         "carId": 81,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford Fiesta RS WRC",
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "Ford RS WRC"
   },
@@ -1910,11 +2255,13 @@
       {
         "carDirpath": "legends\\dirtford34c",
         "carId": 82,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Legends",
+    "rainEnabled": false,
     "relativeSpeed": 20,
     "shortName": "Dirt Legends"
   },
@@ -1924,11 +2271,13 @@
       {
         "carDirpath": "dirtlatemodel\\358",
         "carId": 83,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Late Model - Pro",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "DLM Pro"
   },
@@ -1938,11 +2287,13 @@
       {
         "carDirpath": "dirtlatemodel\\438",
         "carId": 84,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Late Model - Super",
+    "rainEnabled": false,
     "relativeSpeed": 80,
     "shortName": "DLM Super"
   },
@@ -1952,11 +2303,13 @@
       {
         "carDirpath": "dirtsprint\\winged\\360",
         "carId": 85,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt SprintCar - 360",
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "DSC 360"
   },
@@ -1966,11 +2319,13 @@
       {
         "carDirpath": "dirtsprint\\winged\\410",
         "carId": 86,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Sprintcar - 410",
+    "rainEnabled": false,
     "relativeSpeed": 110,
     "shortName": "DSC 410"
   },
@@ -1980,11 +2335,13 @@
       {
         "carDirpath": "dirtsprint\\nonwinged\\410",
         "carId": 89,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt SprintCar - 410wingless",
+    "rainEnabled": false,
     "relativeSpeed": 90,
     "shortName": "DSC 410W"
   },
@@ -1994,11 +2351,13 @@
       {
         "carDirpath": "porsche911cup",
         "carId": 88,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Porsche 911 GT3 Cup",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "[L] Porsche 911"
   },
@@ -2008,11 +2367,13 @@
       {
         "carDirpath": "dirtsprint\\nonwinged\\360",
         "carId": 87,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt SprintCar - 360wingless",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "DSC 360W"
   },
@@ -2022,11 +2383,13 @@
       {
         "carDirpath": "vwbeetlegrc",
         "carId": 91,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "VW Beetle GRC",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "VW Beetle GRC"
   },
@@ -2036,11 +2399,13 @@
       {
         "carDirpath": "fordgt2017",
         "carId": 92,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford GT - 2017",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "Ford GT - 2017"
   },
@@ -2050,11 +2415,13 @@
       {
         "carDirpath": "ferrari488gte",
         "carId": 93,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ferrari 488 GTE",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "Ferrari 488 GTE"
   },
@@ -2064,31 +2431,37 @@
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt2017",
         "carId": 92,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gte",
         "carId": 93,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm8gte",
         "carId": 109,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c8rvettegte",
         "carId": 127,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTE Class",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "GTE Class"
   },
@@ -2098,21 +2471,25 @@
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "IMSA GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "IMSA GT3"
   },
@@ -2122,11 +2499,13 @@
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Ferrari 488 GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L]Ferrari488GT3"
   },
@@ -2136,11 +2515,13 @@
       {
         "carDirpath": "dirtumpmod",
         "carId": 95,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt UMP Modified",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "Dirt UMP Mod"
   },
@@ -2150,11 +2531,13 @@
       {
         "carDirpath": "dirtmidget",
         "carId": 96,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Midget",
+    "rainEnabled": false,
     "relativeSpeed": 40,
     "shortName": "Dirt Midget"
   },
@@ -2164,21 +2547,25 @@
       {
         "carDirpath": "fordfiestarswrc",
         "carId": 81,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "subaruwrxsti",
         "carId": 101,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "vwbeetlegrc",
         "carId": 91,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Rallycross",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Rallycross"
   },
@@ -2188,16 +2575,19 @@
       {
         "carDirpath": "dirtsprint\\nonwinged\\360",
         "carId": 87,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "dirtsprint\\nonwinged\\410",
         "carId": 89,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "USAC Sprint",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "USAC Sprint"
   },
@@ -2207,11 +2597,13 @@
       {
         "carDirpath": "audir18",
         "carId": 98,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Audi R18",
+    "rainEnabled": false,
     "relativeSpeed": 180,
     "shortName": "Audi R18"
   },
@@ -2221,31 +2613,37 @@
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] GT3 Bathurst",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] GT3 Bathurst"
   },
@@ -2255,11 +2653,13 @@
       {
         "carDirpath": "porsche919",
         "carId": 100,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 919",
+    "rainEnabled": false,
     "relativeSpeed": 180,
     "shortName": "Porsche 919"
   },
@@ -2269,16 +2669,19 @@
       {
         "carDirpath": "audir18",
         "carId": 98,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche919",
         "carId": 100,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "LMP1 Class",
+    "rainEnabled": false,
     "relativeSpeed": 180,
     "shortName": "LMP1 Class"
   },
@@ -2288,11 +2691,13 @@
       {
         "carDirpath": "dallarair18",
         "carId": 99,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dallara IR18",
+    "rainEnabled": false,
     "relativeSpeed": 150,
     "shortName": "Dallara IR18"
   },
@@ -2302,11 +2707,13 @@
       {
         "carDirpath": "subaruwrxsti",
         "carId": 101,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Subaru WRX STI",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Subaru WRX STI"
   },
@@ -2316,11 +2723,13 @@
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 911 RSR",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "Porsche 911 RSR"
   },
@@ -2330,16 +2739,19 @@
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "IMSA2 GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "IMSA2 GT3"
   },
@@ -2349,11 +2761,13 @@
       {
         "carDirpath": "stockcars\\camarozl12018",
         "carId": 103,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Chevrolet Camaro ZL1",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Camaro ZL1"
   },
@@ -2363,11 +2777,13 @@
       {
         "carDirpath": "dallaraf3",
         "carId": 106,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dallara F3",
+    "rainEnabled": false,
     "relativeSpeed": 90,
     "shortName": "Dallara F3"
   },
@@ -2377,11 +2793,13 @@
       {
         "carDirpath": "formularenault35",
         "carId": 105,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Formula Renault 3.5",
+    "rainEnabled": false,
     "relativeSpeed": 120,
     "shortName": "Renault 3.5"
   },
@@ -2391,11 +2809,13 @@
       {
         "carDirpath": "bmwm8gte",
         "carId": 109,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M8 GTE",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "BMW M8 GTE"
   },
@@ -2405,11 +2825,13 @@
       {
         "carDirpath": "stockcars\\fordmustang2019",
         "carId": 110,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford Mustang - 2019",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Ford Mustang"
   },
@@ -2419,11 +2841,13 @@
       {
         "carDirpath": "trucks\\silverado2019",
         "carId": 111,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Silverado - 2019",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Silverado - 2019"
   },
@@ -2433,11 +2857,13 @@
       {
         "carDirpath": "protrucks\\pro2truck",
         "carId": 104,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Pro 2 Truck",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "Pro 2 Truck"
   },
@@ -2447,11 +2873,13 @@
       {
         "carDirpath": "protrucks\\pro4truck",
         "carId": 107,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Pro 4 Truck",
+    "rainEnabled": false,
     "relativeSpeed": 53,
     "shortName": "Pro 4 Truck"
   },
@@ -2461,16 +2889,19 @@
       {
         "carDirpath": "stockcars\\chevyss",
         "carId": 45,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordfusion",
         "carId": 46,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] NASCAR Cup",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "[L]  NASCAR Cup"
   },
@@ -2480,11 +2911,13 @@
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
-    "name": "Audi RS 3 LMS",
+    "name": "Audi RS 3 LMS TCR",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Audi RS 3 LMS"
   },
@@ -2494,11 +2927,13 @@
       {
         "carDirpath": "stockcars2\\camaro2019",
         "carId": 114,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR XFINITY Chevrolet Camaro 2019",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Camaro 2019"
   },
@@ -2508,11 +2943,13 @@
       {
         "carDirpath": "stockcars2\\mustang2019",
         "carId": 115,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR XFINITY Ford Mustang 2019",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Mustang 2019"
   },
@@ -2522,11 +2959,13 @@
       {
         "carDirpath": "stockcars2\\supra2019",
         "carId": 116,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR XFINITY Toyota Supra 2019",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Supra 2019"
   },
@@ -2536,11 +2975,13 @@
       {
         "carDirpath": "protrucks\\pro2lite",
         "carId": 113,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Pro 2 Lite Truck",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Pro 2 Lite Truck"
   },
@@ -2550,21 +2991,25 @@
       {
         "carDirpath": "stockcars2\\camaro2019",
         "carId": 114,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\mustang2019",
         "carId": 115,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars2\\supra2019",
         "carId": 116,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "XFINITY Series",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "XFINITY Series"
   },
@@ -2574,11 +3019,13 @@
       {
         "carDirpath": "v8supercars\\holden2019",
         "carId": 117,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Holden ZB Commodore V8 - 2019",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "Holden - 2019"
   },
@@ -2588,11 +3035,13 @@
       {
         "carDirpath": "v8supercars\\fordmustanggt",
         "carId": 118,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Supercars Ford Mustang GT - 2019",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "Ford GT - 2019"
   },
@@ -2602,16 +3051,19 @@
       {
         "carDirpath": "v8supercars\\holden2019",
         "carId": 117,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "v8supercars\\fordmustanggt",
         "carId": 118,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Supercars - 2019",
+    "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "Supercars - 2019"
   },
@@ -2621,11 +3073,13 @@
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 718 Cayman GT4 Clubsport MR",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "Porsche 718"
   },
@@ -2635,16 +3089,19 @@
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm8gte",
         "carId": 109,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTE Class 2",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "GTE Class 2"
   },
@@ -2654,16 +3111,19 @@
       {
         "carDirpath": "ferrarievogt3",
         "carId": 144,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT3 Class 2",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "GT3 Class 2"
   },
@@ -2673,26 +3133,31 @@
       {
         "carDirpath": "bmwz4gt3",
         "carId": 55,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] GT3 Nurb",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] GT3 Nurb"
   },
@@ -2702,11 +3167,13 @@
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M4 GT4",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "BMW M4 GT4"
   },
@@ -2716,11 +3183,13 @@
       {
         "carDirpath": "indypropm18",
         "carId": 120,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Indy Pro 2000 PM-18",
+    "rainEnabled": false,
     "relativeSpeed": 55,
     "shortName": "Pro 2000 PM-18"
   },
@@ -2730,11 +3199,13 @@
       {
         "carDirpath": "usf2000usf17",
         "carId": 121,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "USF 2000",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "USF 2000"
   },
@@ -2744,11 +3215,13 @@
       {
         "carDirpath": "trucks\\fordf150",
         "carId": 123,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford F150",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Ford F150"
   },
@@ -2758,31 +3231,37 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclaren570sgt4",
         "carId": 135,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt4",
         "carId": 157,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT4 Class",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "GT4 Class"
   },
@@ -2792,26 +3271,31 @@
       {
         "carDirpath": "stockcars\\buicklesabre87",
         "carId": 154,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\chevymontecarlo87",
         "carId": 124,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordthunderbird87",
         "carId": 125,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\pontiacgrandprix87",
         "carId": 175,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Legends 1987",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "NASCAR 1987"
   },
@@ -2821,11 +3305,13 @@
       {
         "carDirpath": "stockcars\\chevymontecarlo87",
         "carId": 124,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Legends Chevrolet Monte Carlo - 1987",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "1987 Monte Carlo"
   },
@@ -2835,11 +3321,13 @@
       {
         "carDirpath": "stockcars\\fordthunderbird87",
         "carId": 125,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Legends Ford Thunderbird - 1987",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "1987 Ford T-bird"
   },
@@ -2849,11 +3337,13 @@
       {
         "carDirpath": "c8rvettegte",
         "carId": 127,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Corvette C8.R GTE",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Vette C8.R GTE"
   },
@@ -2863,11 +3353,13 @@
       {
         "carDirpath": "dallarap217",
         "carId": 128,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dallara P217",
+    "rainEnabled": true,
     "relativeSpeed": 150,
     "shortName": "Dallara P217"
   },
@@ -2877,26 +3369,31 @@
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gte",
         "carId": 93,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm8gte",
         "carId": 109,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c8rvettegte",
         "carId": 127,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTE IMSA",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "GTE IMSA"
   },
@@ -2906,26 +3403,31 @@
       {
         "carDirpath": "porsche991rsr",
         "carId": 102,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt2017",
         "carId": 92,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gte",
         "carId": 93,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "c8rvettegte",
         "carId": 127,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTE Class 3",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "GTE Class 3"
   },
@@ -2935,11 +3437,13 @@
       {
         "carDirpath": "dallarair01",
         "carId": 129,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dallara iR-01",
+    "rainEnabled": false,
     "relativeSpeed": 196,
     "shortName": "Dallara iR-01"
   },
@@ -2949,11 +3453,13 @@
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Lamborghini Huracán GT3 EVO",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Lambo Huracán"
   },
@@ -2963,11 +3469,13 @@
       {
         "carDirpath": "dirtmodified\\bigblock",
         "carId": 131,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt Big Block Modified",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Dirt BB Modified"
   },
@@ -2977,11 +3485,13 @@
       {
         "carDirpath": "dirtmodified\\358",
         "carId": 134,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Dirt 358 Modified",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Dirt 358 Mod"
   },
@@ -2991,46 +3501,55 @@
       {
         "carDirpath": "audir8lmsevo2gt3",
         "carId": 176,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "ferrari296gt3",
         "carId": 173,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT3 Class",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "GT3 Class"
   },
@@ -3040,21 +3559,25 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTD Class",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "GTD Class"
   },
@@ -3064,11 +3587,13 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M4 GT3",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "BMW M4 GT3"
   },
@@ -3078,11 +3603,13 @@
       {
         "carDirpath": "mclaren570sgt4",
         "carId": 135,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "McLaren 570S GT4",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "McLaren 570S GT4"
   },
@@ -3092,21 +3619,25 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT3 Nurb 2",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "GT3 Nurb 2"
   },
@@ -3116,21 +3647,25 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "ferrari488gt3",
         "carId": 94,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT3 Class 4",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "GT3 Class 4"
   },
@@ -3140,16 +3675,19 @@
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT4 Nurb",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "GT4 Nurb"
   },
@@ -3159,11 +3697,13 @@
       {
         "carDirpath": "stockcars\\chevycamarozl12022",
         "carId": 139,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Chevrolet Camaro ZL1 - NextGen",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Camaro ZL1 NGC"
   },
@@ -3173,11 +3713,13 @@
       {
         "carDirpath": "stockcars\\fordmustang2022",
         "carId": 140,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford Mustang - NextGen",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Mustang NGC"
   },
@@ -3187,11 +3729,13 @@
       {
         "carDirpath": "stockcars\\toyotacamry2022",
         "carId": 141,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Toyota Camry - NextGen",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "Toyota NGC"
   },
@@ -3201,21 +3745,25 @@
       {
         "carDirpath": "stockcars\\chevycamarozl12022",
         "carId": 139,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\fordmustang2022",
         "carId": 140,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcars\\toyotacamry2022",
         "carId": 141,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR 2022 NextGen",
+    "rainEnabled": false,
     "relativeSpeed": 81,
     "shortName": "NASCAR 2022 NG"
   },
@@ -3225,11 +3773,13 @@
       {
         "carDirpath": "porsche911rgt3",
         "carId": 137,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "[Legacy] Porsche 911 GT3 R",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "[L] Porsche911"
   },
@@ -3239,11 +3789,13 @@
       {
         "carDirpath": "vwbeetlegrc\\lite",
         "carId": 138,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "VW Beetle Lite",
+    "rainEnabled": false,
     "relativeSpeed": 40,
     "shortName": "VW Beetle Lite"
   },
@@ -3253,11 +3805,13 @@
       {
         "carDirpath": "formulavee",
         "carId": 142,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Formula Vee",
+    "rainEnabled": false,
     "relativeSpeed": 20,
     "shortName": "Formula Vee"
   },
@@ -3267,21 +3821,25 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche911rgt3",
         "carId": 137,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GT3 Class 5",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "GT3 Class 5"
   },
@@ -3291,11 +3849,13 @@
       {
         "carDirpath": "porsche992cup",
         "carId": 143,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 911 GT3 Cup (992)",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "Porsche 992"
   },
@@ -3305,11 +3865,13 @@
       {
         "carDirpath": "ferrarievogt3",
         "carId": 144,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ferrari 488 GT3 Evo 2020",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Ferrari Evo GT3"
   },
@@ -3319,11 +3881,13 @@
       {
         "carDirpath": "mercedesw12",
         "carId": 145,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mercedes-AMG W12 E Performance",
+    "rainEnabled": false,
     "relativeSpeed": 220,
     "shortName": "AMG W12 E"
   },
@@ -3333,11 +3897,13 @@
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
-    "name": "Hyundai Elantra N TC",
+    "name": "Hyundai Elantra N TCR",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Elantra N TC"
   },
@@ -3347,11 +3913,13 @@
       {
         "carDirpath": "hondacivictyper",
         "carId": 147,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
-    "name": "Honda Civic Type R",
+    "name": "Honda Civic Type R TCR",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Civic Type R"
   },
@@ -3361,11 +3929,13 @@
       {
         "carDirpath": "formulair04",
         "carId": 148,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "FIA F4",
+    "rainEnabled": true,
     "relativeSpeed": 47,
     "shortName": "FIA F4"
   },
@@ -3375,26 +3945,31 @@
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hondacivictyper",
         "carId": 147,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaivelostern",
         "carId": 153,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Touring Car",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Touring Car"
   },
@@ -3404,41 +3979,49 @@
       {
         "carDirpath": "ferrarievogt3",
         "carId": 144,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "audir8gt3",
         "carId": 73,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche911rgt3",
         "carId": 137,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "IMSA22",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "IMSA22"
   },
@@ -3448,11 +4031,13 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Aston Martin Vantage GT4",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "Aston Martin GT4"
   },
@@ -3462,11 +4047,13 @@
       {
         "carDirpath": "stockcarbrasil\\cruze",
         "carId": 151,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Stock Car Brasil Chevrolet Cruze",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Chevrolet Cruze"
   },
@@ -3476,11 +4063,13 @@
       {
         "carDirpath": "stockcarbrasil\\corolla",
         "carId": 152,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Stock Car Brasil Toyota Corolla",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Toyota Corolla"
   },
@@ -3490,11 +4079,13 @@
       {
         "carDirpath": "hyundaivelostern",
         "carId": 153,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
-    "name": "Hyundai Veloster N TC",
+    "name": "Hyundai Veloster N TCR",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Veloster N TC"
   },
@@ -3504,11 +4095,13 @@
       {
         "carDirpath": "stockcars\\buicklesabre87",
         "carId": 154,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Legends Buick LeSabre 1987",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Buick LeSabre 87"
   },
@@ -3518,11 +4111,13 @@
       {
         "carDirpath": "trucks\\toyotatundra2022",
         "carId": 155,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Toyota Tundra TRD Pro",
+    "rainEnabled": false,
     "relativeSpeed": 60,
     "shortName": "Tundra TRD Pro"
   },
@@ -3532,16 +4127,19 @@
       {
         "carDirpath": "stockcarbrasil\\cruze",
         "carId": 151,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "stockcarbrasil\\corolla",
         "carId": 152,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Stock Car Brasil",
+    "rainEnabled": false,
     "relativeSpeed": 65,
     "shortName": "Stock Car Brasil"
   },
@@ -3551,11 +4149,13 @@
       {
         "carDirpath": "radicalsr10",
         "carId": 149,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Radical SR10",
+    "rainEnabled": false,
     "relativeSpeed": 80,
     "shortName": "Radical SR10"
   },
@@ -3565,11 +4165,13 @@
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mercedes-AMG GT3 2020",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "AMG GT3 2020"
   },
@@ -3579,21 +4181,25 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt3",
         "carId": 72,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche911rgt3",
         "carId": 137,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Nurburgring 2022 GT3",
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Nurb22 GT3"
   },
@@ -3603,16 +4209,19 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Nurburgring 2022 GT4",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "Nurb22 GT4"
   },
@@ -3622,16 +4231,19 @@
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaivelostern",
         "carId": 153,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Nurburgring 2022 Touring",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Nurb22 Touring"
   },
@@ -3641,11 +4253,13 @@
       {
         "carDirpath": "mercedesamggt4",
         "carId": 157,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mercedes-AMG GT4",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "AMG GT4"
   },
@@ -3655,16 +4269,19 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NECGT3",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "NECGT3"
   },
@@ -3674,16 +4291,19 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NECGT4 Class",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "NECGT4 Class"
   },
@@ -3693,16 +4313,19 @@
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NECTCR Class",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "NECTCR Class"
   },
@@ -3712,31 +4335,37 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mclaren570sgt4",
         "carId": 135,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "mercedesamggt4",
         "carId": 157,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "IMPCGT4 Class",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "IMPCGT4 Class"
   },
@@ -3746,11 +4375,13 @@
       {
         "carDirpath": "porschemissionr",
         "carId": 158,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche Mission R",
+    "rainEnabled": false,
     "relativeSpeed": 70,
     "shortName": "Porsche MissionR"
   },
@@ -3760,11 +4391,13 @@
       {
         "carDirpath": "bmwlmdh",
         "carId": 159,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Hybrid V8",
+    "rainEnabled": true,
     "relativeSpeed": 165,
     "shortName": "BMW M Hybrid V8"
   },
@@ -3774,36 +4407,43 @@
       {
         "carDirpath": "audir8lmsevo2gt3",
         "carId": 176,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "lamborghinievogt3",
         "carId": 133,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "ferrari296gt3",
         "carId": 173,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "IMSA23",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "IMSA23"
   },
@@ -3813,11 +4453,13 @@
       {
         "carDirpath": "toyotagr86",
         "carId": 160,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Toyota GR86",
+    "rainEnabled": true,
     "relativeSpeed": 36,
     "shortName": "Toyota GR86"
   },
@@ -3827,11 +4469,13 @@
       {
         "carDirpath": "mercedesw13",
         "carId": 161,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Mercedes-AMG W13 E Performance",
+    "rainEnabled": false,
     "relativeSpeed": 219,
     "shortName": "Mercedes-AMG W13"
   },
@@ -3841,21 +4485,25 @@
       {
         "carDirpath": "audirs3lms",
         "carId": 112,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hondacivictyper",
         "carId": 147,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "RoarTouringCar",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "RoarTouringCar"
   },
@@ -3865,11 +4513,13 @@
       {
         "carDirpath": "renaultcliocup",
         "carId": 162,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Renault Clio",
+    "rainEnabled": false,
     "relativeSpeed": 37,
     "shortName": "Renault Clio"
   },
@@ -3879,11 +4529,13 @@
       {
         "carDirpath": "raygr22",
         "carId": 163,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ray FF1600",
+    "rainEnabled": true,
     "relativeSpeed": 43,
     "shortName": "Ray FF1600"
   },
@@ -3893,11 +4545,13 @@
       {
         "carDirpath": "latemodel2023",
         "carId": 164,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Late Model Stock",
+    "rainEnabled": false,
     "relativeSpeed": 51,
     "shortName": "Late Model Stock"
   },
@@ -3907,11 +4561,13 @@
       {
         "carDirpath": "ligierjsp320",
         "carId": 165,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ligier JS P320",
+    "rainEnabled": false,
     "relativeSpeed": 72,
     "shortName": "Ligier JS P320"
   },
@@ -3921,16 +4577,19 @@
       {
         "carDirpath": "hyundaielantracn7",
         "carId": 146,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "hondacivictyper",
         "carId": 147,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Crev23",
+    "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Crev23"
   },
@@ -3940,11 +4599,13 @@
       {
         "carDirpath": "stockcars2\\chevy\\gen4cup",
         "carId": 167,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Gen 4 Cup",
+    "rainEnabled": false,
     "relativeSpeed": 83,
     "shortName": "Gen 4 Cup"
   },
@@ -3954,26 +4615,31 @@
       {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "ferrari296gt3",
         "carId": 173,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NECGT323",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "NECGT323"
   },
@@ -3983,21 +4649,25 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "porsche718gt4",
         "carId": 119,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "bmwm4gt4",
         "carId": 122,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NECGT423",
+    "rainEnabled": false,
     "relativeSpeed": 49,
     "shortName": "NECGT423"
   },
@@ -4007,11 +4677,13 @@
       {
         "carDirpath": "cadillacvseriesrgtp",
         "carId": 168,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Cadillac V-Series.R GTP",
+    "rainEnabled": true,
     "relativeSpeed": 165,
     "shortName": "Cadillac VSRGTP"
   },
@@ -4021,11 +4693,13 @@
       {
         "carDirpath": "porsche992rgt3",
         "carId": 169,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 911 GT3 R (992)",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Porsche 992GT3R"
   },
@@ -4035,26 +4709,31 @@
       {
         "carDirpath": "cadillacvseriesrgtp",
         "carId": 168,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "acuraarx06gtp",
         "carId": 170,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "porsche963gtp",
         "carId": 174,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "bmwlmdh",
         "carId": 159,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "GTP",
+    "rainEnabled": true,
     "relativeSpeed": 179,
     "shortName": "GTP"
   },
@@ -4064,11 +4743,13 @@
       {
         "carDirpath": "acuraarx06gtp",
         "carId": 170,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Acura ARX-06 GTP",
+    "rainEnabled": true,
     "relativeSpeed": 165,
     "shortName": "Acura ARX-06 GTP"
   },
@@ -4078,11 +4759,13 @@
       {
         "carDirpath": "superformulasf23\\toyota",
         "carId": 171,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Super Formula SF23 - Toyota",
+    "rainEnabled": false,
     "relativeSpeed": 160,
     "shortName": "Super SF23T"
   },
@@ -4092,16 +4775,19 @@
       {
         "carDirpath": "superformulasf23\\toyota",
         "carId": 171,
+        "rainEnabled": false,
         "retired": false
       },
       {
         "carDirpath": "superformulasf23\\honda",
         "carId": 172,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Super Formula SF23",
+    "rainEnabled": false,
     "relativeSpeed": 160,
     "shortName": "Super SF23"
   },
@@ -4111,11 +4797,13 @@
       {
         "carDirpath": "superformulasf23\\honda",
         "carId": 172,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Super Formula SF23 - Honda",
+    "rainEnabled": false,
     "relativeSpeed": 160,
     "shortName": "Super SF23H"
   },
@@ -4125,11 +4813,13 @@
       {
         "carDirpath": "mercedesamgevogt3",
         "carId": 156,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister 2023",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "RingMeister23"
   },
@@ -4139,11 +4829,13 @@
       {
         "carDirpath": "ferrari296gt3",
         "carId": 173,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ferrari 296 GT3",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Ferrari 296 GT3"
   },
@@ -4153,11 +4845,13 @@
       {
         "carDirpath": "porsche963gtp",
         "carId": 174,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Porsche 963 GTP",
+    "rainEnabled": true,
     "relativeSpeed": 165,
     "shortName": "Porsche 963 GTP"
   },
@@ -4167,11 +4861,13 @@
       {
         "carDirpath": "stockcars\\pontiacgrandprix87",
         "carId": 175,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "NASCAR Legends Pontiac Grand Prix - 1987",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Pontiac GP 1987"
   },
@@ -4181,11 +4877,13 @@
       {
         "carDirpath": "lotus49",
         "carId": 42,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister 2023S4",
+    "rainEnabled": false,
     "relativeSpeed": 56,
     "shortName": "RingMeister23S4"
   },
@@ -4195,11 +4893,13 @@
       {
         "carDirpath": "amvantagegt4",
         "carId": 150,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Shiny New Shakedown 2023 S4",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Shiny 2023S4"
   },
@@ -4209,11 +4909,13 @@
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "French Connection 2023 S4",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "French Co 2023S4"
   },
@@ -4223,11 +4925,13 @@
       {
         "carDirpath": "dirtsprint\\winged\\305",
         "carId": 80,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Shake Up 2023 S4",
+    "rainEnabled": false,
     "relativeSpeed": 50,
     "shortName": "Shake Up 2023S4"
   },
@@ -4237,12 +4941,140 @@
       {
         "carDirpath": "audir8lmsevo2gt3",
         "carId": 176,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Audi R8 LMS EVO II GT3",
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Audi R8 EVO2 GT3"
+  },
+  "4049": {
+    "carClassId": 4049,
+    "carsInClass": [
+      {
+        "carDirpath": "superformulalights324",
+        "carId": 178,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Super Formula Lights",
+    "rainEnabled": true,
+    "relativeSpeed": 95,
+    "shortName": "SF Lights"
+  },
+  "4050": {
+    "carClassId": 4050,
+    "carsInClass": [
+      {
+        "carDirpath": "srx",
+        "carId": 179,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "SRX",
+    "rainEnabled": false,
+    "relativeSpeed": 47,
+    "shortName": "SRX"
+  },
+  "4051": {
+    "carClassId": 4051,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtmicrosprint\\winged",
+        "carId": 180,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "dirtmicrosprint\\nonwinged",
+        "carId": 181,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Millbridge23",
+    "rainEnabled": false,
+    "relativeSpeed": 40,
+    "shortName": "Millbridge23"
+  },
+  "4052": {
+    "carClassId": 4052,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtmicrosprint\\winged",
+        "carId": 180,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Dirt Micro Sprint Car - Winged",
+    "rainEnabled": false,
+    "relativeSpeed": 45,
+    "shortName": "DMS Winged"
+  },
+  "4053": {
+    "carClassId": 4053,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtmicrosprint\\nonwinged",
+        "carId": 181,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Dirt Micro Sprint Car - Non-Winged",
+    "rainEnabled": false,
+    "relativeSpeed": 35,
+    "shortName": "DMS Non-Winged"
+  },
+  "4054": {
+    "carClassId": 4054,
+    "carsInClass": [
+      {
+        "carDirpath": "bmwm4gt3",
+        "carId": 132,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwz4gt3",
+        "carId": 55,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt4",
+        "carId": 122,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm8gte",
+        "carId": 109,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwlmdh",
+        "carId": 159,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "BMW M Power",
+    "rainEnabled": false,
+    "relativeSpeed": 100,
+    "shortName": "BMW M Power"
   }
 }
