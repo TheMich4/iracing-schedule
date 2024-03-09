@@ -36,6 +36,7 @@ export const columns: ColumnDef<ParsedData>[] = [
     id: "category",
     accessorFn: (row) => {
       const category = row.track?.category;
+      console.log({ row, category });
       return categoryToName[category] ?? "Unknown";
     },
     cell: CategoryCell,
