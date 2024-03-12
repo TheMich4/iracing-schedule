@@ -4887,6 +4887,22 @@
     "relativeSpeed": 56,
     "shortName": "RingMeister23S4"
   },
+  "4040": {
+    "carClassId": 4040,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars\\impala",
+        "carId": 22,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Draft Master 2023S4",
+    "rainEnabled": false,
+    "relativeSpeed": 52,
+    "shortName": "DraftMaster23S4"
+  },
   "4042": {
     "carClassId": 4042,
     "carsInClass": [
@@ -4951,6 +4967,38 @@
     "relativeSpeed": 52,
     "shortName": "Audi R8 EVO2 GT3"
   },
+  "4047": {
+    "carClassId": 4047,
+    "carsInClass": [
+      {
+        "carDirpath": "raygr22",
+        "carId": 163,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Special2024",
+    "rainEnabled": true,
+    "relativeSpeed": 52,
+    "shortName": "Special2024"
+  },
+  "4048": {
+    "carClassId": 4048,
+    "carsInClass": [
+      {
+        "carDirpath": "cadillacctsvr",
+        "carId": 41,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Ring Meister",
+    "rainEnabled": false,
+    "relativeSpeed": 52,
+    "shortName": "RingMeister"
+  },
   "4049": {
     "carClassId": 4049,
     "carsInClass": [
@@ -4989,12 +5037,6 @@
       {
         "carDirpath": "dirtmicrosprint\\winged",
         "carId": 180,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "dirtmicrosprint\\nonwinged",
-        "carId": 181,
         "rainEnabled": false,
         "retired": false
       }
@@ -5041,30 +5083,6 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm4gt3",
-        "carId": 132,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwz4gt3",
-        "carId": 55,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
         "carDirpath": "bmwlmdh",
         "carId": 159,
         "rainEnabled": true,
@@ -5073,7 +5091,7 @@
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   }
