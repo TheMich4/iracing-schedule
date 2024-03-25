@@ -1,10 +1,9 @@
 import IRacingAPI from "iracing-api";
-import { env } from "@/env.mjs";
 import { parseSeasons } from "./parse-seasons";
 
 const writeToFile = async (
   name: string,
-  data?: Record<string, unknown> | Array<Record<string, unknown>>,
+  data?: Record<string, unknown> | Array<Record<string, unknown>>
 ) => {
   if (!data) {
     console.error(`No data for ${name}`);
@@ -19,7 +18,10 @@ export const updateData = async () => {
   console.log("Starting updating data");
   const ir = new IRacingAPI();
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const login = (await ir.login(env.IRACING_EMAIL, env.IRACING_PASSWORD)) as {
+  const login = (await ir.login(
+    process.env.IRACING_EMAIL!,
+    process.env.IRACING_PASSWORD!
+  )) as {
     authcode: number;
   };
 
@@ -60,7 +62,7 @@ export const updateData = async () => {
     seasons,
     parsedTracks,
     parsedCars,
-    parsedCarClasses,
+    parsedCarClasses
   );
   await writeToFile("seasons-data", parsedData);
 };

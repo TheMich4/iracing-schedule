@@ -4,7 +4,8 @@
   "module": "index.ts",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "app:build": "bun run --cwd apps/next build",

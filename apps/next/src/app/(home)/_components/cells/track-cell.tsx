@@ -5,9 +5,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { type ParsedData } from "@/server/data/parse-seasons";
+import type { ParsedData } from "@iracing-schedule/data";
 import { useMemo, type ReactNode } from "react";
-import seasons from "@/data/seasons.json";
+import { seasons } from "@iracing-schedule/data";
 import Link from "next/link";
 
 interface TrackCellProps {

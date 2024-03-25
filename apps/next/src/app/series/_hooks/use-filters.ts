@@ -1,6 +1,6 @@
 import type { Filters } from "../_components/types";
 import { LicenseGroupNames } from "@/types/iracing";
-import { categories } from "@/data/iracing-consts";
+import { categories } from "@iracing-schedule/data";
 import { useState } from "react";
 
 const getDefaultCategories = () => {

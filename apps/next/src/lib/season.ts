@@ -1,7 +1,5 @@
 import { type Car, type CarClass, type SeriesSeason } from "iracing-api";
-import seasons from "../data/seasons.json";
-import carsJson from "../data/cars.json";
-import carClasses from "../data/car-classes.json";
+import { seasons, cars as carsJson, carClasses } from "@iracing-schedule/data";
 
 // TODO: Arrays should be maps
 export const getSeasonData = (seasonId: number) => {

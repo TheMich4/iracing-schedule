@@ -1,8 +1,3 @@
-import carClasses from "@/data/car-classes.json";
-import cars from "@/data/cars.json";
-import { useMemo } from "react";
-import { type ParsedData } from "@/server/data/parse-seasons";
-import { FreeIcon } from "../icons/free-icon";
 import {
   Dialog,
   DialogContent,
@@ -10,6 +5,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { carClasses, cars } from "@iracing-schedule/data";
+
+import { FreeIcon } from "../icons/free-icon";
+import type { ParsedData } from "@iracing-schedule/data";
+import { useMemo } from "react";
 
 interface CarClassesCellProps {
   row: { original: ParsedData };

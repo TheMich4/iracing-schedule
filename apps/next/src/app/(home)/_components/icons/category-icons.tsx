@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Categories } from "@/data/iracing-consts";
+import { Categories } from "@iracing-schedule/data";
 
 const OvalSvg = () => (
   <svg width="12" height="12" viewBox="0 0 500 500" fill="currentColor">

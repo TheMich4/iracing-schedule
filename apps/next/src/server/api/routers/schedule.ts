@@ -1,7 +1,7 @@
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
-import { type ParsedSeasonsData } from "@/server/data/parse-seasons";
-import seasonsData from "@/data/seasons-data.json";
+import type { ParsedSeasonsData } from "@iracing-schedule/data";
+import { seasonsData } from "@iracing-schedule/data";
 import { z } from "zod";
 
 export const scheduleRouter = createTRPCRouter({

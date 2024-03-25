@@ -1,6 +1,6 @@
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
-import tracks from "@/data/tracks.json";
+import { tracks } from "@iracing-schedule/data";
 import { type Track } from "iracing-api";
 import { z } from "zod";
 

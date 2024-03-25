@@ -9,7 +9,7 @@ import {
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import type { Filters } from "./types";
 import { buttonVariants } from "@/components/ui/button";
-import { categories } from "@/data/iracing-consts";
+import { categories } from "@iracing-schedule/data";
 import { cn } from "@/lib/utils";
 
 interface CategoryDropdownProps {

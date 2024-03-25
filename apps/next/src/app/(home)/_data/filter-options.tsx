@@ -1,4 +1,4 @@
-import { Categories } from "@/data/iracing-consts";
+import { Categories } from "@iracing-schedule/data";
 import { CategoryIcon } from "../_components/icons/category-icons";
 import { ClassIcon } from "../_components/icons/class-icon";
 import { LicenseGroup } from "@/types/iracing";

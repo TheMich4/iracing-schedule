@@ -2,7 +2,7 @@
 
 import { SeasonCard } from "./_components/season-card";
 import { type SeriesSeason } from "iracing-api";
-import seasons from "../../data/seasons.json";
+import { seasons } from "@iracing-schedule/data";
 import { sortSeasons } from "@/lib/season";
 import { useFilters } from "./_hooks/use-filters";
 import { useMemo } from "react";
