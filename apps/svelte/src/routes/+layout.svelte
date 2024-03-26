@@ -5,7 +5,9 @@
 	import Sidebar from '@/components/sidebar';
 </script>
 
-<div class="flex h-full w-full flex-row gap-2">
+<div class="flex">
 	<Sidebar />
-	<slot />
+	<div class="flex-1">
+		<slot />
+	</div>
 </div>

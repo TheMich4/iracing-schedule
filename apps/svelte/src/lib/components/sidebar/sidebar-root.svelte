@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as Sheet from '$lib/components/ui/sheet';
 	import { ScrollArea } from '$lib/components/ui/scroll-area';
 	import { cn } from '$lib/utils';
 	import SidebarHeader from './sidebar-header.svelte';
@@ -8,11 +7,12 @@
 	import * as Accordion from '$lib/components/ui/accordion';
 	import SidebarAssets from './sidebar-assets.svelte';
 	import SidebarLists from './sidebar-lists.svelte';
+	import SidebarSheet from './sidebar-sheet.svelte';
 
 	let isCollapsed = false;
 </script>
 
-<Sheet.Root open={true}>
+<SidebarSheet>
 	<ScrollArea
 		class={cn(
 			'flex h-dvh flex-col gap-2 overflow-hidden border-r-[1px] border-stone-200 bg-stone-50',
@@ -40,4 +40,4 @@
 			</div>
 		</Accordion.Root>
 	</ScrollArea>
-</Sheet.Root>
+</SidebarSheet>

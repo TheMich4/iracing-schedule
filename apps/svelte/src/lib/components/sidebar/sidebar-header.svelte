@@ -5,7 +5,7 @@
 	const toggleSidebar = () => {};
 </script>
 
-<div class="flex items-center justify-between px-2">
+<div class="flex items-center justify-between gap-4 px-2">
 	<div class="flex items-center gap-2">
 		<div class="flex size-6 items-center justify-center rounded-md bg-gray-700 text-white">I</div>
 		<button class="flex items-center gap-1 text-sm font-semibold">
