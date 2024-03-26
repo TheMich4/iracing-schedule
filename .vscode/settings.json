@@ -13,6 +13,7 @@
     "pageview",
     "posthog",
     "signin",
+    "tabler",
     "tanstack",
     "TRPC"
   ],
