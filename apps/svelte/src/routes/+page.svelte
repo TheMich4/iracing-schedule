@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PageHeader from '@/components/page-header';
 	import { IconCar, IconLayoutSidebarLeftExpand, IconMinusVertical } from '@tabler/icons-svelte';
+	import Content from './content.svelte';
 
 	let isSidebarOpen = true;
 	let isSidebarCollapsed = false;
@@ -37,11 +38,13 @@
 			{/if}
 
 			<div class="flex items-center gap-1">
-				<IconCar />
+				<IconCar class="size-5" />
 				<span class="font-semibold">Cars</span>
 			</div>
 		</div>
 	</PageHeader>
 
-	<div class="min-w-[800px] flex-1 bg-red-200">xxxx</div>
+	<div class="flex-1">
+		<Content />
+	</div>
 </div>

@@ -10,7 +10,7 @@
 
 		<div class="flex items-center gap-2">
 			<button class="flex h-[24px] w-[24px] items-center justify-center rounded-full">
-				<IconDotsVertical class="text-xs" />
+				<IconDotsVertical class="size-3" />
 			</button>
 		</div>
 	</div>
