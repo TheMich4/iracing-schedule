@@ -1,6 +1,7 @@
 import { IconCar, IconGps, IconRoad, IconSchool, IconUsersGroup } from '@tabler/icons-svelte';
 
 import ClassIcon from '../lib/components/class-icon.svelte';
+import { categoryToName } from '../lib/category';
 
 export const columns = [
 	{
@@ -16,7 +17,9 @@ export const columns = [
 		id: 'category',
 		label: 'Category',
 		Icon: IconGps,
-		getValue: (row) => row.track.category
+		getValue: (row) =>
+			categoryToName[row.track.category as keyof typeof categoryToName] ?? 'Unknown',
+		class: 'w-28'
 	},
 	{
 		id: 'series',
