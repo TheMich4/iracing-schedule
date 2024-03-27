@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "app:build": "bun run --cwd apps/next build",
-    "app:dev": "bun run --cwd apps/next dev"
+    "app:dev": "bun run --cwd apps/next dev",
+    "svelte:dev": "bun run --cwd apps/svelte dev"
   }
 }

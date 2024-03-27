@@ -7,7 +7,7 @@
 	<TableFilters />
 
 	<div class="relative flex-1">
-		<div class="absolute h-full w-full overflow-scroll px-4">
+		<div class="h-full w-full overflow-auto px-4">
 			<Table />
 		</div>
 	</div>
