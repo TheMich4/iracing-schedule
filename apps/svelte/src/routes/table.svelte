@@ -20,5 +20,5 @@
 		</tr>
 	</thead>
 
-	<TableBody {columns} rows={weekData} />
+	<TableBody {columns} rows={[weekData[0]]} />
 </table>
