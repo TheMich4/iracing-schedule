@@ -11,7 +11,11 @@
 			{#each columns as column (column.id)}
 				<td class="border-r last:border-r-0">
 					<div class={cn('flex items-center gap-2 p-2', column.contentClass)}>
-						{column.getValue(row)}
+						{#if column.Component}
+							<svelte:component this={column.Component} {column} {row} />
+						{:else}
+							{column.getValue(row)}
+						{/if}
 					</div>
 				</td>
 			{/each}

@@ -1,5 +1,7 @@
 import { IconCar, IconGps, IconRoad, IconSchool, IconUsersGroup } from '@tabler/icons-svelte';
 
+import ClassIcon from '../lib/components/class-icon.svelte';
+
 export const columns = [
 	{
 		id: 'class',
@@ -7,7 +9,8 @@ export const columns = [
 		Icon: IconSchool,
 		getValue: (row) => row.licenseGroup,
 		class: 'w-20',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		Component: ClassIcon
 	},
 	{
 		id: 'category',
