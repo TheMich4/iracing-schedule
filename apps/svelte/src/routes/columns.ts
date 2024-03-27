@@ -1,6 +1,14 @@
-import { IconCar, IconGps, IconRoad, IconSchool, IconUsersGroup } from '@tabler/icons-svelte';
+import {
+	IconCar,
+	IconClock,
+	IconGps,
+	IconRoad,
+	IconSchool,
+	IconUsersGroup
+} from '@tabler/icons-svelte';
 
 import ClassIcon from '../lib/components/class-icon.svelte';
+import NextRace from '../lib/components/next-race.svelte';
 import { categoryToName } from '../lib/category';
 
 export const columns = [
@@ -38,6 +46,13 @@ export const columns = [
 		label: 'Cars',
 		Icon: IconCar,
 		getValue: (row) => row.cars.map((car) => car.carNameAbbreviated).join(', ')
+	},
+	{
+		id: 'nextRace',
+		label: 'Next Race',
+		Icon: IconClock,
+		getValue: () => '',
+		Component: NextRace
 	},
 	{
 		id: 'week',
