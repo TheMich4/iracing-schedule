@@ -1166,7 +1166,7 @@
     "custId": 0,
     "name": "Spec Racer Ford",
     "rainEnabled": false,
-    "relativeSpeed": 39,
+    "relativeSpeed": 36,
     "shortName": "SRF"
   },
   "21": {
@@ -4891,8 +4891,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\impala",
-        "carId": 22,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -4971,8 +4989,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "raygr22",
-        "carId": 163,
+        "carDirpath": "superformulalights324",
+        "carId": 178,
         "rainEnabled": true,
         "retired": false
       }
@@ -4987,8 +5005,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "cadillacctsvr",
-        "carId": 41,
+        "carDirpath": "ligierjsp320",
+        "carId": 165,
         "rainEnabled": false,
         "retired": false
       }
@@ -5083,16 +5101,106 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwlmdh",
-        "carId": 159,
-        "rainEnabled": true,
+        "carDirpath": "bmwz4gt3",
+        "carId": 55,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
+  },
+  "4055": {
+    "carClassId": 4055,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt3",
+        "carId": 132,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche992rgt3",
+        "carId": 169,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamgevogt3",
+        "carId": 156,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "ferrari296gt3",
+        "carId": 173,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NECGT324",
+    "rainEnabled": true,
+    "relativeSpeed": 100,
+    "shortName": "NECGT324"
+  },
+  "4056": {
+    "carClassId": 4056,
+    "carsInClass": [
+      {
+        "carDirpath": "amvantagegt4",
+        "carId": 150,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche718gt4",
+        "carId": 119,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt4",
+        "carId": 122,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NECGT424",
+    "rainEnabled": false,
+    "relativeSpeed": 100,
+    "shortName": "NECGT424"
+  },
+  "4057": {
+    "carClassId": 4057,
+    "carsInClass": [
+      {
+        "carDirpath": "hyundaielantracn7",
+        "carId": 146,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "hondacivictyper",
+        "carId": 147,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NECTCR24",
+    "rainEnabled": false,
+    "relativeSpeed": 100,
+    "shortName": "NECTCR24"
   }
 }

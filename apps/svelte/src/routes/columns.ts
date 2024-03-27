@@ -37,6 +37,18 @@ export const columns = [
 		id: 'cars',
 		label: 'Cars',
 		Icon: IconCar,
-		getValue: (row) => row.carClassIds.join(', ')
+		getValue: (row) => row.cars.map((car) => car.carNameAbbreviated).join(', ')
+	},
+	{
+		id: 'week',
+		label: 'Week',
+		getValue: (row) => row.raceWeekNum,
+		class: 'w-14'
+	},
+	{
+		id: 'maxIncidents',
+		label: 'Max Inc',
+		getValue: (row) => row.incidentLimit,
+		class: 'w-20'
 	}
 ];

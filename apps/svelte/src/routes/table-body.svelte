@@ -3,6 +3,7 @@
 
 	export let columns: any[] = [];
 	export let rows: any[] = [];
+	console.log({ rows });
 </script>
 
 <tbody>

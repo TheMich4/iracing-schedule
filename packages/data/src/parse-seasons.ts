@@ -11,6 +11,13 @@ import {
 
 export interface SeasonData {
   carClassIds: number[];
+  carIds: number[];
+  cars: {
+    carId: number;
+    carName: string;
+    carNameAbbreviated: string;
+    packageId: number;
+  }[];
   fixedSetup: boolean;
   hasFreeCar: boolean;
   incidentLimit: number;
@@ -50,7 +57,7 @@ export const parseSeasons = (
   seasons: SeriesSeason[],
   trackData: Record<string, Track>,
   carData: Record<string, Car>,
-  carClassData: Record<string, CarClass>,
+  carClassData: Record<string, CarClass>
 ) => {
   const parsed: ParsedSeasonsData = {};
 
@@ -65,11 +72,24 @@ export const parseSeasons = (
       return [...acc, ...carClass.carsInClass.map((car) => car.carId)];
     }, [] as number[]);
     const hasFreeCar = carIds.some(
-      (carId) => carData[carId]?.freeWithSubscription ?? false,
+      (carId) => carData[carId]?.freeWithSubscription ?? false
     );
 
+    const cars = carIds.map((carId) => {
+      const car = carData[carId];
+
+      return {
+        carId: car.carId,
+        carName: car.carName,
+        carNameAbbreviated: car.carNameAbbreviated,
+        packageId: car.packageId,
+      };
+    });
+
     const seasonData: SeasonData = {
-      carClassIds: carClassIds,
+      carClassIds,
+      carIds,
+      cars,
       fixedSetup: season.fixedSetup,
       incidentLimit: season.incidentLimit,
       hasFreeCar,
