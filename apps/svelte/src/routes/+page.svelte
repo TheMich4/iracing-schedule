@@ -3,22 +3,18 @@
 	import { IconCar, IconLayoutSidebarLeftExpand, IconMinusVertical } from '@tabler/icons-svelte';
 	import Content from './content.svelte';
 
+	import sidebar from '$lib/store/sidebar.svelte.js';
+
 	export let data;
-
-	let isSidebarOpen = true;
-	let isSidebarCollapsed = false;
-
-	const setSidebarOpen = () => {};
-	const setSidebarCollapsed = () => {};
 </script>
 
 <PageHeader>
 	<div class="flex items-center gap-2">
-		{#if !isSidebarOpen}
+		{#if !sidebar.isOpen}
 			<div class="flex items-center gap-2 md:hidden">
 				<button
 					class="flex items-center opacity-60 transition hover:opacity-100 md:hidden"
-					on:click={setSidebarOpen}
+					on:click={sidebar.toggle}
 				>
 					<IconLayoutSidebarLeftExpand />
 				</button>
@@ -26,15 +22,15 @@
 			</div>
 		{/if}
 
-		{#if isSidebarCollapsed}
+		{#if sidebar.isCollapsed}
 			<div class="hidden items-center gap-2 md:flex">
 				<button
 					class="flex items-center opacity-60 transition hover:opacity-100"
-					on:click={setSidebarCollapsed}
+					on:click={sidebar.toggleCollapse}
 				>
-					<IconLayoutSidebarLeftExpand />
+					<IconLayoutSidebarLeftExpand class="size-4" />
 				</button>
-				<IconMinusVertical class="opacity-30" />
+				<IconMinusVertical class="size-4 opacity-30" />
 			</div>
 		{/if}
 

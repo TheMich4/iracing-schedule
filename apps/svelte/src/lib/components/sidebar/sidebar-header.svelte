@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { IconCaretDownFilled, IconLayoutSidebarLeftCollapse } from '@tabler/icons-svelte';
+	import { IconLayoutSidebarLeftCollapse } from '@tabler/icons-svelte';
 
-	const collapseSidebar = () => {};
-	const toggleSidebar = () => {};
+	export let toggleCollapse: () => void;
+	export let toggle: () => void;
 </script>
 
 <div class="flex items-center justify-between gap-4 px-2">
@@ -10,18 +10,15 @@
 		<div class="flex size-6 items-center justify-center rounded-md bg-gray-700 text-white">I</div>
 		<button class="flex items-center gap-1 text-sm font-semibold">
 			iracing schedule
-			<IconCaretDownFilled class="size-3" />
+			<!-- <IconCaretDownFilled class="size-3" /> -->
 		</button>
 	</div>
 
 	<button class="opacity-60 transition hover:opacity-100 md:hidden">
-		<IconLayoutSidebarLeftCollapse class="size-4" on:click={toggleSidebar} />
+		<IconLayoutSidebarLeftCollapse class="size-4" on:click={toggle} />
 	</button>
 
-	<button
-		class="hidden opacity-60 transition hover:opacity-100 md:block"
-		on:click={collapseSidebar}
-	>
+	<button class="hidden opacity-60 transition hover:opacity-100 md:block" on:click={toggleCollapse}>
 		<IconLayoutSidebarLeftCollapse class="size-4" />
 	</button>
 </div>

@@ -9,18 +9,18 @@
 	import SidebarLists from './sidebar-lists.svelte';
 	import SidebarSheet from './sidebar-sheet.svelte';
 
-	let isCollapsed = false;
+	import sidebar from '$lib/store/sidebar.svelte.js';
 </script>
 
-<SidebarSheet>
+<SidebarSheet open={sidebar.isOpen} onOpenChange={(v) => sidebar.setIsOpen(v)}>
 	<ScrollArea
 		class={cn(
 			'flex h-dvh flex-col gap-2 overflow-hidden border-r-[1px] border-stone-200 bg-stone-50',
-			isCollapsed ? 'w-0' : 'w-full'
+			sidebar.isCollapsed ? 'w-0' : 'w-full'
 		)}
 	>
 		<div class="sticky top-0 z-10 border-b-[1px] border-stone-200 bg-stone-50 p-2">
-			<SidebarHeader />
+			<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
 		</div>
 
 		<div class="p-2">
