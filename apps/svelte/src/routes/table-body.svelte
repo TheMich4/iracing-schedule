@@ -1,8 +1,8 @@
 <script lang="ts">
+	import { cn } from '../lib/utils';
+
 	export let columns: any[] = [];
 	export let rows: any[] = [];
-
-	console.log({ columns, rows });
 </script>
 
 <tbody>
@@ -10,7 +10,9 @@
 		<tr class="border-b">
 			{#each columns as column (column.id)}
 				<td class="border-r last:border-r-0">
-					<div class="flex items-center gap-2 p-2">{column.id}</div>
+					<div class={cn('flex items-center gap-2 p-2', column.contentClass)}>
+						{column.getValue(row)}
+					</div>
 				</td>
 			{/each}
 		</tr>

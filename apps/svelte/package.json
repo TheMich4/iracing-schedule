@@ -41,6 +41,7 @@
 		"@tabler/icons-svelte": "^3.1.0",
 		"bits-ui": "^0.21.0",
 		"clsx": "^2.1.0",
+		"iracing-api": "^0.4.1",
 		"svelte-radix": "^1.1.0",
 		"tailwind-merge": "^2.2.2",
 		"tailwind-variants": "^0.2.1"

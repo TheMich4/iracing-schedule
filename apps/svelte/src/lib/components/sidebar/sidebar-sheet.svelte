@@ -14,13 +14,13 @@
 				<slot />
 			</Sheet.Content>
 
-			<Sheet.Close asChild>
+			<!-- <Sheet.Close asChild>
 				<button
 					aria-label="Close"
 					class="absolute right-[10px] top-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
 					><IconX /></button
 				>
-			</Sheet.Close>
+			</Sheet.Close> -->
 		</Sheet.Portal>
 	</Sheet.Root>
 </div>

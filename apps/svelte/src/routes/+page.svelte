@@ -3,6 +3,8 @@
 	import { IconCar, IconLayoutSidebarLeftExpand, IconMinusVertical } from '@tabler/icons-svelte';
 	import Content from './content.svelte';
 
+	export let data;
+
 	let isSidebarOpen = true;
 	let isSidebarCollapsed = false;
 
@@ -44,5 +46,5 @@
 </PageHeader>
 
 <div class="h-full flex-1">
-	<Content />
+	<Content weekData={data.weekData} />
 </div>
