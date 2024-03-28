@@ -23,7 +23,7 @@
 			<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
 		</div>
 
-		<div class="p-2">
+		<div class="mt-1 p-2">
 			<SidebarSearch />
 		</div>
 
@@ -31,13 +31,13 @@
 			<SidebarQuickActions />
 		</div>
 
-		<Accordion.Root multiple={true} value={['assets', 'lists']}>
+		<!-- <Accordion.Root multiple={true} value={['assets', 'lists']}>
 			<div class="p-2">
 				<SidebarAssets />
 			</div>
 			<div class="p-2">
 				<SidebarLists />
 			</div>
-		</Accordion.Root>
+		</Accordion.Root> -->
 	</ScrollArea>
 </SidebarSheet>

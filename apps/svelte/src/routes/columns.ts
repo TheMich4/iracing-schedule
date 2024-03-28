@@ -12,6 +12,7 @@ import CellCategory from '$lib/components/schedule-table/cell-category.svelte';
 import CellCheck from '$lib/components/schedule-table/cell-check.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
+import CellTrack from '$lib/components/schedule-table/cell-track.svelte';
 import { categoryToName } from '../lib/category';
 
 export const columns = [
@@ -43,7 +44,8 @@ export const columns = [
 		id: 'track',
 		label: 'Track',
 		Icon: IconRoad,
-		getValue: (row) => row.track.trackName
+		getValue: (row) => row.track.trackName,
+		Component: CellTrack
 	},
 	{
 		id: 'cars',
