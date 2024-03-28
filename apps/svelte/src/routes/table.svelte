@@ -6,8 +6,8 @@
 	export let weekData: Array<Record<string, any>>;
 </script>
 
-<table class="w-full min-w-[825px] table-fixed border-collapse text-xs">
-	<thead class="sticky top-0 z-[10] bg-white">
+<table class="h-full w-full min-w-[825px] table-fixed border-collapse text-xs">
+	<thead class="sticky -top-[1px] z-[10] border-y bg-white">
 		<tr class="w-full border-y">
 			{#each columns as column (column.id)}
 				<td class={cn('border-r last:border-r-0', column.class)}>

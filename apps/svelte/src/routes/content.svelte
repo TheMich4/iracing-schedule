@@ -8,9 +8,7 @@
 <div class="flex h-full flex-col">
 	<TableFilters />
 
-	<div class="relative flex-1">
-		<div class="h-full w-full overflow-auto px-4">
-			<Table {weekData} />
-		</div>
+	<div class="relative h-full w-full flex-1 overflow-auto px-4">
+		<Table {weekData} />
 	</div>
 </div>
