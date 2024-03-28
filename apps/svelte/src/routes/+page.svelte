@@ -5,9 +5,11 @@
 		IconLayoutSidebarLeftExpand,
 		IconMinusVertical
 	} from '@tabler/icons-svelte';
-	import Content from './content.svelte';
 
 	import sidebar from '$lib/store/sidebar.svelte.js';
+	import Table from '$lib/components/table/table.svelte';
+	import { columns } from './columns';
+	import TableFilters from './table-filters.svelte';
 
 	export let data;
 </script>
@@ -47,6 +49,12 @@
 	</PageHeader>
 
 	<div class="h-[calc(100%-42px)] flex-1 overflow-hidden">
-		<Content weekData={data.weekData} />
+		<div class="flex h-full flex-col">
+			<TableFilters />
+
+			<div class="relative h-full w-full flex-1 overflow-auto px-4">
+				<Table rows={data.weekData} {columns} />
+			</div>
+		</div>
 	</div>
 </div>

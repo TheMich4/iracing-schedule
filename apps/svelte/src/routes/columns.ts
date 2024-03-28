@@ -27,7 +27,7 @@ export const columns = [
 		label: 'Class',
 		Icon: IconSchool,
 		getValue: (row) => row.licenseGroup,
-		class: 'w-20',
+		class: 'w-[4.75rem]',
 		contentClass: 'justify-center',
 		Component: CellClassIcon
 	},
@@ -37,7 +37,7 @@ export const columns = [
 		Icon: IconGps,
 		getValue: (row) =>
 			categoryToName[row.track.category as keyof typeof categoryToName] ?? 'Unknown',
-		class: 'w-28',
+		class: 'w-[6.25rem]',
 		Component: CellCategory
 	},
 	{
@@ -57,7 +57,10 @@ export const columns = [
 		id: 'cars',
 		label: 'Cars',
 		Icon: IconCar,
-		getValue: (row) => row.cars.map((car) => car.carNameAbbreviated).join(', '),
+		getValue: (row) =>
+			row.cars.length === 1
+				? row.cars[0].carName
+				: row.cars.map((car) => car.carNameAbbreviated).join(', '),
 		Component: CellCars
 	},
 	{
