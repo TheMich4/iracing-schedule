@@ -1,6 +1,10 @@
 <script lang="ts">
 	import PageHeader from '@/components/page-header';
-	import { IconCar, IconLayoutSidebarLeftExpand, IconMinusVertical } from '@tabler/icons-svelte';
+	import {
+		IconCalendarEvent,
+		IconLayoutSidebarLeftExpand,
+		IconMinusVertical
+	} from '@tabler/icons-svelte';
 	import Content from './content.svelte';
 
 	import sidebar from '$lib/store/sidebar.svelte.js';
@@ -35,8 +39,8 @@
 		{/if}
 
 		<div class="flex items-center gap-1">
-			<IconCar class="size-5" />
-			<span class="font-semibold">Cars</span>
+			<IconCalendarEvent class="size-4" />
+			<span class="font-semibold">Schedule</span>
 		</div>
 	</div>
 </PageHeader>

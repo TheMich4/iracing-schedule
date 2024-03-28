@@ -1,9 +1,15 @@
 import {
+	IconArrowsUp,
+	IconCalendarWeek,
 	IconCar,
+	IconCarCrash,
+	IconCarGarage,
 	IconClock,
 	IconGps,
 	IconRoad,
 	IconSchool,
+	IconStars,
+	IconTool,
 	IconUsersGroup
 } from '@tabler/icons-svelte';
 
@@ -65,44 +71,51 @@ export const columns = [
 	{
 		id: 'startType',
 		label: 'Start Type',
+		Icon: IconArrowsUp,
 		getValue: (row) => row.startType,
-		class: 'w-24'
+		class: 'w-28'
 	},
 	{
 		id: 'week',
 		label: 'Week',
+		Icon: IconCalendarWeek,
 		getValue: (row) => row.raceWeekNum,
-		class: 'w-14',
+		class: 'w-[4.5rem]',
 		contentClass: 'justify-center'
 	},
 	{
 		id: 'official',
 		label: 'Official',
+		Icon: IconStars,
 		getValue: (row) => row.official,
 		Component: CellCheck,
-		class: 'w-16',
+		class: 'w-[5.25rem]',
 		contentClass: 'justify-center'
 	},
 	{
 		id: 'fixed',
 		label: 'Fixed',
+		Icon: IconTool,
 		getValue: (row) => row.fixedSetup,
 		Component: CellCheck,
-		class: 'w-16',
+		class: 'w-[4.75rem]',
 		contentClass: 'justify-center'
 	},
 	{
 		id: 'multiClass',
 		label: 'Multi',
+		Icon: IconCarGarage,
 		getValue: (row) => row.multiclass,
 		Component: CellCheck,
-		class: 'w-16',
+		class: 'w-[4.25rem]',
 		contentClass: 'justify-center'
 	},
 	{
 		id: 'maxIncidents',
 		label: 'Max Inc',
+		Icon: IconCarCrash,
 		getValue: (row) => row.incidentLimit,
-		class: 'w-20'
+		class: 'w-[5.75rem]',
+		contentClass: 'justify-center'
 	}
 ];
