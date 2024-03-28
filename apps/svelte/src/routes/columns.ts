@@ -7,6 +7,7 @@ import {
 	IconUsersGroup
 } from '@tabler/icons-svelte';
 
+import CellCars from '$lib/components/schedule-table/cell-cars.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import { categoryToName } from '../lib/category';
@@ -45,13 +46,15 @@ export const columns = [
 		id: 'cars',
 		label: 'Cars',
 		Icon: IconCar,
-		getValue: (row) => row.cars.map((car) => car.carNameAbbreviated).join(', ')
+		getValue: (row) => row.cars.map((car) => car.carNameAbbreviated).join(', '),
+		Component: CellCars
 	},
 	{
 		id: 'nextRace',
 		label: 'Next Race',
 		Icon: IconClock,
 		getValue: () => '',
+		class: 'w-36',
 		Component: CellNextRace
 	},
 	{
