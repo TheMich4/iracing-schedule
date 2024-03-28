@@ -3,6 +3,7 @@
 	import '@fontsource-variable/inter';
 
 	import Sidebar from '@/components/sidebar';
+	import TailwindIndicator from '@/components/tailwind-indicator.svelte';
 </script>
 
 <div class="flex">
@@ -11,3 +12,5 @@
 		<slot />
 	</div>
 </div>
+
+<TailwindIndicator />
