@@ -9,10 +9,9 @@
 	export let row: Record<string, any>;
 
 	const category: string = column.getValue(row);
-	console.log({ category });
 </script>
 
-<div class="category flex flex-row items-center gap-1">
+<div class="category flex flex-row items-center gap-2">
 	{#if category === Categories.OVAL}
 		<svelte:component this={OvalIcon} />
 	{:else if category === Categories.ROAD}

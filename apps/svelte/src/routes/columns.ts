@@ -9,6 +9,7 @@ import {
 
 import CellCars from '$lib/components/schedule-table/cell-cars.svelte';
 import CellCategory from '$lib/components/schedule-table/cell-category.svelte';
+import CellCheck from '$lib/components/schedule-table/cell-check.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import { categoryToName } from '../lib/category';
@@ -60,10 +61,41 @@ export const columns = [
 		Component: CellNextRace
 	},
 	{
+		id: 'startType',
+		label: 'Start Type',
+		getValue: (row) => row.startType,
+		class: 'w-24'
+	},
+	{
 		id: 'week',
 		label: 'Week',
 		getValue: (row) => row.raceWeekNum,
-		class: 'w-14'
+		class: 'w-14',
+		contentClass: 'justify-center'
+	},
+	{
+		id: 'official',
+		label: 'Official',
+		getValue: (row) => row.official,
+		Component: CellCheck,
+		class: 'w-16',
+		contentClass: 'justify-center'
+	},
+	{
+		id: 'fixed',
+		label: 'Fixed',
+		getValue: (row) => row.fixedSetup,
+		Component: CellCheck,
+		class: 'w-16',
+		contentClass: 'justify-center'
+	},
+	{
+		id: 'multiClass',
+		label: 'Multi',
+		getValue: (row) => row.multiclass,
+		Component: CellCheck,
+		class: 'w-16',
+		contentClass: 'justify-center'
 	},
 	{
 		id: 'maxIncidents',
