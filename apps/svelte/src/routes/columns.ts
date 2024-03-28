@@ -8,6 +8,7 @@ import {
 } from '@tabler/icons-svelte';
 
 import CellCars from '$lib/components/schedule-table/cell-cars.svelte';
+import CellCategory from '$lib/components/schedule-table/cell-category.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import { categoryToName } from '../lib/category';
@@ -28,7 +29,8 @@ export const columns = [
 		Icon: IconGps,
 		getValue: (row) =>
 			categoryToName[row.track.category as keyof typeof categoryToName] ?? 'Unknown',
-		class: 'w-28'
+		class: 'w-28',
+		Component: CellCategory
 	},
 	{
 		id: 'series',
