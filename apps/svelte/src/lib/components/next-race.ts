@@ -1,4 +1,4 @@
-import { nearestDate } from '../date';
+import { nearestFutureDate } from '../date';
 
 export const getRaceTimes = (raceTimeDescriptor: {
 	repeatMinutes: number;
@@ -33,7 +33,7 @@ export const getRaceTimes = (raceTimeDescriptor: {
 
 export const getMinutesToNextRace = (times: Array<Date>) => {
 	const time = new Date();
-	const index = nearestDate(times, time);
+	const index = nearestFutureDate(times, time);
 
 	if (index < 0) return undefined;
 
