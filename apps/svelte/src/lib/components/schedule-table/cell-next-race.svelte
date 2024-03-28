@@ -1,13 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { getMinutesToNextRace, getRaceTimes } from './next-race';
-	import { cn } from '../utils';
-	import {
-		IconAlertTriangle,
-		IconAlertTriangleFilled,
-		IconClock,
-		IconInfoCircle
-	} from '@tabler/icons-svelte';
+	import { getMinutesToNextRace, getRaceTimes } from '../next-race';
+	import { cn } from '../../utils';
+	import { IconAlertTriangle, IconClock, IconInfoCircle } from '@tabler/icons-svelte';
 
 	export let column: Record<string, any>;
 	export let row: Record<string, any>;

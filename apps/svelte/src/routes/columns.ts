@@ -7,8 +7,8 @@ import {
 	IconUsersGroup
 } from '@tabler/icons-svelte';
 
-import ClassIcon from '../lib/components/class-icon.svelte';
-import NextRace from '../lib/components/next-race.svelte';
+import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
+import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import { categoryToName } from '../lib/category';
 
 export const columns = [
@@ -19,7 +19,7 @@ export const columns = [
 		getValue: (row) => row.licenseGroup,
 		class: 'w-20',
 		contentClass: 'justify-center',
-		Component: ClassIcon
+		Component: CellClassIcon
 	},
 	{
 		id: 'category',
@@ -52,7 +52,7 @@ export const columns = [
 		label: 'Next Race',
 		Icon: IconClock,
 		getValue: () => '',
-		Component: NextRace
+		Component: CellNextRace
 	},
 	{
 		id: 'week',

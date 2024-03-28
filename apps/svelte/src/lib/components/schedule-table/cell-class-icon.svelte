@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { LicenseGroupNames, type License, LicenseColors } from '../license';
-	import { cn } from '../utils';
+	import { LicenseGroupNames, type License, LicenseColors } from '../../license';
+	import { cn } from '../../utils';
 
 	export let column: Record<string, any>;
 	export let row: Record<string, any>;
