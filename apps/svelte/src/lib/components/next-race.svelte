@@ -2,14 +2,23 @@
 	import { onMount } from 'svelte';
 	import { getMinutesToNextRace, getRaceTimes } from './next-race';
 	import { cn } from '../utils';
+	import {
+		IconAlertTriangle,
+		IconAlertTriangleFilled,
+		IconClock,
+		IconInfoCircle
+	} from '@tabler/icons-svelte';
 
 	export let column: Record<string, any>;
 	export let row: Record<string, any>;
 
-	const times = getRaceTimes(row.raceTimeDescriptors[0]);
-	let minutesToNextRace = getMinutesToNextRace(times);
-
 	const isSetDate = row.raceTimeDescriptors.some((t: any) => t.sessionTimes || !t.repeating);
+	const times = getRaceTimes(row.raceTimeDescriptors[0]);
+
+	const iconBackClassName = 'absolute size-[10px]';
+	const iconClassName = 'size-[10px] animate-[ping_1.25s_ease-in-out_infinite] opacity-80';
+
+	let minutesToNextRace = getMinutesToNextRace(times);
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -22,13 +31,13 @@
 	const getClassName = () => {
 		if (!minutesToNextRace) return '';
 
-		if (minutesToNextRace <= 2) return 'bg-red-500/10 text-red-600 border-red-500/40';
-		if (minutesToNextRace <= 5) return 'bg-orange-500/10 text-orange-600 border-orange-500/40';
-		if (minutesToNextRace <= 10) return 'bg-yellow-500/10 text-yellow-600 border-yellow-500/40';
-		if (minutesToNextRace <= 30) return 'bg-green-500/10 text-green-600 border-green-500/40';
-		if (minutesToNextRace <= 60) return 'bg-blue-500/10 text-blue-600 border-blue-500/40';
+		if (minutesToNextRace <= 2) return 'bg-red-200/40 text-red-800 border-red-400/80';
+		if (minutesToNextRace <= 5) return 'bg-orange-200/40 text-orange-800 border-orange-400/80';
+		if (minutesToNextRace <= 10) return 'bg-yellow-200/40 text-yellow-800 border-yellow-400/80';
+		if (minutesToNextRace <= 30) return 'bg-green-200/40 text-green-800 border-green-400/80';
+		if (minutesToNextRace <= 60) return 'bg-blue-200/40 text-blue-800 border-blue-400/80';
 
-		return 'bg-gray-500/10 text-gray-600 border-gray-500/40';
+		return 'bg-gray-200/40 text-gray-800 border-gray-400/80';
 	};
 </script>
 
@@ -36,8 +45,23 @@
 {#if isSetDate}
 	<div>Set Date</div>
 {:else if minutesToNextRace}
-	<div class={cn('rounded-md border px-1 py-[1px] text-xs', getClassName())}>
-		{`${minutesToNextRace} minutes`}
+	<div
+		class={cn(
+			'flex flex-row items-center gap-1 rounded-md border px-[6px] py-[2px] text-xs',
+			getClassName()
+		)}
+	>
+		{#if minutesToNextRace <= 5}
+			<IconAlertTriangle class={iconBackClassName} />
+			<IconAlertTriangle class={iconClassName} />
+		{:else if minutesToNextRace <= 10}
+			<IconClock class={iconBackClassName} />
+			<IconClock class={iconClassName} />
+		{:else if minutesToNextRace <= 30}
+			<IconInfoCircle class={iconBackClassName} />
+			<IconInfoCircle class={iconClassName} />
+		{/if}
+		{`In ${minutesToNextRace} minutes`}
 	</div>
 {:else}
 	<div>Unknown</div>

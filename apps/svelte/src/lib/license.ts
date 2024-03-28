@@ -20,18 +20,18 @@ export const LicenseGroupNames = {
 
 export const LicenseColors = new Proxy(
 	{
-		[LicenseGroup.Rookie]: 'red-600',
-		[LicenseGroup.D]: 'orange-600',
-		[LicenseGroup.C]: 'yellow-600',
-		[LicenseGroup.B]: 'green-600',
-		[LicenseGroup.A]: 'blue-600',
-		[LicenseGroup.Pro]: 'fuchsia-600'
+		[LicenseGroup.Rookie]: 'red',
+		[LicenseGroup.D]: 'orange',
+		[LicenseGroup.C]: 'yellow',
+		[LicenseGroup.B]: 'green',
+		[LicenseGroup.A]: 'blue',
+		[LicenseGroup.Pro]: 'fuchsia'
 	},
 	{
 		// @ts-expect-error TODO
 		get: (target, key: License) => {
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-			return target[key] ?? 'gray-600';
+			return target[key] ?? 'gray';
 		}
 	}
 );

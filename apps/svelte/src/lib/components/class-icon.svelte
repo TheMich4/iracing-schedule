@@ -12,9 +12,9 @@
 
 <div
 	class={cn(
-		'flex w-fit items-center justify-center rounded-sm px-1 text-xs font-semibold text-white',
-		`border-${color} bg-${color}/10 border text-${color}`
+		'flex w-fit items-center justify-center rounded-sm px-[6px] py-[2px] text-xs',
+		`border-${color}-400/80 bg-${color}-200/40 border text-${color}-800`
 	)}
 >
-	{name.charAt(0)}
+	{name}
 </div>

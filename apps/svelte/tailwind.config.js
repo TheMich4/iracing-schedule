@@ -7,7 +7,7 @@ const config = {
 	safelist: [
 		'dark',
 		{
-			pattern: /(bg|border|text)-(red|orange|yellow|green|blue|fuchsia|gray)-(600).*/,
+			pattern: /(bg|border|text)-(red|orange|yellow|green|blue|fuchsia|gray)-(200|400|600|800).*/,
 			variants: ['hover']
 		}
 	],
