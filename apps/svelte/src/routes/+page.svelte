@@ -21,7 +21,7 @@
 						class="flex items-center opacity-60 transition hover:opacity-100 md:hidden"
 						on:click={sidebar.toggle}
 					>
-						<IconLayoutSidebarLeftExpand />
+						<IconLayoutSidebarLeftExpand class="size-4" />
 					</button>
 					<IconMinusVertical class="opacity-30" />
 				</div>
