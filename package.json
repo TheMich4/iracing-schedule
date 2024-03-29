@@ -12,5 +12,8 @@
     "app:dev": "bun run --cwd apps/next dev",
     "data:update": "bun run --cwd packages/data update",
     "svelte:dev": "bun run --cwd apps/svelte dev"
+  },
+  "dependencies": {
+    "mode-watcher": "^0.3.0"
   }
 }

@@ -6,6 +6,7 @@
 		IconMinusVertical
 	} from '@tabler/icons-svelte';
 
+	import ThemeSwitch from '$lib/components/theme-switch.svelte';
 	import sidebar from '$lib/store/sidebar.svelte';
 </script>
 
