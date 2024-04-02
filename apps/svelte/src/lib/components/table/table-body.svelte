@@ -9,7 +9,7 @@
 	{#each rows as row}
 		<tr class="border-b">
 			{#each columns as column (column.id)}
-				<td class="border-r last:border-r-0">
+				<td class={cn('border-r last:border-r-0', column.class)}>
 					<div class={cn('flex items-center gap-2 p-2', column.contentClass)}>
 						{#if column.Component}
 							<svelte:component this={column.Component} {column} {row} />

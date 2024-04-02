@@ -44,13 +44,15 @@ export const columns = [
 		id: 'series',
 		label: 'Series',
 		Icon: IconUsersGroup,
-		getValue: (row) => row.seriesName
+		getValue: (row) => row.seriesName,
+		class: 'w-[250px]'
 	},
 	{
 		id: 'track',
 		label: 'Track',
 		Icon: IconRoad,
 		getValue: (row) => row.track.trackName,
+		class: 'w-[300px]',
 		Component: CellTrack
 	},
 	{
@@ -61,6 +63,7 @@ export const columns = [
 			row.cars.length === 1
 				? row.cars[0].carName
 				: row.cars.map((car) => car.carNameAbbreviated).join(', '),
+		class: 'w-[300px]',
 		Component: CellCars
 	},
 	{
@@ -76,14 +79,14 @@ export const columns = [
 		label: 'Start Type',
 		Icon: IconArrowsUp,
 		getValue: (row) => row.startType,
-		class: 'w-28'
+		class: 'w-[110px]'
 	},
 	{
 		id: 'week',
 		label: 'Week',
 		Icon: IconCalendarWeek,
 		getValue: (row) => row.raceWeekNum,
-		class: 'w-[4.5rem]',
+		class: 'w-[4.65rem]',
 		contentClass: 'justify-center'
 	},
 	{
