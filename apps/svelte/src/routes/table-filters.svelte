@@ -10,15 +10,22 @@
 	// } from '@tabler/icons-svelte';
 	// import TableFiltersButton from './table-filters-button.svelte';
 
+	import DatePicker from '$lib/components/date-picker.svelte';
+
 	import schedule from '$lib/store/schedule.svelte';
+	console.log({ schedule });
 </script>
 
 <div class="flex items-center justify-between px-4 py-3">
 	<div class="flex items-center justify-center gap-2">
 		<input
-			class="shadown-sm placeholder:text-muted-foreground h-[30px] w-[250px] rounded-lg border border-stone-200/70 px-2 text-xs font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-stone-200 disabled:cursor-not-allowed disabled:opacity-50"
+			class="shadown-sm h-[30px] w-[250px] rounded-lg border border-stone-200/70 px-2 text-xs font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-stone-200 disabled:cursor-not-allowed disabled:opacity-50"
 			placeholder="Filter..."
 			bind:value={schedule.filter}
+		/>
+		<DatePicker
+			class="border-ston-200 h-[30px] text-xs font-normal tracking-tight shadow-sm"
+			bind:value={schedule.date}
 		/>
 		<!-- <TableFiltersButton>
 			<IconTable class="size-4 opacity-60" />
