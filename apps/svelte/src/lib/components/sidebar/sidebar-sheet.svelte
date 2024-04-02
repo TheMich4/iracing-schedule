@@ -6,7 +6,7 @@
 	export let onOpenChange: (value: boolean) => void;
 </script>
 
-<div><slot /></div>
+<div class="hidden lg:flex"><slot /></div>
 
 <div class="lg:hidden">
 	<Sheet.Root {open} {onOpenChange}>
