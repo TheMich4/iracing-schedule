@@ -191,7 +191,7 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -275,7 +275,7 @@
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -937,6 +937,18 @@
         "carId": 181,
         "rainEnabled": false,
         "retired": false
+      },
+      {
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
+        "rainEnabled": false,
+        "retired": false
       }
     ],
     "custId": 0,
@@ -1485,13 +1497,13 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "McLaren MP4-12C GT3",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "MP4-12C"
   },
@@ -1737,13 +1749,13 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -1851,13 +1863,13 @@
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ford GT GT3",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Ford GT GT3"
   },
@@ -2631,7 +2643,7 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -3525,13 +3537,13 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "fordgt\\gt3",
         "carId": 59,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -3549,7 +3561,7 @@
     ],
     "custId": 0,
     "name": "GT3 Class",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "GT3 Class"
   },
@@ -4009,7 +4021,7 @@
       {
         "carDirpath": "mclarenmp4",
         "carId": 43,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -4891,26 +4903,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\buicklesabre87",
-        "carId": 154,
+        "carDirpath": "stockcars\\chevycamarozl12022",
+        "carId": 139,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\chevymontecarlo87",
-        "carId": 124,
+        "carDirpath": "stockcars\\fordmustang2022",
+        "carId": 140,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\fordthunderbird87",
-        "carId": 125,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\pontiacgrandprix87",
-        "carId": 175,
+        "carDirpath": "stockcars\\toyotacamry2022",
+        "carId": 141,
         "rainEnabled": false,
         "retired": false
       }
@@ -4989,15 +4995,39 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "superformulalights324",
-        "carId": 178,
-        "rainEnabled": true,
+        "carDirpath": "amvantagegt4",
+        "carId": 150,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche718gt4",
+        "carId": 119,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "mclaren570sgt4",
+        "carId": 135,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt4",
+        "carId": 122,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamggt4",
+        "carId": 157,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Special2024",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Special2024"
   },
@@ -5005,8 +5035,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "ligierjsp320",
-        "carId": 165,
+        "carDirpath": "lotus79",
+        "carId": 25,
         "rainEnabled": false,
         "retired": false
       }
@@ -5053,8 +5083,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\winged",
-        "carId": 180,
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
         "rainEnabled": false,
         "retired": false
       }
@@ -5078,7 +5108,7 @@
     "custId": 0,
     "name": "Dirt Micro Sprint Car - Winged",
     "rainEnabled": false,
-    "relativeSpeed": 45,
+    "relativeSpeed": 42,
     "shortName": "DMS Winged"
   },
   "4053": {
@@ -5094,15 +5124,15 @@
     "custId": 0,
     "name": "Dirt Micro Sprint Car - Non-Winged",
     "rainEnabled": false,
-    "relativeSpeed": 35,
+    "relativeSpeed": 32,
     "shortName": "DMS Non-Winged"
   },
   "4054": {
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwz4gt3",
-        "carId": 55,
+        "carDirpath": "bmwm8gte",
+        "carId": 109,
         "rainEnabled": false,
         "retired": false
       }
@@ -5150,7 +5180,7 @@
     "custId": 0,
     "name": "NECGT324",
     "rainEnabled": true,
-    "relativeSpeed": 100,
+    "relativeSpeed": 52,
     "shortName": "NECGT324"
   },
   "4056": {
@@ -5178,7 +5208,7 @@
     "custId": 0,
     "name": "NECGT424",
     "rainEnabled": false,
-    "relativeSpeed": 100,
+    "relativeSpeed": 49,
     "shortName": "NECGT424"
   },
   "4057": {
@@ -5200,7 +5230,39 @@
     "custId": 0,
     "name": "NECTCR24",
     "rainEnabled": false,
-    "relativeSpeed": 100,
+    "relativeSpeed": 45,
     "shortName": "NECTCR24"
+  },
+  "4058": {
+    "carClassId": 4058,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Dirt Outlaw Micro Sprint Car - Winged",
+    "rainEnabled": false,
+    "relativeSpeed": 45,
+    "shortName": "Outlaw - Winged"
+  },
+  "4059": {
+    "carClassId": 4059,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Dirt Outlaw Micro Sprint Car - Non-Winged",
+    "rainEnabled": false,
+    "relativeSpeed": 35,
+    "shortName": "Outlaw NonWinged"
   }
 }
