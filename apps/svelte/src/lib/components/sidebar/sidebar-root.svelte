@@ -6,8 +6,9 @@
 	import SidebarQuickActions from './sidebar-quick-actions.svelte';
 	import * as Accordion from '$lib/components/ui/accordion';
 	import SidebarAssets from './sidebar-assets.svelte';
-	import SidebarLists from './sidebar-lists.svelte';
+	// import SidebarLists from './sidebar-lists.svelte';
 	import SidebarSheet from './sidebar-sheet.svelte';
+	import SidebarCategories from './sidebar-categories.svelte';
 
 	import sidebar from '$lib/store/sidebar.svelte.js';
 </script>
@@ -31,13 +32,16 @@
 			<SidebarQuickActions />
 		</div>
 
-		<!-- <Accordion.Root multiple={true} value={['assets', 'lists']}>
+		<Accordion.Root multiple={true} value={['categories', 'assets', 'lists']}>
+			<div class="p-2">
+				<SidebarCategories />
+			</div>
 			<div class="p-2">
 				<SidebarAssets />
 			</div>
-			<div class="p-2">
+			<!-- <div class="p-2">
 				<SidebarLists />
-			</div>
-		</Accordion.Root> -->
+			</div> -->
+		</Accordion.Root>
 	</ScrollArea>
 </SidebarSheet>
