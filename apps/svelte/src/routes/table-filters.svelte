@@ -19,12 +19,12 @@
 
 <div class="flex items-center justify-between px-4 py-3">
 	<div class="flex items-center justify-center gap-2">
-		<input
+		<!-- <input
 			class="shadown-sm placeholder:text-muted-foreground h-[30px] w-[250px] rounded-lg border border-stone-200/70 px-2 text-xs font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-stone-200 disabled:cursor-not-allowed disabled:opacity-50"
 			placeholder="Filter..."
 			bind:value={schedule.filter}
 			type="text"
-		/>
+		/> -->
 		<DatePicker
 			class="border-ston-200 h-[30px] text-xs font-normal tracking-tight shadow-sm"
 			bind:value={schedule.date}

@@ -32,6 +32,6 @@
 		</Button>
 	</Popover.Trigger>
 	<Popover.Content class="w-auto p-0" align="start">
-		<Calendar bind:value />
+		<Calendar bind:value preventDeselect={true} />
 	</Popover.Content>
 </Popover.Root>
