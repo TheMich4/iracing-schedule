@@ -3,8 +3,14 @@
 	import Table from '$lib/components/table/table.svelte';
 	import { columns } from './columns';
 	import TableFilters from './table-filters.svelte';
+	import { getScheduleState } from '$lib/store/schedule.svelte';
+	import { getPreviousTuesdayString } from '@iracing-schedule/utils';
 
-	export let data;
+	let schedule = getScheduleState();
+
+	let { data } = $props();
+
+	let weekData = $derived(data.schedule[getPreviousTuesdayString(schedule.date)]);
 </script>
 
 <div class="h-screen">
@@ -15,7 +21,7 @@
 			<TableFilters />
 
 			<div class="relative h-full w-full flex-1 overflow-auto px-4">
-				<Table rows={data.weekData} {columns} />
+				<Table rows={weekData} {columns} />
 			</div>
 		</div>
 	</div>
