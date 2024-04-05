@@ -24,9 +24,9 @@
 			<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
 		</div>
 
-		<div class="mt-1 p-2">
+		<!-- <div class="mt-1 p-2">
 			<SidebarSearch />
-		</div>
+		</div> -->
 
 		<div class="mb-4 p-2">
 			<SidebarQuickActions />
