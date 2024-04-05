@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		IconDotsVertical,
 		IconCalendarEvent,
@@ -8,6 +8,8 @@
 
 	import ThemeSwitch from '$lib/components/theme-switch.svelte';
 	import sidebar from '$lib/store/sidebar.svelte';
+
+	export let title: string;
 </script>
 
 <div class="border-b-[1px] border-stone-200 p-2 px-4">
@@ -40,7 +42,7 @@
 
 				<div class="flex items-center gap-1">
 					<IconCalendarEvent class="size-4" />
-					<span class="font-semibold">Schedule</span>
+					<span class="font-semibold">{title}</span>
 				</div>
 			</div>
 		</div>

@@ -14,7 +14,7 @@
 </script>
 
 <div class="h-screen">
-	<PageHeader />
+	<PageHeader title="Schedule" />
 
 	<div class="h-[calc(100%-42px)] flex-1 overflow-hidden">
 		<div class="flex h-full flex-col">
