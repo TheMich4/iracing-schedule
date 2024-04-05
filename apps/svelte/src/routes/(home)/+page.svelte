@@ -2,7 +2,7 @@
 	import PageHeader from '@/components/page-header';
 	import Table from '$lib/components/table/table.svelte';
 	import { columns } from './columns';
-	import TableFilters from './table-filters.svelte';
+	import TableFilters from '$lib/components/table/table-filters.svelte';
 	import { getScheduleState } from '$lib/store/schedule.svelte';
 	import { getPreviousTuesdayString } from '@iracing-schedule/utils';
 
