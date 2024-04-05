@@ -2,8 +2,8 @@
 	import PageHeader from '@/components/page-header/page-header.svelte';
 	import TableFilters from '@/components/table/table-filters.svelte';
 	import Table from '@/components/table/table.svelte';
+	import { columns } from './schedule-page-columns';
 
-	export let columns: Array<Record<string, any>> = [];
 	export let data: Array<Record<string, any>> = [];
 	export let title: string;
 </script>
