@@ -3,6 +3,8 @@ export const Categories = {
   ROAD: "Road",
   DIRT_OVAL: "Dirt Oval",
   DIRT_ROAD: "Dirt Road",
+  SPORTS_CAR: "Sports Car",
+  FORMULA_CAR: "Formula Car",
 };
 
 export const categories = [
@@ -10,6 +12,8 @@ export const categories = [
   Categories.ROAD,
   Categories.DIRT_OVAL,
   Categories.DIRT_ROAD,
+  Categories.SPORTS_CAR,
+  Categories.FORMULA_CAR,
 ];
 
 export const categoryToName = {
@@ -17,4 +21,6 @@ export const categoryToName = {
   ["road"]: Categories.ROAD,
   ["dirt_oval"]: Categories.DIRT_OVAL,
   ["dirt_road"]: Categories.DIRT_ROAD,
+  ["sports_car"]: Categories.SPORTS_CAR,
+  ["formula_car"]: Categories.FORMULA_CAR,
 };

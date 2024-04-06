@@ -1,4 +1,4 @@
-import seasonsData from '$lib/seasons-data.json';
+import { seasonsData } from '@iracing-schedule/data';
 
 export function load() {
 	return {

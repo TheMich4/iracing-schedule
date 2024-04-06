@@ -1,65 +1,13 @@
 /* eslint-disable @typescript-eslint/consistent-indexed-object-style */
 
-import {
-  type RaceTimeDescriptor,
-  type CarRestriction,
-  type SeriesSeason,
-  type Track,
-  type Car,
-  type CarClass,
-} from "iracing-api";
-
-export interface SeasonData {
-  carClassIds: number[];
-  carIds: number[];
-  cars: {
-    carId: number;
-    carName: string;
-    carNameAbbreviated: string;
-    packageId: number;
-  }[];
-  fixedSetup: boolean;
-  hasFreeCar: boolean;
-  incidentLimit: number;
-  licenseGroup: number;
-  multiclass: boolean;
-  official: boolean;
-  scheduleDescription: string;
-  seasonId: number;
-  seasonName: string;
-  seasonQuarter: number;
-  seasonYear: number;
-  seriesId: number;
-}
-
-export interface ScheduleData {
-  carRestrictions: CarRestriction[];
-  category: string;
-  categoryId: number;
-  raceLapLimit: number | null;
-  raceTimeDescriptors: RaceTimeDescriptor[];
-  raceTimeLimit: number | null;
-  raceWeekNum: number;
-  restartType: string;
-  seriesName: string;
-  startDate: string;
-  startType: string;
-  track: SeriesSeason["schedules"][0]["track"] & { isFree: boolean };
-  weather: SeriesSeason["schedules"][0]["weather"];
-  week: number;
-}
-
-export type ParsedData = SeasonData & ScheduleData;
-
-export interface ParsedSeasonsData {
-  [startDate: string]: ParsedData[];
-}
+import type { SeriesSeason, Track, Car, CarClass } from "iracing-api";
+import type { ParsedSeasonsData, SeasonData } from "./types/schedule.ts";
 
 export const parseSeasons = (
   seasons: SeriesSeason[],
   trackData: Record<string, Track>,
   carData: Record<string, Car>,
-  carClassData: Record<string, CarClass>
+  carClassData: Record<string, CarClass>,
 ) => {
   const parsed: ParsedSeasonsData = {};
 
@@ -74,7 +22,7 @@ export const parseSeasons = (
       return [...acc, ...carClass.carsInClass.map((car) => car.carId)];
     }, [] as number[]);
     const hasFreeCar = carIds.some(
-      (carId) => carData[carId]?.freeWithSubscription ?? false
+      (carId) => carData[carId]?.freeWithSubscription ?? false,
     );
 
     const cars = carIds.map((carId) => {

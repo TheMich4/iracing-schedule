@@ -19,7 +19,7 @@ import CellCheck from '$lib/components/schedule-table/cell-check.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import CellTrack from '$lib/components/schedule-table/cell-track.svelte';
-import { categoryToName } from '../../lib/category';
+import { categoryToName } from '$lib/category';
 
 export const columns = [
 	{
