@@ -4,6 +4,7 @@
 	import SportsCarIcon from '$lib/icons/sports-car-icon.svelte';
 	import DirtOvalIcon from '$lib/icons/dirt-oval-icon.svelte';
 	import DirtRoadIcon from '$lib/icons/dirt-road-icon.svelte';
+	import FormulaCarIcon from '$lib/icons/formula-car-icon.svelte';
 
 	export let column: Record<string, any>;
 	export let row: Record<string, any>;
@@ -14,8 +15,10 @@
 <div class="category flex flex-row items-center gap-2">
 	{#if category === Categories.OVAL}
 		<svelte:component this={OvalIcon} />
-	{:else if category === Categories.ROAD}
+	{:else if category === Categories.SPORTS_CAR}
 		<svelte:component this={SportsCarIcon} />
+		{:else if category === Categories.FORMULA_CAR}
+		<svelte:component this={FormulaCarIcon} />
 	{:else if category === Categories.DIRT_OVAL}
 		<svelte:component this={DirtOvalIcon} />
 	{:else if category === Categories.DIRT_ROAD}
