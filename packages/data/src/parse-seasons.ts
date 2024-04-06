@@ -34,6 +34,8 @@ export interface SeasonData {
 
 export interface ScheduleData {
   carRestrictions: CarRestriction[];
+  category: string;
+  categoryId: number;
   raceLapLimit: number | null;
   raceTimeDescriptors: RaceTimeDescriptor[];
   raceTimeLimit: number | null;
@@ -113,6 +115,8 @@ export const parseSeasons = (
           ...seasonData,
 
           carRestrictions: schedule.carRestrictions,
+          category: schedule.category,
+          categoryId: schedule.categoryId,
           raceLapLimit: schedule.raceLapLimit,
           raceTimeDescriptors: schedule.raceTimeDescriptors,
           raceTimeLimit: schedule.raceTimeLimit,
