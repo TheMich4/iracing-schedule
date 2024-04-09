@@ -5,6 +5,7 @@ import {
 	IconCarCrash,
 	IconCarGarage,
 	IconClock,
+	IconCloudRain,
 	IconGps,
 	IconRoad,
 	IconSchool,
@@ -118,10 +119,16 @@ export const columns: Column[] = [
 	},
 	{
 		Icon: IconCarCrash,
-		class: 'w-[5.75rem]',
-		contentClass: 'justify-center',
+		class: 'w-[4.5rem]',
 		getValue: (row) => row.incidentLimit,
 		id: 'maxIncidents',
 		label: 'Max Inc'
+	},
+	{
+		Icon: IconCloudRain,
+		class: 'w-[3.5rem]',
+		getValue: (row) => `${row.weather?.weatherSummary?.maxPrecipRate ?? 0}%`,
+		id: 'rain',
+		label: 'Rain'
 	}
 ];
