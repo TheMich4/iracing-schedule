@@ -7,9 +7,9 @@
 	export let column: Column;
 	export let row: WeekEntry;
 
-	const licenseGroup = column.getValue(row) as License;
-	const name = LicenseGroupNames[licenseGroup];
-	const color = LicenseColors[licenseGroup];
+	$: licenseGroup = column.getValue(row) as License;
+	$: className = LicenseGroupNames[licenseGroup];
+	$: color = LicenseColors[licenseGroup];
 </script>
 
 <div
@@ -18,5 +18,5 @@
 		`border-${color}-400/80 bg-${color}-200/40 border text-${color}-800`
 	)}
 >
-	{name}
+	{className}
 </div>

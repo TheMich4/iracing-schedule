@@ -1,7 +1,7 @@
 import type { RaceTimeDescriptor } from 'iracing-api';
 import { nearestFutureDate } from '../date';
 
-export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor) => {
+export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor, startDate: string) => {
 	const { repeatMinutes, firstSessionTime, sessionTimes } = raceTimeDescriptor;
 
 	if (sessionTimes) {
@@ -19,7 +19,7 @@ export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor) => {
 		m = +start.at(1)!;
 
 	do {
-		const d = new Date();
+		const d = new Date(startDate);
 		d.setUTCHours(h);
 		d.setMinutes(m);
 		d.setSeconds(0);
@@ -39,6 +39,8 @@ export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor) => {
 };
 
 export const getMinutesToNextRace = (times: Array<Date>) => {
+	if (!times || times.length === 0) return undefined;
+
 	const time = new Date();
 	const index = nearestFutureDate(times, time);
 

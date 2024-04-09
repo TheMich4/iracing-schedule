@@ -11,7 +11,7 @@
 	export let column: Column;
 	export let row: WeekEntry;
 
-	const category = column.getValue(row);
+	$: category = column.getValue(row);
 </script>
 
 <div class="category flex flex-row items-center gap-2">

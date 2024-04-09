@@ -6,11 +6,11 @@
 	export let column: Column;
 	export let row: WeekEntry;
 
-	const track: string = column.getValue(row);
+	$: track = column.getValue(row);
 </script>
 
 <div class="group flex flex-row flex-wrap items-baseline gap-1 text-wrap">
-	{#if row.track.isFree}
+	{#if track.isFree}
 		<FreeIcon />
 	{/if}
 

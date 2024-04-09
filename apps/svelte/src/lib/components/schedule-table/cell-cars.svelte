@@ -7,7 +7,7 @@
 	export let column: Column;
 	export let row: WeekEntry;
 
-	const cars = column.getValue(row);
+	$: cars = column.getValue(row);
 </script>
 
 <HoverCard.Root>

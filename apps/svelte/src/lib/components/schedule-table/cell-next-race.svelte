@@ -7,12 +7,12 @@
 
 	export let row: WeekEntry;
 
-	const times = getRaceTimes(row.raceTimeDescriptors[0]);
+	$: times = getRaceTimes(row.raceTimeDescriptors[0], row.startDate);
 
 	const iconBackClassName = 'absolute size-[10px]';
 	const iconClassName = 'size-[10px] animate-[ping_1.25s_ease-in-out_infinite] opacity-80';
 
-	let minutesToNextRace = getMinutesToNextRace(times);
+	$: minutesToNextRace = getMinutesToNextRace(times);
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -35,7 +35,7 @@
 	};
 </script>
 
-{#if minutesToNextRace}
+{#if minutesToNextRace !== undefined}
 	<div
 		class={cn(
 			'flex flex-row items-center gap-1 rounded-md border px-[6px] py-[2px] text-xs',

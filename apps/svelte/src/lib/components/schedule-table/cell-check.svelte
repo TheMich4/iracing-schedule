@@ -6,7 +6,7 @@
 	export let column: Column;
 	export let row: WeekEntry;
 
-	const isChecked = column.getValue(row);
+	$: isChecked = column.getValue(row);
 </script>
 
 {#if isChecked}
