@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/consistent-indexed-object-style */
 
 import type { SeriesSeason, Track, Car, CarClass } from "iracing-api";
-import type { SeasonSchedule, SeasonData } from "./types/schedule.ts";
+import type { SeasonSchedule, SeasonData } from "./types";
 
 export const parseSeasons = (
   seasons: SeriesSeason[],

@@ -1,8 +1,10 @@
 <script lang="ts">
 	import FreeIcon from '../free-icon.svelte';
+	import type { WeekEntry } from '@iracing-schedule/data';
+	import type { Column } from '@/templates/column';
 
-	export let column: Record<string, any>;
-	export let row: Record<string, any>;
+	export let column: Column;
+	export let row: WeekEntry;
 
 	const track: string = column.getValue(row);
 </script>

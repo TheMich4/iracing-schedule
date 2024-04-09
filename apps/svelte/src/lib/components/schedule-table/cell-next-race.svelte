@@ -3,11 +3,12 @@
 	import { getMinutesToNextRace, getRaceTimes } from '../next-race';
 	import { cn } from '../../utils';
 	import { IconAlertTriangle, IconClock, IconInfoCircle } from '@tabler/icons-svelte';
+	import type { WeekEntry } from '@iracing-schedule/data';
 
-	export let column: Record<string, any>;
-	export let row: Record<string, any>;
+	export let row: WeekEntry;
 
-	const isSetDate = row.raceTimeDescriptors.some((t: any) => t.sessionTimes || !t.repeating);
+	const x = row.raceTimeDescriptors.some((t) => t.sessionTimes || !t.repeating);
+	const isSetDate = false;
 	const times = getRaceTimes(row.raceTimeDescriptors[0]);
 
 	const iconBackClassName = 'absolute size-[10px]';
@@ -18,10 +19,14 @@
 	onMount(() => {
 		const interval = setInterval(() => {
 			minutesToNextRace = getMinutesToNextRace(times);
-		}, 30000);
+		}, 10000);
 
 		return () => clearInterval(interval);
 	});
+
+	if (x) {
+		console.log('setDate', { isSetDate, row, times });
+	}
 
 	const getClassName = () => {
 		if (!minutesToNextRace) return '';
@@ -56,7 +61,13 @@
 			<IconInfoCircle class={iconBackClassName} />
 			<IconInfoCircle class={iconClassName} />
 		{/if}
-		{`In ${minutesToNextRace} minutes`}
+		{#if minutesToNextRace <= 1}
+			{`Starting now`}
+		{:else if minutesToNextRace >= 60 * 24}
+			{`In ${Math.floor(minutesToNextRace / 60 / 24)} day${Math.floor(minutesToNextRace / 60 / 24) > 1 ? 's' : ''}`}
+		{:else}
+			{`In ${minutesToNextRace} minutes`}
+		{/if}
 	</div>
 {:else}
 	<div>Unknown</div>

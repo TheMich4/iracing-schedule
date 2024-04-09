@@ -1,11 +1,13 @@
 <script lang="ts">
 	import { LicenseGroupNames, type License, LicenseColors } from '../../license';
 	import { cn } from '../../utils';
+	import type { Column } from '@/templates/column';
+	import type { WeekEntry } from '@iracing-schedule/data';
 
-	export let column: Record<string, any>;
-	export let row: Record<string, any>;
+	export let column: Column;
+	export let row: WeekEntry;
 
-	const licenseGroup: License = column.getValue(row);
+	const licenseGroup = column.getValue(row) as License;
 	const name = LicenseGroupNames[licenseGroup];
 	const color = LicenseColors[licenseGroup];
 </script>

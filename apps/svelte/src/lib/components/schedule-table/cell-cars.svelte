@@ -1,11 +1,13 @@
 <script lang="ts">
 	import * as HoverCard from '$lib/components/ui/hover-card';
 	import FreeIcon from '../free-icon.svelte';
+	import type { WeekEntry } from '@iracing-schedule/data';
+	import type { Column } from '@/templates/column';
 
-	export let column: Record<string, any>;
-	export let row: Record<string, any>;
+	export let column: Column;
+	export let row: WeekEntry;
 
-	const cars: string = column.getValue(row);
+	const cars = column.getValue(row);
 </script>
 
 <HoverCard.Root>

@@ -20,18 +20,7 @@ import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import CellTrack from '$lib/components/schedule-table/cell-track.svelte';
 import { categoryToName } from '$lib/category';
-import type { WeekEntry } from '@iracing-schedule/data';
-import type { ComponentType } from 'svelte';
-
-interface Column {
-	Component?: ComponentType;
-	Icon: ComponentType;
-	class?: string;
-	contentClass?: string;
-	getValue: (row: WeekEntry) => string | number | boolean;
-	id: string;
-	label: string;
-}
+import type { Column } from '@/templates/column';
 
 export const columns: Column[] = [
 	{

@@ -1,12 +1,14 @@
+import type { RaceTimeDescriptor } from 'iracing-api';
 import { nearestFutureDate } from '../date';
 
-export const getRaceTimes = (raceTimeDescriptor: {
-	repeatMinutes: number;
-	firstSessionTime: string;
-}) => {
-	const { repeatMinutes, firstSessionTime } = raceTimeDescriptor;
+export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor) => {
+	const { repeatMinutes, firstSessionTime, sessionTimes } = raceTimeDescriptor;
 
-	if (!firstSessionTime) return [];
+	if (sessionTimes) {
+		return sessionTimes.map((sessionTime) => new Date(sessionTime));
+	}
+
+	if (!firstSessionTime || !repeatMinutes) return [];
 
 	const start = firstSessionTime.split(':');
 	const hToAdd = Math.floor(repeatMinutes / 60);
