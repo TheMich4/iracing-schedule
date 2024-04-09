@@ -13,6 +13,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "iracing-api": "^0.4.1"
+    "iracing-api": "^0.4.3"
   }
 }

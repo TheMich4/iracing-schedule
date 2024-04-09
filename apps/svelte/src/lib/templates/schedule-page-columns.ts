@@ -20,107 +20,119 @@ import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import CellTrack from '$lib/components/schedule-table/cell-track.svelte';
 import { categoryToName } from '$lib/category';
+import type { WeekEntry } from '@iracing-schedule/data';
+import type { ComponentType } from 'svelte';
 
-export const columns = [
+interface Column {
+	Component?: ComponentType;
+	Icon: ComponentType;
+	class?: string;
+	contentClass?: string;
+	getValue: (row: WeekEntry) => string | number | boolean;
+	id: string;
+	label: string;
+}
+
+export const columns: Column[] = [
 	{
-		id: 'class',
-		label: 'Class',
+		Component: CellClassIcon,
 		Icon: IconSchool,
-		getValue: (row) => row.licenseGroup,
 		class: 'w-[4.75rem]',
 		contentClass: 'justify-center',
-		Component: CellClassIcon
+		getValue: (row) => row.licenseGroup,
+		id: 'class',
+		label: 'Class'
 	},
 	{
-		id: 'category',
-		label: 'Category',
+		Component: CellCategory,
 		Icon: IconGps,
-		getValue: (row) => categoryToName[row.category as keyof typeof categoryToName] ?? 'Unknown',
 		class: 'w-[6.25rem]',
-		Component: CellCategory
+		getValue: (row) => categoryToName[row.category as keyof typeof categoryToName] ?? 'Unknown',
+		id: 'category',
+		label: 'Category'
 	},
 	{
-		id: 'series',
-		label: 'Series',
 		Icon: IconUsersGroup,
+		class: 'w-[250px]',
 		getValue: (row) => row.seriesName,
-		class: 'w-[250px]'
+		id: 'series',
+		label: 'Series'
 	},
 	{
-		id: 'track',
-		label: 'Track',
+		Component: CellTrack,
 		Icon: IconRoad,
-		getValue: (row) => row.track.trackName,
 		class: 'w-[300px]',
-		Component: CellTrack
+		getValue: (row) => row.track.trackName,
+		id: 'track',
+		label: 'Track'
 	},
 	{
-		id: 'cars',
-		label: 'Cars',
+		Component: CellCars,
 		Icon: IconCar,
+		class: 'w-[300px]',
 		getValue: (row) =>
 			row.cars.length === 1
 				? row.cars[0].carName
 				: row.cars.map((car) => car.carNameAbbreviated).join(', '),
-		class: 'w-[300px]',
-		Component: CellCars
+		id: 'cars',
+		label: 'Cars'
 	},
 	{
-		id: 'nextRace',
-		label: 'Next Race',
+		Component: CellNextRace,
 		Icon: IconClock,
-		getValue: () => '',
 		class: 'w-36',
-		Component: CellNextRace
+		getValue: () => '',
+		id: 'nextRace',
+		label: 'Next Race'
 	},
 	{
-		id: 'startType',
-		label: 'Start Type',
 		Icon: IconArrowsUp,
+		class: 'w-[110px]',
 		getValue: (row) => row.startType,
-		class: 'w-[110px]'
+		id: 'startType',
+		label: 'Start Type'
 	},
 	{
-		id: 'week',
-		label: 'Week',
 		Icon: IconCalendarWeek,
-		getValue: (row) => row.raceWeekNum,
 		class: 'w-[4.65rem]',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		getValue: (row) => row.raceWeekNum,
+		id: 'week',
+		label: 'Week'
 	},
 	{
-		id: 'official',
-		label: 'Official',
+		Component: CellCheck,
 		Icon: IconStars,
-		getValue: (row) => row.official,
-		Component: CellCheck,
 		class: 'w-[5.25rem]',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		getValue: (row) => row.official,
+		id: 'official',
+		label: 'Official'
 	},
 	{
-		id: 'fixed',
-		label: 'Fixed',
+		Component: CellCheck,
 		Icon: IconTool,
-		getValue: (row) => row.fixedSetup,
-		Component: CellCheck,
 		class: 'w-[4.75rem]',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		getValue: (row) => row.fixedSetup,
+		id: 'fixed',
+		label: 'Fixed'
 	},
 	{
-		id: 'multiClass',
-		label: 'Multi',
-		Icon: IconCarGarage,
-		getValue: (row) => row.multiclass,
 		Component: CellCheck,
+		Icon: IconCarGarage,
 		class: 'w-[4.25rem]',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		getValue: (row) => row.multiclass,
+		id: 'multiClass',
+		label: 'Multi'
 	},
 	{
-		id: 'maxIncidents',
-		label: 'Max Inc',
 		Icon: IconCarCrash,
-		getValue: (row) => row.incidentLimit,
 		class: 'w-[5.75rem]',
-		contentClass: 'justify-center'
+		contentClass: 'justify-center',
+		getValue: (row) => row.incidentLimit,
+		id: 'maxIncidents',
+		label: 'Max Inc'
 	}
 ];

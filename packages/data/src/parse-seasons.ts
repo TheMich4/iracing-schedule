@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/consistent-indexed-object-style */
 
 import type { SeriesSeason, Track, Car, CarClass } from "iracing-api";
-import type { ParsedSeasonsData, SeasonData } from "./types/schedule.ts";
+import type { SeasonSchedule, SeasonData } from "./types/schedule.ts";
 
 export const parseSeasons = (
   seasons: SeriesSeason[],
@@ -9,7 +9,7 @@ export const parseSeasons = (
   carData: Record<string, Car>,
   carClassData: Record<string, CarClass>,
 ) => {
-  const parsed: ParsedSeasonsData = {};
+  const parsed: SeasonSchedule = {};
 
   for (const season of seasons) {
     const carClassIds = season.carClassIds ?? [];

@@ -44,8 +44,9 @@ export interface ScheduleData {
   week: number;
 }
 
-export type ParsedData = SeasonData & ScheduleData;
+export type WeekEntry = SeasonData & ScheduleData;
+export type WeekSchedule = WeekEntry[];
 
-export interface ParsedSeasonsData {
-  [startDate: string]: ParsedData[];
+export interface SeasonSchedule {
+  [startDate: string]: WeekSchedule;
 }
