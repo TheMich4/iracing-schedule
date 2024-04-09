@@ -27,8 +27,13 @@ export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor) => {
 		h = h + hToAdd;
 		m = m + mToAdd;
 
+		if (m >= 60) {
+			m = m - 60;
+			h = h + 1;
+		}
+
 		times.push(d);
-	} while (h < 24 && m < 60);
+	} while (h <= 24 && m <= 60);
 
 	return times;
 };

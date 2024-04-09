@@ -7,8 +7,6 @@
 
 	export let row: WeekEntry;
 
-	const x = row.raceTimeDescriptors.some((t) => t.sessionTimes || !t.repeating);
-	const isSetDate = false;
 	const times = getRaceTimes(row.raceTimeDescriptors[0]);
 
 	const iconBackClassName = 'absolute size-[10px]';
@@ -24,10 +22,6 @@
 		return () => clearInterval(interval);
 	});
 
-	if (x) {
-		console.log('setDate', { isSetDate, row, times });
-	}
-
 	const getClassName = () => {
 		if (!minutesToNextRace) return '';
 
@@ -41,10 +35,7 @@
 	};
 </script>
 
-<!-- TODO: Handle if race is on current day -->
-{#if isSetDate}
-	<div>Set Date</div>
-{:else if minutesToNextRace}
+{#if minutesToNextRace}
 	<div
 		class={cn(
 			'flex flex-row items-center gap-1 rounded-md border px-[6px] py-[2px] text-xs',
