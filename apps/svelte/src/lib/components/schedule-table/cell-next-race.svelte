@@ -23,7 +23,7 @@
 	});
 
 	const getClassName = () => {
-		if (!minutesToNextRace) return '';
+		if (minutesToNextRace === undefined) return '';
 
 		if (minutesToNextRace <= 2) return 'bg-red-200/40 text-red-800 border-red-400/80';
 		if (minutesToNextRace <= 5) return 'bg-orange-200/40 text-orange-800 border-orange-400/80';

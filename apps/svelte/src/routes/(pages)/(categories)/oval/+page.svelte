@@ -9,7 +9,7 @@
 
 	let weekData = $derived(
 		data.schedule[getPreviousTuesdayString(schedule.date)]?.filter(
-			(item) => item.track.category === 'oval'
+			(item) => item.category === 'oval'
 		)
 	);
 </script>

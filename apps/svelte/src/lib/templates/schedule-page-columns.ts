@@ -35,7 +35,7 @@ export const columns: Column[] = [
 	{
 		Component: CellCategory,
 		Icon: IconGps,
-		class: 'w-[6.25rem]',
+		class: 'w-[7rem]',
 		getValue: (row) => categoryToName[row.category as keyof typeof categoryToName] ?? 'Unknown',
 		id: 'category',
 		label: 'Category'
