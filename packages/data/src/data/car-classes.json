@@ -4903,20 +4903,8 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
+        "carDirpath": "stockcars\\impala",
+        "carId": 22,
         "rainEnabled": false,
         "retired": false
       }
@@ -4995,32 +4983,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "amvantagegt4",
-        "carId": 150,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche718gt4",
-        "carId": 119,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclaren570sgt4",
-        "carId": 135,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamggt4",
-        "carId": 157,
+        "carDirpath": "formulavee",
+        "carId": 142,
         "rainEnabled": false,
         "retired": false
       }
@@ -5035,8 +4999,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "lotus79",
-        "carId": 25,
+        "carDirpath": "hondacivictyper",
+        "carId": 147,
         "rainEnabled": false,
         "retired": false
       }
@@ -5083,8 +5047,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
@@ -5131,15 +5095,15 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
-        "rainEnabled": false,
+        "carDirpath": "bmwlmdh",
+        "carId": 159,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   },
