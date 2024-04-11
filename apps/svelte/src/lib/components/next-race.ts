@@ -1,6 +1,12 @@
 import type { RaceTimeDescriptor } from 'iracing-api';
 import { nearestFutureDate } from '../date';
 
+import { DateFormatter, type DateValue, getLocalTimeZone } from '@internationalized/date';
+
+const df = new DateFormatter('en-US', {
+	dateStyle: 'long'
+});
+
 export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor, startDate: string) => {
 	const { repeatMinutes, firstSessionTime, sessionTimes } = raceTimeDescriptor;
 
@@ -18,8 +24,12 @@ export const getRaceTimes = (raceTimeDescriptor: RaceTimeDescriptor, startDate: 
 	let h = +start.at(0)!,
 		m = +start.at(1)!;
 
+	const currentDate = new Date();
+	const raceDate =
+		new Date(startDate) < currentDate ? currentDate.toISOString().split('T')[0] : startDate;
+
 	do {
-		const d = new Date(startDate);
+		const d = new Date(raceDate);
 		d.setUTCHours(h);
 		d.setMinutes(m);
 		d.setSeconds(0);

@@ -7,8 +7,6 @@
 
 	let { data } = $props();
 
-	console.log({data})
-
 	let weekData = $derived(
 		data.schedule[getPreviousTuesdayString(schedule.date)]?.filter(
 			(item) => item.category === 'sports_car'
