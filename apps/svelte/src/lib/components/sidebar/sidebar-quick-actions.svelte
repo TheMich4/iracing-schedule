@@ -17,16 +17,16 @@
 		<IconCalendarEvent class="size-4 opacity-70" />
 		<span>Schedule</span>
 	</a>
-	<a
-		class={cn(
-			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/favorite' && 'active'
-		)}
-		href="/favorite"
-	>
-		<IconStar class="size-4 opacity-70" />
-		<span>Favorite</span>
-	</a>
+<!--	<a-->
+<!--		class={cn(-->
+<!--			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',-->
+<!--			currentRoute === '/favorite' && 'active'-->
+<!--		)}-->
+<!--		href="/favorite"-->
+<!--	>-->
+<!--		<IconStar class="size-4 opacity-70" />-->
+<!--		<span>Favorite</span>-->
+<!--	</a>-->
 </div>
 
 <style lang="pcss">

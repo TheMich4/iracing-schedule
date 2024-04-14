@@ -14,5 +14,5 @@
 	</div>
 </div>
 
-<!-- <ModeWatcher /> -->
+<!-- <ModeWatcher />-->
 <TailwindIndicator />

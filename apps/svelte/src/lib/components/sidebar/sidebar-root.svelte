@@ -11,6 +11,7 @@
 	import SidebarCategories from './sidebar-categories.svelte';
 
 	import sidebar from '$lib/store/sidebar.svelte.js';
+	// import ThemeSwitch from '../theme-switch.svelte';
 </script>
 
 <SidebarSheet open={sidebar.isOpen} onOpenChange={(v) => sidebar.setIsOpen(v)}>
@@ -28,7 +29,7 @@
 			<SidebarSearch />
 		</div> -->
 
-		<div class="mb-4 p-2">
+		<div class="p-2">
 			<SidebarQuickActions />
 		</div>
 
@@ -43,5 +44,7 @@
 				<SidebarLists />
 			</div> -->
 		</Accordion.Root>
+
+<!--		<ThemeSwitch />-->
 	</ScrollArea>
 </SidebarSheet>
