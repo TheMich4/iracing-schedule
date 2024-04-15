@@ -11,17 +11,17 @@
 	import SidebarCategories from './sidebar-categories.svelte';
 
 	import sidebar from '$lib/store/sidebar.svelte.js';
-	// import ThemeSwitch from '../theme-switch.svelte';
+	import ThemeSwitch from '../theme-switch.svelte';
 </script>
 
 <SidebarSheet open={sidebar.isOpen} onOpenChange={(v) => sidebar.setIsOpen(v)}>
 	<ScrollArea
 		class={cn(
-			'flex h-dvh flex-col gap-2 overflow-hidden border-r-[1px] border-stone-200 bg-stone-50',
+			'flex h-dvh flex-col gap-2 overflow-hidden border-r-[1px] border-border bg-stone-50 dark:bg-background',
 			sidebar.isCollapsed ? 'w-0' : 'w-full'
 		)}
 	>
-		<div class="sticky top-0 z-10 border-b-[1px] border-stone-200 bg-stone-50 p-2">
+		<div class="sticky top-0 z-10 border-b-[1px] border-border bg-stone-50 dark:bg-background p-2">
 			<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
 		</div>
 
@@ -45,6 +45,6 @@
 			</div> -->
 		</Accordion.Root>
 
-<!--		<ThemeSwitch />-->
+		<ThemeSwitch />
 	</ScrollArea>
 </SidebarSheet>

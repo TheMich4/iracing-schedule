@@ -11,7 +11,7 @@
 	export let title: string;
 </script>
 
-<div class="border-b-[1px] border-stone-200 p-2 px-4">
+<div class="border-b-[1px] border-border p-2 px-4">
 	<div class="flex items-center justify-between">
 		<div class="flex items-center gap-2">
 			<div class="flex items-center gap-2">

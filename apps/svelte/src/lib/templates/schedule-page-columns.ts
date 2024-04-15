@@ -119,7 +119,7 @@ export const columns: Column[] = [
 	},
 	{
 		Icon: IconCarCrash,
-		class: 'w-[4.5rem]',
+		class: 'w-[5rem]',
 		getValue: (row) => row.incidentLimit,
 		id: 'maxIncidents',
 		label: 'Max Inc'
