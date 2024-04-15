@@ -11,6 +11,7 @@
     "app:build": "bun run --cwd apps/next build",
     "app:dev": "bun run --cwd apps/next dev",
     "data:update": "bun run --cwd packages/data update",
+    "svelte:build": "bun run --cwd apps/svelte build",
     "svelte:dev": "bun run --cwd apps/svelte dev"
   },
   "dependencies": {
