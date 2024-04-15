@@ -8,7 +8,7 @@ const config = {
 		'dark',
 		{
 			pattern: /(bg|border|text)-(red|orange|yellow|green|blue|fuchsia|gray)-(200|400|600|800).*/,
-			variants: ['hover']
+			variants: ['hover', 'dark']
 		}
 	],
 	theme: {

@@ -15,7 +15,7 @@
 <div
 	class={cn(
 		'flex w-fit items-center justify-center rounded-sm px-[6px] py-[2px] text-xs',
-		`border-${color}-400/80 bg-${color}-200/40 border text-${color}-800`
+		`border-${color}-400/80 bg-${color}-200/40 border text-${color}-800 dark:text-${color}-400/80 dark:bg-${color}-800/20 dark:border-${color}-800`,
 	)}
 >
 	{className}
