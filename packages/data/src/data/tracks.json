@@ -22584,7 +22584,7 @@
     "hasOptPath": false,
     "hasShortParadeLap": false,
     "hasStartZone": false,
-    "hasSvgMap": false,
+    "hasSvgMap": true,
     "isDirt": false,
     "isOval": true,
     "isPsPurchasable": true,
