@@ -77,3 +77,22 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+::-webkit-scrollbar {
+	@apply w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	@apply rounded-md bg-muted-foreground/60 dark:bg-muted-foreground/40;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-muted-foreground/80 dark:bg-muted-foreground/60;
+}
