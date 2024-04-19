@@ -79,7 +79,7 @@
 }
 
 ::-webkit-scrollbar {
-	@apply w-2;
+	@apply h-2 w-2 bg-transparent;
 }
 
 /* Track */
@@ -95,4 +95,8 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	@apply bg-muted-foreground/80 dark:bg-muted-foreground/60;
+}
+
+::-webkit-scrollbar-corner {
+	@apply bg-transparent;
 }
