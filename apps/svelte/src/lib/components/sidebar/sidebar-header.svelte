@@ -7,7 +7,9 @@
 
 <div class="flex items-center justify-between gap-4 px-2">
 	<div class="flex items-center gap-2">
-		<div class="flex size-6 items-center justify-center rounded-md bg-gray-700 text-sm text-white">
+		<div
+			class="flex size-6 items-center justify-center rounded-md bg-gray-700 text-sm text-white dark:bg-muted-foreground/20"
+		>
 			is
 		</div>
 		<button class="flex items-center gap-1 text-sm font-semibold">
