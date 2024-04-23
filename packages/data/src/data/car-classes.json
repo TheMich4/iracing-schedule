@@ -4903,20 +4903,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "trucks\\fordf150",
-        "carId": 123,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\toyotatundra2022",
-        "carId": 155,
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\silverado2019",
-        "carId": 111,
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -4995,8 +5001,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "legends\\ford34c",
-        "carId": 5,
+        "carDirpath": "protrucks\\pro2truck",
+        "carId": 104,
         "rainEnabled": false,
         "retired": false
       }
@@ -5011,8 +5017,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
+        "carDirpath": "stockcarbrasil\\cruze",
+        "carId": 151,
         "rainEnabled": false,
         "retired": false
       }
@@ -5059,8 +5065,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
@@ -5107,15 +5113,15 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm4gt3",
-        "carId": 132,
-        "rainEnabled": true,
+        "carDirpath": "bmwz4gt3",
+        "carId": 55,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   },
