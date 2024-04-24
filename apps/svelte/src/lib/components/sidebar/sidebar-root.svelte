@@ -17,40 +17,42 @@
 <SidebarSheet open={sidebar.isOpen} onOpenChange={(v) => sidebar.setIsOpen(v)}>
 	<ScrollArea
 		class={cn(
-			'flex h-dvh flex-col justify-between gap-2 overflow-hidden border-r-[1px] border-border bg-stone-50 dark:bg-background',
+			'flex h-full flex-col justify-between gap-2 overflow-hidden border-r-[1px] border-border bg-stone-50 dark:bg-background',
 			sidebar.isCollapsed ? 'w-0' : 'w-full'
 		)}
 	>
-		<div class="flex flex-col">
-			<div
-				class="sticky top-0 z-10 border-b-[1px] border-border bg-stone-50 p-2 dark:bg-background"
-			>
-				<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
-			</div>
+		<div class="flex h-full flex-col justify-between gap-2">
+			<div class="flex flex-col">
+				<div
+					class="sticky top-0 z-10 border-b-[1px] border-border bg-stone-50 p-2 dark:bg-background"
+				>
+					<SidebarHeader toggleCollapse={sidebar.toggleCollapse} toggle={sidebar.toggle} />
+				</div>
 
-			<!-- <div class="mt-1 p-2">
+				<!-- <div class="mt-1 p-2">
 			<SidebarSearch />
 		</div> -->
 
-			<div class="p-2">
-				<SidebarQuickActions />
-			</div>
+				<div class="p-2">
+					<SidebarQuickActions />
+				</div>
 
-			<Accordion.Root multiple={true} value={['categories', 'assets', 'lists']}>
-				<div class="p-2">
-					<SidebarCategories />
-				</div>
-				<div class="p-2">
-					<SidebarAssets />
-				</div>
-				<!-- <div class="p-2">
+				<Accordion.Root multiple={true} value={['categories', 'assets', 'lists']}>
+					<div class="p-2">
+						<SidebarCategories />
+					</div>
+					<div class="p-2">
+						<SidebarAssets />
+					</div>
+					<!-- <div class="p-2">
 				<SidebarLists />
 			</div> -->
-			</Accordion.Root>
-		</div>
+				</Accordion.Root>
+			</div>
 
-		<div class="p-2">
-			<ThemeSwitch />
+			<div class="p-2">
+				<ThemeSwitch />
+			</div>
 		</div>
 	</ScrollArea>
 </SidebarSheet>
