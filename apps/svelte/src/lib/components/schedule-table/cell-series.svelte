@@ -18,7 +18,7 @@
 	};
 </script>
 
-<a class="inline-flex flex-row items-baseline gap-1" on:click={handleClick}>
+<a class="group inline-flex flex-row items-baseline gap-1" on:click={handleClick}>
 	{#if isFavorite}
 		<FavoriteIcon />
 	{/if}
