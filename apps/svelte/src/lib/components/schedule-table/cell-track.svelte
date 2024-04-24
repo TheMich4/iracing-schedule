@@ -1,7 +1,6 @@
 <script lang="ts">
 	import FreeIcon from '../free-icon.svelte';
 	import type { WeekEntry } from '@iracing-schedule/data';
-	import type { Column } from '@/templates/column';
 
 	export let row: WeekEntry;
 

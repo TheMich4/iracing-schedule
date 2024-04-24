@@ -20,6 +20,7 @@ import CellCheck from '$lib/components/schedule-table/cell-check.svelte';
 import CellClassIcon from '$lib/components/schedule-table/cell-class-icon.svelte';
 import CellNextRace from '$lib/components/schedule-table/cell-next-race.svelte';
 import CellTrack from '$lib/components/schedule-table/cell-track.svelte';
+import CellSeries from '$lib/components/schedule-table/cell-series.svelte';
 import { categoryToName } from '$lib/category';
 import type { Column } from '@/templates/column';
 
@@ -42,6 +43,7 @@ export const columns: Column[] = [
 		label: 'Category'
 	},
 	{
+		Component: CellSeries,
 		Icon: IconUsersGroup,
 		class: 'w-[250px]',
 		getValue: (row) => row.seriesName,
