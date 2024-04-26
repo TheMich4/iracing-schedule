@@ -11,4 +11,4 @@
 	let weekSchedule: WeekSchedule = $derived(data.schedule[getPreviousTuesdayString(schedule.date)]);
 </script>
 
-<SchedulePage data={weekSchedule} title="Schedule" />
+<SchedulePage data={weekSchedule} favorite={data.favorite} title="Schedule" />

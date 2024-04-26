@@ -5,6 +5,7 @@
 	import { columns } from './schedule-page-columns';
 
 	export let data: Array<Record<string, any>> = [];
+	export let favorite;
 	export let title: string;
 </script>
 
@@ -16,7 +17,7 @@
 			<TableFilters />
 
 			<div class="relative h-full w-full flex-1 overflow-auto px-4">
-				<Table rows={data} {columns} />
+				<Table rows={data} {columns} {favorite} />
 			</div>
 		</div>
 	</div>
