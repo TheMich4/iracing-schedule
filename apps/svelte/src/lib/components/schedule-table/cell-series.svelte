@@ -13,8 +13,15 @@
 
 	let isFavorite = $derived(favoriteState.series[row.seriesId] ?? false);
 
-	const handleClick = () => {
+	const handleClick = async () => {
 		favoriteState.toggleSeries(row.seriesId);
+
+		const x = await fetch('api/session/favorite', {
+			method: 'PUT',
+			body: JSON.stringify({ type: 'series', id: row.seriesId })
+		});
+
+		console.log({ x });
 	};
 </script>
 
