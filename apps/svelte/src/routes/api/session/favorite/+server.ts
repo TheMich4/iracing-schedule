@@ -7,7 +7,6 @@ export async function PUT({ locals, request }) {
 	try {
 		const { type, id } = await request.json();
 		const current = data.get(KEY);
-		console.log({ type, id, data, current });
 
 		data.set(KEY, {
 			[type]: {

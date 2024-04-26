@@ -15,9 +15,9 @@
 	<a
 		class={cn(
 			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/oval' && 'active'
+			currentRoute === '/category/oval' && 'active'
 		)}
-		href="/oval"
+		href="/category/oval"
 	>
 		<svelte:component this={OvalIcon} />
 		<span>Oval</span>
@@ -25,9 +25,9 @@
 	<a
 		class={cn(
 			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/sports-car' && 'active'
+			currentRoute === '/category/sports-car' && 'active'
 		)}
-		href="/sports-car"
+		href="/category/sports-car"
 	>
 		<svelte:component this={SportsCarIcon} />
 		<span>Sports Car</span>
@@ -35,9 +35,9 @@
 	<a
 		class={cn(
 			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/formula-car' && 'active'
+			currentRoute === '/category/formula-car' && 'active'
 		)}
-		href="/formula-car"
+		href="/category/formula-car"
 	>
 		<svelte:component this={FormulaCarIcon} />
 		<span>Formula Car</span>
@@ -45,9 +45,9 @@
 	<a
 		class={cn(
 			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/dirt-oval' && 'active'
+			currentRoute === '/category/dirt-oval' && 'active'
 		)}
-		href="/dirt-oval"
+		href="/category/dirt-oval"
 	>
 		<svelte:component this={DirtOvalIcon} />
 		<span>Dirt Oval</span>
@@ -55,9 +55,9 @@
 	<a
 		class={cn(
 			'flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium',
-			currentRoute === '/dirt-road' && 'active'
+			currentRoute === '/category/dirt-road' && 'active'
 		)}
-		href="/dirt-road"
+		href="/category/dirt-road"
 	>
 		<svelte:component this={DirtRoadIcon} />
 		<span>Dirt Road</span>

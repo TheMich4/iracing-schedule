@@ -12,9 +12,7 @@
 	let isFavorite = $state(favorite.series[row.seriesId] ?? false);
 
 	const handleClick = async () => {
-		console.log({ isFavorite, favorite, x: favorite.series[row.seriesId], id: row.seriesId });
-
-		await fetch('api/session/favorite', {
+		await fetch('/api/session/favorite', {
 			method: 'PUT',
 			body: JSON.stringify({ type: 'series', id: row.seriesId })
 		});

@@ -2,6 +2,7 @@
 	import SchedulePage from '@/templates/schedule-page.svelte';
 	import { getScheduleState } from '$lib/store/schedule.svelte';
 	import { getPreviousTuesdayString } from '@iracing-schedule/utils';
+	import { categoryToName } from '@iracing-schedule/data';
 
 	let schedule = getScheduleState();
 
@@ -9,9 +10,9 @@
 
 	let weekData = $derived(
 		data.schedule[getPreviousTuesdayString(schedule.date)]?.filter(
-			(item) => item.category === 'dirt_road'
+			(item) => item.category === data.category
 		)
 	);
 </script>
 
-<SchedulePage title="Dirt Road" data={weekData} />
+<SchedulePage title={categoryToName[data.category]} data={weekData} favorite={data.favorite} />
