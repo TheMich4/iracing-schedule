@@ -4,10 +4,11 @@
 	export let columns: any[] = [];
 	export let favorite;
 	export let rows: any[] = [];
+	console.log({ rows });
 </script>
 
 <tbody>
-	{#each rows as row}
+	{#each rows as row (row.seriesId)}
 		<tr class="border-b">
 			{#each columns as column (column.id)}
 				<td class={cn('border-r last:border-r-0', column.class)}>
