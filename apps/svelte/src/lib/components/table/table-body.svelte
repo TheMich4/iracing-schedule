@@ -4,7 +4,6 @@
 	export let columns: any[] = [];
 	export let favorite;
 	export let rows: any[] = [];
-	console.log({ rows });
 </script>
 
 <tbody>

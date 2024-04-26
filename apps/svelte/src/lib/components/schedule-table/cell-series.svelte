@@ -1,31 +1,18 @@
 <script lang="ts">
 	import type { WeekEntry } from '@iracing-schedule/data';
-	import FavoriteIcon from '../favorite-icon.svelte';
+	import CellFavorite from './cell-favorite.svelte';
+	import type { FavoriteState } from '@/config/favorite';
 
 	type Props = {
-		favorite: any;
+		favorite: FavoriteState;
 		row: WeekEntry;
 	};
 
 	let { favorite, row } = $props<Props>();
-
-	let isFavorite = $state(favorite.series[row.seriesId] ?? false);
-
-	const handleClick = async () => {
-		await fetch('/api/session/favorite', {
-			method: 'PUT',
-			body: JSON.stringify({ type: 'series', id: row.seriesId })
-		});
-
-		isFavorite = !isFavorite;
-	};
 </script>
 
-<a class="group inline-flex cursor-pointer flex-row items-baseline gap-1" on:click={handleClick}>
-	{#if isFavorite}
-		<FavoriteIcon />
-	{/if}
+<CellFavorite {favorite} id={row.seriesId} type="series">
 	<span class="flex-wrap text-wrap">
 		{row.seriesName}
 	</span>
-</a>
+</CellFavorite>

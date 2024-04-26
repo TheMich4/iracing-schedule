@@ -1,4 +1,4 @@
-const KEY = 'favorite';
+import { FAVORITE_KEY } from '$lib/config/favorite';
 
 export async function PUT({ locals, request }) {
 	// Get the session data and response function
@@ -6,9 +6,9 @@ export async function PUT({ locals, request }) {
 
 	try {
 		const { type, id } = await request.json();
-		const current = data.get(KEY);
+		const current = data.get(FAVORITE_KEY);
 
-		data.set(KEY, {
+		data.set(FAVORITE_KEY, {
 			[type]: {
 				...current[type],
 				[id]: !current[type]?.[id]
@@ -19,5 +19,5 @@ export async function PUT({ locals, request }) {
 	}
 
 	// Respond with new favorite series
-	return response(data.get(KEY));
+	return response(data.get(FAVORITE_KEY));
 }
