@@ -10,7 +10,7 @@
 
 	let { favorite, id, type } = $props<Props>();
 
-	let isFavorite = $state(favorite[type][id] ?? false);
+	let isFavorite = $state(favorite[type]?.[id] ?? false);
 
 	const handleClick = async () => {
 		await fetch('/api/session/favorite', {

@@ -12,7 +12,7 @@
 </script>
 
 <CellFavorite {favorite} id={row.seriesId} type="series">
-	<span class="flex-wrap text-wrap">
+	<div class="flex-wrap text-wrap">
 		{row.seriesName}
-	</span>
+	</div>
 </CellFavorite>
