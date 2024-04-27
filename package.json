@@ -14,10 +14,4 @@
     "svelte:build": "bun run --cwd apps/svelte build",
     "svelte:dev": "bun run --cwd apps/svelte dev"
   },
-  "dependencies": {
-    "@sveltejs/adapter-vercel": "^5.3.0",
-    "katai": "^0.1.5",
-    "mode-watcher": "^0.3.0",
-    "sveltekit-server-session": "^0.1.12"
-  }
 }
