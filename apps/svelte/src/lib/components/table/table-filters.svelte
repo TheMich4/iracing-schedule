@@ -4,6 +4,7 @@
 	import type { Column } from '@/templates/column';
 	import TableFiltersSettings from './table-filters-settings.svelte';
 	import type { ColumnState } from '@/config/column';
+	import { FilterClass } from './filters';
 
 	type Props = {
 		columns: Column[];
@@ -41,6 +42,8 @@
 			<IconArrowsDownUp class="size-4 opacity-60" />
 			<span>Sort</span>
 		</TableFiltersButton> -->
+
+		<FilterClass />
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
 		<TableFiltersSettings {columns} {columnState} />
