@@ -29,7 +29,6 @@ export const columns: Column[] = [
 		Component: CellClassIcon,
 		Icon: IconSchool,
 		class: 'w-[4.75rem]',
-		contentClass: 'justify-center',
 		getValue: (row) => row.licenseGroup,
 		id: 'class',
 		label: 'Class'
@@ -108,7 +107,7 @@ export const columns: Column[] = [
 		contentClass: 'justify-center',
 		getValue: (row) => row.fixedSetup,
 		id: 'fixed',
-		label: 'Fixed'
+		label: 'Fixed Setup'
 	},
 	{
 		Component: CellCheck,
@@ -117,20 +116,20 @@ export const columns: Column[] = [
 		contentClass: 'justify-center',
 		getValue: (row) => row.multiclass,
 		id: 'multiClass',
-		label: 'Multi'
+		label: 'Multi Class'
 	},
 	{
 		Icon: IconCarCrash,
 		class: 'w-[5rem]',
 		getValue: (row) => row.incidentLimit,
 		id: 'maxIncidents',
-		label: 'Max Inc'
+		label: 'Max Incidents'
 	},
 	{
 		Icon: IconCloudRain,
 		class: 'w-[3.5rem]',
 		getValue: (row) => `${row.weather?.weatherSummary?.maxPrecipRate ?? 0}%`,
 		id: 'rain',
-		label: 'Rain'
+		label: 'Rain Chance'
 	}
 ];
