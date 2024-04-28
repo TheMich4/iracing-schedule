@@ -8,12 +8,11 @@
 	// 	IconSettings,
 	// 	IconTable
 	// } from '@tabler/icons-svelte';
-	import TableFiltersButton from './table-filters-button.svelte';
 
 	import DatePicker from '$lib/components/date-picker.svelte';
 
 	import { getScheduleState } from '$lib/store/schedule.svelte';
-	import { IconSettings } from '@tabler/icons-svelte';
+	import TableFiltersSettings from './table-filters-settings.svelte';
 
 	const schedule = getScheduleState();
 </script>
@@ -46,10 +45,7 @@
 		</TableFiltersButton> -->
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
-		<TableFiltersButton>
-			<IconSettings class="size-4 opacity-60" />
-			<span>View Settings</span>
-		</TableFiltersButton>
+		<TableFiltersSettings />
 		<!-- <TableFiltersButton>
 			<IconPlus class="size-4 opacity-60" />
 			<span>Import export</span>
