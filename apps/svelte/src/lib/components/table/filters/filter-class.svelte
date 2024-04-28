@@ -1,14 +1,17 @@
 <script lang="ts">
 	import * as Command from '$lib/components/ui/command';
 	import * as Popover from '$lib/components/ui/popover';
+	import { Badge } from '@/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import { Checkbox } from '$lib/components/ui/checkbox';
 	import { IconPlus } from '@tabler/icons-svelte';
+	import { Separator } from '$lib/components/ui/separator';
 	import { LicenseColors, LicenseGroup, LicenseGroupNames } from '@/license';
 
 	let title = 'Class';
 
 	let licenses = Object.values(LicenseGroup).filter((x) => typeof x === 'number');
+	let selected = licenses.slice(0, 2);
 </script>
 
 <Popover.Root>
@@ -16,6 +19,27 @@
 		<Button builders={[builder]} class="border-dashed text-foreground" size="sm" variant="outline">
 			<IconPlus class="mr-2 size-3" />
 			<span>{title}</span>
+
+			{#if selected.length > 0}
+				<Separator class="mx-2 h-4" orientation="vertical" />
+
+				<Badge class="rounded-sm px-1 font-normal lg:hidden" variant="secondary">
+					{selected.length}
+				</Badge>
+				<div class="hidden space-x-1 lg:flex">
+					{#if selected.length > 2}
+						<Badge class="rounded-sm px-1 font-normal" variant="secondary">
+							{selected.length} selected</Badge
+						>
+					{:else}
+						{#each selected as license}
+							<Badge class="rounded-sm px-1 font-normal" variant="secondary">
+								{LicenseGroupNames[license]}
+							</Badge>
+						{/each}
+					{/if}
+				</div>
+			{/if}
 		</Button>
 	</Popover.Trigger>
 
@@ -30,7 +54,7 @@
 						<Command.Item class="flex flex-row gap-2">
 							{@const color = LicenseColors[license]}
 							{@const name = LicenseGroupNames[license]}
-							<Checkbox />
+							<Checkbox checked={selected.includes(license)} />
 
 							<div
 								class="flex size-4 items-center justify-center rounded-sm border border-{color}-400/80 bg-{color}-200/40 text-{color}-800 text-xs dark:text-{color}-400/80 dark:bg-{color}-800/20 dark:border-{color}-800"
@@ -45,6 +69,13 @@
 							>
 						</Command.Item>
 					{/each}
+
+					{#if selected.length > 0}
+						<Command.Separator />
+						<Command.Group>
+							<Command.Item class="flex justify-center text-center">Clear filters</Command.Item>
+						</Command.Group>
+					{/if}
 				</Command.Group>
 			</Command.List>
 		</Command.Root>
