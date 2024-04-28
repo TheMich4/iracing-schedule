@@ -8,9 +8,10 @@
 
 	let { data } = $props();
 
+	let column = $state(data.column);
 	let favorite = $state(data.favorite);
 
 	let weekSchedule: WeekSchedule = $derived(data.schedule[getPreviousTuesdayString(schedule.date)]);
 </script>
 
-<SchedulePage data={weekSchedule} {favorite} title="Schedule" />
+<SchedulePage {column} data={weekSchedule} {favorite} title="Schedule" />

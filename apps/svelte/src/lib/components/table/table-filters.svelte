@@ -1,18 +1,16 @@
-<script>
-	// import {
-	// 	IconArrowsDownUp,
-	// 	IconChevronDown,
-	// 	IconFilter,
-	// 	IconMinusVertical,
-	// 	IconPlus,
-	// 	IconSettings,
-	// 	IconTable
-	// } from '@tabler/icons-svelte';
-
+<script lang="ts">
 	import DatePicker from '$lib/components/date-picker.svelte';
-
 	import { getScheduleState } from '$lib/store/schedule.svelte';
+	import type { Column } from '@/templates/column';
 	import TableFiltersSettings from './table-filters-settings.svelte';
+	import type { ColumnState } from '@/config/column';
+
+	type Props = {
+		columns: Column[];
+		columnState: ColumnState;
+	};
+
+	let { columns, columnState } = $props<Props>();
 
 	const schedule = getScheduleState();
 </script>
@@ -45,7 +43,7 @@
 		</TableFiltersButton> -->
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
-		<TableFiltersSettings />
+		<TableFiltersSettings {columns} {columnState} />
 		<!-- <TableFiltersButton>
 			<IconPlus class="size-4 opacity-60" />
 			<span>Import export</span>

@@ -2,11 +2,22 @@
 	import PageHeader from '@/components/page-header/page-header.svelte';
 	import TableFilters from '@/components/table/table-filters.svelte';
 	import Table from '@/components/table/table.svelte';
-	import { columns } from './schedule-page-columns';
+	import { columns as defaultColumns } from './schedule-page-columns';
+	import type { ColumnState } from '$lib/config/column';
+	import type { FavoriteState } from '$lib/config/favorite';
 
-	export let data: Array<Record<string, any>> = [];
-	export let favorite;
-	export let title: string;
+	type Props = {
+		column: ColumnState;
+		data: Array<Record<string, any>>;
+		favorite: FavoriteState;
+		title: string;
+	};
+
+	let { column, data, favorite, title } = $props<Props>();
+
+	let columns = $derived(defaultColumns.filter((col) => column.visibility[col.id] !== false));
+
+	$effect(() => console.log(column));
 </script>
 
 <div class="h-screen">
@@ -14,7 +25,7 @@
 
 	<div class="h-[calc(100%-42px)] flex-1 overflow-hidden">
 		<div class="flex h-full flex-col">
-			<TableFilters />
+			<TableFilters columns={defaultColumns} columnState={column} />
 
 			<div class="relative h-full w-full flex-1 overflow-auto px-4">
 				<Table rows={data} {columns} {favorite} />
