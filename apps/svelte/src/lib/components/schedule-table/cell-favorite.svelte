@@ -14,16 +14,15 @@
 	let isFavorite = $derived(favorite[type]?.[id] ?? false);
 
 	const handleClick = async () => {
-		console.log({ isFavorite, x: favorite[type] });
-		await fetch('/api/session/favorite', {
-			method: 'PUT',
-			body: JSON.stringify({ type, id })
-		});
-
 		favorite[type] = {
 			...favorite[type],
 			[id]: !isFavorite
 		};
+
+		await fetch('/api/session/favorite', {
+			method: 'PUT',
+			body: JSON.stringify({ type, id })
+		});
 	};
 </script>
 
