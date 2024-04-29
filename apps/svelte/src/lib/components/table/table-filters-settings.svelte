@@ -11,10 +11,9 @@
 		columnState: ColumnState;
 	};
 
-	let { columns, columnState } = $props<Props>();
+	let { columns, columnState }: Props = $props();
 
 	const handleVisibilityChange = async (columnId: string, checked: boolean) => {
-		console.log('---', columnState);
 		columnState.visibility[columnId] = checked;
 
 		await fetch('/api/session/column', {

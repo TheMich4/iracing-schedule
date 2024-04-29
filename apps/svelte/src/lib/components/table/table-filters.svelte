@@ -9,9 +9,10 @@
 	type Props = {
 		columns: Column[];
 		columnState: ColumnState;
+		filter: FilterState;
 	};
 
-	let { columns, columnState } = $props<Props>();
+	let { columns, columnState, filter }: Props = $props();
 
 	const schedule = getScheduleState();
 </script>
@@ -43,7 +44,7 @@
 			<span>Sort</span>
 		</TableFiltersButton> -->
 
-		<FilterClass />
+		<FilterClass {filter} />
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
 		<TableFiltersSettings {columns} {columnState} />

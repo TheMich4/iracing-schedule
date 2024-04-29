@@ -9,7 +9,7 @@
 		row: WeekEntry;
 	};
 
-	let { favorite, row } = $props<Props>();
+	let { favorite, row }: Props = $props();
 </script>
 
 <CellFavorite {favorite} id={row.track.trackId} type="track">

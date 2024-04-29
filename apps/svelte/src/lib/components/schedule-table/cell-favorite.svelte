@@ -9,7 +9,7 @@
 		type: string;
 	};
 
-	let { favorite, id, type } = $props<Props>();
+	let { favorite, id, type }: Props = $props();
 
 	let isFavorite = $derived(favorite[type]?.[id] ?? false);
 

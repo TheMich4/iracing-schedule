@@ -1,1 +1,0 @@
-import{a,t as s}from"./disclose-version.DANBn3SQ.js";import{a as e,p as r}from"./runtime.C97gWRuW.js";import{i as p}from"./lifecycle.Dnzq6qZw.js";var n=s('<div class="flex h-full w-full items-center justify-center text-2xl tracking-tighter">This page is coming soon.</div>');function c(t,i){e(i,!1),p();var o=n();a(t,o),r()}export{c as C};

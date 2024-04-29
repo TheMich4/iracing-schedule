@@ -8,4 +8,4 @@ export interface FavoriteState {
 export const defaultFavoriteState = {
 	series: {},
 	track: {}
-}
+};

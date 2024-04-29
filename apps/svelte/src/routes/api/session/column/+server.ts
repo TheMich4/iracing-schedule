@@ -8,8 +8,6 @@ export async function PUT({ locals, request }) {
 		const { id, checked } = await request.json();
 		const current = data.get(COLUMN_KEY);
 
-		console.log({ id, checked, current })
-
 		data.set(COLUMN_KEY, {
 			...current,
 			visibility: {

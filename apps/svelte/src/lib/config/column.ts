@@ -20,4 +20,4 @@ export const defaultColumnState = {
 		maxIncidents: false,
 		rain: true
 	}
-}
+};
