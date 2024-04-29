@@ -37,7 +37,7 @@
 			<IconPlus class="mr-2 size-3" />
 			<span>{title}</span>
 
-			{#if filter.class.length > 0}
+			{#if filter.class?.length > 0}
 				<Separator class="mx-2 h-4" orientation="vertical" />
 
 				<Badge class="rounded-sm px-1 font-normal lg:hidden" variant="secondary">
