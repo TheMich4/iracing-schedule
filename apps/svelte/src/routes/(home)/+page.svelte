@@ -10,8 +10,9 @@
 	let column = $state(data.column);
 	let favorite = $state(data.favorite);
 	let filter = $state(data.filter);
+	let sorting = $state(data.sorting);
 
 	const weekSchedule = $derived(getSchedule(data.schedule, scheduleState.date, filter));
 </script>
 
-<SchedulePage {column} data={weekSchedule} {favorite} {filter} title="Schedule" />
+<SchedulePage {column} data={weekSchedule} {favorite} {filter} {sorting} title="Schedule" />

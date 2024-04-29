@@ -11,6 +11,7 @@
 	let column = $state(data.column);
 	let favorite = $state(data.favorite);
 	let filter = $state(data.filter);
+	let sorting = $state(data.sorting);
 
 	let weekSchedule = $derived(
 		getSchedule(data.schedule, scheduleState.date, filter).filter(
@@ -24,5 +25,6 @@
 	data={weekSchedule}
 	{favorite}
 	{filter}
+	{sorting}
 	title={categoryToName[data.category]}
 />

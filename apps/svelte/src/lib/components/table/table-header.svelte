@@ -1,20 +1,30 @@
 <script lang="ts">
+	import type { SortingState } from '@/config/sorting';
+	import type { Column } from '@/templates/column';
 	import { cn } from '@/utils';
 
-	export let columns: Array<Record<string, any>>;
+	export let columns: Array<Column>;
+	export let sorting: SortingState;
+
+	const handleColumnClick = (columnId: string) => {
+		sorting.asc = sorting.id === columnId ? !sorting.asc : true;
+		sorting.id = columnId;
+
+	};
 </script>
 
 <thead class="sticky -top-[1px] z-[10] max-h-[20px] border-y bg-background">
 	<tr class="w-full border-y">
 		{#each columns as column (column.id)}
 			<td class={cn('border-r last:border-r-0', column.class)}>
-				<div
+				<button
 					class="flex items-center gap-1 overflow-hidden text-ellipsis text-nowrap p-2 text-sm font-normal"
+					on:click={() => handleColumnClick(column.id)}
 					title={column.label}
 				>
 					<svelte:component this={column.Icon} class="size-4 opacity-60" />
 					<span class="w-full overflow-hidden text-ellipsis opacity-70">{column.label}</span>
-				</div>
+				</button>
 			</td>
 		{/each}
 	</tr>

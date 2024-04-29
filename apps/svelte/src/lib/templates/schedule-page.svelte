@@ -6,16 +6,18 @@
 	import type { ColumnState } from '$lib/config/column';
 	import type { FavoriteState } from '$lib/config/favorite';
 	import type { FilterState } from '@/config/filter';
+	import type { SortingState } from '@/config/sorting';
 
 	type Props = {
 		column: ColumnState;
 		data: Array<Record<string, any>>;
 		favorite: FavoriteState;
 		filter: FilterState;
+		sorting: SortingState;
 		title: string;
 	};
 
-	let { column, data, favorite, filter, title }: Props = $props();
+	let { column, data, favorite, filter, sorting, title }: Props = $props();
 
 	let columns = $derived(defaultColumns.filter((col) => column.visibility[col.id] !== false));
 </script>
@@ -25,10 +27,10 @@
 
 	<div class="h-[calc(100%-42px)] flex-1 overflow-hidden">
 		<div class="flex h-full flex-col">
-			<TableFilters columns={defaultColumns} columnState={column} {filter} />
+			<TableFilters columns={defaultColumns} columnState={column} {filter} {sorting} />
 
 			<div class="relative h-full w-full flex-1 overflow-auto px-4">
-				<Table rows={data} {columns} {favorite} />
+				<Table rows={data} {columns} {favorite} {sorting} />
 			</div>
 		</div>
 	</div>

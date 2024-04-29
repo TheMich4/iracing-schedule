@@ -5,14 +5,16 @@
 	import TableFiltersSettings from './table-filters-settings.svelte';
 	import type { ColumnState } from '@/config/column';
 	import { FilterClass } from './filters';
+	import type { FilterState } from '@/config/filter';
 
 	type Props = {
 		columns: Column[];
 		columnState: ColumnState;
 		filter: FilterState;
+		sorting: SortingState;
 	};
 
-	let { columns, columnState, filter }: Props = $props();
+	let { columns, columnState, filter, sorting }: Props = $props();
 
 	const schedule = getScheduleState();
 </script>
@@ -45,6 +47,9 @@
 		</TableFiltersButton> -->
 
 		<FilterClass {filter} />
+		{#if sorting.id}
+			{sorting.id} {sorting.asc ? 'asc' : 'desc'}
+		{/if}
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
 		<TableFiltersSettings {columns} {columnState} />
