@@ -12,7 +12,7 @@
 	let filter = $state(data.filter);
 	let sorting = $state(data.sorting);
 
-	const weekSchedule = $derived(getSchedule(data.schedule, scheduleState.date, filter));
+	const weekSchedule = $derived(getSchedule(data.schedule, scheduleState.date, filter, sorting));
 </script>
 
 <SchedulePage {column} data={weekSchedule} {favorite} {filter} {sorting} title="Schedule" />

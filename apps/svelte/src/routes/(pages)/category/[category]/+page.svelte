@@ -14,7 +14,7 @@
 	let sorting = $state(data.sorting);
 
 	let weekSchedule = $derived(
-		getSchedule(data.schedule, scheduleState.date, filter).filter(
+		getSchedule(data.schedule, scheduleState.date, filter, sorting).filter(
 			(item) => item.category === data.category
 		)
 	);
