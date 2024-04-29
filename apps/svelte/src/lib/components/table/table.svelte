@@ -7,8 +7,10 @@
 	export let rows: Array<Record<string, any>>;
 </script>
 
-<table class="h-full w-full min-w-[825px] table-fixed border-collapse text-xs">
-	<TableHeader {columns} />
+<div class="h-full w-full">
+	<table class="w-full min-w-[825px] table-fixed border-collapse text-xs">
+		<TableHeader {columns} />
 
-	<TableBody {columns} {favorite} {rows} />
-</table>
+		<TableBody {columns} {favorite} {rows} />
+	</table>
+</div>
