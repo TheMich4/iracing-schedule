@@ -9,7 +9,6 @@
 	const handleColumnClick = (columnId: string) => {
 		sorting.asc = sorting.id === columnId ? !sorting.asc : true;
 		sorting.id = columnId;
-
 	};
 </script>
 
@@ -17,14 +16,17 @@
 	<tr class="w-full border-y">
 		{#each columns as column (column.id)}
 			<td class={cn('border-r last:border-r-0', column.class)}>
-				<button
-					class="flex items-center gap-1 overflow-hidden text-ellipsis text-nowrap p-2 text-sm font-normal"
+				<div
+					class="flex cursor-pointer items-center gap-1 overflow-hidden text-ellipsis text-nowrap p-2 text-sm font-normal"
+					role="button"
 					on:click={() => handleColumnClick(column.id)}
+					on:keydown={(e) => e.key === 'Enter' && handleColumnClick(column.id)}
+					tabindex="0"
 					title={column.label}
 				>
 					<svelte:component this={column.Icon} class="size-4 opacity-60" />
 					<span class="w-full overflow-hidden text-ellipsis opacity-70">{column.label}</span>
-				</button>
+				</div>
 			</td>
 		{/each}
 	</tr>
