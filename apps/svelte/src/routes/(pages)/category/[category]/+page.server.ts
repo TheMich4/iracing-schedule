@@ -1,8 +1,8 @@
-import seasonsData from '$lib/seasons-data.json';
 import { routeToCategory } from '@/category';
 import { COLUMN_KEY, defaultColumnState, type ColumnState } from '@/config/column';
 import { FAVORITE_KEY, defaultFavoriteState, type FavoriteState } from '@/config/favorite';
 import { FILTER_KEY, defaultFilterState, type FilterState } from '@/config/filter';
+import { seasonsData } from '@iracing-schedule/data';
 
 export function load({ locals, params }) {
 	const { data } = locals.session;
