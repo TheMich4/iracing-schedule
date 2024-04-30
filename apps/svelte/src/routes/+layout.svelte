@@ -6,6 +6,10 @@
 	import TailwindIndicator from '@/components/tailwind-indicator.svelte';
 </script>
 
+<svelte:head>
+	<title>iRacing Schedule</title>
+</svelte:head>
+
 <div class="flex">
 	<Sidebar />
 	<div class="flex-1">
