@@ -1,8 +1,7 @@
-<script>
+<script lang="ts">
 	import '../app.pcss';
 	import '@fontsource-variable/inter';
 	import { ModeWatcher } from 'mode-watcher';
-
 	import Sidebar from '@/components/sidebar';
 	import TailwindIndicator from '@/components/tailwind-indicator.svelte';
 </script>

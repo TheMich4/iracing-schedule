@@ -23,6 +23,7 @@
     "bunx": "^0.1.0",
     "context-menu": "^2.0.0",
     "mode-watcher": "^0.3.0",
+    "posthog-js": "^1.130.1",
     "shadcn-svelte": "^0.10.3",
     "sveltekit-server-session": "^0.1.13"
   }
