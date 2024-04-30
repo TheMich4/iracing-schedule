@@ -20,7 +20,7 @@ export const getSchedule = (
 
 	weekSchedule = weekSchedule?.sort((a, b) => {
 		if (!sorting.id || sorting.id === 'class') {
-			if (sorting.asc) {
+			if (sorting.order === 'asc') {
 				return a.licenseGroup > b.licenseGroup ? 1 : -1;
 			} else {
 				return a.licenseGroup < b.licenseGroup ? 1 : -1;

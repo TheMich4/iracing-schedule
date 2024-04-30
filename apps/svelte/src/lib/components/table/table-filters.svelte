@@ -6,6 +6,7 @@
 	import type { ColumnState } from '@/config/column';
 	import { FilterClass } from './filters';
 	import type { FilterState } from '@/config/filter';
+	import type { SortingState } from '@/config/sorting';
 
 	type Props = {
 		columns: Column[];
@@ -14,7 +15,7 @@
 		sorting: SortingState;
 	};
 
-	let { columns, columnState, filter, sorting }: Props = $props();
+	let { columns, columnState, filter }: Props = $props();
 
 	const schedule = getScheduleState();
 </script>
@@ -47,9 +48,6 @@
 		</TableFiltersButton> -->
 
 		<FilterClass {filter} />
-		{#if sorting.id}
-			{sorting.id} {sorting.asc ? 'asc' : 'desc'}
-		{/if}
 	</div>
 	<div class="hidden items-center gap-2 md:flex">
 		<TableFiltersSettings {columns} {columnState} />

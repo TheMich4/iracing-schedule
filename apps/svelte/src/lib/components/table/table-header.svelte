@@ -7,7 +7,7 @@
 	export let sorting: SortingState;
 
 	const handleColumnClick = (columnId: string) => {
-		sorting.asc = sorting.id === columnId ? !sorting.asc : true;
+		sorting.order = sorting.id === columnId ? (sorting.order === 'asc' ? 'desc' : 'asc') : 'asc';
 		sorting.id = columnId;
 	};
 </script>
