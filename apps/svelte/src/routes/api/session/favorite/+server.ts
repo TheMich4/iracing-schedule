@@ -9,6 +9,7 @@ export async function PUT({ locals, request }) {
 		const current = data.get(FAVORITE_KEY);
 
 		data.set(FAVORITE_KEY, {
+			...current,
 			[type]: {
 				...current[type],
 				[id]: !current[type]?.[id]

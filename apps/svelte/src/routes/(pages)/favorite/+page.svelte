@@ -1,5 +1,22 @@
-<script>
-	import ComingSoon from '@/components/coming-soon.svelte';
+<script lang="ts">
+	import { getScheduleState } from '$lib/store/schedule.svelte';
+	import SchedulePage from '$lib/templates/schedule-page.svelte';
+	import { getSchedule } from '$lib/schedule';
+
+	let { data } = $props();
+
+	let scheduleState = getScheduleState();
+
+	let column = $state(data.column);
+	let favorite = $state(data.favorite);
+	let filter = $state(data.filter);
+	let sorting = $state(data.sorting);
+
+	const weekSchedule = $derived(
+		getSchedule(data.schedule, scheduleState.date, filter, sorting).filter((series) => {
+			return favorite.series?.[series.seriesId] || favorite.track?.[series.track.trackId];
+		})
+	);
 </script>
 
-<ComingSoon />
+<SchedulePage {column} data={weekSchedule} {favorite} {filter} {sorting} title="Favorite" />

@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
 	import { page } from '$app/stores';
+	import type { ComponentType } from 'svelte';
 
 	export let href: string;
-	export let Icon: any | null = null;
+	export let Icon: ComponentType | null = null;
+	export let title: string;
 
 	$: currentRoute = $page.url.pathname;
 </script>
@@ -14,9 +16,10 @@
 		currentRoute === href && 'bg-muted-foreground/10'
 	)}
 	{href}
+	{title}
 >
 	{#if Icon}
 		<Icon class="size-4 opacity-70" />
 	{/if}
-	<span>Schedule</span>
+	<span>{title}</span>
 </a>
