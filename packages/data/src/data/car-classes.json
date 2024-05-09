@@ -4903,26 +4903,8 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\buicklesabre87",
-        "carId": 154,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\chevymontecarlo87",
-        "carId": 124,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordthunderbird87",
-        "carId": 125,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\pontiacgrandprix87",
-        "carId": 175,
+        "carDirpath": "stockcars\\impala",
+        "carId": 22,
         "rainEnabled": false,
         "retired": false
       }
@@ -5001,8 +4983,14 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "protrucks\\pro2truck",
-        "carId": 104,
+        "carDirpath": "v8supercars\\holden2019",
+        "carId": 117,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "v8supercars\\fordmustanggt",
+        "carId": 118,
         "rainEnabled": false,
         "retired": false
       }
@@ -5017,8 +5005,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "stockcarbrasil\\cruze",
-        "carId": 151,
+        "carDirpath": "c6r",
+        "carId": 26,
         "rainEnabled": false,
         "retired": false
       }
@@ -5113,15 +5101,15 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwz4gt3",
-        "carId": 55,
-        "rainEnabled": false,
+        "carDirpath": "bmwlmdh",
+        "carId": 159,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   },
