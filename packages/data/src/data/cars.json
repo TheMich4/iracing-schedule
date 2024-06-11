@@ -1336,7 +1336,7 @@
     "awardExempt": false,
     "carDirpath": "streetstock",
     "carId": 36,
-    "carName": "Street Stock",
+    "carName": "Street Stock - Panther C1",
     "carNameAbbreviated": "SS",
     "carTypes": [
       {
@@ -2833,7 +2833,7 @@
     "freeWithSubscription": true,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 181,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -2843,7 +2843,7 @@
     "patterns": 24,
     "price": 0,
     "priceDisplay": "$0.00",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,miata,mx5",
     "siteUrl": "http://www.mazdamotorsports.com/",
@@ -5711,7 +5711,7 @@
     "freeWithSubscription": false,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 425,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -5734,7 +5734,7 @@
     "patterns": 25,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,gt4,gs",
     "siteUrl": "http://www.porsche.com/",
@@ -5883,7 +5883,7 @@
     "freeWithSubscription": false,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 431,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -5917,7 +5917,7 @@
     "patterns": 26,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,gt4,gs",
     "siteUrl": "https://www.bmw-motorsport.com/en/home.html",
@@ -6593,7 +6593,7 @@
     "freeWithSubscription": false,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 461,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -6626,7 +6626,7 @@
     "patterns": 25,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,gt4,gs",
     "siteUrl": "https://www.mclaren.com/",
@@ -7036,7 +7036,7 @@
     "patterns": 25,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar",
     "siteUrl": "https://www.porsche.com/international/motorsportandevents/motorsport/",
@@ -7681,7 +7681,7 @@
     "freeWithSubscription": false,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 450,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -7727,7 +7727,7 @@
     "patterns": 25,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,aienabled",
     "sku": 10523
@@ -8246,7 +8246,7 @@
     "freeWithSubscription": false,
     "hasHeadlights": true,
     "hasMultipleDryTireTypes": false,
-    "hasRainCapableTireTypes": false,
+    "hasRainCapableTireTypes": true,
     "hp": 515,
     "isPsPurchasable": true,
     "maxPowerAdjustPct": 0,
@@ -8302,7 +8302,7 @@
     "patterns": 28,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,gt4,gtd",
     "siteUrl": "https://customerracing.mercedes-amg.com/en/vehicles/mercedes-amg-gt4.html",
@@ -9038,7 +9038,7 @@
     "patterns": 25,
     "price": 11.95,
     "priceDisplay": "$11.95",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "retired": false,
     "searchFilters": "road,sportscar,prototype,lmp3",
     "siteUrl": "https://ligierautomotive.com/",
@@ -10046,5 +10046,234 @@
     "retired": false,
     "searchFilters": "dirt,dirtoval,sprintcar",
     "sku": 10573
+  },
+  "184": {
+    "aiEnabled": true,
+    "allowNumberColors": true,
+    "allowNumberFont": true,
+    "allowSponsor1": true,
+    "allowSponsor2": true,
+    "allowWheelColor": true,
+    "awardExempt": false,
+    "carDirpath": "chevyvettez06rgt3",
+    "carId": 184,
+    "carMake": "Chevrolet",
+    "carModel": "Chevrolet Corvette Z06 GT3.R",
+    "carName": "Chevrolet Corvette Z06 GT3.R",
+    "carNameAbbreviated": "CZ06",
+    "carTypes": [
+      {
+        "carType": "chevy"
+      },
+      {
+        "carType": "gt3"
+      },
+      {
+        "carType": "road"
+      }
+    ],
+    "carWeight": 2943,
+    "categories": [
+      "sports_car"
+    ],
+    "created": "2024-03-26T15:14:21Z",
+    "firstSale": "2024-06-04T14:17:23Z",
+    "forumUrl": "https://forums.iracing.com/categories/chevrolet-corvette-z06-gt3-r",
+    "freeWithSubscription": false,
+    "hasHeadlights": true,
+    "hasMultipleDryTireTypes": false,
+    "hasRainCapableTireTypes": true,
+    "hp": 522,
+    "isPsPurchasable": true,
+    "maxPowerAdjustPct": 0,
+    "maxWeightPenaltyKg": 250,
+    "minPowerAdjustPct": -5,
+    "packageId": 471,
+    "paintRules": {
+      "1": {
+        "color1": "FF0000",
+        "color2": "00FF00",
+        "color3": "0000FF",
+        "paintCarAvailable": false,
+        "rulesExplanation": "The currently selected car pattern doesn't allow painting the car or the car's numbers.",
+        "sponsor1": "0",
+        "sponsor1Available": false,
+        "sponsor2": "0",
+        "sponsor2Available": false
+      },
+      "2": {
+        "color1": "FF0000",
+        "color2": "00FF00",
+        "color3": "0000FF",
+        "paintCarAvailable": false,
+        "rulesExplanation": "The currently selected car pattern doesn't allow painting the car or the car's numbers.",
+        "sponsor1": "0",
+        "sponsor1Available": false,
+        "sponsor2": "0",
+        "sponsor2Available": false
+      }
+    },
+    "patterns": 24,
+    "price": 11.95,
+    "priceDisplay": "$11.95",
+    "rainEnabled": true,
+    "retired": false,
+    "searchFilters": "road,gt3,chevy",
+    "sku": 10576
+  },
+  "185": {
+    "aiEnabled": true,
+    "allowNumberColors": true,
+    "allowNumberFont": true,
+    "allowSponsor1": true,
+    "allowSponsor2": true,
+    "allowWheelColor": true,
+    "awardExempt": false,
+    "carDirpath": "fordmustanggt3",
+    "carId": 185,
+    "carMake": "Ford",
+    "carModel": "Ford Mustang GT3",
+    "carName": "Ford Mustang GT3",
+    "carNameAbbreviated": "FMGT3",
+    "carTypes": [
+      {
+        "carType": "gt3"
+      },
+      {
+        "carType": "road"
+      },
+      {
+        "carType": "sportscar"
+      }
+    ],
+    "carWeight": 2900,
+    "categories": [
+      "sports_car"
+    ],
+    "created": "2024-05-06T14:26:58Z",
+    "firstSale": "2024-06-04T14:17:42Z",
+    "forumUrl": "https://forums.iracing.com/categories/ford-mustang-gt3",
+    "freeWithSubscription": false,
+    "hasHeadlights": true,
+    "hasMultipleDryTireTypes": true,
+    "hasRainCapableTireTypes": true,
+    "hp": 516,
+    "isPsPurchasable": true,
+    "maxPowerAdjustPct": 0,
+    "maxWeightPenaltyKg": 250,
+    "minPowerAdjustPct": -5,
+    "packageId": 476,
+    "paintRules": {
+      "1": {
+        "color1": "FF0000",
+        "color2": "00FF00",
+        "color3": "0000FF",
+        "paintCarAvailable": false,
+        "rulesExplanation": "The currently selected car pattern doesn't allow painting the car or the car's numbers.",
+        "sponsor1": "0",
+        "sponsor1Available": false,
+        "sponsor2": "0",
+        "sponsor2Available": false
+      }
+    },
+    "patterns": 25,
+    "price": 11.95,
+    "priceDisplay": "$11.95",
+    "rainEnabled": true,
+    "retired": false,
+    "searchFilters": "road,sportscar,gt3",
+    "sku": 10580
+  },
+  "186": {
+    "aiEnabled": true,
+    "allowNumberColors": true,
+    "allowNumberFont": true,
+    "allowSponsor1": true,
+    "allowSponsor2": true,
+    "allowWheelColor": true,
+    "awardExempt": false,
+    "carDirpath": "streetstock\\streetstock2",
+    "carId": 186,
+    "carModel": "Street Stock - Casino",
+    "carName": "Street Stock - Casino M2",
+    "carNameAbbreviated": "SSC",
+    "carTypes": [
+      {
+        "carType": "oval"
+      },
+      {
+        "carType": "ss"
+      }
+    ],
+    "carWeight": 3400,
+    "categories": [
+      "oval"
+    ],
+    "created": "2024-05-06T15:21:23Z",
+    "firstSale": "2024-06-04T14:18:29Z",
+    "forumUrl": "https://forums.iracing.com/categories/street-stock/",
+    "freeWithSubscription": false,
+    "hasHeadlights": false,
+    "hasMultipleDryTireTypes": false,
+    "hasRainCapableTireTypes": false,
+    "hp": 375,
+    "isPsPurchasable": true,
+    "maxPowerAdjustPct": 0,
+    "maxWeightPenaltyKg": 250,
+    "minPowerAdjustPct": -5,
+    "packageId": 482,
+    "patterns": 24,
+    "price": 11.95,
+    "priceDisplay": "$11.95",
+    "rainEnabled": false,
+    "retired": false,
+    "searchFilters": "oval,ss",
+    "sku": 10581
+  },
+  "187": {
+    "aiEnabled": true,
+    "allowNumberColors": true,
+    "allowNumberFont": true,
+    "allowSponsor1": true,
+    "allowSponsor2": true,
+    "allowWheelColor": true,
+    "awardExempt": false,
+    "carDirpath": "streetstock\\streetstock3",
+    "carId": 187,
+    "carModel": "Street Stock - Eagle",
+    "carName": "Street Stock - Eagle T3",
+    "carNameAbbreviated": "SSE",
+    "carTypes": [
+      {
+        "carType": "oval"
+      },
+      {
+        "carType": "ss"
+      }
+    ],
+    "carWeight": 3400,
+    "categories": [
+      "oval"
+    ],
+    "created": "2024-05-06T15:25:13Z",
+    "firstSale": "2024-06-04T14:18:29Z",
+    "forumUrl": "https://forums.iracing.com/categories/street-stock/",
+    "freeWithSubscription": false,
+    "hasHeadlights": false,
+    "hasMultipleDryTireTypes": false,
+    "hasRainCapableTireTypes": false,
+    "hp": 375,
+    "isPsPurchasable": true,
+    "maxPowerAdjustPct": 0,
+    "maxWeightPenaltyKg": 250,
+    "minPowerAdjustPct": -5,
+    "packageId": 482,
+    "patterns": 24,
+    "price": 11.95,
+    "priceDisplay": "$11.95",
+    "rainEnabled": false,
+    "retired": false,
+    "searchFilters": "oval,ss",
+    "sku": 10581
   }
 }
