@@ -4945,20 +4945,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "trucks\\fordf150",
-        "carId": 123,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\toyotatundra2022",
-        "carId": 155,
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\silverado2019",
-        "carId": 111,
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -5037,15 +5043,15 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "hyundaielantracn7",
-        "carId": 146,
-        "rainEnabled": false,
+        "carDirpath": "superformulalights324",
+        "carId": 178,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Special2024",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Special2024"
   },
@@ -5085,8 +5091,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
@@ -5133,15 +5139,15 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": true,
+        "carDirpath": "bmwz4gt3",
+        "carId": 55,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   },
@@ -5369,56 +5375,8 @@
     "carClassId": 4065,
     "carsInClass": [
       {
-        "carDirpath": "audir8lmsevo2gt3",
-        "carId": 176,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt3",
-        "carId": 132,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "lamborghinievogt3",
-        "carId": 133,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "chevyvettez06rgt3",
-        "carId": 184,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche992rgt3",
-        "carId": 169,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "fordmustanggt3",
-        "carId": 185,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclarenmp4",
-        "carId": 43,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamgevogt3",
-        "carId": 156,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "ferrari296gt3",
-        "carId": 173,
+        "carDirpath": "mx5\\mx52016",
+        "carId": 67,
         "rainEnabled": true,
         "retired": false
       }
