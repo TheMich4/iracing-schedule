@@ -4945,20 +4945,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -5037,39 +5043,15 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "amvantagegt4",
-        "carId": 150,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche718gt4",
-        "carId": 119,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclaren570sgt4",
-        "carId": 135,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamggt4",
-        "carId": 157,
-        "rainEnabled": true,
+        "carDirpath": "protrucks\\pro2truck",
+        "carId": 104,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Special2024",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "Special2024"
   },
@@ -5109,8 +5091,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
@@ -5157,8 +5139,8 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
+        "carDirpath": "bmwz4gt3",
+        "carId": 55,
         "rainEnabled": false,
         "retired": false
       }
@@ -5393,15 +5375,15 @@
     "carClassId": 4065,
     "carsInClass": [
       {
-        "carDirpath": "rt2000",
-        "carId": 1,
-        "rainEnabled": false,
+        "carDirpath": "raygr22",
+        "carId": 163,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister 2024S3",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 56,
     "shortName": "RingMeister24S3"
   }
