@@ -4945,26 +4945,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\buicklesabre87",
-        "carId": 154,
+        "carDirpath": "stockcars\\chevycamarozl12022",
+        "carId": 139,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\chevymontecarlo87",
-        "carId": 124,
+        "carDirpath": "stockcars\\fordmustang2022",
+        "carId": 140,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\fordthunderbird87",
-        "carId": 125,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\pontiacgrandprix87",
-        "carId": 175,
+        "carDirpath": "stockcars\\toyotacamry2022",
+        "carId": 141,
         "rainEnabled": false,
         "retired": false
       }
@@ -5043,8 +5037,8 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "protrucks\\pro2truck",
-        "carId": 104,
+        "carDirpath": "hpdarx01c",
+        "carId": 39,
         "rainEnabled": false,
         "retired": false
       }
@@ -5091,8 +5085,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
-        "carId": 182,
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
         "rainEnabled": false,
         "retired": false
       }
@@ -5139,8 +5133,8 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwz4gt3",
-        "carId": 55,
+        "carDirpath": "bmwm8gte",
+        "carId": 109,
         "rainEnabled": false,
         "retired": false
       }
@@ -5375,8 +5369,8 @@
     "carClassId": 4065,
     "carsInClass": [
       {
-        "carDirpath": "raygr22",
-        "carId": 163,
+        "carDirpath": "porsche992cup",
+        "carId": 143,
         "rainEnabled": true,
         "retired": false
       }
