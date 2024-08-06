@@ -4945,20 +4945,8 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
+        "carDirpath": "stockcars\\impala",
+        "carId": 22,
         "rainEnabled": false,
         "retired": false
       }
@@ -5037,8 +5025,14 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "hpdarx01c",
-        "carId": 39,
+        "carDirpath": "v8supercars\\holden2019",
+        "carId": 117,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "v8supercars\\fordmustanggt",
+        "carId": 118,
         "rainEnabled": false,
         "retired": false
       }
@@ -5085,8 +5079,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
@@ -5133,15 +5127,15 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
-        "rainEnabled": false,
+        "carDirpath": "bmwlmdh",
+        "carId": 159,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "BMW M Power",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 100,
     "shortName": "BMW M Power"
   },
@@ -5369,8 +5363,8 @@
     "carClassId": 4065,
     "carsInClass": [
       {
-        "carDirpath": "porsche992cup",
-        "carId": 143,
+        "carDirpath": "formulair04",
+        "carId": 148,
         "rainEnabled": true,
         "retired": false
       }
