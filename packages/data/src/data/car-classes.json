@@ -4945,8 +4945,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\impala",
-        "carId": 22,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -5025,21 +5043,15 @@
     "carClassId": 4047,
     "carsInClass": [
       {
-        "carDirpath": "v8supercars\\holden2019",
-        "carId": 117,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "v8supercars\\fordmustanggt",
-        "carId": 118,
-        "rainEnabled": false,
+        "carDirpath": "toyotagr86",
+        "carId": 160,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Special2024",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "Special2024"
   },
@@ -5127,8 +5139,8 @@
     "carClassId": 4054,
     "carsInClass": [
       {
-        "carDirpath": "bmwlmdh",
-        "carId": 159,
+        "carDirpath": "bmwm4gt4",
+        "carId": 122,
         "rainEnabled": true,
         "retired": false
       }
@@ -5363,8 +5375,32 @@
     "carClassId": 4065,
     "carsInClass": [
       {
-        "carDirpath": "formulair04",
-        "carId": 148,
+        "carDirpath": "amvantagegt4",
+        "carId": 150,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche718gt4",
+        "carId": 119,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "mclaren570sgt4",
+        "carId": 135,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt4",
+        "carId": 122,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamggt4",
+        "carId": 157,
         "rainEnabled": true,
         "retired": false
       }
