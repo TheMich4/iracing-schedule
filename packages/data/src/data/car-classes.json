@@ -4941,40 +4941,6 @@
     "relativeSpeed": 56,
     "shortName": "RingMeister23S4"
   },
-  "4040": {
-    "carClassId": 4040,
-    "carsInClass": [
-      {
-        "carDirpath": "stockcars\\buicklesabre87",
-        "carId": 154,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\chevymontecarlo87",
-        "carId": 124,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\fordthunderbird87",
-        "carId": 125,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\pontiacgrandprix87",
-        "carId": 175,
-        "rainEnabled": false,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Draft Master 2023S4",
-    "rainEnabled": false,
-    "relativeSpeed": 52,
-    "shortName": "DraftMaster23S4"
-  },
   "4042": {
     "carClassId": 4042,
     "carsInClass": [
@@ -5039,22 +5005,6 @@
     "relativeSpeed": 52,
     "shortName": "Audi R8 EVO2 GT3"
   },
-  "4047": {
-    "carClassId": 4047,
-    "carsInClass": [
-      {
-        "carDirpath": "toyotagr86",
-        "carId": 160,
-        "rainEnabled": true,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Special2024",
-    "rainEnabled": true,
-    "relativeSpeed": 52,
-    "shortName": "Special2024"
-  },
   "4049": {
     "carClassId": 4049,
     "carsInClass": [
@@ -5087,22 +5037,6 @@
     "relativeSpeed": 47,
     "shortName": "SRX"
   },
-  "4051": {
-    "carClassId": 4051,
-    "carsInClass": [
-      {
-        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
-        "carId": 182,
-        "rainEnabled": false,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Millbridge23",
-    "rainEnabled": false,
-    "relativeSpeed": 40,
-    "shortName": "Millbridge23"
-  },
   "4052": {
     "carClassId": 4052,
     "carsInClass": [
@@ -5134,22 +5068,6 @@
     "rainEnabled": false,
     "relativeSpeed": 32,
     "shortName": "DMS Non-Winged"
-  },
-  "4054": {
-    "carClassId": 4054,
-    "carsInClass": [
-      {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": true,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "BMW M Power",
-    "rainEnabled": true,
-    "relativeSpeed": 100,
-    "shortName": "BMW M Power"
   },
   "4055": {
     "carClassId": 4055,
@@ -5370,45 +5288,5 @@
     "rainEnabled": false,
     "relativeSpeed": 45,
     "shortName": "Street Stocks"
-  },
-  "4065": {
-    "carClassId": 4065,
-    "carsInClass": [
-      {
-        "carDirpath": "amvantagegt4",
-        "carId": 150,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche718gt4",
-        "carId": 119,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclaren570sgt4",
-        "carId": 135,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4gt4",
-        "carId": 122,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamggt4",
-        "carId": 157,
-        "rainEnabled": true,
-        "retired": false
-      }
-    ],
-    "custId": 0,
-    "name": "Ring Meister 2024S3",
-    "rainEnabled": true,
-    "relativeSpeed": 56,
-    "shortName": "RingMeister24S3"
   }
 }
