@@ -4975,8 +4975,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "srx",
-        "carId": 179,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -5055,39 +5073,15 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "amvantagegt4",
-        "carId": 150,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "porsche718gt4",
-        "carId": 119,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mclaren570sgt4",
-        "carId": 135,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "mercedesamggt4",
-        "carId": 157,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm4evogt4",
-        "carId": 189,
-        "rainEnabled": true,
+        "carDirpath": "cadillacctsvr",
+        "carId": 41,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "RingMeister"
   },
@@ -5127,8 +5121,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
-        "carId": 182,
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
         "rainEnabled": false,
         "retired": false
       }
