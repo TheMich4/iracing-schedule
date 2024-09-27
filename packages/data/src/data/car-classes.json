@@ -4975,26 +4975,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\buicklesabre87",
-        "carId": 154,
+        "carDirpath": "trucks\\fordf150",
+        "carId": 123,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\chevymontecarlo87",
-        "carId": 124,
+        "carDirpath": "trucks\\toyotatundra2022",
+        "carId": 155,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\fordthunderbird87",
-        "carId": 125,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars\\pontiacgrandprix87",
-        "carId": 175,
+        "carDirpath": "trucks\\silverado2019",
+        "carId": 111,
         "rainEnabled": false,
         "retired": false
       }
@@ -5073,8 +5067,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "cadillacctsvr",
-        "carId": 41,
+        "carDirpath": "specracer",
+        "carId": 23,
         "rainEnabled": false,
         "retired": false
       }
@@ -5121,8 +5115,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
