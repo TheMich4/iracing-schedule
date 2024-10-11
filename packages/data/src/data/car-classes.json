@@ -4975,20 +4975,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "trucks\\fordf150",
-        "carId": 123,
+        "carDirpath": "stockcars\\chevycamarozl12022",
+        "carId": 139,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\toyotatundra2022",
-        "carId": 155,
+        "carDirpath": "stockcars\\fordmustang2022",
+        "carId": 140,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "trucks\\silverado2019",
-        "carId": 111,
+        "carDirpath": "stockcars\\toyotacamry2022",
+        "carId": 141,
         "rainEnabled": false,
         "retired": false
       }
@@ -5067,8 +5067,20 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "specracer",
-        "carId": 23,
+        "carDirpath": "fordfiestarswrc",
+        "carId": 81,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "subaruwrxsti",
+        "carId": 101,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "vwbeetlegrc",
+        "carId": 91,
         "rainEnabled": false,
         "retired": false
       }
