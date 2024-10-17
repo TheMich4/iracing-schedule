@@ -24,6 +24,7 @@ export const updateData = async () => {
   )) as {
     authcode: number;
   };
+  console.log(login);
 
   if (login.authcode == 0) {
     console.error("Login failed");

@@ -6223,7 +6223,7 @@
         "carType": "road"
       }
     ],
-    "carWeight": 2360,
+    "carWeight": 2050,
     "categories": [
       "sports_car"
     ],
@@ -10467,6 +10467,7 @@
       "oval"
     ],
     "created": "2024-07-16T11:21:04Z",
+    "firstSale": "2024-09-04T00:00:00Z",
     "forumUrl": "https://forums.iracing.com/categories/mini-stock",
     "freeWithSubscription": true,
     "hasHeadlights": false,
@@ -10518,6 +10519,7 @@
       "oval"
     ],
     "created": "2024-08-12T13:32:45Z",
+    "firstSale": "2024-09-04T00:00:00Z",
     "forumUrl": "https://forums.iracing.com/categories/dirt-mini-stock",
     "freeWithSubscription": true,
     "hasHeadlights": false,

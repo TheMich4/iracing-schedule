@@ -4975,20 +4975,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars\\chevycamarozl12022",
-        "carId": 139,
+        "carDirpath": "stockcars2\\camaro2019",
+        "carId": 114,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\fordmustang2022",
-        "carId": 140,
+        "carDirpath": "stockcars2\\mustang2019",
+        "carId": 115,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars\\toyotacamry2022",
-        "carId": 141,
+        "carDirpath": "stockcars2\\supra2019",
+        "carId": 116,
         "rainEnabled": false,
         "retired": false
       }
@@ -5067,20 +5067,32 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "fordfiestarswrc",
-        "carId": 81,
+        "carDirpath": "porsche991rsr",
+        "carId": 102,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "subaruwrxsti",
-        "carId": 101,
+        "carDirpath": "fordgt2017",
+        "carId": 92,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "vwbeetlegrc",
-        "carId": 91,
+        "carDirpath": "ferrari488gte",
+        "carId": 93,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm8gte",
+        "carId": 109,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "c8rvettegte",
+        "carId": 127,
         "rainEnabled": false,
         "retired": false
       }
@@ -5127,8 +5139,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
-        "carId": 182,
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
         "rainEnabled": false,
         "retired": false
       }
