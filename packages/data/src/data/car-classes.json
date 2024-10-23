@@ -4975,20 +4975,8 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars2\\camaro2019",
-        "carId": 114,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars2\\mustang2019",
-        "carId": 115,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "stockcars2\\supra2019",
-        "carId": 116,
+        "carDirpath": "srx",
+        "carId": 179,
         "rainEnabled": false,
         "retired": false
       }
@@ -5067,39 +5055,15 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "porsche991rsr",
-        "carId": 102,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "fordgt2017",
-        "carId": 92,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "ferrari488gte",
-        "carId": 93,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "bmwm8gte",
-        "carId": 109,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "c8rvettegte",
-        "carId": 127,
-        "rainEnabled": false,
+        "carDirpath": "porsche992cup",
+        "carId": 143,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 52,
     "shortName": "RingMeister"
   },
@@ -5139,8 +5103,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
