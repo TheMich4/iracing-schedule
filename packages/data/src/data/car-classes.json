@@ -713,7 +713,7 @@
       {
         "carDirpath": "formulavee",
         "carId": 142,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -987,15 +987,45 @@
         "retired": false
       },
       {
+        "carDirpath": "supercars\\fordmustanggen3",
+        "carId": 190,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
         "carDirpath": "ministock",
         "carId": 191,
         "rainEnabled": false,
         "retired": false
       },
       {
+        "carDirpath": "supercars\\chevycamarogen3",
+        "carId": 192,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
         "carDirpath": "dirtministock",
         "carId": 193,
         "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "acuransxevo22gt3",
+        "carId": 194,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm2csr",
+        "carId": 195,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "ferrari499p",
+        "carId": 196,
+        "rainEnabled": true,
         "retired": false
       }
     ],
@@ -3100,7 +3130,7 @@
       }
     ],
     "custId": 0,
-    "name": "Supercars Ford Mustang GT - 2019",
+    "name": "[Legacy] Supercars Ford Mustang GT - 2019",
     "rainEnabled": false,
     "relativeSpeed": 75,
     "shortName": "Ford GT - 2019"
@@ -3565,6 +3595,12 @@
         "retired": false
       },
       {
+        "carDirpath": "acuransxevo22gt3",
+        "carId": 194,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
         "rainEnabled": true,
@@ -3871,13 +3907,13 @@
       {
         "carDirpath": "formulavee",
         "carId": 142,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Formula Vee",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 20,
     "shortName": "Formula Vee"
   },
@@ -4477,6 +4513,12 @@
         "retired": false
       },
       {
+        "carDirpath": "acuransxevo22gt3",
+        "carId": 194,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
         "carDirpath": "bmwm4gt3",
         "carId": 132,
         "rainEnabled": true,
@@ -4791,6 +4833,12 @@
     "carClassId": 4029,
     "carsInClass": [
       {
+        "carDirpath": "ferrari499p",
+        "carId": 196,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
         "carDirpath": "cadillacvseriesrgtp",
         "carId": 168,
         "rainEnabled": true,
@@ -4975,8 +5023,20 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "srx",
-        "carId": 179,
+        "carDirpath": "stockcars2\\camaro2019",
+        "carId": 114,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\mustang2019",
+        "carId": 115,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\supra2019",
+        "carId": 116,
         "rainEnabled": false,
         "retired": false
       }
@@ -5055,8 +5115,14 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "porsche992cup",
-        "carId": 143,
+        "carDirpath": "supercars\\chevycamarogen3",
+        "carId": 192,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "supercars\\fordmustanggen3",
+        "carId": 190,
         "rainEnabled": true,
         "retired": false
       }
@@ -5103,8 +5169,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
-        "carId": 182,
+        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
+        "carId": 183,
         "rainEnabled": false,
         "retired": false
       }
@@ -5405,6 +5471,22 @@
     "relativeSpeed": 49,
     "shortName": "BMW M4 EVO GT4"
   },
+  "4068": {
+    "carClassId": 4068,
+    "carsInClass": [
+      {
+        "carDirpath": "supercars\\fordmustanggen3",
+        "carId": 190,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Supercars Ford Mustang Gen 3",
+    "rainEnabled": true,
+    "relativeSpeed": 75,
+    "shortName": "Mustang Gen 3"
+  },
   "4069": {
     "carClassId": 4069,
     "carsInClass": [
@@ -5421,6 +5503,22 @@
     "relativeSpeed": 100,
     "shortName": "Mini Stock"
   },
+  "4070": {
+    "carClassId": 4070,
+    "carsInClass": [
+      {
+        "carDirpath": "supercars\\chevycamarogen3",
+        "carId": 192,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Supercars Chevrolet Camaro Gen 3",
+    "rainEnabled": true,
+    "relativeSpeed": 75,
+    "shortName": "Camaro Gen 3"
+  },
   "4071": {
     "carClassId": 4071,
     "carsInClass": [
@@ -5436,5 +5534,91 @@
     "rainEnabled": false,
     "relativeSpeed": 40,
     "shortName": "Dirt Mini Stock"
+  },
+  "4072": {
+    "carClassId": 4072,
+    "carsInClass": [
+      {
+        "carDirpath": "acuransxevo22gt3",
+        "carId": 194,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Acura NSX GT3 EVO 22",
+    "rainEnabled": true,
+    "relativeSpeed": 52,
+    "shortName": "NSX GT3 EVO22"
+  },
+  "4073": {
+    "carClassId": 4073,
+    "carsInClass": [
+      {
+        "carDirpath": "bmwm2csr",
+        "carId": 195,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "BMW M2 CS Racing",
+    "rainEnabled": true,
+    "relativeSpeed": 42,
+    "shortName": "BMW M2 CS Racing"
+  },
+  "4074": {
+    "carClassId": 4074,
+    "carsInClass": [
+      {
+        "carDirpath": "ferrari499p",
+        "carId": 196,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Ferrari 499P",
+    "rainEnabled": true,
+    "relativeSpeed": 165,
+    "shortName": "Ferrari 499P"
+  },
+  "4075": {
+    "carClassId": 4075,
+    "carsInClass": [
+      {
+        "carDirpath": "dirtlatemodel\\438",
+        "carId": 84,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "WoO Pro Series",
+    "rainEnabled": false,
+    "relativeSpeed": 95,
+    "shortName": "WoO Pro Series"
+  },
+  "4076": {
+    "carClassId": 4076,
+    "carsInClass": [
+      {
+        "carDirpath": "supercars\\chevycamarogen3",
+        "carId": 192,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "supercars\\fordmustanggen3",
+        "carId": 190,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "Supercars Gen 3",
+    "rainEnabled": true,
+    "relativeSpeed": 75,
+    "shortName": "Supercars Gen 3"
   }
 }
