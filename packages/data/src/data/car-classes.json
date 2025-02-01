@@ -5023,20 +5023,26 @@
     "carClassId": 4040,
     "carsInClass": [
       {
-        "carDirpath": "stockcars2\\camaro2019",
-        "carId": 114,
+        "carDirpath": "stockcars\\buicklesabre87",
+        "carId": 154,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars2\\mustang2019",
-        "carId": 115,
+        "carDirpath": "stockcars\\chevymontecarlo87",
+        "carId": 124,
         "rainEnabled": false,
         "retired": false
       },
       {
-        "carDirpath": "stockcars2\\supra2019",
-        "carId": 116,
+        "carDirpath": "stockcars\\fordthunderbird87",
+        "carId": 125,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars\\pontiacgrandprix87",
+        "carId": 175,
         "rainEnabled": false,
         "retired": false
       }
@@ -5115,21 +5121,15 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "supercars\\chevycamarogen3",
-        "carId": 192,
-        "rainEnabled": true,
-        "retired": false
-      },
-      {
-        "carDirpath": "supercars\\fordmustanggen3",
-        "carId": 190,
-        "rainEnabled": true,
+        "carDirpath": "specracer",
+        "carId": 23,
+        "rainEnabled": false,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Ring Meister",
-    "rainEnabled": true,
+    "rainEnabled": false,
     "relativeSpeed": 52,
     "shortName": "RingMeister"
   },
@@ -5169,8 +5169,8 @@
     "carClassId": 4051,
     "carsInClass": [
       {
-        "carDirpath": "dirtmicrosprint\\nonwinged\\outlaw",
-        "carId": 183,
+        "carDirpath": "dirtmicrosprint\\winged\\outlaw",
+        "carId": 182,
         "rainEnabled": false,
         "retired": false
       }
