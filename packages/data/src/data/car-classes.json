@@ -29,18 +29,12 @@
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
         "carDirpath": "solstice\\rookie",
         "carId": 10,
-        "rainEnabled": false,
-        "retired": false
-      },
-      {
-        "carDirpath": "legends\\ford34c\\rookie",
-        "carId": 11,
         "rainEnabled": false,
         "retired": false
       },
@@ -77,7 +71,7 @@
       {
         "carDirpath": "specracer",
         "carId": 23,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       },
       {
@@ -1027,6 +1021,24 @@
         "carId": 196,
         "rainEnabled": true,
         "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\arcachevy25",
+        "carId": 198,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\arcaford25",
+        "carId": 199,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\arcatoyota25",
+        "carId": 200,
+        "rainEnabled": false,
+        "retired": false
       }
     ],
     "custId": 0,
@@ -1105,13 +1117,13 @@
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Legends",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 38,
     "shortName": "Legends"
   },
@@ -1122,14 +1134,14 @@
         "carDirpath": "legends\\ford34c\\rookie",
         "carId": 11,
         "rainEnabled": false,
-        "retired": false
+        "retired": true
       }
     ],
     "custId": 0,
-    "name": "Rookie Legends",
+    "name": "[Retired] - Rookie Legends",
     "rainEnabled": false,
     "relativeSpeed": 20,
-    "shortName": "Rookie Legends"
+    "shortName": "[R] Rookie Lgnds"
   },
   "13": {
     "carClassId": 13,
@@ -1249,13 +1261,13 @@
       {
         "carDirpath": "specracer",
         "carId": 23,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "Spec Racer Ford",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 36,
     "shortName": "SRF"
   },
@@ -1270,10 +1282,10 @@
       }
     ],
     "custId": 0,
-    "name": "ARCA Series",
+    "name": "[Legacy] ARCA Series",
     "rainEnabled": false,
     "relativeSpeed": 53,
-    "shortName": "ARCA Series"
+    "shortName": "[L] ARCA Series"
   },
   "22": {
     "carClassId": 22,
@@ -4730,10 +4742,10 @@
       }
     ],
     "custId": 0,
-    "name": "Gen 4 Cup",
+    "name": "[Legacy] Gen 4 Cup",
     "rainEnabled": false,
     "relativeSpeed": 83,
-    "shortName": "Gen 4 Cup"
+    "shortName": "[L] Gen 4 Cup"
   },
   "4022": {
     "carClassId": 4022,
@@ -5075,13 +5087,13 @@
       {
         "carDirpath": "legends\\ford34c",
         "carId": 5,
-        "rainEnabled": false,
+        "rainEnabled": true,
         "retired": false
       }
     ],
     "custId": 0,
     "name": "French Connection 2023 S4",
-    "rainEnabled": false,
+    "rainEnabled": true,
     "relativeSpeed": 50,
     "shortName": "French Co 2023S4"
   },
@@ -5121,8 +5133,8 @@
     "carClassId": 4048,
     "carsInClass": [
       {
-        "carDirpath": "specracer",
-        "carId": 23,
+        "carDirpath": "porschemissionr",
+        "carId": 158,
         "rainEnabled": false,
         "retired": false
       }
@@ -5620,5 +5632,195 @@
     "rainEnabled": true,
     "relativeSpeed": 75,
     "shortName": "Supercars Gen 3"
+  },
+  "4077": {
+    "carClassId": 4077,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars2\\arcachevy25",
+        "carId": 198,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "ARCA Chevrolet SS",
+    "rainEnabled": false,
+    "relativeSpeed": 53,
+    "shortName": "ARCA Chevy SS"
+  },
+  "4078": {
+    "carClassId": 4078,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars2\\arcaford25",
+        "carId": 199,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "ARCA Ford Mustang",
+    "rainEnabled": false,
+    "relativeSpeed": 53,
+    "shortName": "ARCA Mustang"
+  },
+  "4079": {
+    "carClassId": 4079,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars2\\arcatoyota25",
+        "carId": 200,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "ARCA Toyota Camry",
+    "rainEnabled": false,
+    "relativeSpeed": 53,
+    "shortName": "ARCA Camry"
+  },
+  "4083": {
+    "carClassId": 4083,
+    "carsInClass": [
+      {
+        "carDirpath": "audir8lmsevo2gt3",
+        "carId": 176,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4gt3",
+        "carId": 132,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "lamborghinievogt3",
+        "carId": 133,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche992rgt3",
+        "carId": 169,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "fordmustanggt3",
+        "carId": 185,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamgevogt3",
+        "carId": 156,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "ferrari296gt3",
+        "carId": 173,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NEC GT3 2025",
+    "rainEnabled": true,
+    "relativeSpeed": 52,
+    "shortName": "NEC GT3 2025"
+  },
+  "4084": {
+    "carClassId": 4084,
+    "carsInClass": [
+      {
+        "carDirpath": "amvantagegt4",
+        "carId": 150,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "porsche718gt4",
+        "carId": 119,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "mercedesamggt4",
+        "carId": 157,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "bmwm4evogt4",
+        "carId": 189,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NEC GT4 2025",
+    "rainEnabled": true,
+    "relativeSpeed": 49,
+    "shortName": "NEC GT4 2025"
+  },
+  "4085": {
+    "carClassId": 4085,
+    "carsInClass": [
+      {
+        "carDirpath": "audirs3lms",
+        "carId": 112,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "hyundaielantracn7",
+        "carId": 146,
+        "rainEnabled": true,
+        "retired": false
+      },
+      {
+        "carDirpath": "hondacivictyper",
+        "carId": 147,
+        "rainEnabled": true,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "NEC TCR 2025",
+    "rainEnabled": true,
+    "relativeSpeed": 45,
+    "shortName": "NEC TCR 2025"
+  },
+  "4086": {
+    "carClassId": 4086,
+    "carsInClass": [
+      {
+        "carDirpath": "stockcars2\\arcachevy25",
+        "carId": 198,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\arcaford25",
+        "carId": 199,
+        "rainEnabled": false,
+        "retired": false
+      },
+      {
+        "carDirpath": "stockcars2\\arcatoyota25",
+        "carId": 200,
+        "rainEnabled": false,
+        "retired": false
+      }
+    ],
+    "custId": 0,
+    "name": "ARCA",
+    "rainEnabled": false,
+    "relativeSpeed": 53,
+    "shortName": "ARCA"
   }
 }
